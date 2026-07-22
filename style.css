@@ -11,25 +11,34 @@ body{
 }
 
 header{
-    background:#0F172A;
-    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(12px);
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
+    padding:18px 8%;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 .logo{
+    font-size:32px;
     color:#D4AF37;
-    font-size:30px;
     font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:30px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:25px;
-    font-weight:500;
+    font-weight:600;
+    transition:.3s;
 }
 
 nav a:hover{

@@ -1,7 +1,7 @@
 console.log("Atmakur Land Hub Loaded");
 const searchInput = document.querySelector(".search-box input");
 const searchButton = document.querySelector(".search-box button");
-const cards = document.querySelectorAll(".property-card");
+const cards = document.querySelectorAll(".card");
 
 searchButton.addEventListener("click", () => {
     const value = searchInput.value.toLowerCase();

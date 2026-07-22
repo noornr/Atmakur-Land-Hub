@@ -354,18 +354,19 @@ footer p{
     font-size:17px;
 }
 .search-box{
-    max-width:600px;
-    margin:0 auto 40px;
     display:flex;
+    justify-content:center;
     gap:10px;
+    margin-bottom:30px;
 }
 
 .search-box input{
-    flex:1;
+    width:350px;
     padding:15px;
     border:2px solid #D4AF37;
     border-radius:10px;
     font-size:16px;
+    outline:none;
 }
 
 .search-box button{
@@ -374,6 +375,11 @@ footer p{
     border:none;
     padding:15px 25px;
     border-radius:10px;
-    font-weight:bold;
+    font-size:16px;
+    font-weight:600;
     cursor:pointer;
+}
+
+.search-box button:hover{
+    background:#c89b2c;
 }

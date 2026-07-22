@@ -133,3 +133,23 @@ nav a:hover{
     background:#25D366;
     color:white;
 }
+
+.about{
+    padding:80px 10%;
+    background:#ffffff;
+    text-align:center;
+}
+
+.about h2{
+    font-size:36px;
+    color:#0F172A;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}

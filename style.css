@@ -153,3 +153,40 @@ nav a:hover{
     line-height:1.8;
     color:#555;
 }
+
+.contact{
+    padding:80px 10%;
+    background:#0F172A;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:36px;
+    margin-bottom:25px;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+.call-btn,
+.contact .whatsapp-btn{
+    display:inline-block;
+    margin:15px 10px 0;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.call-btn{
+    background:#D4AF37;
+    color:#0F172A;
+}
+
+.contact .whatsapp-btn{
+    background:#25D366;
+    color:white;
+}

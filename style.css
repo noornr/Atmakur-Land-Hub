@@ -201,3 +201,14 @@ nav a:hover{
     background:#25D366;
     color:white;
 }
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#D4AF37;
+    color:#0F172A;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+}

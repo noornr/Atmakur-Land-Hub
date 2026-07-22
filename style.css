@@ -290,3 +290,33 @@ footer p{
 .stat-box p{
     font-size:18px;
 }
+
+.property-details{
+    max-width:900px;
+    margin:60px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.property-details img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.property-details h1{
+    color:#0F172A;
+    margin-bottom:10px;
+}
+
+.property-details h2{
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.property-details p{
+    margin:12px 0;
+    line-height:1.8;
+}

@@ -233,3 +233,20 @@ nav a:hover{
 .floating-whatsapp:hover{
     transform:scale(1.1);
 }
+footer{
+    background:#08111f;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h2{
+    color:#D4AF37;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:10px 0;
+    color:#ccc;
+}

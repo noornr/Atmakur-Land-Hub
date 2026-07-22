@@ -353,3 +353,27 @@ footer p{
     border-radius:8px;
     font-size:17px;
 }
+.search-box{
+    max-width:600px;
+    margin:0 auto 40px;
+    display:flex;
+    gap:10px;
+}
+
+.search-box input{
+    flex:1;
+    padding:15px;
+    border:2px solid #D4AF37;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.search-box button{
+    background:#D4AF37;
+    color:#0F172A;
+    border:none;
+    padding:15px 25px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}

@@ -62,6 +62,7 @@ function prevSlide() {
     current = (current - 1 + images.length) % images.length;
     showSlide(current);
 }
+setInterval(nextSlide, 3000);
 
 const images = [
     "images/property1.jpg",

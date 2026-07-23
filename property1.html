@@ -70,16 +70,16 @@ A premium open plot located in a fast-growing area of Atmakur. Suitable for resi
 
 <h3>Property Enquiry</h3>
 
-<form class="enquiry-form">
-<input type="text" placeholder="Your Name" required>
+<form class="enquiry-form" onsubmit="sendWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
 
-<input type="tel" placeholder="Mobile Number" required>
+    <input type="tel" id="phone" placeholder="Mobile Number" required>
 
-<input type="email" placeholder="Email (Optional)">
+    <input type="email" id="email" placeholder="Email (Optional)">
 
-<textarea placeholder="Your Message"></textarea>
+    <textarea id="message" placeholder="Your Message"></textarea>
 
-<button type="submit">Send Enquiry</button>
+    <button type="submit">Send Enquiry</button>
 </form>
     
 <a href="tel:+91YOURNUMBER" class="call-btn">📞 Call Now</a>

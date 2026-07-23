@@ -52,3 +52,30 @@ body{
 .login-box button:hover{
     background:#c89b2c;
 }
+.dashboard{
+    text-align:center;
+    width:90%;
+}
+
+.dashboard h1{
+    color:#D4AF37;
+    margin-bottom:40px;
+}
+
+.dashboard-buttons{
+    display:grid;
+    gap:20px;
+    max-width:400px;
+    margin:auto;
+}
+
+.dashboard-buttons button{
+    padding:18px;
+    border:none;
+    border-radius:10px;
+    background:#D4AF37;
+    color:#0F172A;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}

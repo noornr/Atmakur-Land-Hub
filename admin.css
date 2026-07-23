@@ -95,3 +95,14 @@ body{
 .dashboard-btn:hover{
     background:#c89b2c;
 }
+textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:2px solid #D4AF37;
+    border-radius:10px;
+    font-size:16px;
+    resize:vertical;
+    min-height:120px;
+    box-sizing:border-box;
+}

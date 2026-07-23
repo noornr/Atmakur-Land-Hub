@@ -14,3 +14,22 @@ searchButton.addEventListener("click", () => {
         }
     });
 });
+function sendWhatsApp() {
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    let text =
+`🏡 New Property Enquiry
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Message: ${message}`;
+
+    window.open(
+        `https://wa.me/91YOURNUMBER?text=${encodeURIComponent(text)}`,
+        "_blank"
+    );
+}

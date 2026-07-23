@@ -532,3 +532,43 @@ footer p{
         height:250px;
     }
 }
+.slider{
+    position:relative;
+    max-width:100%;
+    margin-bottom:30px;
+}
+
+.slider img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.6);
+    color:white;
+    border:none;
+    padding:15px 20px;
+    font-size:28px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.prev{
+    left:15px;
+}
+
+.next{
+    right:15px;
+}
+
+.prev:hover,
+.next:hover{
+    background:#D4AF37;
+    color:#000;
+}

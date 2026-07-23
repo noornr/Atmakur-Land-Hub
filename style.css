@@ -440,3 +440,42 @@ footer p{
     color:#777;
     font-weight:600;
 }
+
+.enquiry-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin:30px 0;
+}
+
+.enquiry-form input,
+.enquiry-form textarea{
+    width:100%;
+    padding:15px;
+    border:2px solid #D4AF37;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    box-sizing:border-box;
+}
+
+.enquiry-form textarea{
+    height:120px;
+    resize:vertical;
+}
+
+.enquiry-form button{
+    background:#D4AF37;
+    color:#0F172A;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.enquiry-form button:hover{
+    background:#c89b2c;
+}

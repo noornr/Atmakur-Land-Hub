@@ -1,4 +1,9 @@
 console.log("Atmakur Land Hub Loaded");
+
+// Search
+const searchInput = document.querySelector(".search-box input");
+const cards = document.querySelectorAll(".card");
+
 if (searchInput) {
     searchInput.addEventListener("input", () => {
         const value = searchInput.value.toLowerCase().trim();
@@ -12,6 +17,8 @@ if (searchInput) {
         });
     });
 }
+
+// WhatsApp Enquiry
 function sendWhatsApp() {
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;

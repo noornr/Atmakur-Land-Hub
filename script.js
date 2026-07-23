@@ -72,12 +72,3 @@ function openFullscreen() {
 function closeFullscreen() {
     document.getElementById("lightbox").style.display = "none";
 }
-function openFullscreen() {
-    document.getElementById("lightbox").style.display = "flex";
-    document.getElementById("lightboxImg").src =
-        document.getElementById("slide").src;
-}
-
-function closeFullscreen() {
-    document.getElementById("lightbox").style.display = "none";
-}

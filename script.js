@@ -1,4 +1,5 @@
 console.log("Atmakur Land Hub Loaded");
+alert("script.js loaded");
 
 // Search
 const searchInput = document.querySelector(".search-box input");

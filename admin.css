@@ -79,3 +79,19 @@ body{
     font-weight:bold;
     cursor:pointer;
 }
+.dashboard-btn{
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    padding:18px;
+    background:#D4AF37;
+    color:#0F172A;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.dashboard-btn:hover{
+    background:#c89b2c;
+}

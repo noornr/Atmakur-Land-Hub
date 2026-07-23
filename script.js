@@ -39,3 +39,25 @@ Message: ${message}`;
         "_blank"
     );
 }
+const images = [
+    "images/property1.jpg",
+    "images/property1-2.jpg",
+    "images/property1-3.jpg",
+    "images/property1-4.jpg"
+];
+
+let current = 0;
+
+function showSlide(index){
+    document.getElementById("slide").src = images[index];
+}
+
+function nextSlide(){
+    current = (current + 1) % images.length;
+    showSlide(current);
+}
+
+function prevSlide(){
+    current = (current - 1 + images.length) % images.length;
+    showSlide(current);
+}

@@ -659,8 +659,23 @@ footer p{
 .hero-buttons{
     justify-content:center;
 }
-.search-box{
-    flex-direction:column;
+.search-section{
+        margin-top:20px;
+        padding:0 20px;
+    }
+
+    .search-container{
+        grid-template-columns:1fr;
+        padding:20px;
+        gap:15px;
+    }
+
+    .search-btn{
+        margin-top:0;
+        padding:15px;
+        width:100%;
+    }
+
 }
 .section-title h2{
     font-size:30px;

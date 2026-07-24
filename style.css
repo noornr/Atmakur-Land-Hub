@@ -46,9 +46,9 @@ header{
 }
 
 .list-btn{
-    padding:12px 20px;
-    font-size:15px;
-    margin-left:30px;
+    padding:8px 16px;   /* Smaller button */
+    font-size:15px;     /* Smaller text */
+    border-radius:8px;
 }
 /* ===== Hero Section ===== */
 

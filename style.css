@@ -26,16 +26,17 @@ header{
 }
 
 .logo{
-    font-size:24px;
+    color:#D4AF37;
+    font-size:32px;
+    font-weight:700;
 }
-
 .navbar nav{
     display:flex;
     gap:18px;
 }
 
 .navbar nav a{
-    white-space:nowrap;
+    color:#ffffff;
 }
 
 .navbar nav a:hover{

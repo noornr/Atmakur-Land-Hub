@@ -129,9 +129,12 @@ header{
 }
 
 .property-grid{
+    max-width:1300px;
+    margin:50px auto;
+    padding:0 20px;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
 }
 
 .card{

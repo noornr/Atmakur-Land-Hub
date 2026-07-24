@@ -32,11 +32,13 @@ header{
 }
 .navbar nav{
     display:flex;
-    gap:18px;
+    gap:45px;
 }
 
 .navbar nav a{
+    font-size:18px;   /* Increase from the default */
     color:#ffffff;
+    font-weight:600;
 }
 
 .navbar nav a:hover{

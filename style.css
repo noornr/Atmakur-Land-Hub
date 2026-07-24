@@ -808,3 +808,44 @@ footer p{
 .list-btn:hover{
     background:#c89b2c;
 }
+
+.search-section{
+    background:#f8fafc;
+    padding:60px 8%;
+    text-align:center;
+}
+
+.search-section h2{
+    font-size:34px;
+    margin-bottom:25px;
+    color:#0F172A;
+}
+
+.search-box{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    gap:15px;
+}
+
+.search-box input{
+    flex:1;
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.search-box button{
+    background:#D4AF37;
+    color:#000;
+    border:none;
+    padding:16px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.search-box button:hover{
+    background:#b9962d;
+}

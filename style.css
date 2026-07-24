@@ -198,6 +198,7 @@ header{
 .card-buttons{
     display:flex;
     gap:12px;
+    margin-top:20px;
 }
 
 .price{
@@ -209,23 +210,31 @@ header{
 
 .details-btn,
 .whatsapp-btn{
-    display:block;
+    flex:1;
     text-align:center;
     text-decoration:none;
     padding:12px;
-    border-radius:8px;
-    margin-top:12px;
+    border-radius:10px;
     font-weight:600;
+    transition:.3s;
 }
 
 .details-btn{
     background:#0F172A;
-    color:white;
+    color:#fff;
+}
+
+.details-btn:hover{
+    background:#1E293B;
 }
 
 .whatsapp-btn{
     background:#25D366;
-    color:white;
+    color:#fff;
+}
+
+.whatsapp-btn:hover{
+    background:#1EA952;
 }
 
 .about{

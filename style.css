@@ -607,6 +607,9 @@ footer p{
 .hero-buttons{
     justify-content:center;
 }
+.search-box{
+    flex-direction:column;
+}
 }
 .slider{
     position:relative;

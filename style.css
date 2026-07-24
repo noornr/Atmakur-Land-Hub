@@ -575,6 +575,18 @@ footer p{
         max-width:250px;
         text-align:center;
     }
+    .hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
 }
 .slider{
     position:relative;

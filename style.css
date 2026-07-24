@@ -200,27 +200,6 @@ header{
     gap:12px;
 }
 
-.details-btn{
-    display:inline-block;
-    width:100%;
-    margin-top:15px;
-    padding:14px 24px;
-    background:#D4AF37;
-    color:#000;
-    text-align:center;
-    text-decoration:none;
-    border-radius:10px;
-    font-weight:600;
-    transition:all .3s ease;
-}
-
-.details-btn:hover{
-    background:#b9962d;
-    color:#fff;
-    transform:translateY(-3px);
-    box-shadow:0 8px 20px rgba(212,175,55,.35);
-}
-
 .price{
     color:#D4AF37;
     font-size:24px;

@@ -26,21 +26,16 @@ header{
 }
 
 .logo{
-    margin:0;
-    line-height:1;
+    font-size:24px;
 }
 
 .navbar nav{
     display:flex;
-    align-items:center;
-    gap:30px;
+    gap:18px;
 }
 
 .navbar nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
+    white-space:nowrap;
 }
 
 .navbar nav a:hover{
@@ -48,11 +43,8 @@ header{
 }
 
 .list-btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:50px;
-    padding:0 28px;
+    padding:10px 18px;
+    font-size:15px;
 }
 /* ===== Hero Section ===== */
 

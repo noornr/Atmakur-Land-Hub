@@ -135,18 +135,7 @@ header{
 .card:hover img{
     transform:scale(1.08);
 }
-.price-badge{
-    position:absolute;
-    bottom:15px;
-    right:15px;
-    background:rgba(15,23,42,.9);
-    color:#fff;
-    padding:10px 18px;
-    border-radius:10px;
-    font-size:18px;
-    font-weight:700;
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
-}
+
 .card-content{
     padding:22px;
 }

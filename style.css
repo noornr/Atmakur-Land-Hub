@@ -721,3 +721,46 @@ footer p{
     background:#b9962d;
     transform:translateY(-2px);
 }
+/* ===== New Header ===== */
+
+.top-bar{
+    background:#07162c;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px 8%;
+    font-size:14px;
+}
+
+.top-bar a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.top-bar a:hover{
+    color:#D4AF37;
+}
+
+.navbar{
+    background:#0F172A;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.list-btn{
+    background:#D4AF37;
+    color:#000;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.list-btn:hover{
+    background:#c89b2c;
+}

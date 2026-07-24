@@ -14,13 +14,6 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(15,23,42,0.95);
-    backdrop-filter:blur(12px);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 .logo{

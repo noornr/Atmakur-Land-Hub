@@ -54,16 +54,19 @@ header{
 }
 
 .hero-content{
-    position:relative;
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform:translateY(-50%);
     z-index:2;
-    max-width:1200px;
-    margin:auto;
-    width:100%;
-    padding:0 8%;
+    max-width:520px;
 }
 
-.hero-text{
-    max-width:600px;
+.hero-text h1{
+    color:#fff;
+    font-size:64px;
+    line-height:1.1;
+    font-weight:800;
 }
 
 .hero-text h1{

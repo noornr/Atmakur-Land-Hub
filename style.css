@@ -140,16 +140,17 @@ header{
     border-radius:20px;
     overflow:hidden;
     box-shadow:
-        0 0 12px rgba(212,175,55,.35),
-        0 10px 30px rgba(0,0,0,.08);
+        0 0 15px rgba(212,175,55,.45),
+        0 12px 30px rgba(0,0,0,.10);
     transition:all .35s ease;
 }
 
 .card:hover{
     transform:translateY(-8px);
+    border-color:#FFD700;
     box-shadow:
-        0 0 22px rgba(212,175,55,.75),
-        0 15px 40px rgba(0,0,0,.15);
+        0 0 28px rgba(255,215,0,.8),
+        0 18px 45px rgba(0,0,0,.15);
 }
 
 .card img{

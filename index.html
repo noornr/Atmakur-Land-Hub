@@ -120,13 +120,23 @@ List Your Property
   </div>
 </section>
 <section class="properties" id="properties">
-<div class="search-box">
-<input type="text" placeholder="Search by area, road or property ID...">
-</div>
 
-<h2>Available Properties</h2>
+    <div class="search-section">
+        <h2>Find Your Perfect Property</h2>
 
-<div class="property-grid">
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by area, road or property ID...">
+
+            <button onclick="searchProperties()">Search</button>
+        </div>
+    </div>
+
+    <h2>Available Properties</h2>
+
+    <div class="property-grid">
 
 <!-- Property 1 -->
 <div class="card">

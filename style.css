@@ -21,22 +21,19 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    max-width:1400px;
-    margin:auto;
-    padding:18px 8%;
-    gap:30px;
+    padding:15px 8%;
+    min-height:80px;
 }
 
 .logo{
-    font-size:32px;
-    color:#D4AF37;
-    font-weight:700;
-    white-space:nowrap;
+    margin:0;
+    line-height:1;
 }
 
 .navbar nav{
     display:flex;
-    gap:20px;
+    align-items:center;
+    gap:30px;
 }
 
 .navbar nav a{
@@ -51,7 +48,11 @@ header{
 }
 
 .list-btn{
-    white-space:nowrap;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:50px;
+    padding:0 28px;
 }
 /* ===== Hero Section ===== */
 

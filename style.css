@@ -677,3 +677,33 @@ footer p{
     opacity:0.9;
     transform:translateY(-2px);
 }
+.visit-box{
+    background:#1a1a1a;
+    border:1px solid #D4AF37;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    margin:25px 0;
+}
+
+.visit-box p{
+    color:#ddd;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+.visit-btn{
+    display:inline-block;
+    background:#D4AF37;
+    color:#000;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.visit-btn:hover{
+    background:#b9962d;
+    transform:translateY(-2px);
+}

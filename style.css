@@ -182,17 +182,6 @@ header{
     position:relative;
 }
 
-.property-type{
-    position:absolute;
-    top:15px;
-    left:15px;
-    background:#D4AF37;
-    color:#111;
-    padding:6px 14px;
-    border-radius:25px;
-    font-size:13px;
-    font-weight:700;
-}
 
 .location{
     color:#64748B;

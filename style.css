@@ -943,18 +943,20 @@ footer p{
 }
 .section-title{
     text-align:center;
-    margin:60px 0 40px;
+    margin:70px 0 50px;
 }
 
 .section-title h2{
-    font-size:38px;
+    font-size:42px;
+    font-weight:800;
     color:#0F172A;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .section-title p{
-    color:#64748b;
-    font-size:17px;
+    color:#64748B;
+    font-size:18px;
+    line-height:1.7;
     max-width:700px;
     margin:auto;
 }

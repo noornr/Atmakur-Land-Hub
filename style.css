@@ -34,7 +34,7 @@ header{
     transition:.3s;
 }
 
-nav a:hover{
+.navbar nav a:hover{
     color:#D4AF37;
 }
 

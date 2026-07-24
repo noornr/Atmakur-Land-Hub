@@ -136,17 +136,20 @@ header{
 .card{
     position:relative;
     background:#fff;
-    border:2px solid #E5E7EB;
+    border:2px solid #D4AF37;
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow:
+        0 0 12px rgba(212,175,55,.35),
+        0 10px 30px rgba(0,0,0,.08);
     transition:all .35s ease;
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    border-color:#D4AF37;
-    box-shadow:0 18px 45px rgba(212,175,55,.25);
+    transform:translateY(-8px);
+    box-shadow:
+        0 0 22px rgba(212,175,55,.75),
+        0 15px 40px rgba(0,0,0,.15);
 }
 
 .card img{

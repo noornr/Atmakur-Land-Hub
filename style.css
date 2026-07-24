@@ -125,12 +125,12 @@ header{
 }
 
 .property-grid{
-    max-width:1300px;
+    display:grid;
+    grid-template-columns:repeat(2, minmax(350px, 1fr));
+    gap:35px;
+    max-width:900px;
     margin:50px auto;
     padding:0 20px;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
 }
 
 .card{

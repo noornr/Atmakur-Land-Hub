@@ -112,6 +112,7 @@ header{
 }
 
 .card{
+    position:relative;
     background:#fff;
     border-radius:18px;
     overflow:hidden;

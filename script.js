@@ -72,3 +72,19 @@ function openFullscreen() {
 function closeFullscreen() {
     document.getElementById("lightbox").style.display = "none";
 }
+
+const pageUrl = window.location.href;
+
+document.getElementById("share-whatsapp").href =
+`https://wa.me/?text=${encodeURIComponent(pageUrl)}`;
+
+document.getElementById("share-facebook").href =
+`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+
+document.getElementById("share-x").href =
+`https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}`;
+
+document.getElementById("copy-link").addEventListener("click", () => {
+    navigator.clipboard.writeText(pageUrl);
+    alert("Property link copied!");
+});

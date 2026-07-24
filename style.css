@@ -610,6 +610,13 @@ footer p{
 .search-box{
     flex-direction:column;
 }
+.section-title h2{
+    font-size:30px;
+}
+
+.section-title p{
+    font-size:15px;
+}
 }
 .slider{
     position:relative;
@@ -851,4 +858,21 @@ footer p{
 
 .search-box button:hover{
     background:#b9962d;
+}
+.section-title{
+    text-align:center;
+    margin:60px 0 40px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#0F172A;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#64748b;
+    font-size:17px;
+    max-width:700px;
+    margin:auto;
 }

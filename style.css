@@ -178,6 +178,45 @@ header{
     line-height:1.6;
 }
 
+.property-image{
+    position:relative;
+}
+
+.property-type{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#D4AF37;
+    color:#111;
+    padding:6px 14px;
+    border-radius:25px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.location{
+    color:#64748B;
+    margin:10px 0;
+}
+
+.property-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:18px 0;
+}
+
+.price{
+    color:#D4AF37;
+    font-size:22px;
+    font-weight:700;
+}
+
+.card-buttons{
+    display:flex;
+    gap:12px;
+}
+
 .details-btn{
     display:inline-block;
     width:100%;

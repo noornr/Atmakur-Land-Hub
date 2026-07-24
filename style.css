@@ -16,10 +16,22 @@ header{
     z-index:1000;
 }
 
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1400px;
+    margin:auto;
+    padding:18px 8%;
+    gap:30px;
+}
+
 .logo{
     font-size:32px;
     color:#D4AF37;
     font-weight:700;
+    white-space:nowrap;
 }
 
 .navbar nav{
@@ -38,6 +50,9 @@ header{
     color:#D4AF37;
 }
 
+.list-btn{
+    white-space:nowrap;
+}
 /* ===== Hero Section ===== */
 
 .hero{

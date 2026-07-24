@@ -22,7 +22,7 @@ header{
     font-weight:700;
 }
 
-nav{
+.navbar nav{
     display:flex;
     gap:30px;
 }

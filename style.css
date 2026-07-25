@@ -377,19 +377,30 @@ footer{
     background:#111111;
     color:#FFFFFF;
     padding:60px 8% 30px;
-    border-top:1px solid #2A2A2A;
+    border-top:2px solid #D4AF37;
+    text-align:center;
 }
 
 footer h2{
     color:#D4AF37;
-    font-size:32px;
-    margin-bottom:15px;
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:18px;
 }
 
 footer p{
-    margin:10px 0;
+    margin:12px 0;
     color:#CFCFCF;
     line-height:1.8;
+    font-size:17px;
+}
+
+footer p:last-child{
+    margin-top:25px;
+    padding-top:20px;
+    border-top:1px solid #2A2A2A;
+    color:#888888;
+    font-size:15px;
 }
 
 .stats{

@@ -517,12 +517,6 @@ footer p:last-child{
     border-radius:8px;
     font-size:17px;
 }
-.search-section{
-    margin-top:-45px;
-    position:relative;
-    z-index:10;
-}
-
 .testimonials{
     padding:90px 8%;
     background:#0B0B0B;
@@ -838,6 +832,11 @@ footer p:last-child{
     transform:translateY(-2px);
 }
 
+.search-section{
+    margin-top:-45px;
+    position:relative;
+    z-index:10;
+}
 .search-section h2{
     font-size:40px;
     font-weight:700;

@@ -1012,13 +1012,13 @@ footer p{
 #nav-menu{
     display:none;
     position:absolute;
-    top:70px;
+    top:65px;
     right:0;
-    width:220px;
+    width:155px;
     background:#181818;
     border:1px solid #D4AF37;
-    border-radius:14px;
-    box-shadow:0 12px 30px rgba(0,0,0,.5);
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.45);
     overflow:hidden;
     z-index:1000;
 }
@@ -1031,10 +1031,10 @@ footer p{
 #nav-menu a{
     display:flex;
     align-items:center;
-    gap:14px;
-    padding:16px 18px;
+    gap:10px;
+    padding:11px 14px;
     color:#FFFFFF;
-    font-size:17px;
+    font-size:13px;
     font-weight:600;
     text-decoration:none;
     border-bottom:1px solid rgba(255,255,255,.08);
@@ -1046,9 +1046,9 @@ footer p{
 }
 
 #nav-menu a i{
-    width:22px;
+    width:18px;
     color:#D4AF37;
-    font-size:18px;
+    font-size:15px;
     text-align:center;
 }
 

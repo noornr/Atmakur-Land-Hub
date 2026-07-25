@@ -163,11 +163,9 @@ header{
 
 .property-grid{
     display:grid;
-    grid-template-columns:repeat(2, minmax(350px, 1fr));
-    gap:35px;
-    max-width:900px;
-    margin:50px auto;
-    padding:0 20px;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:40px;
 }
 
 .card{
@@ -175,14 +173,14 @@ header{
     border:1px solid #2A2A2A;
     border-radius:18px;
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
-    transition:all .3s ease;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
 }
 
 .card:hover{
     transform:translateY(-8px);
     border-color:#D4AF37;
-    box-shadow:0 16px 40px rgba(212,175,55,.20);
+    box-shadow:0 18px 40px rgba(212,175,55,.20);
 }
 
 .card img{
@@ -201,16 +199,15 @@ header{
 
 .card-content h3{
     color:#FFFFFF;
-    font-size:24px;
+    font-size:30px;
     font-weight:700;
-    margin-bottom:12px;
+    margin-bottom:18px;
 }
 
 .card-content p{
-    color:#CFCFCF;
-    font-size:17px;
-    line-height:1.7;
-    margin-bottom:10px;
+    color:#D0D0D0;
+    font-size:18px;
+    line-height:1.8;
 }
 
 .property-image{
@@ -238,8 +235,9 @@ header{
 
 .price{
     color:#D4AF37;
-    font-size:26px;
-    font-weight:700;
+    font-size:34px;
+    font-weight:800;
+    margin:20px 0;
 }
 
 .details-btn,

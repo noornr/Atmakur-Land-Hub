@@ -65,6 +65,10 @@ header{
     border:none;
     transition:.3s;
 }
+
+.list-btn:hover{
+    background:#F4C542;
+}
 /* ===== Hero Section ===== */
 
 .hero{
@@ -909,19 +913,6 @@ footer p{
     align-items:center;
     padding:18px 8%;
     box-shadow:0 5px 20px rgba(0,0,0,.15);
-}
-
-.list-btn{
-    background:#D4AF37;
-    color:#000;
-    text-decoration:none;
-    padding:12px 24px;
-    border-radius:8px;
-    font-weight:600;
-}
-
-.list-btn:hover{
-    background:#c89b2c;
 }
 
 .search-section{

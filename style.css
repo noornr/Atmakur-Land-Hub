@@ -494,47 +494,6 @@ footer p{
     padding:0 8%;
 }
 
-.search-container{
-    background:#fff;
-    border-radius:18px;
-    box-shadow:0 20px 50px rgba(0,0,0,.15);
-    max-width:1200px;
-    margin:auto;
-    padding:27px;
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:20px;
-}
-
-.search-item label{
-    display:block;
-    font-weight:600;
-    margin-bottom:8px;
-    color:#111827;
-}
-
-.search-item input,
-.search-item select{
-    width:100%;
-    padding:12px;
-    border:1px solid #ddd;
-    border-radius:8px;
-    font-size:15px;
-}
-
-.search-btn{
-    background:#D4AF37;
-    color:#111;
-    border:none;
-    border-radius:10px;
-    font-weight:700;
-    cursor:pointer;
-    margin-top:28px;
-}
-
-.search-btn:hover{
-    background:#b9962d;
-}
 .testimonials{
     padding:80px 10%;
     background:#f8f8f8;

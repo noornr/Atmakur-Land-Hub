@@ -1013,7 +1013,7 @@ footer p{
     display:none;
     position:absolute;
     top:70px;
-    right:15px;
+    right:0;
     width:220px;
     background:#181818;
     border:1px solid #D4AF37;

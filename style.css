@@ -1053,25 +1053,24 @@ body{
 
 /* Search */
 .search-section{
-    margin-top:-18px;
+    margin-top:-9px;
 }
 
 .search-section h2{
-    font-size:18px;
+    font-size:9px;
 }
 
 .search-box{
     flex-direction:column;
-    gap:7px;
+    gap:3.5px;
 }
 
 .search-box input,
 .search-box button{
     width:100%;
-    padding:8px;
-    font-size:10px;
+    padding:4px;
+    font-size:5px;
 }
-
 /* Stats */
 .stats{
     padding:30px 3%;

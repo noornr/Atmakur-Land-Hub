@@ -32,7 +32,8 @@ header{
 }
 .navbar nav{
     display:flex;
-    gap:35px;
+    gap:30px;
+    margin-right:50px;
 }
 
 .navbar nav a{

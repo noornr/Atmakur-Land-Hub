@@ -938,3 +938,9 @@ footer p:last-child{
     line-height:1.8;
     font-size:17px;
 }
+.section-divider{
+    border:none;
+    height:1px;
+    background:#2A2A2A;
+    margin:0;
+}

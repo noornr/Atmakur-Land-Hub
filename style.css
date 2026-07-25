@@ -860,23 +860,29 @@ footer p{
 .search-box input{
     flex:1;
     padding:16px;
-    border:1px solid #ddd;
-    border-radius:10px;
     font-size:16px;
+    border:1px solid #444444;
+    border-radius:10px;
+    background:#1A1A1A;
+    color:#FFFFFF;
 }
 
+.search-box input::placeholder{
+    color:#AAAAAA;
+}
 .search-box button{
     background:#D4AF37;
-    color:#000;
+    color:#111111;
     border:none;
     padding:16px 28px;
     border-radius:10px;
+    font-weight:700;
     cursor:pointer;
-    font-weight:600;
+    transition:.3s;
 }
 
 .search-box button:hover{
-    background:#b9962d;
+    background:#F4C542;
 }
 .section-title{
     text-align:center;

@@ -1012,15 +1012,14 @@ footer p{
 #nav-menu{
     display:none;
     position:absolute;
-    top:80px;
-    left:50%;
-    transform:translateX(-50%);
-    width:92%;
-    max-width:360px;
+    top:70px;
+    right:15px;
+    width:220px;
     background:#181818;
     border:1px solid #D4AF37;
-    border-radius:18px;
-    box-shadow:0 15px 40px rgba(0,0,0,.55);
+    border-radius:14px;
+    box-shadow:0 12px 30px rgba(0,0,0,.5);
+    overflow:hidden;
     z-index:1000;
 }
 
@@ -1032,19 +1031,24 @@ footer p{
 #nav-menu a{
     display:flex;
     align-items:center;
-    gap:18px;
-    padding:20px 24px;
-    font-size:18px;
+    gap:14px;
+    padding:16px 18px;
+    color:#FFFFFF;
+    font-size:17px;
     font-weight:600;
+    text-decoration:none;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    transition:.3s;
 }
+
 #nav-menu a:last-child{
     border-bottom:none;
 }
 
 #nav-menu a i{
-    width:26px;
+    width:22px;
     color:#D4AF37;
-    font-size:20px;
+    font-size:18px;
     text-align:center;
 }
 
@@ -1057,19 +1061,9 @@ footer p{
     color:#111111;
 }
 
+/* Hide List Property button on mobile */
 .list-btn{
-    display:flex !important;
-    justify-content:center !important;
-    align-items:center !important;
-    width:90%;
-    margin:18px auto;
-    padding:16px 20px;
-    background:#D4AF37;
-    color:#111 !important;
-    border-radius:14px;
-    font-size:18px;
-    font-weight:700;
-    text-decoration:none;
+    display:none !important;
 }
 hero{
     min-height:85vh;

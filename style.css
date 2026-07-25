@@ -986,42 +986,44 @@ footer p{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:15px 20px;
     position:relative;
-    padding:18px 20px;
 }
 
 .logo{
     font-size:22px;
+    margin:0;
 }
 
 .menu-toggle{
     display:block;
 }
 
-nav{
+#nav-menu{
     display:none;
     position:absolute;
-    top:70px;
+    top:90px;
     left:0;
     width:100%;
-    background:#111;
+    background:#111111;
     flex-direction:column;
-    text-align:center;
+    align-items:center;
     padding:20px 0;
-    border-top:1px solid #333;
+    border-top:1px solid #2A2A2A;
+    z-index:1000;
 }
 
-nav.active{
+#nav-menu.active{
     display:flex;
 }
 
-nav a{
+#nav-menu a{
     margin:12px 0;
     font-size:18px;
 }
 
 .list-btn{
-    width:220px;
-    margin:15px auto 0;
+    display:none;
 }
+
 }

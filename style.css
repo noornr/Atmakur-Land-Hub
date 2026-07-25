@@ -1030,5 +1030,31 @@ footer p{
 .list-btn{
     display:none;
 }
+.hero-text h1{
+    font-size:56px;
+    line-height:1.1;
+    word-break:break-word;
+}
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero-buttons a{
+    width:100%;
+}
+
+.search-box{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.search-box input,
+.search-box button{
+    width:100%;
+}
+
 
 }

@@ -972,6 +972,12 @@ footer p{
     color:#D4AF37;
     cursor:pointer;
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#D4AF37;
+    cursor:pointer;
+}
 
 /* Mobile */
 @media (max-width:768px){

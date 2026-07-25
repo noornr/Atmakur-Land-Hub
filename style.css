@@ -885,12 +885,6 @@ footer p{
     transform:translateY(-2px);
 }
 
-.search-section{
-    background:#f8fafc;
-    padding:60px 8%;
-    text-align:center;
-}
-
 .search-section h2{
     font-size:34px;
     margin-bottom:25px;

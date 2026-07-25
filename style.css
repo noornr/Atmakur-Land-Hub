@@ -599,7 +599,7 @@ footer p:last-child{
     text-align:center;
     margin-bottom:40px;
     font-size:36px;
-    color:#0F172A;
+    color:#FFFFFF;
 }
 
 .featured-card{
@@ -608,6 +608,11 @@ footer p:last-child{
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 12px 35px rgba(0,0,0,.35);
+}
+.featured-card:hover{
+    transform:translateY(-8px);
+    border-color:#D4AF37;
+    transition:.3s;
 }
 
 .featured-card img{
@@ -623,11 +628,14 @@ footer p:last-child{
 .featured-content h3{
     font-size:30px;
     margin-bottom:20px;
+    color:#FFFFFF;
 }
 
 .featured-content p{
     font-size:18px;
     margin:12px 0;
+    color:#CFCFCF;
+    line-height:1.8;
 }
 
 @media(max-width:768px){

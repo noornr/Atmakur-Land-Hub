@@ -988,117 +988,269 @@ footer p{
 @media (max-width:768px){
 
 .navbar{
-    position:relative;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 20px;
-    position:relative;
+    padding:10px 15px;
+    min-height:65px;
 }
 
 .logo{
-    font-size:22px;
+    font-size:18px;
     margin:0;
 }
 
 .menu-toggle{
     display:block;
-    font-size:34px;
-    color:#D4AF37;
-    cursor:pointer;
-    z-index:1001;
+    font-size:28px;
 }
 
 #nav-menu{
-    display:none;
-    position:absolute;
-    top:65px;
-    right:0;
-    width:155px;
-    background:#181818;
-    border:1px solid #D4AF37;
-    border-radius:10px;
-    box-shadow:0 8px 20px rgba(0,0,0,.45);
-    overflow:hidden;
-    z-index:1000;
-}
-
-#nav-menu.active{
-    display:flex;
-    flex-direction:column;
+    top:60px;
+    width:140px;
 }
 
 #nav-menu a{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    padding:11px 14px;
-    color:#FFFFFF;
-    font-size:13px;
-    font-weight:600;
-    text-decoration:none;
-    border-bottom:1px solid rgba(255,255,255,.08);
-    transition:.3s;
+    padding:9px 12px;
+    font-size:12px;
 }
 
-#nav-menu a:last-child{
-    border-bottom:none;
-}
-
-#nav-menu a i{
-    width:18px;
-    color:#D4AF37;
-    font-size:15px;
-    text-align:center;
-}
-
-#nav-menu a:hover{
-    background:#D4AF37;
-    color:#111111;
-}
-
-#nav-menu a:hover i{
-    color:#111111;
-}
-
-/* Hide List Property button on mobile */
 .list-btn{
     display:none !important;
 }
-hero{
-    min-height:85vh;
-    padding:40px 6%;
+
+/* Hero */
+.hero{
+    min-height:65vh;
+    padding:30px 5%;
 }
-.hero-text h1{
-    font-size:40px;
-    line-height:1.1;
-    word-break:break-word;
-}
-.hero-text p{
-    font-size:18px;
-    line-height:1.6;
+
+.hero-content{
     max-width:100%;
 }
+
+.hero-text h1{
+    font-size:30px;
+}
+
+.hero-text p{
+    font-size:14px;
+    line-height:1.5;
+}
+
 .hero-buttons{
-    display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:10px;
 }
 
 .hero-buttons a{
     width:100%;
+    padding:12px;
+    font-size:14px;
+}
+
+/* Search */
+.search-section{
+    margin-top:-25px;
+}
+
+.search-section h2{
+    font-size:26px;
 }
 
 .search-box{
-    display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:10px;
 }
 
 .search-box input,
 .search-box button{
     width:100%;
+    padding:12px;
+    font-size:14px;
 }
 
+/* Stats */
+.stats{
+    padding:45px 5%;
+    gap:15px;
+}
+
+.stat-box{
+    padding:22px;
+}
+
+.stat-box h2{
+    font-size:28px;
+}
+
+.stat-box p{
+    font-size:14px;
+}
+
+/* Properties */
+.properties{
+    padding:45px 5%;
+}
+
+.properties h2{
+    font-size:28px;
+}
+
+.property-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.card-content{
+    padding:16px;
+}
+
+.card-content h3{
+    font-size:22px;
+}
+
+.card-content p{
+    font-size:14px;
+}
+
+.price{
+    font-size:24px;
+}
+
+.details-btn,
+.whatsapp-btn{
+    font-size:15px;
+    padding:12px;
+}
+
+/* Featured Property */
+.featured-property{
+    padding:45px 5%;
+}
+
+.featured-card{
+    grid-template-columns:1fr;
+}
+
+.featured-card img{
+    min-height:220px;
+}
+
+.featured-content{
+    padding:20px;
+}
+
+.featured-content h3{
+    font-size:24px;
+}
+
+.featured-content p{
+    font-size:15px;
+}
+
+/* About */
+.about{
+    padding:45px 5%;
+}
+
+.about h2{
+    font-size:28px;
+}
+
+.about p{
+    font-size:15px;
+}
+
+/* Why Us */
+.why-us{
+    padding:45px 5%;
+}
+
+.why-us h2{
+    font-size:28px;
+}
+
+.why-grid{
+    grid-template-columns:1fr;
+}
+
+.why-card{
+    padding:22px;
+}
+
+.why-card h3{
+    font-size:20px;
+}
+
+.why-card p{
+    font-size:14px;
+}
+
+/* Testimonials */
+.testimonials{
+    padding:45px 5%;
+}
+
+.testimonials h2{
+    font-size:28px;
+}
+
+.testimonial-card{
+    padding:22px;
+}
+
+.testimonial-card p{
+    font-size:14px;
+}
+
+/* Contact */
+.contact{
+    padding:45px 5%;
+}
+
+.contact h2{
+    font-size:28px;
+}
+
+.contact p{
+    font-size:15px;
+}
+
+.call-btn,
+.contact .whatsapp-btn{
+    width:100%;
+    margin:8px 0;
+}
+
+/* Footer */
+footer{
+    padding:40px 5%;
+}
+
+footer h2{
+    font-size:26px;
+}
+
+footer p{
+    font-size:14px;
+}
+
+/* Gallery */
+.gallery{
+    grid-template-columns:1fr;
+}
+
+.gallery img{
+    height:200px;
+}
+
+.slider img{
+    height:250px;
+}
+
+/* Floating WhatsApp */
+.floating-whatsapp{
+    width:50px;
+    height:50px;
+    font-size:24px;
+}
 
 }

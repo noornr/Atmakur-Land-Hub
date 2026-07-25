@@ -27,8 +27,9 @@ header{
 
 .logo{
     color:#D4AF37;
-    font-size:32px;
+    font-size:28px;
     font-weight:700;
+    margin-left:-20px;
 }
 .navbar nav{
     display:flex;

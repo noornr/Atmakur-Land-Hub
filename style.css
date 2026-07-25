@@ -407,21 +407,22 @@ footer p:last-child{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
     gap:25px;
-    padding:70px 8%;
-    background:#ffffff;
+    padding:80px 8%;
+    background:#0B0B0B;
 }
 
 .stat-box{
-    background:#0F172A;
-    color:white;
+    background:#1A1A1A;
+    border:1px solid #2A2A2A;
+    border-radius:16px;
+    padding:35px 25px;
     text-align:center;
-    padding:35px 20px;
-    border-radius:15px;
     transition:.3s;
 }
 
 .stat-box:hover{
     transform:translateY(-8px);
+    border-color:#D4AF37;
 }
 
 .stat-box h2{
@@ -431,7 +432,8 @@ footer p:last-child{
 }
 
 .stat-box p{
-    font-size:18px;
+    color:#CFCFCF;
+    font-size:17px;
 }
 
 .property-details{

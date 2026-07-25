@@ -986,7 +986,12 @@ footer p{
 
 /* Mobile */
 @media (max-width:768px){
-
+    
+body{
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 200%;
+}
 .navbar{
     padding:7px 10px;
     min-height:45px;

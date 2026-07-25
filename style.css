@@ -637,7 +637,12 @@ footer p:last-child{
     color:#CFCFCF;
     line-height:1.8;
 }
-
+.price{
+    color:#D4AF37;
+    font-size:28px;
+    font-weight:700;
+    margin:18px 0;
+}
 @media(max-width:768px){
 
     .featured-card{

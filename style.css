@@ -1012,13 +1012,15 @@ footer p{
 #nav-menu{
     display:none;
     position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
+    top:80px;
+    left:50%;
+    transform:translateX(-50%);
+    width:92%;
+    max-width:360px;
     background:#181818;
-    border-top:1px solid #2A2A2A;
-    border-radius:0 0 18px 18px;
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    border:1px solid #D4AF37;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.55);
     z-index:1000;
 }
 
@@ -1030,13 +1032,10 @@ footer p{
 #nav-menu a{
     display:flex;
     align-items:center;
-    gap:16px;
-    padding:18px 25px;
-    color:#fff;
+    gap:18px;
+    padding:20px 24px;
     font-size:18px;
     font-weight:600;
-    text-decoration:none;
-    border-bottom:1px solid rgba(255,255,255,.08);
 }
 #nav-menu a:last-child{
     border-bottom:none;
@@ -1062,8 +1061,8 @@ footer p{
     display:flex !important;
     justify-content:center !important;
     align-items:center !important;
-    width:calc(100% - 40px);
-    margin:20px;
+    width:90%;
+    margin:18px auto;
     padding:16px 20px;
     background:#D4AF37;
     color:#111 !important;

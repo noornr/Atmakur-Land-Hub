@@ -964,3 +964,90 @@ footer p{
     line-height:1.8;
     margin:8px 0;
 }
+
+@media (max-width:768px){
+
+    /* Navbar */
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    /* Hero */
+    .hero{
+        min-height:60vh;
+        padding:60px 6%;
+        justify-content:center;
+    }
+
+    .hero-content{
+        max-width:100%;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:38px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    /* Property Grid */
+    .property-grid{
+        grid-template-columns:1fr;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+    /* Stats */
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    /* Featured Property */
+    .featured-card{
+        grid-template-columns:1fr;
+    }
+
+    .featured-card img{
+        min-height:250px;
+    }
+
+    .featured-content{
+        padding:25px;
+    }
+
+    /* Why Choose Us */
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Testimonials */
+    .testimonial-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Contact */
+    .contact iframe{
+        height:250px;
+    }
+
+    /* Footer */
+    footer h2{
+        font-size:28px;
+    }
+}

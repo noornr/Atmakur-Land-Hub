@@ -105,11 +105,6 @@ const navMenu = document.getElementById("nav-menu");
 if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", () => {
         navMenu.classList.toggle("active");
-
-        if(navMenu.classList.contains("active")){
-            menuToggle.innerHTML = "✕";
-        }else{
-            menuToggle.innerHTML = "☰";
-        }
+        menuToggle.innerHTML = navMenu.classList.contains("active") ? "✕" : "☰";
     });
 }

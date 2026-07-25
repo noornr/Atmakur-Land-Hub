@@ -274,23 +274,24 @@ header{
     background:#1EBE5D;
 }
 .about{
-    padding:80px 10%;
-    background:#ffffff;
+    padding:90px 8%;
+    background:#111111;
     text-align:center;
 }
 
 .about h2{
-    font-size:36px;
-    color:#0F172A;
-    margin-bottom:20px;
+    font-size:40px;
+    color:#D4AF37;
+    margin-bottom:30px;
+    font-weight:700;
 }
 
 .about p{
-    max-width:800px;
+    max-width:900px;
     margin:auto;
+    color:#CFCFCF;
     font-size:18px;
-    line-height:1.8;
-    color:#555;
+    line-height:1.9;
 }
 
 .contact{

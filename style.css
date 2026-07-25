@@ -944,3 +944,23 @@ footer p:last-child{
     background:#2A2A2A;
     margin:0;
 }
+footer{
+    background:#0B0B0B;
+    padding:60px 8%;
+    text-align:center;
+    border-top:1px solid #2A2A2A;
+}
+
+footer h2{
+    color:#D4AF37;
+    font-size:34px;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+footer p{
+    color:#CFCFCF;
+    font-size:17px;
+    line-height:1.8;
+    margin:8px 0;
+}

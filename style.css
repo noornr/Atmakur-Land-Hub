@@ -488,10 +488,9 @@ footer p{
     font-size:17px;
 }
 .search-section{
-    position:relative;
-    margin-top:-50px;
-    z-index:100;
-    padding:0 8%;
+    background:#111111;
+    padding:70px 8%;
+    text-align:center;
 }
 
 .testimonials{
@@ -845,9 +844,10 @@ footer p{
 }
 
 .search-section h2{
-    font-size:34px;
-    margin-bottom:25px;
-    color:#0F172A;
+    font-size:40px;
+    font-weight:700;
+    color:#FFFFFF;
+    margin-bottom:30px;
 }
 
 .search-box{

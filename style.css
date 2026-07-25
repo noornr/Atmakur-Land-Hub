@@ -1120,8 +1120,8 @@ body{
 }
 
 .card{
-    width:80%;      /* 20% smaller */
-    max-width:320px;
+    width:92%;      /* 15% larger than 80% */
+    max-width:370px;
 }
 
 .card-content{

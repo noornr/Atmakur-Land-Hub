@@ -23,6 +23,8 @@ header{
     align-items:center;
     padding:15px 8%;
     min-height:90px;
+    background:#111111;
+    border-bottom:1px solid #2A2A2A;
 }
 
 .logo{

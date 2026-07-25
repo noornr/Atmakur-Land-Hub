@@ -174,7 +174,7 @@ header{
     border:1px solid #2A2A2A;
     border-radius:18px;
     overflow:hidden;
-    transition:.3s;
+    transition:all .35s ease;
     box-shadow:0 10px 25px rgba(0,0,0,.30);
 }
 
@@ -185,13 +185,11 @@ header{
 }
 
 .card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
+    transition:transform .4s ease;
 }
 
 .card:hover img{
-    transform:scale(1.05);   /* Less zoom */
+    transform:scale(1.06);
 }
 
 .card-content{

@@ -1030,10 +1030,19 @@ footer p{
 .list-btn{
     display:none;
 }
+hero{
+    min-height:85vh;
+    padding:40px 6%;
+}
 .hero-text h1{
-    font-size:56px;
+    font-size:40px;
     line-height:1.1;
     word-break:break-word;
+}
+.hero-text p{
+    font-size:18px;
+    line-height:1.6;
+    max-width:100%;
 }
 .hero-buttons{
     display:flex;

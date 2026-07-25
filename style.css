@@ -591,8 +591,8 @@ footer p:last-child{
 }
 
 .featured-property{
-    padding:80px 10%;
-    background:#fff;
+    background:#111111;
+    padding:80px 8%;
 }
 
 .featured-property h2{
@@ -603,13 +603,11 @@ footer p:last-child{
 }
 
 .featured-card{
-    display:flex;
-    align-items:center;
-    gap:30px;
-    background:#f8f8f8;
-    border-radius:20px;
+    background:#1A1A1A;
+    border:1px solid #2A2A2A;
+    border-radius:18px;
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
 }
 
 .featured-card img{

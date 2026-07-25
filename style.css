@@ -169,13 +169,13 @@ header{
 }
 
 .card{
+    position:relative;
     background:#1A1A1A;
     border:1px solid #2A2A2A;
     border-radius:18px;
     overflow:hidden;
     transition:.3s;
     box-shadow:0 10px 25px rgba(0,0,0,.30);
-    position:relative;
 }
 
 .card:hover{

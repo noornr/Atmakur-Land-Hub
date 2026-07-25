@@ -75,19 +75,29 @@ function closeFullscreen() {
 
 const pageUrl = window.location.href;
 
-document.getElementById("share-whatsapp").href =
-`https://wa.me/?text=${encodeURIComponent(pageUrl)}`;
+const whatsapp = document.getElementById("share-whatsapp");
+const facebook = document.getElementById("share-facebook");
+const x = document.getElementById("share-x");
+const copy = document.getElementById("copy-link");
 
-document.getElementById("share-facebook").href =
-`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+if (whatsapp) {
+    whatsapp.href = `https://wa.me/?text=${encodeURIComponent(pageUrl)}`;
+}
 
-document.getElementById("share-x").href =
-`https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}`;
+if (facebook) {
+    facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+}
 
-document.getElementById("copy-link").addEventListener("click", () => {
-    navigator.clipboard.writeText(pageUrl);
-    alert("Property link copied!");
-});
+if (x) {
+    x.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}`;
+}
+
+if (copy) {
+    copy.addEventListener("click", () => {
+        navigator.clipboard.writeText(pageUrl);
+        alert("Property link copied!");
+    });
+}
 // Mobile Hamburger Menu
 const menuToggle = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-menu");

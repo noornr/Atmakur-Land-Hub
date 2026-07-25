@@ -968,16 +968,35 @@ footer p{
 @media (max-width:768px){
 
     /* Navbar */
-    nav{
-        flex-direction:column;
-        gap:15px;
-    }
+.navbar{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+}
 
-    .nav-links{
-        flex-direction:column;
-        gap:15px;
-        text-align:center;
-    }
+.logo{
+    font-size:26px;
+    text-align:center;
+    white-space:normal;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+}
+
+nav a{
+    font-size:20px;
+}
+
+.list-btn{
+    width:220px;
+    text-align:center;
+}
 
     /* Hero */
     .hero{

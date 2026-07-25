@@ -504,9 +504,9 @@ footer p:last-child{
     font-size:17px;
 }
 .search-section{
-    background:#111111;
-    padding:70px 8%;
-    text-align:center;
+    margin-top:-45px;
+    position:relative;
+    z-index:10;
 }
 
 .testimonials{

@@ -79,8 +79,11 @@ header{
     justify-content:center;
     text-align:center;
     padding:0 8%;
+
+    background-image:url("images/hero.jpg");
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
 }
 .hero::before{
     content:"";

@@ -4,6 +4,11 @@
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
 }
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
 
 body{
     background:#0B0B0B;

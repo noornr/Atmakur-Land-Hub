@@ -988,6 +988,7 @@ footer p{
 @media (max-width:768px){
 
 .navbar{
+    position:relative;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -1011,16 +1012,13 @@ footer p{
 #nav-menu{
     display:none;
     position:absolute;
-    top:85px;
-    left:50%;
-    transform:translateX(-50%);
-    width:90%;
-    max-width:360px;
+    top:100%;
+    left:0;
+    width:100%;
     background:#181818;
-    border:1px solid #D4AF37;
-    border-radius:18px;
-    box-shadow:0 15px 40px rgba(0,0,0,.55);
-    padding:10px 0;
+    border-top:1px solid #2A2A2A;
+    border-radius:0 0 18px 18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
     z-index:1000;
 }
 

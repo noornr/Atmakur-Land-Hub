@@ -175,6 +175,7 @@ header{
     overflow:hidden;
     transition:.3s;
     box-shadow:0 10px 25px rgba(0,0,0,.30);
+    position:relative;
 }
 
 .card:hover{

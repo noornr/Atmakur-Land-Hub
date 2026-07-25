@@ -388,7 +388,8 @@ footer h2{
 
 footer p{
     margin:10px 0;
-    color:#ccc;
+    color:#CFCFCF;
+    line-height:1.8;
 }
 
 .stats{

@@ -1010,73 +1010,117 @@ body{
     overflow-x:hidden;                 /* Prevent horizontal scrolling */
 }
 
+/* Premium Mobile Navbar */
+
 .navbar{
-    display:flex;                      /* Enable Flexbox */
-    flex-direction:column;             /* Arrange items vertically */
-    align-items:center;                /* Center all items horizontally */
-    padding:10px 2%;                   /* 7px top & bottom, 4px left & right */
+
+    background:#050505;                         /* Pure black navbar background */
+    padding:16px 14px;                          /* Space inside navbar */
+    border-bottom:1px solid rgba(212,175,55,.25); /* Thin gold bottom border */
+
 }
 
 .logo{
-    font-size:24px;                    /* Logo text size */
-    line-height:1.25;                  /* Space between logo lines */
-    text-align:center;                 /* Center logo text */
-    margin-bottom:6px;                 /* Space below logo */
-    margin-left:20px;                  /* Move logo to the right */ 
+
+    color:#D4AF37;                              /* Gold logo color */
+    font-size:30px;                             /* Logo text size */
+    font-weight:800;                            /* Extra bold logo */
+    text-align:center;                          /* Center logo */
+    margin-bottom:18px;                         /* Space below logo */
+    letter-spacing:.5px;                        /* Small gap between letters */
+
 }
 
 .navbar nav{
-    width:100%;                        /* Full navbar width */
-    display:flex;                      /* Enable Flexbox */
-    justify-content:center;            /* Center navigation buttons */
-    align-items:center;                /* Align buttons vertically */
-    gap:40px;                          /* Space between buttons */
-    margin:0 auto;                     /* Center navigation container */
+
+    display:grid;                               /* Use CSS Grid */
+    grid-template-columns:repeat(4,1fr);        /* Four equal-width buttons */
+
+    background:#111111;                         /* Dark menu background */
+
+    border:2px solid rgba(212,175,55,.35);      /* Gold border around menu */
+    border-radius:18px;                         /* Rounded corners */
+
+    overflow:hidden;                            /* Hide overflow outside border */
+
+    box-shadow:
+    0 0 20px rgba(212,175,55,.18),              /* Outer gold glow */
+    inset 0 0 12px rgba(255,215,90,.06);        /* Inner gold glow */
+
 }
 
 .navbar nav a{
-    width:50px;                        /* Button width */
-    height:45px;                       /* Button height */
 
-    display:flex;                      /* Enable Flexbox */
-    flex-direction:column;             /* Icon above text */
-    justify-content:center;            /* Center content vertically */
-    align-items:center;                /* Center content horizontally */
+    display:flex;                               /* Enable Flexbox */
+    flex-direction:column;                      /* Icon above text */
+    justify-content:center;                     /* Center vertically */
+    align-items:center;                         /* Center horizontally */
 
-    background:#D4AF37;                /* Gold background */
-    color:#111111;                     /* Black text */
-    border-radius:8px;                 /* Rounded corners */
-    text-decoration:none;              /* Remove underline */
+    height:88px;                                /* Button height */
 
-    font-size:9px;                     /* Text size */
-    font-weight:600;                   /* Semi-bold text */
+    color:#ffffff;                              /* White text color */
+    text-decoration:none;                       /* Remove underline */
+
+    font-size:14px;                             /* Navigation text size */
+    font-weight:700;                            /* Bold navigation text */
+
+    position:relative;                          /* Allow future positioning */
+    transition:.35s;                            /* Smooth hover animation */
+
+}
+
+.navbar nav a:not(:last-child){
+
+    border-right:1px solid rgba(255,255,255,.12); /* Thin divider between buttons */
+
 }
 
 .navbar nav a i{
-    font-size:12px;                    /* Icon size */
-    margin-bottom:2px;                 /* Space below icon */
+
+    font-size:26px;                             /* Navigation icon size */
+    margin-bottom:10px;                         /* Space below icon */
+
 }
 
-.list-btn{
-    display:flex;                      /* Enable Flexbox */
-    justify-content:center;            /* Center text horizontally */
-    align-items:center;                /* Center text vertically */
+.navbar nav a.active{
 
-    width:72%;                         /* Button width */
-    max-width:224px;                   /* Maximum button width */
-    height:32px;                       /* Button height */
+    background:linear-gradient(                 /* Premium gold gradient */
+    180deg,
+    #F7D96B 0%,                                 /* Light gold top */
+    #E6BE43 45%,                                /* Rich gold middle */
+    #C99719 100%                                /* Dark gold bottom */
+    );
 
-    margin:8px auto 0;                /* Center button with top spacing */
+    color:#111111;                              /* Black active text */
 
-    background:#D4AF37;                /* Gold background */
-    color:#111111;                     /* Black text */
-    border-radius:8px;                 /* Rounded corners */
-    text-decoration:none;              /* Remove underline */
+    box-shadow:
+    inset 0 2px 0 rgba(255,255,255,.45),        /* Top shine effect */
+    0 0 18px rgba(255,215,80,.55);              /* Outer glowing effect */
 
-    font-size:13px;                    /* Text size */
-    font-weight:700;                   /* Bold text */
+}
 
-    flex-shrink:0;                     /* Prevent shrinking */
+.navbar nav a.active i{
+
+    color:#111111;                              /* Black active icon */
+
+}
+
+.navbar nav a:hover{
+
+    background:#1B1B1B;                         /* Dark hover background */
+
+}
+
+.navbar nav a:hover:not(.active){
+
+    color:#F4C542;                              /* Gold hover text */
+
+}
+
+.navbar nav a:hover:not(.active) i{
+
+    color:#F4C542;                              /* Gold hover icon */
+
 }
 
 /* ===== Hero Section (Mobile) ===== */

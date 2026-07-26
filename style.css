@@ -492,88 +492,90 @@ footer p:last-child{
 }
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    margin-bottom:30px;
+    display:grid;                          /* Enable CSS Grid */
+    grid-template-columns:repeat(2,1fr);   /* Two equal-width columns */
+    gap:15px;                              /* Space between images */
+    margin-bottom:30px;                    /* Space below gallery */
 }
 
 .gallery img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:15px;
-    transition:.3s;
+    width:100%;                            /* Full image width */
+    height:250px;                          /* Fixed image height */
+    object-fit:cover;                      /* Fill area without distortion */
+    border-radius:15px;                    /* Rounded image corners */
+    transition:.3s;                        /* Smooth hover animation */
 }
 
 .gallery img:hover{
-    transform:scale(1.03);
+    transform:scale(1.03);                 /* Slight zoom on hover */
 }
+
 .highlights{
-    list-style:none;
-    padding:0;
-    margin:25px 0;
+    list-style:none;                       /* Remove bullet points */
+    padding:0;                             /* Remove inner spacing */
+    margin:25px 0;                         /* Top & bottom spacing */
 }
 
 .highlights li{
-    background:#f8f8f8;
-    margin:10px 0;
-    padding:15px;
-    border-left:5px solid #D4AF37;
-    border-radius:8px;
-    font-size:17px;
+    background:#f8f8f8;                    /* Light background */
+    margin:10px 0;                         /* Space between items */
+    padding:15px;                          /* Inner spacing */
+    border-left:5px solid #D4AF37;         /* Gold left border */
+    border-radius:8px;                     /* Rounded corners */
+    font-size:17px;                        /* Text size */
 }
+
 .testimonials{
-    padding:90px 8%;
-    background:#0B0B0B;
-    text-align:center;
+    padding:90px 8%;                       /* Section spacing */
+    background:#0B0B0B;                    /* Black background */
+    text-align:center;                     /* Center all content */
 }
 
 .testimonials h2{
-    margin-bottom:50px;
-    font-size:40px;
-    color:#D4AF37;
-    font-weight:700;
+    margin-bottom:50px;                    /* Space below heading */
+    font-size:40px;                        /* Heading size */
+    color:#D4AF37;                         /* Gold heading */
+    font-weight:700;                       /* Bold heading */
 }
 
 .testimonial-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+    display:grid;                          /* Enable CSS Grid */
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); /* Responsive columns */
+    gap:30px;                              /* Space between testimonial cards */
 }
 
 .testimonial-card{
-    background:#1A1A1A;
-    padding:35px;
-    border:1px solid #2A2A2A;
-    border-radius:18px;
-    box-shadow:0 10px 25px rgba(0,0,0,.30);
-    transition:all .35s ease;
+    background:#1A1A1A;                    /* Dark card background */
+    padding:35px;                          /* Inner spacing */
+    border:1px solid #2A2A2A;              /* Thin border */
+    border-radius:18px;                    /* Rounded corners */
+    box-shadow:0 10px 25px rgba(0,0,0,.30);/* Shadow effect */
+    transition:all .35s ease;              /* Smooth hover animation */
 }
 
 .testimonial-card:hover{
-    transform:translateY(-10px);
-    border-color:#D4AF37;
-    box-shadow:0 20px 45px rgba(212,175,55,.20);
+    transform:translateY(-10px);           /* Move card upward */
+    border-color:#D4AF37;                  /* Gold border on hover */
+    box-shadow:0 20px 45px rgba(212,175,55,.20); /* Gold glow */
 }
 
 .testimonial-card p{
-    color:#CFCFCF;
-    font-size:17px;
-    line-height:1.8;
-    font-style:italic;
-    margin-bottom:20px;
+    color:#CFCFCF;                         /* Light gray text */
+    font-size:17px;                        /* Paragraph text size */
+    line-height:1.8;                       /* Comfortable line spacing */
+    font-style:italic;                     /* Italic testimonial text */
+    margin-bottom:20px;                    /* Space below paragraph */
 }
 
 .testimonial-card h4{
-    color:#D4AF37;
-    font-size:20px;
-    margin-bottom:8px;
+    color:#D4AF37;                         /* Gold customer name */
+    font-size:20px;                        /* Name text size */
+    margin-bottom:8px;                     /* Space below name */
 }
 
 .testimonial-card span{
-    color:#999999;
-    font-size:15px;
+    color:#999999;                         /* Gray designation text */
+    font-size:15px;                        /* Designation text size */
 }
 .enquiry-form{
     display:flex;

@@ -1018,12 +1018,14 @@ body{
 
 .navbar nav a{
     font-size:18px;   /* Increase from the default */
-    color:#FFFFFF;
+    color:#111111;
+    background:#D4AF37;
     font-weight:600;
 }
 
 .navbar nav a:hover{
-    color:#D4AF37;
+    color:#111111;
+    background:#F4C542;
 }
 
 .list-btn{

@@ -1100,11 +1100,11 @@ body{
 .hero-content{
     position:relative;
     z-index:2;
-    max-width:450px;
+    max-width:360px;
 }
 
 .hero-text h1{
-    font-size:52px;
+    font-size:42px;
     line-height:1;
     font-weight:800;
     color:#FFFFFF;
@@ -1116,7 +1116,7 @@ body{
 }
 
 .hero-text p{
-    font-size:18px;
+    font-size:15px;
     line-height:1.6;
     color:#E5E5E5;
     margin-bottom:28px;
@@ -1124,19 +1124,20 @@ body{
 
 .hero-buttons{
     display:flex;
-    gap:16px;
+    gap:12px;
     flex-direction:row;
 }
 
 .btn-primary,
 .btn-secondary{
-    padding:16px 34px;
+    padding:13px 27px;
     border-radius:10px;
     text-decoration:none;
     font-weight:700;
     transition:.3s;
-    width:220px;
+    width:176px;
     text-align:center;
+    font-size:15px;
 }
 
 .btn-primary{

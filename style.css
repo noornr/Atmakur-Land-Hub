@@ -1110,7 +1110,7 @@ body{
 }
 .hero-location{
     margin-bottom:16px;                  /* Reduced from 31px */
-    margin-left:-5px;                    /* Reduced from -10px */
+    margin-left:-2px;                    /* Reduced from -10px */
 }
 
 .hero-location img{

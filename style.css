@@ -38,29 +38,6 @@ header{
 /* Desktop Logo Container */
 /* ========================= */
 
-.nav-logo{
-
-    display:flex;                            /* Enable Flexbox */
-    align-items:center;                      /* Center logo vertically */
-    justify-content:flex-start;              /* Align logo to left */
-
-    width:280px;                             /* Logo container width */
-    flex-shrink:0;                           /* Prevent shrinking */
-
-}
-
-/* ========================= */
-/* Desktop Logo Image */
-/* ========================= */
-
-.nav-logo img{
-
-    width:220px;                             /* Logo width */
-    height:auto;                             /* Keep image proportions */
-    display:block;                           /* Display as block */
-
-}
-
 .navbar nav{
     display:flex;                       /* Arrange menu items in a row */
     gap:30px;                           /* Space between menu items */
@@ -1068,20 +1045,6 @@ body{
 
 }
 
-
-/* ===========================
-   WEBSITE LOGO
-=========================== */
-
-.logo img{
-
-    height:20px;                       /* 70% smaller appearance */
-
-    width:auto;                        /* Keeps original image ratio */
-
-    display:block;                     /* Removes unwanted spacing */
-
-}
 
 /* ===========================
    NAVIGATION CONTAINER

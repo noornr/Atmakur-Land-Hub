@@ -1121,10 +1121,10 @@ body{
 
 .nav-logo{
 
-    flex:0 0 28%;                                /* Fixed logo area */
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
+    flex:0 0 22%;                    /* Reserve only 22% of navbar for logo */
+    display:flex;                    /* Enable Flexbox */
+    align-items:center;              /* Center logo vertically */
+    justify-content:flex-start;      /* Keep logo aligned to the left */
 
 }
 
@@ -1134,9 +1134,9 @@ body{
 
 .nav-logo img{
 
-    width:80px;                                  /* Slightly smaller logo */
-    height:auto;
-    display:block;
+    width:70px;                      /* Set logo width to 70px */
+    height:auto;                     /* Keep original image proportions */
+    display:block;                   /* Remove extra inline spacing */
 
 }
 
@@ -1146,21 +1146,10 @@ body{
 
 .navbar nav{
 
-    flex:1;                                      /* Takes remaining space */
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-
-    background:#111111;
-
-    border:2px solid rgba(212,175,55,.35);
-    border-radius:14px;
-
-    overflow:hidden;
-
-    box-shadow:
-    0 0 12px rgba(212,175,55,.18),
-    inset 0 0 8px rgba(255,215,90,.08);
+    flex:1;                          /* Use all remaining space after logo */
+    display:grid;                    /* Enable CSS Grid */
+    grid-template-columns:repeat(4,1fr); /* Four equal navigation buttons */
+    margin-left:12px;                /* Space between logo and navigation */
 
 }
 
@@ -1170,23 +1159,11 @@ body{
 
 .navbar nav a{
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    height:46px;                                 /* Balanced height */
-
-    color:#FFFFFF;
-    text-decoration:none;
-
-    font-size:9px;                               /* Slightly larger text */
-    font-weight:700;
-
-    transition:.35s;
+    height:45px;                     /* Navigation button height */
+    font-size:8px;                   /* Navigation text size */
+    font-weight:700;                 /* Bold navigation text */
 
 }
-
 /* ========================= */
 /* Divider Between Buttons */
 /* ========================= */
@@ -1203,8 +1180,8 @@ body{
 
 .navbar nav a i{
 
-    font-size:15px;
-    margin-bottom:4px;
+    font-size:13px;                  /* Icon size */
+    margin-bottom:3px;               /* Space between icon and text */
 
 }
 

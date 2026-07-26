@@ -1013,7 +1013,7 @@ body{
     display:flex;                      /* Enable Flexbox */
     flex-direction:column;             /* Arrange items vertically */
     align-items:center;                /* Center all items horizontally */
-    padding:7px;                      /* Space inside navbar */
+    padding:7px 4px;                   /* 7px top & bottom, 4px left & right */
 }
 
 .logo{

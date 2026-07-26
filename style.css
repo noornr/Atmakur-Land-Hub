@@ -1009,11 +1009,12 @@ body{
 }
 
 .navbar nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:22px;
     width:100%;
+    display:flex;
+    justify-content:center;   /* Centers the buttons */
+    align-items:center;
+    gap:25px;                 /* Space between buttons */
+    margin:0 auto;
 }
 
 .navbar nav a{

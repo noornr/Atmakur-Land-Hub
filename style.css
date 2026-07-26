@@ -1108,14 +1108,14 @@ body{
     max-width:225px;                   /* Reduced from 320px */
 }
 .hero-location{
-    margin-bottom:12px;                  /* Space below */
-    margin-left:-15px;                   /* Move 15px to the left */
+    margin-bottom:31px;                  /* Space below */
+    margin-left:-10px;                   /* Move logo 10px to the left */
 }
 
 .hero-location img{
-    width:170px;                         /* Logo width */
-    height:auto;                         /* Keep aspect ratio */
-    display:block;                       /* Display as block */
+    width:460px;                         /* Logo width */
+    height:auto;                         /* Keep image proportions */
+    display:block;                       /* Display as block element */
 }
 .hero-text h1{
     font-size:31px;                    /* Reduced from 44px */

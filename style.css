@@ -105,7 +105,8 @@ header{
     max-width:450px;                       /* Maximum content width */
 }
 .hero-location{
-    margin-bottom:26px;                  /* Increased space below by 20% */
+    margin-bottom:26px;                    /*Increased space below by 20% */
+    margin-left:-5px;                      /* Move 5px to the left */
 }
 
 .hero-location img{

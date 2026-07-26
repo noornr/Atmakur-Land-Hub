@@ -435,58 +435,156 @@ footer p:last-child{
     border:1px solid #2A2A2A;
     border-radius:18px;
     padding:40px 30px;
-    text-align:center;
-    transition:all .35s ease;
-    box-shadow:0 10px 25px rgba(0,0,0,.30);
+.badge{
+    position:absolute;                     /* Position badge over the image */
+    top:18px;                              /* Distance from top */
+    left:18px;                             /* Distance from left */
+    padding:8px 16px;                      /* Inner spacing */
+    border-radius:30px;                    /* Pill-shaped badge */
+    font-size:13px;                        /* Badge text size */
+    font-weight:700;                       /* Bold text */
+    letter-spacing:1px;                    /* Space between letters */
+    text-transform:uppercase;              /* Convert text to uppercase */
+    z-index:2;                             /* Show badge above image */
+}
+
+.available{
+    background:#D4AF37;                    /* Gold background */
+    color:#111111;                         /* Black text */
+    border:1px solid #F4C542;              /* Gold border */
+    box-shadow:0 6px 18px rgba(212,175,55,.35); /* Gold glow effect */
+}
+
+.featured{
+    background:#D4AF37;                    /* Gold background */
+    color:#000;                            /* Black text */
+}
+
+.new{
+    background:#007bff;                    /* Blue background */
+}
+
+.sold{
+    background:#dc3545;                    /* Red background */
+}
+
+.floating-whatsapp{
+    position:fixed;                        /* Stay fixed while scrolling */
+    bottom:20px;                           /* Distance from bottom */
+    right:20px;                            /* Distance from right */
+    width:60px;                            /* Button width */
+    height:60px;                           /* Button height */
+    background:#25D366;                    /* WhatsApp green */
+    color:white;                           /* White icon */
+    border-radius:50%;                     /* Perfect circle */
+    display:flex;                          /* Enable Flexbox */
+    justify-content:center;                /* Center icon horizontally */
+    align-items:center;                    /* Center icon vertically */
+    font-size:30px;                        /* Icon size */
+    text-decoration:none;                  /* Remove underline */
+    box-shadow:0 5px 15px rgba(0,0,0,.3);  /* Shadow effect */
+    z-index:1000;                          /* Keep above all elements */
+}
+
+.floating-whatsapp:hover{
+    transform:scale(1.1);                  /* Increase size on hover */
+}
+
+footer{
+    background:#111111;                    /* Dark background */
+    color:#FFFFFF;                         /* White text */
+    padding:60px 8% 30px;                  /* Inner spacing */
+    border-top:2px solid #D4AF37;          /* Gold top border */
+    text-align:center;                     /* Center content */
+}
+
+footer h2{
+    color:#D4AF37;                         /* Gold heading */
+    font-size:34px;                        /* Heading size */
+    font-weight:700;                       /* Bold heading */
+    margin-bottom:18px;                    /* Space below heading */
+}
+
+footer p{
+    margin:12px 0;                         /* Top & bottom spacing */
+    color:#CFCFCF;                         /* Light gray text */
+    line-height:1.8;                       /* Comfortable line spacing */
+    font-size:17px;                        /* Paragraph text size */
+}
+
+footer p:last-child{
+    margin-top:25px;                       /* Space above copyright */
+    padding-top:20px;                      /* Inner top spacing */
+    border-top:1px solid #2A2A2A;          /* Top divider line */
+    color:#888888;                         /* Gray text */
+    font-size:15px;                        /* Smaller text */
+}
+
+.stats{
+    display:grid;                          /* Enable CSS Grid */
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); /* Responsive columns */
+    gap:30px;                              /* Space between stat boxes */
+    padding:90px 8%;                       /* Section spacing */
+    background:#0B0B0B;                    /* Black background */
+}
+
+.stat-box{
+    background:#1A1A1A;                    /* Dark box background */
+    border:1px solid #2A2A2A;              /* Thin border */
+    border-radius:18px;                    /* Rounded corners */
+    padding:40px 30px;                     /* Inner spacing */
+    text-align:center;                     /* Center content */
+    transition:all .35s ease;              /* Smooth hover animation */
+    box-shadow:0 10px 25px rgba(0,0,0,.30);/* Shadow effect */
 }
 
 .stat-box:hover{
-    transform:translateY(-10px);
-    border-color:#D4AF37;
-    box-shadow:0 20px 45px rgba(212,175,55,.20);
+    transform:translateY(-10px);           /* Move box upward */
+    border-color:#D4AF37;                  /* Gold border on hover */
+    box-shadow:0 20px 45px rgba(212,175,55,.20); /* Gold glow */
 }
 
 .stat-box h2{
-    color:#D4AF37;
-    font-size:46px;
-    font-weight:800;
-    margin-bottom:12px;
+    color:#D4AF37;                         /* Gold heading */
+    font-size:46px;                        /* Number size */
+    font-weight:800;                       /* Extra bold */
+    margin-bottom:12px;                    /* Space below number */
 }
 
 .stat-box p{
-    color:#CFCFCF;
-    font-size:18px;
-    font-weight:500;
+    color:#CFCFCF;                         /* Light gray text */
+    font-size:18px;                        /* Text size */
+    font-weight:500;                       /* Medium bold */
 }
 
 .property-details{
-    max-width:900px;
-    margin:60px auto;
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    max-width:900px;                       /* Maximum content width */
+    margin:60px auto;                      /* Center section */
+    background:#fff;                       /* White background */
+    padding:30px;                          /* Inner spacing */
+    border-radius:20px;                    /* Rounded corners */
+    box-shadow:0 10px 30px rgba(0,0,0,.1); /* Shadow effect */
 }
 
 .property-details img{
-    width:100%;
-    border-radius:15px;
-    margin-bottom:25px;
+    width:100%;                            /* Full image width */
+    border-radius:15px;                    /* Rounded image corners */
+    margin-bottom:25px;                    /* Space below image */
 }
 
 .property-details h1{
-    color:#0F172A;
-    margin-bottom:10px;
+    color:#0F172A;                         /* Dark heading */
+    margin-bottom:10px;                    /* Space below heading */
 }
 
 .property-details h2{
-    color:#D4AF37;
-    margin-bottom:20px;
+    color:#D4AF37;                         /* Gold subheading */
+    margin-bottom:20px;                    /* Space below subheading */
 }
 
 .property-details p{
-    margin:12px 0;
-    line-height:1.8;
+    margin:12px 0;                         /* Top & bottom spacing */
+    line-height:1.8;                       /* Comfortable line spacing */
 }
 
 .gallery{

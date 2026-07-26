@@ -1039,78 +1039,13 @@ body{
 .navbar{
 
     background:#050505;                           /* Pure black navbar background */
-    padding:8px 8px;                              /* Space inside navbar */
+    padding:12px 12px;                            /* Navbar padding */
+
     border-bottom:1px solid rgba(212,175,55,.25); /* Thin gold bottom border */
 
-    display:flex;                                 /* Arrange logo and menu horizontally */
-    justify-content:space-between;                /* Logo left, menu right */
-    align-items:center;                           /* Center items vertically */
-
-}
-
-/* ========================= */
-/* Logo Container */
-/* ========================= */
-
-.nav-logo{
-
-    width:41%;                                    /* Increased from 24% by about 70% */
     display:flex;                                 /* Enable Flexbox */
-    align-items:center;                           /* Center logo vertically */
-    justify-content:flex-start;                   /* Align logo to left */
-
-}
-
-/* ========================= */
-/* Logo Image */
-/* ========================= */
-
-.nav-logo img{
-
-    width:94px;                                   /* Increased from 55px to about 94px (+70%) */
-    height:auto;                                  /* Keep image proportions */
-    display:block;                                /* Display as block */
-
-}
-
-/* ========================= */
-/* Navigation Container */
-/* ========================= */
-
-.navbar nav{
-
-    width:74%;                                    /* Navigation takes right side */
-
-    display:grid;                                 /* Use CSS Grid */
-    grid-template-columns:repeat(4,1fr);          /* Four equal-width buttons */
-
-    background:#111111;                           /* Dark navigation background */
-
-    border:2px solid rgba(212,175,55,.35);        /* Gold border */
-    border-radius:12px;                           /* Rounded corners */
-
-    overflow:hidden;                              /* Hide overflow */
-
-    box-shadow:
-    0 0 12px rgba(212,175,55,.18),                /* Outer gold glow */
-    inset 0 0 8px rgba(255,215,90,.08);           /* Inner gold glow */
-
-}
-
-/* ========================= */
-/* Premium Mobile Navbar */
-/* ========================= */
-
-.navbar{
-
-    background:#050505;                           /* Pure black navbar background */
-    padding:12px 12px;                            /* More breathing space */
-
-    border-bottom:1px solid rgba(212,175,55,.25);
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content:space-between;                /* Logo left, menu right */
+    align-items:center;                           /* Center vertically */
     gap:14px;                                     /* Space between logo and menu */
 
 }
@@ -1121,10 +1056,10 @@ body{
 
 .nav-logo{
 
-    flex:0 0 22%;                    /* Reserve only 22% of navbar for logo */
-    display:flex;                    /* Enable Flexbox */
-    align-items:center;              /* Center logo vertically */
-    justify-content:flex-start;      /* Keep logo aligned to the left */
+    flex:0 0 22%;                                /* Reserve 22% for logo */
+    display:flex;                                /* Enable Flexbox */
+    align-items:center;                          /* Center vertically */
+    justify-content:flex-start;                  /* Align logo left */
 
 }
 
@@ -1134,9 +1069,9 @@ body{
 
 .nav-logo img{
 
-    width:70px;                      /* Set logo width to 70px */
-    height:auto;                     /* Keep original image proportions */
-    display:block;                   /* Remove extra inline spacing */
+    width:70px;                                  /* Logo width */
+    height:auto;                                 /* Keep proportions */
+    display:block;                               /* Remove inline spacing */
 
 }
 
@@ -1146,10 +1081,23 @@ body{
 
 .navbar nav{
 
-    flex:1;                          /* Use all remaining space after logo */
-    display:grid;                    /* Enable CSS Grid */
-    grid-template-columns:repeat(4,1fr); /* Four equal navigation buttons */
-    margin-left:12px;                /* Space between logo and navigation */
+    flex:1;                                      /* Use remaining width */
+
+    display:grid;                                /* Enable Grid */
+    grid-template-columns:repeat(4,1fr);         /* Four equal buttons */
+
+    margin-left:4px;                             /* Small gap from logo */
+
+    background:#111111;                          /* Navigation background */
+
+    border:3px solid rgba(212,175,55,.35);       /* Premium gold border */
+    border-radius:16px;                          /* Rounded corners */
+
+    overflow:hidden;                             /* Hide overflow */
+
+    box-shadow:
+    0 0 16px rgba(212,175,55,.18),               /* Outer glow */
+    inset 0 0 10px rgba(255,215,90,.08);         /* Inner glow */
 
 }
 
@@ -1159,18 +1107,30 @@ body{
 
 .navbar nav a{
 
-    height:45px;                     /* Navigation button height */
-    font-size:8px;                   /* Navigation text size */
-    font-weight:700;                 /* Bold navigation text */
+    display:flex;                                /* Enable Flexbox */
+    flex-direction:column;                       /* Icon above text */
+    justify-content:center;                      /* Center vertically */
+    align-items:center;                          /* Center horizontally */
+
+    height:59px;                                 /* Button height */
+
+    color:#FFFFFF;                               /* White text */
+    text-decoration:none;                        /* Remove underline */
+
+    font-size:10px;                              /* Text size */
+    font-weight:700;                             /* Bold */
+
+    transition:.35s;                             /* Smooth animation */
 
 }
+
 /* ========================= */
 /* Divider Between Buttons */
 /* ========================= */
 
 .navbar nav a:not(:last-child){
 
-    border-right:1px solid rgba(255,255,255,.10);
+    border-right:1px solid rgba(255,255,255,.10); /* Divider */
 
 }
 
@@ -1180,8 +1140,8 @@ body{
 
 .navbar nav a i{
 
-    font-size:13px;                  /* Icon size */
-    margin-bottom:3px;               /* Space between icon and text */
+    font-size:17px;                              /* Icon size */
+    margin-bottom:1px;                           /* Space below icon */
 
 }
 

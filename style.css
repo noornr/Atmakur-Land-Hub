@@ -1034,7 +1034,7 @@ body{
 
 .nav-logo{
 
-    width:24%;                                    /* Reserve left side for logo */
+    width:41%;                                    /* Increased from 24% by about 70% */
     display:flex;                                 /* Enable Flexbox */
     align-items:center;                           /* Center logo vertically */
     justify-content:flex-start;                   /* Align logo to left */
@@ -1047,7 +1047,7 @@ body{
 
 .nav-logo img{
 
-    width:55px;                                   /* Logo image width */
+    width:94px;                                   /* Increased from 55px to about 94px (+70%) */
     height:auto;                                  /* Keep image proportions */
     display:block;                                /* Display as block */
 

@@ -1082,7 +1082,7 @@ body{
 
 .hero{
     position:relative;
-    min-height:30vh;
+    min-height:40vh;
     display:flex;
     align-items:center;
     justify-content:flex-start;

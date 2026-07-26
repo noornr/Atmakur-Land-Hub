@@ -1013,7 +1013,7 @@ body{
     display:flex;                      /* Enable Flexbox */
     flex-direction:column;             /* Arrange items vertically */
     align-items:center;                /* Center all items horizontally */
-    padding:6px;                      /* Space inside navbar */
+    padding:7px;                      /* Space inside navbar */
 }
 
 .logo{
@@ -1028,7 +1028,7 @@ body{
     display:flex;                      /* Enable Flexbox */
     justify-content:center;            /* Center navigation buttons */
     align-items:center;                /* Align buttons vertically */
-    gap:20px;                          /* Space between buttons */
+    gap:40px;                          /* Space between buttons */
     margin:0 auto;                     /* Center navigation container */
 }
 

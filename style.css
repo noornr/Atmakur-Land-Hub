@@ -1020,7 +1020,8 @@ body{
     font-size:18px;                    /* Logo text size */
     line-height:1.25;                  /* Space between logo lines */
     text-align:center;                 /* Center logo text */
-    margin-bottom:6px;                /* Space below logo */
+    margin-bottom:6px;                 /* Space below logo */
+    margin-left:20px;                  /* Move logo to the right */ 
 }
 
 .navbar nav{

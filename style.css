@@ -1024,21 +1024,6 @@ body{
 
 }
 
-/* ========================= */
-/* Logo */
-/* ========================= */
-
-.logo{
-
-    color:#D4AF37;                                /* Gold logo color */
-    font-size:11px;                               /* Reduced logo size by 50% */
-    font-weight:800;                              /* Extra bold logo */
-    text-align:center;                            /* Center logo */
-    margin-bottom:7px;                            /* Reduced bottom spacing */
-    letter-spacing:.15px;                         /* Reduced letter spacing */
-    line-height:1.2;                              /* Better line spacing */
-
-}
 
 /* ========================= */
 /* Navigation Container */

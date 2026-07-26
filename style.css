@@ -80,85 +80,85 @@ header{
 /* ===== Hero Section ===== */
 
 .hero{
-    position:relative;
-    min-height:30vh;
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-    background-image:url("images/hero.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    padding:80px 8%;
+    position:relative;                     /* Parent element for overlay */
+    min-height:30vh;                       /* Minimum hero height (30% of screen height) */
+    display:flex;                          /* Enable Flexbox */
+    align-items:center;                    /* Center content vertically */
+    justify-content:flex-start;            /* Align content to the left */
+    background-image:url("images/hero.jpg"); /* Hero background image */
+    background-size:cover;                 /* Fill entire hero area */
+    background-position:center;            /* Center the background image */
+    background-repeat:no-repeat;           /* Prevent image repetition */
+    padding:80px 8%;                       /* Inner spacing (top/bottom & left/right) */
 }
+
 .hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.45);
+    content:"";                            /* Create overlay layer */
+    position:absolute;                     /* Position overlay absolutely */
+    inset:0;                               /* Cover the entire hero section */
+    background:rgba(0,0,0,.45);            /* Black transparent overlay */
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
-    max-width:450px;
+    position:relative;                     /* Place content above overlay */
+    z-index:2;                             /* Keep content visible */
+    max-width:450px;                       /* Maximum content width */
 }
 
 .hero-text h1{
-    font-size:52px;
-    line-height:1;
-    font-weight:800;
-    color:#FFFFFF;
-    margin-bottom:15px;
+    font-size:52px;                        /* Main heading size */
+    line-height:1;                         /* Line spacing for heading */
+    font-weight:800;                       /* Extra bold text */
+    color:#FFFFFF;                         /* White heading */
+    margin-bottom:15px;                    /* Space below heading */
 }
 
 .hero-text span{
-    color:#D4AF37;
+    color:#D4AF37;                         /* Gold highlighted text */
 }
 
 .hero-text p{
-    font-size:18px;
-    line-height:1.6;
-    color:#E5E5E5;
-    margin-bottom:28px;
+    font-size:18px;                        /* Paragraph text size */
+    line-height:1.6;                       /* Comfortable line spacing */
+    color:#E5E5E5;                         /* Light gray paragraph color */
+    margin-bottom:28px;                    /* Space below paragraph */
 }
 
 .hero-buttons{
-    display:flex;
-    gap:16px;
-    flex-direction:row;
+    display:flex;                          /* Arrange buttons in a row */
+    gap:16px;                              /* Space between buttons */
+    flex-direction:row;                    /* Horizontal button layout */
 }
 
 .btn-primary,
 .btn-secondary{
-    padding:16px 34px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:700;
-    transition:.3s;
-    width:220px;
-    text-align:center;
+    padding:16px 34px;                     /* Inner button spacing */
+    border-radius:10px;                    /* Rounded button corners */
+    text-decoration:none;                  /* Remove underline */
+    font-weight:700;                       /* Bold button text */
+    transition:.3s;                        /* Smooth hover animation */
+    width:220px;                           /* Fixed button width */
+    text-align:center;                     /* Center button text */
 }
 
 .btn-primary{
-    background:#D4AF37;
-    color:#111;
+    background:#D4AF37;                    /* Gold background */
+    color:#111;                            /* Black text */
 }
 
 .btn-primary:hover{
-    background:#b9962d;
+    background:#b9962d;                    /* Darker gold on hover */
 }
 
 .btn-secondary{
-    border:2px solid #fff;
-    color:#fff;
+    border:2px solid #fff;                 /* White border */
+    color:#fff;                            /* White text */
 }
 
 .btn-secondary:hover{
-    background:#fff;
-    color:#111;
+    background:#fff;                       /* White background on hover */
+    color:#111;                            /* Black text on hover */
 }
-
 .properties{
     padding:60px 8%;
 }

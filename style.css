@@ -1134,12 +1134,12 @@ body{
 .hero-location{
     display:inline-block;                 /* Fit around the text */
     color:#D4AF37;                        /* Gold text color */
-    font-size:24px;                       /* Smaller Telugu heading */
+    font-size:17px;                       /* Reduced Telugu heading size */
     font-weight:700;                      /* Bold text */
     font-family:"Noto Sans Telugu", sans-serif; /* Telugu font */
-    letter-spacing:.5px;                  /* Slight letter spacing */
-    margin-bottom:12px;                   /* Space below heading */
-    padding:5px 18px;                     /* Smaller inner spacing */
+    letter-spacing:.3px;                  /* Reduced letter spacing */
+    margin-bottom:8px;                    /* Reduced space below heading */
+    padding:3px 12px;                     /* Reduced inner spacing */
 
     border-top:2px solid #D4AF37;         /* Top gold line */
     border-bottom:2px solid #D4AF37;      /* Bottom gold line */
@@ -1154,15 +1154,15 @@ body{
     top:50%;                              /* Vertical center */
     transform:translateY(-50%);           /* Perfect centering */
     color:#D4AF37;                        /* Gold star */
-    font-size:12px;                       /* Smaller star */
+    font-size:9px;                        /* Reduced star size */
 }
 
 .hero-location::before{
-    left:-12px;                           /* Left star position */
+    left:-8px;                            /* Reduced left spacing */
 }
 
 .hero-location::after{
-    right:-12px;                          /* Right star position */
+    right:-8px;                           /* Reduced right spacing */
 }
 
 .hero-text h1{

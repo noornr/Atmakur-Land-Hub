@@ -1108,12 +1108,12 @@ body{
     max-width:225px;                   /* Reduced from 320px */
 }
 .hero-location{
-    margin-bottom:31px;                  /* Space below */
-    margin-left:-10px;                   /* Move logo 10px to the left */
+    margin-bottom:16px;                  /* Reduced from 31px */
+    margin-left:-5px;                    /* Reduced from -10px */
 }
 
 .hero-location img{
-    width:460px;                         /* Logo width */
+    width:230px;                         /* Reduced from 460px */
     height:auto;                         /* Keep image proportions */
     display:block;                       /* Display as block element */
 }

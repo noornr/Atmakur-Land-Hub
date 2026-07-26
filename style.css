@@ -1084,9 +1084,9 @@ body{
     flex:1;                                      /* Use remaining width */
 
     display:grid;                                /* Enable Grid */
-    grid-template-columns:repeat(4,1fr);         /* Four equal buttons */
+    grid-template-columns:0.9fr 1.3fr 1fr 1.1fr;   /* Home | Properties | About | Contact */
 
-    margin-left:4px;                             /* Small gap from logo */
+    margin-left:2px;          /* Smaller gap between logo and menu */
 
     background:#111111;                          /* Navigation background */
 

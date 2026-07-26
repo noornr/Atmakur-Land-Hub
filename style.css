@@ -160,88 +160,86 @@ header{
     color:#111;                            /* Black text on hover */
 }
 .properties{
-    padding:60px 8%;
+    padding:60px 8%;                        /* Section spacing (top/bottom & left/right) */
 }
 
 .properties h2{
-    color: #f5c242;
-    text-align:center;
-    font-size:36px;
-    font-weight: 700;
-    margin-bottom:40px;
+    color:#f5c242;                          /* Gold heading color */
+    text-align:center;                      /* Center heading */
+    font-size:36px;                         /* Heading text size */
+    font-weight:700;                        /* Bold heading */
+    margin-bottom:40px;                     /* Space below heading */
 }
 
 .property-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:30px;
-    margin-top:40px;
+    display:grid;                           /* Enable CSS Grid */
+    grid-template-columns:repeat(2,1fr);    /* Two equal-width columns */
+    gap:30px;                               /* Space between cards */
+    margin-top:40px;                        /* Space above grid */
 }
 
 .card{
-    position:relative;
-    background:#1A1A1A;
-    border:1px solid #2A2A2A;
-    border-radius:18px;
-    overflow:hidden;
-    transition:all .35s ease;
-    box-shadow:0 10px 25px rgba(0,0,0,.30);
+    position:relative;                      /* Parent for positioned elements */
+    background:#1A1A1A;                     /* Dark card background */
+    border:1px solid #2A2A2A;               /* Thin dark border */
+    border-radius:18px;                     /* Rounded card corners */
+    overflow:hidden;                        /* Hide overflowing content */
+    transition:all .35s ease;               /* Smooth hover animation */
+    box-shadow:0 10px 25px rgba(0,0,0,.30); /* Card shadow */
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    border-color:#D4AF37;
-    box-shadow:0 18px 40px rgba(212,175,55,.20);
+    transform:translateY(-8px);             /* Move card upward on hover */
+    border-color:#D4AF37;                   /* Gold border on hover */
+    box-shadow:0 18px 40px rgba(212,175,55,.20); /* Gold glow shadow */
 }
 
 .card img{
-    transition:transform .4s ease;
+    transition:transform .4s ease;          /* Smooth image zoom effect */
 }
 
 .card:hover img{
-    transform:scale(1.06);
+    transform:scale(1.06);                  /* Zoom image on hover */
 }
 
 .card-content{
-    padding:22px;
+    padding:22px;                           /* Inner content spacing */
 }
 
 .card-content h3{
-    color:#FFFFFF;
-    font-size:30px;
-    font-weight:700;
-    margin-bottom:18px;
+    color:#FFFFFF;                          /* White heading */
+    font-size:30px;                         /* Property title size */
+    font-weight:700;                        /* Bold title */
+    margin-bottom:18px;                     /* Space below title */
 }
 
 .card-content p{
-    color:#D0D0D0;
-    font-size:18px;
-    line-height:1.8;
+    color:#D0D0D0;                          /* Light gray text */
+    font-size:18px;                         /* Paragraph size */
+    line-height:1.8;                        /* Comfortable line spacing */
 }
 
 .property-image{
-    position:relative;
+    position:relative;                      /* Parent for image overlays */
 }
 
-
 .location{
-    color:#64748B;
-    margin:10px 0;
+    color:#64748B;                          /* Gray-blue location text */
+    margin:10px 0;                          /* Top & bottom spacing */
 }
 
 .property-info{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin:18px 0;
+    display:flex;                           /* Enable Flexbox */
+    justify-content:space-between;          /* Space items to left & right */
+    align-items:center;                     /* Vertically center items */
+    margin:18px 0;                          /* Top & bottom spacing */
 }
 
 .card-buttons{
-    display:flex;
-    gap:15px;
-    margin-top:25px;
+    display:flex;                           /* Arrange buttons in a row */
+    gap:15px;                               /* Space between buttons */
+    margin-top:25px;                        /* Space above buttons */
 }
-
 .price{
     color:#D4AF37;
     font-size:34px;

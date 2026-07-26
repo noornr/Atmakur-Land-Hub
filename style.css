@@ -577,150 +577,155 @@ footer p:last-child{
     color:#999999;                         /* Gray designation text */
     font-size:15px;                        /* Designation text size */
 }
+
 .enquiry-form{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    margin:30px 0;
+    display:flex;                          /* Enable Flexbox */
+    flex-direction:column;                 /* Arrange fields vertically */
+    gap:15px;                              /* Space between form fields */
+    margin:30px 0;                         /* Top & bottom spacing */
 }
 
 .enquiry-form input,
 .enquiry-form textarea{
-    width:100%;
-    padding:15px;
-    border:2px solid #D4AF37;
-    border-radius:10px;
-    font-size:16px;
-    outline:none;
-    box-sizing:border-box;
+    width:100%;                            /* Full input width */
+    padding:15px;                          /* Inner spacing */
+    border:2px solid #D4AF37;              /* Gold border */
+    border-radius:10px;                    /* Rounded corners */
+    font-size:16px;                        /* Input text size */
+    outline:none;                          /* Remove default focus outline */
+    box-sizing:border-box;                 /* Include padding in width */
 }
 
 .enquiry-form textarea{
-    height:120px;
-    resize:vertical;
+    height:120px;                          /* Textarea height */
+    resize:vertical;                       /* Allow only vertical resizing */
 }
 
 .enquiry-form button{
-    background:#D4AF37;
-    color:#0F172A;
-    border:none;
-    padding:15px;
-    border-radius:10px;
-    font-size:17px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:0.3s;
+    background:#D4AF37;                    /* Gold background */
+    color:#0F172A;                         /* Dark text */
+    border:none;                           /* Remove border */
+    padding:15px;                          /* Inner spacing */
+    border-radius:10px;                    /* Rounded corners */
+    font-size:17px;                        /* Button text size */
+    font-weight:bold;                      /* Bold button text */
+    cursor:pointer;                        /* Hand cursor on hover */
+    transition:0.3s;                       /* Smooth hover animation */
 }
 
 .enquiry-form button:hover{
-    background:#c89b2c;
+    background:#c89b2c;                    /* Darker gold on hover */
 }
 
 .featured-property{
-    background:#111111;
-    padding:80px 8%;
+    background:#111111;                    /* Dark section background */
+    padding:80px 8%;                       /* Section spacing */
 }
 
 .featured-property h2{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:36px;
-    color:#FFFFFF;
+    text-align:center;                     /* Center heading */
+    margin-bottom:40px;                    /* Space below heading */
+    font-size:36px;                        /* Heading size */
+    color:#FFFFFF;                         /* White heading */
 }
 
 .featured-card{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    align-items:center;
-    background:#1A1A1A;
-    border:1px solid #2A2A2A;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-    transition:all .35s ease;
+    display:grid;                          /* Enable CSS Grid */
+    grid-template-columns:1.2fr 1fr;       /* Image wider than content */
+    align-items:center;                    /* Center content vertically */
+    background:#1A1A1A;                    /* Dark card background */
+    border:1px solid #2A2A2A;              /* Thin border */
+    border-radius:20px;                    /* Rounded corners */
+    overflow:hidden;                       /* Hide overflow */
+    box-shadow:0 15px 40px rgba(0,0,0,.35);/* Shadow effect */
+    transition:all .35s ease;              /* Smooth hover animation */
 }
+
 .featured-card:hover{
-    transform:translateY(-10px);
-    border-color:#D4AF37;
-    box-shadow:0 25px 50px rgba(212,175,55,.20);
+    transform:translateY(-10px);           /* Move card upward */
+    border-color:#D4AF37;                  /* Gold border on hover */
+    box-shadow:0 25px 50px rgba(212,175,55,.20); /* Gold glow */
 }
 
 .featured-card img{
-    width:100%;
-    height:100%;
-    min-height:420px;
-    object-fit:cover;
-    transition:transform .4s ease;
+    width:100%;                            /* Full image width */
+    height:100%;                           /* Full image height */
+    min-height:420px;                      /* Minimum image height */
+    object-fit:cover;                      /* Fill without distortion */
+    transition:transform .4s ease;         /* Smooth zoom animation */
 }
 
 .featured-card:hover img{
-    transform:scale(1.05);
+    transform:scale(1.05);                 /* Zoom image on hover */
 }
 
 .featured-content{
-    padding:45px;
+    padding:45px;                          /* Inner spacing */
 }
 
 .featured-content h3{
-    font-size:34px;
-    color:#FFFFFF;
-    margin-bottom:25px;
+    font-size:34px;                        /* Heading size */
+    color:#FFFFFF;                         /* White heading */
+    margin-bottom:25px;                    /* Space below heading */
 }
 
 .featured-content p{
-    font-size:19px;
-    color:#CFCFCF;
-    line-height:1.9;
-    margin-bottom:14px;
+    font-size:19px;                        /* Paragraph text size */
+    color:#CFCFCF;                         /* Light gray text */
+    line-height:1.9;                       /* Comfortable line spacing */
+    margin-bottom:14px;                    /* Space below paragraph */
 }
+
 .featured-content strong{
-    color:#D4AF37;
+    color:#D4AF37;                         /* Gold highlighted text */
 }
+
 .price{
-    color:#D4AF37;
-    font-size:28px;
-    font-weight:700;
-    margin:18px 0;
+    color:#D4AF37;                         /* Gold price */
+    font-size:28px;                        /* Price text size */
+    font-weight:700;                       /* Bold price */
+    margin:18px 0;                         /* Top & bottom spacing */
 }
+
 .slider{
-    position:relative;
-    max-width:100%;
-    margin-bottom:30px;
+    position:relative;                     /* Parent for navigation buttons */
+    max-width:100%;                        /* Full available width */
+    margin-bottom:30px;                    /* Space below slider */
 }
 
 .slider img{
-    width:100%;
-    height:450px;
-    object-fit:cover;
-    border-radius:15px;
+    width:100%;                            /* Full image width */
+    height:450px;                          /* Fixed image height */
+    object-fit:cover;                      /* Fill without distortion */
+    border-radius:15px;                    /* Rounded image corners */
 }
 
 .prev,
 .next{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    background:rgba(0,0,0,0.6);
-    color:white;
-    border:none;
-    padding:15px 20px;
-    font-size:28px;
-    cursor:pointer;
-    border-radius:50%;
+    position:absolute;                     /* Position over image */
+    top:50%;                               /* Center vertically */
+    transform:translateY(-50%);            /* Perfect vertical centering */
+    background:rgba(0,0,0,0.6);            /* Dark transparent background */
+    color:white;                           /* White arrow */
+    border:none;                           /* Remove border */
+    padding:15px 20px;                     /* Button size */
+    font-size:28px;                        /* Arrow size */
+    cursor:pointer;                        /* Hand cursor */
+    border-radius:50%;                     /* Circular button */
 }
 
 .prev{
-    left:15px;
+    left:15px;                             /* Position from left */
 }
 
 .next{
-    right:15px;
+    right:15px;                            /* Position from right */
 }
 
 .prev:hover,
 .next:hover{
-    background:#D4AF37;
-    color:#000;
+    background:#D4AF37;                    /* Gold background on hover */
+    color:#000;                            /* Black arrow */
 }
 .lightbox{
     display:none;

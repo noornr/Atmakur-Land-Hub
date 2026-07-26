@@ -1060,9 +1060,9 @@ body{
     justify-content:center;            /* Center text horizontally */
     align-items:center;                /* Center text vertically */
 
-    width:90%;                         /* Button width */
-    max-width:280px;                   /* Maximum button width */
-    height:40px;                       /* Button height */
+    width:72%;                         /* Button width */
+    max-width:224px;                   /* Maximum button width */
+    height:32px;                       /* Button height */
 
     margin:8px auto 0;                /* Center button with top spacing */
 

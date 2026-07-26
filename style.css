@@ -1021,6 +1021,10 @@ body{
     color:#111111;
     background:#D4AF37;
     font-weight:600;
+    padding:8px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
 }
 
 .navbar nav a:hover{

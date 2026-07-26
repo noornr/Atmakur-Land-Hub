@@ -241,102 +241,103 @@ header{
     margin-top:25px;                        /* Space above buttons */
 }
 .price{
-    color:#D4AF37;
-    font-size:34px;
-    font-weight:800;
-    margin:20px 0;
+    color:#D4AF37;                          /* Gold price color */
+    font-size:34px;                         /* Price text size */
+    font-weight:800;                        /* Extra bold price */
+    margin:20px 0;                          /* Top & bottom spacing */
 }
 
 .details-btn,
 .whatsapp-btn{
-    display:block;
-    width:100%;
-    text-align:center;
-    text-decoration:none;
-    padding:14px;
-    border-radius:10px;
-    font-size:18px;
-    font-weight:700;
-    margin-top:12px;
-    transition:.3s;
-    box-sizing:border-box;
+    display:block;                          /* Full-width button */
+    width:100%;                             /* Take full available width */
+    text-align:center;                      /* Center button text */
+    text-decoration:none;                   /* Remove underline */
+    padding:14px;                           /* Inner button spacing */
+    border-radius:10px;                     /* Rounded corners */
+    font-size:18px;                         /* Button text size */
+    font-weight:700;                        /* Bold button text */
+    margin-top:12px;                        /* Space above button */
+    transition:.3s;                         /* Smooth hover animation */
+    box-sizing:border-box;                  /* Include padding in width */
 }
 
 .details-btn{
-    background:#D4AF37;
-    color:#111111;
-    border:none;
+    background:#D4AF37;                     /* Gold background */
+    color:#111111;                          /* Black text */
+    border:none;                            /* Remove border */
 }
 
 .details-btn:hover{
-    background:#F4C542;
+    background:#F4C542;                     /* Lighter gold on hover */
 }
 
 .whatsapp-btn{
-    background:#25D366;
-    color:#FFFFFF;
-    border:none;
+    background:#25D366;                     /* WhatsApp green background */
+    color:#FFFFFF;                          /* White text */
+    border:none;                            /* Remove border */
 }
 
 .whatsapp-btn:hover{
-    background:#1EBE5D;
+    background:#1EBE5D;                     /* Darker green on hover */
 }
+
 .about{
-    padding:90px 8%;
-    background:#111111;
-    text-align:center;
+    padding:90px 8%;                        /* Section spacing */
+    background:#111111;                     /* Dark background */
+    text-align:center;                      /* Center all content */
 }
 
 .about h2{
-    font-size:40px;
-    color:#D4AF37;
-    margin-bottom:30px;
-    font-weight:700;
+    font-size:40px;                         /* Heading size */
+    color:#D4AF37;                          /* Gold heading */
+    margin-bottom:30px;                     /* Space below heading */
+    font-weight:700;                        /* Bold heading */
 }
 
 .about p{
-    max-width:900px;
-    margin:auto;
-    color:#CFCFCF;
-    font-size:18px;
-    line-height:1.9;
+    max-width:900px;                        /* Maximum paragraph width */
+    margin:auto;                            /* Center paragraph */
+    color:#CFCFCF;                          /* Light gray text */
+    font-size:18px;                         /* Paragraph text size */
+    line-height:1.9;                        /* Comfortable line spacing */
 }
 
 .contact{
-    padding:80px 10%;
-    background:#0F172A;
-    color:white;
-    text-align:center;
+    padding:80px 10%;                       /* Section spacing */
+    background:#0F172A;                     /* Dark blue background */
+    color:white;                            /* White text */
+    text-align:center;                      /* Center all content */
 }
 
 .contact h2{
-    font-size:36px;
-    margin-bottom:25px;
+    font-size:36px;                         /* Heading size */
+    margin-bottom:25px;                     /* Space below heading */
 }
 
 .contact p{
-    margin:12px 0;
-    font-size:18px;
+    margin:12px 0;                          /* Top & bottom spacing */
+    font-size:18px;                         /* Paragraph text size */
 }
 
 .call-btn,
 .contact .whatsapp-btn{
-    display:inline-block;
-    margin:15px 10px 0;
-    padding:14px 28px;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:600;
+    display:inline-block;                   /* Display buttons in one line */
+    margin:15px 10px 0;                     /* Outer spacing */
+    padding:14px 28px;                      /* Inner button spacing */
+    text-decoration:none;                   /* Remove underline */
+    border-radius:8px;                      /* Rounded corners */
+    font-weight:600;                        /* Semi-bold text */
 }
 
 .call-btn{
-    background:#D4AF37;
-    color:#0F172A;
+    background:#D4AF37;                     /* Gold background */
+    color:#0F172A;                          /* Dark text */
 }
 
 .contact .whatsapp-btn{
-    background:#25D366;
-    color:white;
+    background:#25D366;                     /* WhatsApp green background */
+    color:white;                            /* White text */
 }
 .badge{
     position:absolute;

@@ -1010,15 +1010,17 @@ body{
     overflow-x:hidden;                 /* Prevent horizontal scrolling */
 }
 
+
+
 /* ========================= */
 /* Premium Mobile Navbar */
 /* ========================= */
 
 .navbar{
 
-    background:#050505;                           /* Pure black navbar */
-    padding:12px 10px;                            /* Reduced padding */
-    border-bottom:1px solid rgba(212,175,55,.25); /* Thin gold border */
+    background:#050505;                           /* Pure black navbar background */
+    padding:6px 5px;                              /* Reduced padding by 50% */
+    border-bottom:1px solid rgba(212,175,55,.25); /* Thin gold bottom border */
 
 }
 
@@ -1028,13 +1030,13 @@ body{
 
 .logo{
 
-    color:#D4AF37;                                /* Gold logo */
-    font-size:22px;                               /* Reduced from 30px */
-    font-weight:800;                              /* Extra bold */
+    color:#D4AF37;                                /* Gold logo color */
+    font-size:11px;                               /* Reduced logo size by 50% */
+    font-weight:800;                              /* Extra bold logo */
     text-align:center;                            /* Center logo */
-    margin-bottom:14px;                           /* Space below */
-    letter-spacing:.3px;                          /* Letter spacing */
-    line-height:1.2;                              /* Better spacing */
+    margin-bottom:7px;                            /* Reduced bottom spacing */
+    letter-spacing:.15px;                         /* Reduced letter spacing */
+    line-height:1.2;                              /* Better line spacing */
 
 }
 
@@ -1044,19 +1046,19 @@ body{
 
 .navbar nav{
 
-    display:grid;                                 /* CSS Grid */
-    grid-template-columns:repeat(4,1fr);          /* Four equal buttons */
+    display:grid;                                 /* Use CSS Grid */
+    grid-template-columns:repeat(4,1fr);          /* Four equal-width buttons */
 
-    background:#111111;                           /* Dark background */
+    background:#111111;                           /* Dark navigation background */
 
-    border:2px solid rgba(212,175,55,.35);        /* Gold border */
-    border-radius:18px;                           /* Rounded corners */
+    border:1px solid rgba(212,175,55,.35);        /* Thin gold border */
+    border-radius:9px;                            /* Rounded corners reduced by 50% */
 
-    overflow:hidden;                              /* Hide overflow */
+    overflow:hidden;                              /* Hide overflow outside border */
 
     box-shadow:
-    0 0 16px rgba(212,175,55,.18),                /* Outer glow */
-    inset 0 0 10px rgba(255,215,90,.08);          /* Inner glow */
+    0 0 8px rgba(212,175,55,.18),                 /* Reduced outer gold glow */
+    inset 0 0 5px rgba(255,215,90,.08);           /* Reduced inner glow */
 
 }
 
@@ -1066,18 +1068,18 @@ body{
 
 .navbar nav a{
 
-    display:flex;                                 /* Flexbox */
+    display:flex;                                 /* Enable Flexbox */
     flex-direction:column;                        /* Icon above text */
-    justify-content:center;                       /* Vertical center */
-    align-items:center;                           /* Horizontal center */
+    justify-content:center;                       /* Center vertically */
+    align-items:center;                           /* Center horizontally */
 
-    height:72px;                                  /* Reduced from 88px */
+    height:36px;                                  /* Reduced button height by 50% */
 
-    color:#FFFFFF;                                /* White text */
+    color:#FFFFFF;                                /* White navigation text */
     text-decoration:none;                         /* Remove underline */
 
-    font-size:12px;                               /* Reduced font */
-    font-weight:700;                              /* Bold */
+    font-size:6px;                                /* Reduced text size by 50% */
+    font-weight:700;                              /* Bold text */
 
     transition:.35s;                              /* Smooth animation */
 
@@ -1089,18 +1091,18 @@ body{
 
 .navbar nav a:not(:last-child){
 
-    border-right:1px solid rgba(255,255,255,.10); /* Divider */
+    border-right:1px solid rgba(255,255,255,.10); /* Divider between buttons */
 
 }
 
 /* ========================= */
-/* Icons */
+/* Navigation Icons */
 /* ========================= */
 
 .navbar nav a i{
 
-    font-size:22px;                               /* Reduced icon size */
-    margin-bottom:6px;                            /* Space below icon */
+    font-size:11px;                               /* Reduced icon size by 50% */
+    margin-bottom:3px;                            /* Reduced spacing below icon */
 
 }
 
@@ -1110,18 +1112,18 @@ body{
 
 .navbar nav a.active{
 
-    background:linear-gradient(
+    background:linear-gradient(                   /* Premium gold gradient */
     180deg,
-    #FFE27A 0%,                                   /* Bright gold */
-    #F4C542 45%,                                  /* Premium gold */
+    #FFE27A 0%,                                   /* Light gold */
+    #F4C542 45%,                                  /* Rich gold */
     #C89212 100%                                  /* Dark gold */
     );
 
-    color:#111111;                                /* Black text */
+    color:#111111;                                /* Black active text */
 
     box-shadow:
-    inset 0 2px 2px rgba(255,255,255,.45),        /* Top shine */
-    0 0 16px rgba(255,215,0,.45);                 /* Gold glow */
+    inset 0 1px 1px rgba(255,255,255,.45),        /* Top shine */
+    0 0 8px rgba(255,215,0,.45);                  /* Reduced outer glow */
 
 }
 
@@ -1131,31 +1133,32 @@ body{
 
 .navbar nav a.active i{
 
-    color:#111111;                                /* Black icon */
+    color:#111111;                                /* Black active icon */
 
 }
 
 /* ========================= */
-/* Hover */
+/* Hover Effect */
 /* ========================= */
 
 .navbar nav a:hover{
 
-    background:#1A1A1A;                           /* Dark hover */
+    background:#1A1A1A;                           /* Dark hover background */
 
 }
 
 .navbar nav a:hover:not(.active){
 
-    color:#F4C542;                                /* Gold text */
+    color:#F4C542;                                /* Gold hover text */
 
 }
 
 .navbar nav a:hover:not(.active) i{
 
-    color:#F4C542;                                /* Gold icon */
+    color:#F4C542;                                /* Gold hover icon */
 
 }
+
 
 /* ===== Hero Section (Mobile) ===== */
 

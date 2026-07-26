@@ -986,157 +986,158 @@ footer p{
 }
 
 /* Mobile */
-@media (max-width:768px){
+@media (max-width:768px){              /* Apply styles only on screens 768px or smaller */
 
 html,
 body{
-    width:100%;
-    overflow-x:hidden;
+    width:100%;                        /* Full screen width */
+    overflow-x:hidden;                 /* Prevent horizontal scrolling */
 }
 
 .navbar{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding:12px;
+    display:flex;                      /* Enable Flexbox */
+    flex-direction:column;             /* Arrange items vertically */
+    align-items:center;                /* Center all items horizontally */
+    padding:12px;                      /* Space inside navbar */
 }
 
 .logo{
-    font-size:18px;
-    line-height:1.25;
-    text-align:center;
-    margin-bottom:12px;
+    font-size:18px;                    /* Logo text size */
+    line-height:1.25;                  /* Space between logo lines */
+    text-align:center;                 /* Center logo text */
+    margin-bottom:12px;                /* Space below logo */
 }
 
 .navbar nav{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    margin:0 auto;
+    width:100%;                        /* Full navbar width */
+    display:flex;                      /* Enable Flexbox */
+    justify-content:center;            /* Center navigation buttons */
+    align-items:center;                /* Align buttons vertically */
+    gap:20px;                          /* Space between buttons */
+    margin:0 auto;                     /* Center navigation container */
 }
 
 .navbar nav a{
-    width:50px;
-    height:45px;
+    width:50px;                        /* Button width */
+    height:45px;                       /* Button height */
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    display:flex;                      /* Enable Flexbox */
+    flex-direction:column;             /* Icon above text */
+    justify-content:center;            /* Center content vertically */
+    align-items:center;                /* Center content horizontally */
 
-    background:#D4AF37;
-    color:#111111;
-    border-radius:8px;
-    text-decoration:none;
+    background:#D4AF37;                /* Gold background */
+    color:#111111;                     /* Black text */
+    border-radius:8px;                 /* Rounded corners */
+    text-decoration:none;              /* Remove underline */
 
-    font-size:9px;
-    font-weight:600;
+    font-size:9px;                     /* Text size */
+    font-weight:600;                   /* Semi-bold text */
 }
 
 .navbar nav a i{
-    font-size:12px;
-    margin-bottom:2px;
+    font-size:12px;                    /* Icon size */
+    margin-bottom:2px;                 /* Space below icon */
 }
 
 .list-btn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display:flex;                      /* Enable Flexbox */
+    justify-content:center;            /* Center text horizontally */
+    align-items:center;                /* Center text vertically */
 
-    width:90%;
-    max-width:280px;
-    height:40px;
+    width:90%;                         /* Button width */
+    max-width:280px;                   /* Maximum button width */
+    height:40px;                       /* Button height */
 
-    margin:15px auto 0;
+    margin:15px auto 0;                /* Center button with top spacing */
 
-    background:#D4AF37;
-    color:#111111;
-    border-radius:8px;
-    text-decoration:none;
+    background:#D4AF37;                /* Gold background */
+    color:#111111;                     /* Black text */
+    border-radius:8px;                 /* Rounded corners */
+    text-decoration:none;              /* Remove underline */
 
-    font-size:13px;
-    font-weight:700;
+    font-size:13px;                    /* Text size */
+    font-weight:700;                   /* Bold text */
 
-    flex-shrink:0;
+    flex-shrink:0;                     /* Prevent shrinking */
 }
+
 /* ===== Hero Section (Mobile) ===== */
 
 .hero{
-    position:relative;
-    min-height:440px;
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
+    position:relative;                 /* Position parent for overlay */
+    min-height:440px;                  /* Minimum hero height */
+    display:flex;                      /* Enable Flexbox */
+    align-items:center;                /* Center content vertically */
+    justify-content:flex-start;        /* Align content to left */
 
-    background-image:url("images/hero.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-image:url("images/hero.jpg"); /* Hero background image */
+    background-size:cover;             /* Cover entire hero */
+    background-position:center;        /* Center image */
+    background-repeat:no-repeat;       /* Prevent repeating */
 
-    padding:40px 20px;
+    padding:40px 20px;                 /* Inner spacing */
 }
 
 .hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.45);
+    content:"";                        /* Create overlay layer */
+    position:absolute;                 /* Position overlay */
+    inset:0;                           /* Cover entire hero */
+    background:rgba(0,0,0,.45);        /* Dark transparent overlay */
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
-    max-width:320px;
+    position:relative;                 /* Place above overlay */
+    z-index:2;                         /* Keep content visible */
+    max-width:320px;                   /* Maximum content width */
 }
 
 .hero-text h1{
-    font-size:44px;
-    line-height:1.08;
-    font-weight:800;
-    margin-bottom:16px;
-    color:#fff;
+    font-size:44px;                    /* Main heading size */
+    line-height:1.08;                  /* Space between heading lines */
+    font-weight:800;                   /* Extra bold heading */
+    margin-bottom:16px;                /* Space below heading */
+    color:#fff;                        /* White heading text */
 }
 
 .hero-text span{
-    color:#D4AF37;
+    color:#D4AF37;                     /* Gold highlight text */
 }
 
 .hero-text p{
-    font-size:18px;
-    line-height:1.6;
-    color:#E5E5E5;
-    margin-bottom:28px;
+    font-size:18px;                    /* Paragraph text size */
+    line-height:1.6;                   /* Comfortable line spacing */
+    color:#E5E5E5;                     /* Light gray text */
+    margin-bottom:28px;                /* Space below paragraph */
 }
 
 .hero-buttons{
-    display:flex;
-    gap:12px;
+    display:flex;                      /* Arrange buttons in a row */
+    gap:12px;                          /* Space between buttons */
 }
 
 .btn-primary,
 .btn-secondary{
-    width:150px;
-    height:48px;
+    width:150px;                       /* Button width */
+    height:48px;                       /* Button height */
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display:flex;                      /* Enable Flexbox */
+    justify-content:center;            /* Center text horizontally */
+    align-items:center;                /* Center text vertically */
 
-    font-size:15px;
-    font-weight:700;
+    font-size:15px;                    /* Button text size */
+    font-weight:700;                   /* Bold button text */
 
-    border-radius:10px;
-    text-decoration:none;
+    border-radius:10px;                /* Rounded corners */
+    text-decoration:none;              /* Remove underline */
 }
 
 .btn-primary{
-    background:#D4AF37;
-    color:#111111;
+    background:#D4AF37;                /* Gold button background */
+    color:#111111;                     /* Black text */
 }
 
 .btn-secondary{
-    border:2px solid #FFFFFF;
-    color:#FFFFFF;
+    border:2px solid #FFFFFF;          /* White border */
+    color:#FFFFFF;                     /* White text */
 }

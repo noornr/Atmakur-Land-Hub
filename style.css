@@ -850,120 +850,125 @@ footer p:last-child{
 }
 
 .search-section{
-    margin-top:-45px;
-    position:relative;
-    z-index:10;
+    margin-top:-45px;                      /* Move search section upward */
+    position:relative;                     /* Allow z-index positioning */
+    z-index:10;                            /* Display above hero section */
 }
+
 .search-section h2{
-    font-size:40px;
-    font-weight:700;
-    color:#FFFFFF;
-    margin-bottom:30px;
+    font-size:40px;                        /* Heading text size */
+    font-weight:700;                       /* Bold heading */
+    color:#FFFFFF;                         /* White heading */
+    margin-bottom:30px;                    /* Space below heading */
 }
 
 .search-box{
-    max-width:750px;
-    margin:auto;
-    display:flex;
-    gap:15px;
+    max-width:750px;                       /* Maximum search box width */
+    margin:auto;                           /* Center horizontally */
+    display:flex;                          /* Arrange input & button in a row */
+    gap:15px;                              /* Space between input and button */
 }
 
 .search-box input{
-    flex:1;
-    padding:16px;
-    font-size:16px;
-    border:1px solid #444444;
-    border-radius:10px;
-    background:#1A1A1A;
-    color:#FFFFFF;
+    flex:1;                                /* Take remaining width */
+    padding:16px;                          /* Inner spacing */
+    font-size:16px;                        /* Input text size */
+    border:1px solid #444444;              /* Dark border */
+    border-radius:10px;                    /* Rounded corners */
+    background:#1A1A1A;                    /* Dark background */
+    color:#FFFFFF;                         /* White text */
 }
 
 .search-box input::placeholder{
-    color:#AAAAAA;
+    color:#AAAAAA;                         /* Gray placeholder text */
 }
+
 .search-box button{
-    background:#D4AF37;
-    color:#111111;
-    border:none;
-    padding:16px 28px;
-    border-radius:10px;
-    font-weight:700;
-    cursor:pointer;
-    transition:.3s;
+    background:#D4AF37;                    /* Gold background */
+    color:#111111;                         /* Black text */
+    border:none;                           /* Remove border */
+    padding:16px 28px;                     /* Inner spacing */
+    border-radius:10px;                    /* Rounded corners */
+    font-weight:700;                       /* Bold text */
+    cursor:pointer;                        /* Hand cursor */
+    transition:.3s;                        /* Smooth hover animation */
 }
 
 .search-box button:hover{
-    background:#F4C542;
+    background:#F4C542;                    /* Lighter gold on hover */
 }
+
 .section-title{
-    text-align:center;
-    margin:70px 0 50px;
+    text-align:center;                     /* Center all content */
+    margin:70px 0 50px;                    /* Top & bottom spacing */
 }
 
 .section-title h2{
-    font-size:42px;
-    font-weight:800;
-    color:#0F172A;
-    margin-bottom:15px;
+    font-size:42px;                        /* Heading text size */
+    font-weight:800;                       /* Extra bold heading */
+    color:#0F172A;                         /* Dark blue heading */
+    margin-bottom:15px;                    /* Space below heading */
 }
 
 .section-title p{
-    color:#64748B;
-    font-size:18px;
-    line-height:1.7;
-    max-width:700px;
-    margin:auto;
+    color:#64748B;                         /* Gray-blue text */
+    font-size:18px;                        /* Paragraph text size */
+    line-height:1.7;                       /* Comfortable line spacing */
+    max-width:700px;                       /* Maximum paragraph width */
+    margin:auto;                           /* Center paragraph */
 }
+
 .why-us{
-    padding:90px 8%;
-    background:#111111;
+    padding:90px 8%;                       /* Section spacing */
+    background:#111111;                    /* Dark background */
 }
 
 .why-us h2{
-    text-align:center;
-    color:#D4AF37;
-    font-size:40px;
-    margin-bottom:50px;
+    text-align:center;                     /* Center heading */
+    color:#D4AF37;                         /* Gold heading */
+    font-size:40px;                        /* Heading text size */
+    margin-bottom:50px;                    /* Space below heading */
 }
 
 .why-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+    display:grid;                          /* Enable CSS Grid */
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); /* Responsive columns */
+    gap:30px;                              /* Space between cards */
 }
 
 .why-card{
-    background:#1A1A1A;
-    border:1px solid #2A2A2A;
-    border-radius:18px;
-    padding:35px;
-    text-align:center;
-    transition:all .35s ease;
-    box-shadow:0 10px 25px rgba(0,0,0,.30);
+    background:#1A1A1A;                    /* Dark card background */
+    border:1px solid #2A2A2A;              /* Thin border */
+    border-radius:18px;                    /* Rounded corners */
+    padding:35px;                          /* Inner spacing */
+    text-align:center;                     /* Center content */
+    transition:all .35s ease;              /* Smooth hover animation */
+    box-shadow:0 10px 25px rgba(0,0,0,.30);/* Shadow effect */
 }
 
 .why-card:hover{
-    transform:translateY(-10px);
-    border-color:#D4AF37;
-    box-shadow:0 20px 45px rgba(212,175,55,.20);
+    transform:translateY(-10px);           /* Move card upward */
+    border-color:#D4AF37;                  /* Gold border on hover */
+    box-shadow:0 20px 45px rgba(212,175,55,.20); /* Gold glow effect */
 }
 
 .why-card h3{
-    color:#FFFFFF;
-    font-size:24px;
-    margin-bottom:18px;
+    color:#FFFFFF;                         /* White heading */
+    font-size:24px;                        /* Heading size */
+    margin-bottom:18px;                    /* Space below heading */
 }
 
 .why-card p{
-    color:#CFCFCF;
-    line-height:1.8;
-    font-size:17px;
+    color:#CFCFCF;                         /* Light gray text */
+    line-height:1.8;                       /* Comfortable line spacing */
+    font-size:17px;                        /* Paragraph text size */
 }
+
 .section-divider{
-    border:none;
-    height:1px;
-    background:#2A2A2A;
-    margin:0;
+    border:none;                           /* Remove default border */
+    height:1px;                            /* Divider thickness */
+    background:#2A2A2A;                    /* Dark gray divider */
+    margin:0;                              /* Remove outer spacing */
 }
 footer{
     background:#0B0B0B;

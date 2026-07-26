@@ -991,14 +991,6 @@ footer p{
     margin:8px 0;                          /* Top & bottom spacing */
 }
 
-/* Hamburger Icon */
-
-.menu-toggle{
-    display:none;                          /* Hide on desktop */
-    font-size:30px;                        /* Hamburger icon size */
-    color:#D4AF37;                         /* Gold icon color */
-    cursor:pointer;                        /* Show hand cursor on hover */
-}
 
 /* Mobile */
 @media (max-width:768px){              /* Apply styles only on screens 768px or smaller */

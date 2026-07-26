@@ -1013,14 +1013,14 @@ body{
     display:flex;                      /* Enable Flexbox */
     flex-direction:column;             /* Arrange items vertically */
     align-items:center;                /* Center all items horizontally */
-    padding:12px;                      /* Space inside navbar */
+    padding:6px;                      /* Space inside navbar */
 }
 
 .logo{
     font-size:18px;                    /* Logo text size */
     line-height:1.25;                  /* Space between logo lines */
     text-align:center;                 /* Center logo text */
-    margin-bottom:12px;                /* Space below logo */
+    margin-bottom:6px;                /* Space below logo */
 }
 
 .navbar nav{
@@ -1064,7 +1064,7 @@ body{
     max-width:280px;                   /* Maximum button width */
     height:40px;                       /* Button height */
 
-    margin:15px auto 0;                /* Center button with top spacing */
+    margin:8px auto 0;                /* Center button with top spacing */
 
     background:#D4AF37;                /* Gold background */
     color:#111111;                     /* Black text */

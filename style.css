@@ -34,11 +34,31 @@ header{
     border-bottom:1px solid #2A2A2A;    /* Bottom border */
 }
 
-.logo{
-    color:#D4AF37;                      /* Gold logo color */
-    font-size:28px;                     /* Logo text size */
-    font-weight:700;                    /* Bold logo */
-    margin-left:-30px;                  /* Move logo slightly left */
+/* ========================= */
+/* Desktop Logo Container */
+/* ========================= */
+
+.nav-logo{
+
+    display:flex;                            /* Enable Flexbox */
+    align-items:center;                      /* Center logo vertically */
+    justify-content:flex-start;              /* Align logo to left */
+
+    width:280px;                             /* Logo container width */
+    flex-shrink:0;                           /* Prevent shrinking */
+
+}
+
+/* ========================= */
+/* Desktop Logo Image */
+/* ========================= */
+
+.nav-logo img{
+
+    width:220px;                             /* Logo width */
+    height:auto;                             /* Keep image proportions */
+    display:block;                           /* Display as block */
+
 }
 
 .navbar nav{

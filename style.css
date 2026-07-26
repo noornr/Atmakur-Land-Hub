@@ -1,78 +1,81 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    margin:0;                           /* Remove default outer spacing */
+    padding:0;                          /* Remove default inner spacing */
+    box-sizing:border-box;              /* Include padding & border in width/height */
+    font-family:'Poppins',sans-serif;   /* Set default font */
 }
+
 html,
 body{
-    width:100%;
-    overflow-x:hidden;
+    width:100%;                         /* Full page width */
+    overflow-x:hidden;                  /* Prevent horizontal scrolling */
 }
 
 body{
-    background:#0B0B0B;
-    color:#FFFFFF;
+    background:#0B0B0B;                 /* Black page background */
+    color:#FFFFFF;                      /* Default text color */
 }
 
 header{
-    position:sticky;
-    top:0;
-    z-index:1000;
+    position:sticky;                    /* Keep header fixed while scrolling */
+    top:0;                              /* Stick to the top */
+    z-index:1000;                       /* Keep header above other elements */
 }
 
 /* Navbar */
+
 .navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 8%;
-    min-height:90px;
-    background:#111111;
-    border-bottom:1px solid #2A2A2A;
+    display:flex;                       /* Enable Flexbox */
+    justify-content:space-between;      /* Space logo, menu & button evenly */
+    align-items:center;                 /* Vertically center all items */
+    padding:15px 8%;                    /* Top/bottom & left/right spacing */
+    min-height:90px;                    /* Minimum navbar height */
+    background:#111111;                 /* Dark navbar background */
+    border-bottom:1px solid #2A2A2A;    /* Bottom border */
 }
 
 .logo{
-    color:#D4AF37;
-    font-size:28px;
-    font-weight:700;
-    margin-left:-30px;
+    color:#D4AF37;                      /* Gold logo color */
+    font-size:28px;                     /* Logo text size */
+    font-weight:700;                    /* Bold logo */
+    margin-left:-30px;                  /* Move logo slightly left */
 }
+
 .navbar nav{
-    display:flex;
-    gap:30px;
-    margin-right:40px;
+    display:flex;                       /* Arrange menu items in a row */
+    gap:30px;                           /* Space between menu items */
+    margin-right:40px;                  /* Move menu slightly left */
 }
 
 .navbar nav a{
-    font-size:18px;   /* Increase from the default */
-    color:#FFFFFF;
-    font-weight:600;
+    font-size:18px;                     /* Navigation text size */
+    color:#FFFFFF;                      /* White text */
+    font-weight:600;                    /* Semi-bold text */
 }
 
 .navbar nav a:hover{
-    color:#D4AF37;
+    color:#D4AF37;                      /* Gold color on hover */
 }
 
 .list-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:8px 14px;
-    font-size:15px;
-    font-weight:600;
-    white-space:nowrap;
-    border-radius:8px;
-    margin-right:-30px;
-    width:160px;
-    background:#D4AF37;
-    color:#111111;
-    border:none;
-    transition:.3s;
+    display:inline-flex;                /* Flexbox without taking full width */
+    align-items:center;                 /* Center text vertically */
+    justify-content:center;             /* Center text horizontally */
+    padding:8px 14px;                   /* Inner button spacing */
+    font-size:15px;                     /* Button text size */
+    font-weight:600;                    /* Semi-bold text */
+    white-space:nowrap;                 /* Prevent text wrapping */
+    border-radius:8px;                  /* Rounded corners */
+    margin-right:-30px;                 /* Move button slightly right */
+    width:160px;                        /* Button width */
+    background:#D4AF37;                 /* Gold background */
+    color:#111111;                      /* Black text */
+    border:none;                        /* Remove border */
+    transition:.3s;                     /* Smooth hover animation */
 }
 
 .list-btn:hover{
-    background:#F4C542;
+    background:#F4C542;                 /* Lighter gold on hover */
 }
 /* ===== Hero Section ===== */
 

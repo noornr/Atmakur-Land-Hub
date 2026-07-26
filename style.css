@@ -1061,4 +1061,82 @@ body{
 
     flex-shrink:0;
 }
+/* ===== Hero Section (Mobile) ===== */
 
+.hero{
+    position:relative;
+    min-height:440px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    background-image:url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:40px 20px;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:320px;
+}
+
+.hero-text h1{
+    font-size:44px;
+    line-height:1.08;
+    font-weight:800;
+    margin-bottom:16px;
+    color:#fff;
+}
+
+.hero-text span{
+    color:#D4AF37;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.6;
+    color:#E5E5E5;
+    margin-bottom:28px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn-primary,
+.btn-secondary{
+    width:150px;
+    height:48px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:15px;
+    font-weight:700;
+
+    border-radius:10px;
+    text-decoration:none;
+}
+
+.btn-primary{
+    background:#D4AF37;
+    color:#111111;
+}
+
+.btn-secondary{
+    border:2px solid #FFFFFF;
+    color:#FFFFFF;
+}

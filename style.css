@@ -104,6 +104,15 @@ header{
     z-index:2;                             /* Keep content visible */
     max-width:450px;                       /* Maximum content width */
 }
+.hero-location{
+    margin-bottom:20px;
+}
+
+.hero-location img{
+    width:320px;
+    height:auto;
+    display:block;
+}
 .hero-text h1{
     font-size:52px;                        /* Main heading size */
     line-height:1;                         /* Line spacing for heading */

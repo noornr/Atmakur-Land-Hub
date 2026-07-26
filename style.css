@@ -971,38 +971,40 @@ footer p:last-child{
     margin:0;                              /* Remove outer spacing */
 }
 footer{
-    background:#0B0B0B;
-    padding:60px 8%;
-    text-align:center;
-    border-top:1px solid #2A2A2A;
+    background:#0B0B0B;                    /* Black footer background */
+    padding:60px 8%;                       /* Inner spacing (top/bottom & left/right) */
+    text-align:center;                     /* Center all footer content */
+    border-top:1px solid #2A2A2A;          /* Top divider line */
 }
 
 footer h2{
-    color:#D4AF37;
-    font-size:34px;
-    margin-bottom:18px;
-    font-weight:700;
+    color:#D4AF37;                         /* Gold heading */
+    font-size:34px;                        /* Heading text size */
+    margin-bottom:18px;                    /* Space below heading */
+    font-weight:700;                       /* Bold heading */
 }
 
 footer p{
-    color:#CFCFCF;
-    font-size:17px;
-    line-height:1.8;
-    margin:8px 0;
+    color:#CFCFCF;                         /* Light gray text */
+    font-size:17px;                        /* Paragraph text size */
+    line-height:1.8;                       /* Comfortable line spacing */
+    margin:8px 0;                          /* Top & bottom spacing */
 }
 
 /* Hamburger Icon */
+
 .menu-toggle{
-    display:none;
-    font-size:30px;
-    color:#D4AF37;
-    cursor:pointer;
+    display:none;                          /* Hide on desktop */
+    font-size:30px;                        /* Hamburger icon size */
+    color:#D4AF37;                         /* Gold icon color */
+    cursor:pointer;                        /* Show hand cursor on hover */
 }
+
 .menu-toggle{
-    display:none;
-    font-size:30px;
-    color:#D4AF37;
-    cursor:pointer;
+    display:none;                          /* Hide on desktop */
+    font-size:30px;                        /* Hamburger icon size */
+    color:#D4AF37;                         /* Gold icon color */
+    cursor:pointer;                        /* Show hand cursor on hover */
 }
 
 /* Mobile */

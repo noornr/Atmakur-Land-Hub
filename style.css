@@ -1119,10 +1119,10 @@ body{
     display:block;                       /* Display as block element */
 }
 .hero-text h1{
-    font-size:31px;                    /* Reduced from 44px */
+    font-size:36px;                    /* Increased heading size */
     line-height:1.08;                  /* Space between heading lines */
     font-weight:800;                   /* Extra bold heading */
-    margin-bottom:11px;                /* Reduced from 16px */
+    margin-bottom:11px;                /* Space below heading */
     color:#fff;                        /* White heading text */
 }
 
@@ -1131,10 +1131,10 @@ body{
 }
 
 .hero-text p{
-    font-size:13px;                    /* Reduced from 18px */
+    font-size:15px;                    /* Increased paragraph size */
     line-height:1.5;                   /* Comfortable line spacing */
-    color:#E5E5E5;                     /* Light gray text */
-    margin-bottom:20px;                /* Reduced from 28px */
+    color:#E5E5E5;                     /* Light gray paragraph text */
+    margin-bottom:20px;                /* Space below paragraph */
 }
 
 .hero-buttons{

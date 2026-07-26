@@ -161,8 +161,10 @@ header{
 }
 
 .properties h2{
+    color: #f5c242;
     text-align:center;
     font-size:36px;
+    font-weight: 700;
     margin-bottom:40px;
 }
 

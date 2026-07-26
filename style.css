@@ -1149,3 +1149,78 @@ body{
     border:2px solid #FFFFFF;          /* White border */
     color:#FFFFFF;                     /* White text */
 }
+    
+/*Search Section */
+
+.search-section{
+    margin-top:-20px;                    /* Move section slightly upward */
+    padding:0 15px;                      /* Left & right spacing */
+}
+
+.search-section h2{
+    font-size:24px;                      /* Smaller heading */
+    font-weight:700;                     /* Bold heading */
+    color:#FFFFFF;                       /* White text */
+    margin-bottom:20px;                  /* Space below heading */
+    text-align:center;                   /* Center heading */
+}
+
+.search-box{
+    width:100%;                          /* Full width */
+    display:flex;                        /* Enable Flexbox */
+    flex-direction:column;               /* Stack input & button */
+    gap:12px;                            /* Space between input & button */
+    margin:auto;                         /* Center container */
+}
+
+.search-box input{
+    width:100%;                          /* Full width input */
+    padding:14px;                        /* Inner spacing */
+    font-size:15px;                      /* Input text size */
+    border:1px solid #444444;            /* Dark border */
+    border-radius:10px;                  /* Rounded corners */
+    background:#1A1A1A;                  /* Dark background */
+    color:#FFFFFF;                       /* White text */
+    box-sizing:border-box;               /* Include padding in width */
+}
+
+.search-box input::placeholder{
+    color:#AAAAAA;                       /* Gray placeholder */
+}
+
+.search-box button{
+    width:100%;                          /* Full width button */
+    padding:14px;                        /* Inner spacing */
+    font-size:15px;                      /* Button text size */
+    font-weight:700;                     /* Bold text */
+    background:#D4AF37;                  /* Gold background */
+    color:#111111;                       /* Black text */
+    border:none;                         /* Remove border */
+    border-radius:10px;                  /* Rounded corners */
+    cursor:pointer;                      /* Hand cursor */
+    transition:.3s;                      /* Smooth hover effect */
+}
+
+.search-box button:hover{
+    background:#F4C542;                  /* Lighter gold on hover */
+}
+
+.section-title{
+    text-align:center;                   /* Center content */
+    margin:40px 15px 30px;               /* Reduced spacing */
+}
+
+.section-title h2{
+    font-size:28px;                      /* Smaller heading */
+    font-weight:800;                     /* Extra bold */
+    color:#0F172A;                       /* Dark heading */
+    margin-bottom:10px;                  /* Space below heading */
+}
+
+.section-title p{
+    font-size:15px;                      /* Smaller paragraph */
+    line-height:1.6;                     /* Comfortable spacing */
+    color:#64748B;                       /* Gray-blue text */
+    max-width:100%;                      /* Full width */
+    margin:auto;                         /* Center paragraph */
+}

@@ -1033,121 +1033,110 @@ body{
 
 
 /* ===========================
+/* ======================================
    PREMIUM MOBILE NAVBAR
+   Luxury Black & Gold Theme
+   Designed for Mobile (320px–430px)
+====================================== */
+
+
+.navbar{
+
+    position:fixed;                     /* Keeps navbar fixed at the top while scrolling */
+
+    top:0;                              /* Start from top of screen */
+    left:0;                             /* Start from left side */
+
+    width:100%;                         /* Full mobile screen width */
+
+    height:56px;                        /* Navbar height (comfortable for mobile) */
+
+    display:flex;                       /* Places logo and menu in one row */
+
+    justify-content:space-between;      /* Logo on left, menu on right */
+
+    align-items:center;                 /* Vertically center everything */
+
+    padding:0 10px;                     /* Left and right spacing */
+
+    background:#050505;                 /* Premium black background */
+
+    border-bottom:1px solid rgba(212,175,55,.35);
+                                        /* Thin luxury gold bottom border */
+
+    z-index:1000;                       /* Always stays above page content */
+
+}
+
+
+/* ===========================
+   WEBSITE LOGO
 =========================== */
 
+.logo img{
 
-/* =========================
-   Main Navigation Bar
-========================= */
-.navbar{
-    position:fixed;                 /* Navbar always stays at the top */
-    top:0;
-    left:0;
-    width:100%;                     /* Full screen width */
-    height:50px;                    /* 30% smaller height */
-    padding:0 12px;                 /* Space inside navbar */
+    height:38px;                        /* Logo height */
 
-    display:flex;                   /* Logo left, menu right */
-    align-items:center;             /* Center vertically */
-    justify-content:space-between;  /* Push items to both sides */
+    width:auto;                         /* Keeps original image ratio */
 
-    background:rgba(5,5,5,.95);     /* Premium black background */
-    backdrop-filter:blur(18px);     /* Glass blur effect */
-    -webkit-backdrop-filter:blur(18px);
+    display:block;                      /* Removes unwanted spacing */
 
-    border-bottom:1px solid rgba(212,175,55,.35); /* Gold bottom border */
-
-    z-index:1000;                   /* Always above page content */
 }
 
-/* =========================
-   Website Logo
-========================= */
-.logo{
-    font-size:16px;                 /* Smaller logo text */
-    font-weight:700;                /* Bold */
-    color:#d4af37;                  /* Gold color */
-    letter-spacing:.8px;            /* Premium spacing */
-}
 
-/* =========================
-   Hamburger Menu Button
-========================= */
-.menu-toggle{
-    width:32px;                     /* Button width */
-    height:32px;                    /* Button height */
-    border-radius:8px;              /* Rounded corners */
+/* ===========================
+   NAVIGATION CONTAINER
+=========================== */
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:rgba(212,175,55,.08);/* Light gold background */
-    border:1px solid rgba(212,175,55,.25); /* Gold border */
-
-    color:#d4af37;                  /* Gold icon */
-    font-size:17px;                 /* Icon size */
-
-    cursor:pointer;                 /* Hand cursor */
-
-    transition:.35s;                /* Smooth animation */
-}
-
-/* Small press animation */
-.menu-toggle:active{
-    transform:scale(.95);
-}
-
-/* =========================
-   Mobile Menu
-========================= */
 .nav-links{
-    position:absolute;
-    top:50px;                       /* Opens below navbar */
-    left:0;
-    width:100%;
 
-    display:flex;
-    flex-direction:column;          /* Links stacked vertically */
+    display:flex;                       /* Places all links in one horizontal row */
 
-    background:#080808;             /* Dark menu background */
+    align-items:center;                 /* Vertically align menu */
 
-    border-top:1px solid rgba(212,175,55,.15);
+    gap:12px;                           /* Space between buttons */
 
-    max-height:0;                   /* Hidden by default */
-    overflow:hidden;                /* Prevents content showing */
-
-    transition:max-height .4s ease; /* Smooth open animation */
 }
 
-/* Menu opens when active class is added */
-.nav-links.active{
-    max-height:300px;
-}
 
-/* =========================
-   Navigation Links
-========================= */
+/* ===========================
+   NAVIGATION LINKS
+=========================== */
+
 .nav-links a{
-    color:#ffffff;                  /* White text */
-    text-decoration:none;           /* Remove underline */
 
-    padding:12px 16px;              /* Space around links */
+    color:#ffffff;                      /* White text */
 
-    font-size:13px;                 /* Smaller text */
-    font-weight:500;
+    text-decoration:none;               /* Removes underline */
 
-    border-bottom:1px solid rgba(255,255,255,.05);
+    font-size:13px;                     /* Mobile-friendly font size */
 
-    transition:.3s;
+    font-weight:600;                    /* Semi-bold text */
+
+    transition:.3s;                     /* Smooth hover animation */
+
 }
 
-/* Hover Effect */
+
+/* ===========================
+   HOVER EFFECT
+=========================== */
+
 .nav-links a:hover{
-    background:rgba(212,175,55,.08);/* Gold highlight */
-    color:#d4af37;                  /* Gold text */
-    padding-left:22px;              /* Slide effect */
+
+    color:#d4af37;                      /* Changes text to gold */
+
+}
+
+
+/* ===========================
+   ACTIVE PAGE
+=========================== */
+
+.nav-links a.active{
+
+    color:#d4af37;                      /* Current page always gold */
+
 }
 
 

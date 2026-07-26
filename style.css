@@ -1082,7 +1082,7 @@ body{
 
 .hero{
     position:relative;                 /* Position parent for overlay */
-    min-height:440px;                  /* Minimum hero height */
+    min-height:310px;                  /* Reduced from 440px */
     display:flex;                      /* Enable Flexbox */
     align-items:center;                /* Center content vertically */
     justify-content:flex-start;        /* Align content to left */
@@ -1092,7 +1092,7 @@ body{
     background-position:center;        /* Center image */
     background-repeat:no-repeat;       /* Prevent repeating */
 
-    padding:40px 20px;                 /* Inner spacing */
+    padding:28px 14px;                 /* Reduced from 40px 20px */
 }
 
 .hero::before{
@@ -1105,14 +1105,14 @@ body{
 .hero-content{
     position:relative;                 /* Place above overlay */
     z-index:2;                         /* Keep content visible */
-    max-width:320px;                   /* Maximum content width */
+    max-width:225px;                   /* Reduced from 320px */
 }
 
 .hero-text h1{
-    font-size:44px;                    /* Main heading size */
+    font-size:31px;                    /* Reduced from 44px */
     line-height:1.08;                  /* Space between heading lines */
     font-weight:800;                   /* Extra bold heading */
-    margin-bottom:16px;                /* Space below heading */
+    margin-bottom:11px;                /* Reduced from 16px */
     color:#fff;                        /* White heading text */
 }
 
@@ -1121,30 +1121,30 @@ body{
 }
 
 .hero-text p{
-    font-size:18px;                    /* Paragraph text size */
-    line-height:1.6;                   /* Comfortable line spacing */
+    font-size:13px;                    /* Reduced from 18px */
+    line-height:1.5;                   /* Comfortable line spacing */
     color:#E5E5E5;                     /* Light gray text */
-    margin-bottom:28px;                /* Space below paragraph */
+    margin-bottom:20px;                /* Reduced from 28px */
 }
 
 .hero-buttons{
     display:flex;                      /* Arrange buttons in a row */
-    gap:12px;                          /* Space between buttons */
+    gap:8px;                           /* Reduced from 12px */
 }
 
 .btn-primary,
 .btn-secondary{
-    width:150px;                       /* Button width */
-    height:48px;                       /* Button height */
+    width:105px;                       /* Reduced from 150px */
+    height:34px;                       /* Reduced from 48px */
 
     display:flex;                      /* Enable Flexbox */
     justify-content:center;            /* Center text horizontally */
     align-items:center;                /* Center text vertically */
 
-    font-size:15px;                    /* Button text size */
+    font-size:11px;                    /* Reduced from 15px */
     font-weight:700;                   /* Bold button text */
 
-    border-radius:10px;                /* Rounded corners */
+    border-radius:7px;                 /* Reduced from 10px */
     text-decoration:none;              /* Remove underline */
 }
 

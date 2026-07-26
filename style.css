@@ -1075,14 +1075,13 @@ body{
 
 .logo img{
 
-    height:38px;                        /* Logo height */
+    height:20px;                       /* 70% smaller appearance */
 
-    width:auto;                         /* Keeps original image ratio */
+    width:auto;                        /* Keeps original image ratio */
 
-    display:block;                      /* Removes unwanted spacing */
+    display:block;                     /* Removes unwanted spacing */
 
 }
-
 
 /* ===========================
    NAVIGATION CONTAINER

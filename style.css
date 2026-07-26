@@ -105,13 +105,13 @@ header{
     max-width:450px;                       /* Maximum content width */
 }
 .hero-location{
-    margin-bottom:20px;
+    margin-bottom:26px;                  /* Increased space below by 20% */
 }
 
 .hero-location img{
-    width:320px;
-    height:auto;
-    display:block;
+    width:384px;                         /* Increased from 320px to 384px (+20%) */
+    height:auto;                         /* Keep image proportions */
+    display:block;                       /* Display as block element */
 }
 .hero-text h1{
     font-size:52px;                        /* Main heading size */

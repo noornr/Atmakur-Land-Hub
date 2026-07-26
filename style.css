@@ -1017,11 +1017,11 @@ body{
 }
 
 .navbar nav a{
-    font-size:18px;   /* Increase from the default */
+    font-size:14px;   /* Increase from the default */
     color:#111111;
     background:#D4AF37;
     font-weight:600;
-    padding:8px 14px;
+    padding:6px 11px;
     border-radius:8px;
     text-decoration:none;
     transition:.3s;

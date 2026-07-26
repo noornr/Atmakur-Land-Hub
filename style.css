@@ -1098,25 +1098,92 @@ body{
 }
 
 /* ========================= */
+/* Premium Mobile Navbar */
+/* ========================= */
+
+.navbar{
+
+    background:#050505;                           /* Pure black navbar background */
+    padding:12px 12px;                            /* More breathing space */
+
+    border-bottom:1px solid rgba(212,175,55,.25);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:14px;                                     /* Space between logo and menu */
+
+}
+
+/* ========================= */
+/* Logo Container */
+/* ========================= */
+
+.nav-logo{
+
+    flex:0 0 28%;                                /* Fixed logo area */
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+}
+
+/* ========================= */
+/* Logo Image */
+/* ========================= */
+
+.nav-logo img{
+
+    width:80px;                                  /* Slightly smaller logo */
+    height:auto;
+    display:block;
+
+}
+
+/* ========================= */
+/* Navigation Container */
+/* ========================= */
+
+.navbar nav{
+
+    flex:1;                                      /* Takes remaining space */
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    background:#111111;
+
+    border:2px solid rgba(212,175,55,.35);
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 0 12px rgba(212,175,55,.18),
+    inset 0 0 8px rgba(255,215,90,.08);
+
+}
+
+/* ========================= */
 /* Navigation Buttons */
 /* ========================= */
 
 .navbar nav a{
 
-    display:flex;                                 /* Enable Flexbox */
-    flex-direction:column;                        /* Icon above text */
-    justify-content:center;                       /* Center vertically */
-    align-items:center;                           /* Center horizontally */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-    height:47px;                                  /* Navigation button height */
+    height:46px;                                 /* Balanced height */
 
-    color:#FFFFFF;                                /* White text */
-    text-decoration:none;                         /* Remove underline */
+    color:#FFFFFF;
+    text-decoration:none;
 
-    font-size:8px;                                /* Navigation text size */
-    font-weight:700;                              /* Bold text */
+    font-size:9px;                               /* Slightly larger text */
+    font-weight:700;
 
-    transition:.35s;                              /* Smooth animation */
+    transition:.35s;
 
 }
 
@@ -1126,7 +1193,7 @@ body{
 
 .navbar nav a:not(:last-child){
 
-    border-right:1px solid rgba(255,255,255,.10); /* Thin divider */
+    border-right:1px solid rgba(255,255,255,.10);
 
 }
 
@@ -1136,8 +1203,8 @@ body{
 
 .navbar nav a i{
 
-    font-size:14px;                               /* Icon size */
-    margin-bottom:4px;                            /* Space below icon */
+    font-size:15px;
+    margin-bottom:4px;
 
 }
 
@@ -1147,28 +1214,24 @@ body{
 
 .navbar nav a.active{
 
-    background:linear-gradient(                   /* Premium gold gradient */
+    background:linear-gradient(
     180deg,
-    #FFE27A 0%,                                   /* Light gold */
-    #F4C542 45%,                                  /* Rich gold */
-    #C89212 100%                                  /* Dark gold */
+    #FFE27A 0%,
+    #F4C542 45%,
+    #C89212 100%
     );
 
-    color:#111111;                                /* Black active text */
+    color:#111111;
 
     box-shadow:
-    inset 0 1px 2px rgba(255,255,255,.45),        /* Top shine */
-    0 0 10px rgba(255,215,0,.45);                 /* Gold glow */
+    inset 0 1px 2px rgba(255,255,255,.45),
+    0 0 10px rgba(255,215,0,.45);
 
 }
 
-/* ========================= */
-/* Active Navigation Icon */
-/* ========================= */
-
 .navbar nav a.active i{
 
-    color:#111111;                                /* Black active icon */
+    color:#111111;
 
 }
 
@@ -1178,19 +1241,19 @@ body{
 
 .navbar nav a:hover{
 
-    background:#1A1A1A;                           /* Dark hover background */
+    background:#1A1A1A;
 
 }
 
 .navbar nav a:hover:not(.active){
 
-    color:#F4C542;                                /* Gold hover text */
+    color:#F4C542;
 
 }
 
 .navbar nav a:hover:not(.active) i{
 
-    color:#F4C542;                                /* Gold hover icon */
+    color:#F4C542;
 
 }
 

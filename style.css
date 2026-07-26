@@ -1017,19 +1017,35 @@ body{
 }
 
 .navbar nav a{
-    font-size:14px;   /* Increase from the default */
+    display:flex;
+    flex-direction:column;      /* Icon above text */
+    justify-content:center;
+    align-items:center;
+    gap:4px;
+
+    font-size:14px;
     color:#111111;
-    background:#D4AF37;
     font-weight:600;
-    padding:6px 11px;
+    background:#D4AF37;
+    padding:8px 12px;
     border-radius:8px;
     text-decoration:none;
     transition:.3s;
+
+    width:80px;
+    height:60px;
+    box-sizing:border-box;
+}
+
+.navbar nav a i{
+    font-size:18px;
+    margin:0;
+    display:block;
 }
 
 .navbar nav a:hover{
-    color:#111111;
     background:#F4C542;
+    color:#111111;
 }
 
 .list-btn{

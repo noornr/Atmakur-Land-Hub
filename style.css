@@ -988,11 +988,6 @@ footer p{
 /* Mobile */
 @media (max-width:768px){
     
-body{
-    transform: scale(0.5);
-    transform-origin: top left;
-    width: 200%;
-}
 /* Navbar */
 .navbar{
     display:flex;

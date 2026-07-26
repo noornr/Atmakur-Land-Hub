@@ -104,39 +104,6 @@ header{
     z-index:2;                             /* Keep content visible */
     max-width:450px;                       /* Maximum content width */
 }
-.hero-location{
-    display:inline-block;                 /* Make the element fit its content */
-    color:#D4AF37;                        /* Gold text color */
-    font-size:50px;                       /* Increased from 38px */
-    font-weight:700;                      /* Bold text */
-    font-family:"Noto Sans Telugu", sans-serif; /* Telugu font */
-    letter-spacing:1.3px;                 /* Increased letter spacing */
-    margin-bottom:28px;                   /* Increased gap below heading */
-    padding:10px 40px;                    /* Increased inner spacing */
-
-    border-top:3px solid #D4AF37;         /* Thicker top gold line */
-    border-bottom:3px solid #D4AF37;      /* Thicker bottom gold line */
-
-    position:relative;                    /* Parent for decorative stars */
-}
-
-.hero-location::before,
-.hero-location::after{
-    content:"✦";                          /* Decorative gold star */
-    position:absolute;                    /* Position independently */
-    top:50%;                              /* Move to vertical center */
-    transform:translateY(-50%);           /* Perfect vertical centering */
-    color:#D4AF37;                        /* Gold star color */
-    font-size:24px;                       /* Larger star size */
-}
-
-.hero-location::before{
-    left:-28px;                           /* Increased left spacing */
-}
-
-.hero-location::after{
-    right:-28px;                          /* Increased right spacing */
-}
 .hero-text h1{
     font-size:52px;                        /* Main heading size */
     line-height:1;                         /* Line spacing for heading */

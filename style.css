@@ -1107,6 +1107,15 @@ body{
     z-index:2;                         /* Keep content visible */
     max-width:225px;                   /* Reduced from 320px */
 }
+.hero-location{
+    margin-bottom:12px;
+}
+
+.hero-location img{
+    width:170px;
+    height:auto;
+    display:block;
+}
 .hero-text h1{
     font-size:31px;                    /* Reduced from 44px */
     line-height:1.08;                  /* Space between heading lines */

@@ -1106,7 +1106,7 @@ body{
 
 .hero{
     position:relative;                     /* Parent element for overlay */
-    min-height:30vh;                       /* Minimum hero height */
+    min-height:50vh;                       /* Minimum hero height */
     display:flex;                          /* Enable Flexbox */
     align-items:center;                    /* Center content vertically */
     justify-content:flex-start;            /* Align content to the left */

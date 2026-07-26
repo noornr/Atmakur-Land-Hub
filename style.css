@@ -1036,86 +1036,106 @@ body{
    PREMIUM MOBILE NAVBAR
 =========================== */
 
+
+/* =========================
+   Main Navigation Bar
+========================= */
 .navbar{
-    position:fixed;
+    position:fixed;                 /* Navbar always stays at the top */
     top:0;
     left:0;
-    width:100%;
-    height:70px;
-    padding:0 18px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    width:100%;                     /* Full screen width */
+    height:50px;                    /* 30% smaller height */
+    padding:0 12px;                 /* Space inside navbar */
 
-    background:rgba(5,5,5,.95);
-    backdrop-filter:blur(18px);
+    display:flex;                   /* Logo left, menu right */
+    align-items:center;             /* Center vertically */
+    justify-content:space-between;  /* Push items to both sides */
+
+    background:rgba(5,5,5,.95);     /* Premium black background */
+    backdrop-filter:blur(18px);     /* Glass blur effect */
     -webkit-backdrop-filter:blur(18px);
 
-    border-bottom:1px solid rgba(212,175,55,.35);
+    border-bottom:1px solid rgba(212,175,55,.35); /* Gold bottom border */
 
-    z-index:1000;
+    z-index:1000;                   /* Always above page content */
 }
 
+/* =========================
+   Website Logo
+========================= */
 .logo{
-    font-size:22px;
-    font-weight:700;
-    color:#d4af37;
-    letter-spacing:1px;
+    font-size:16px;                 /* Smaller logo text */
+    font-weight:700;                /* Bold */
+    color:#d4af37;                  /* Gold color */
+    letter-spacing:.8px;            /* Premium spacing */
 }
 
+/* =========================
+   Hamburger Menu Button
+========================= */
 .menu-toggle{
-    width:45px;
-    height:45px;
-    border-radius:12px;
+    width:32px;                     /* Button width */
+    height:32px;                    /* Button height */
+    border-radius:8px;              /* Rounded corners */
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    background:rgba(212,175,55,.08);
-    border:1px solid rgba(212,175,55,.25);
+    background:rgba(212,175,55,.08);/* Light gold background */
+    border:1px solid rgba(212,175,55,.25); /* Gold border */
 
-    color:#d4af37;
-    font-size:22px;
-    cursor:pointer;
+    color:#d4af37;                  /* Gold icon */
+    font-size:17px;                 /* Icon size */
 
-    transition:.35s;
+    cursor:pointer;                 /* Hand cursor */
+
+    transition:.35s;                /* Smooth animation */
 }
 
+/* Small press animation */
 .menu-toggle:active{
     transform:scale(.95);
 }
 
+/* =========================
+   Mobile Menu
+========================= */
 .nav-links{
     position:absolute;
-    top:70px;
+    top:50px;                       /* Opens below navbar */
     left:0;
-
     width:100%;
-    display:flex;
-    flex-direction:column;
 
-    background:#080808;
+    display:flex;
+    flex-direction:column;          /* Links stacked vertically */
+
+    background:#080808;             /* Dark menu background */
 
     border-top:1px solid rgba(212,175,55,.15);
 
-    max-height:0;
-    overflow:hidden;
+    max-height:0;                   /* Hidden by default */
+    overflow:hidden;                /* Prevents content showing */
 
-    transition:max-height .4s ease;
+    transition:max-height .4s ease; /* Smooth open animation */
 }
 
+/* Menu opens when active class is added */
 .nav-links.active{
-    max-height:420px;
+    max-height:300px;
 }
 
+/* =========================
+   Navigation Links
+========================= */
 .nav-links a{
-    color:#fff;
-    text-decoration:none;
+    color:#ffffff;                  /* White text */
+    text-decoration:none;           /* Remove underline */
 
-    padding:18px;
+    padding:12px 16px;              /* Space around links */
 
-    font-size:16px;
+    font-size:13px;                 /* Smaller text */
     font-weight:500;
 
     border-bottom:1px solid rgba(255,255,255,.05);
@@ -1123,13 +1143,12 @@ body{
     transition:.3s;
 }
 
+/* Hover Effect */
 .nav-links a:hover{
-    background:rgba(212,175,55,.08);
-    color:#d4af37;
-    padding-left:28px;
+    background:rgba(212,175,55,.08);/* Gold highlight */
+    color:#d4af37;                  /* Gold text */
+    padding-left:22px;              /* Slide effect */
 }
-
-
 
 
 /* ===== Hero Section (Mobile) ===== */

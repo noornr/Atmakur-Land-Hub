@@ -107,15 +107,15 @@ header{
 .hero-location{
     display:inline-block;                 /* Make the element fit its content */
     color:#D4AF37;                        /* Gold text color */
-    font-size:38px;                       /* Telugu heading text size */
+    font-size:50px;                       /* Increased from 38px */
     font-weight:700;                      /* Bold text */
     font-family:"Noto Sans Telugu", sans-serif; /* Telugu font */
-    letter-spacing:1px;                   /* Space between letters */
-    margin-bottom:20px;                   /* Space below the heading */
-    padding:8px 30px;                     /* Inner spacing (top/bottom & left/right) */
+    letter-spacing:1.3px;                 /* Increased letter spacing */
+    margin-bottom:28px;                   /* Increased gap below heading */
+    padding:10px 40px;                    /* Increased inner spacing */
 
-    border-top:2px solid #D4AF37;         /* Gold line at the top */
-    border-bottom:2px solid #D4AF37;      /* Gold line at the bottom */
+    border-top:3px solid #D4AF37;         /* Thicker top gold line */
+    border-bottom:3px solid #D4AF37;      /* Thicker bottom gold line */
 
     position:relative;                    /* Parent for decorative stars */
 }
@@ -127,15 +127,15 @@ header{
     top:50%;                              /* Move to vertical center */
     transform:translateY(-50%);           /* Perfect vertical centering */
     color:#D4AF37;                        /* Gold star color */
-    font-size:18px;                       /* Star size */
+    font-size:24px;                       /* Larger star size */
 }
 
 .hero-location::before{
-    left:-20px;                           /* Position star on the left */
+    left:-28px;                           /* Increased left spacing */
 }
 
 .hero-location::after{
-    right:-20px;                          /* Position star on the right */
+    right:-28px;                          /* Increased right spacing */
 }
 .hero-text h1{
     font-size:52px;                        /* Main heading size */

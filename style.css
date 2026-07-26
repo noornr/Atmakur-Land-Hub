@@ -1102,93 +1102,105 @@ body{
 }
 
 
-/* ===== Hero Section (Mobile) ===== */
+/* ===== Hero Section ===== */
 
 .hero{
-    position:relative;                 /* Position parent for overlay */
-    min-height:310px;                  /* Reduced from 440px */
-    display:flex;                      /* Enable Flexbox */
-    align-items:center;                /* Center content vertically */
-    justify-content:flex-start;        /* Align content to left */
-
+    position:relative;                     /* Parent element for overlay */
+    min-height:30vh;                       /* Minimum hero height */
+    display:flex;                          /* Enable Flexbox */
+    align-items:center;                    /* Center content vertically */
+    justify-content:flex-start;            /* Align content to the left */
     background-image:url("images/hero.jpg"); /* Hero background image */
-    background-size:cover;             /* Cover entire hero */
-    background-position:center;        /* Center image */
-    background-repeat:no-repeat;       /* Prevent repeating */
-
-    padding:28px 14px;                 /* Reduced from 40px 20px */
+    background-size:cover;                 /* Fill entire hero area */
+    background-position:center;            /* Center the background image */
+    background-repeat:no-repeat;           /* Prevent image repetition */
+    padding:80px 8%;                       /* Inner spacing */
 }
 
 .hero::before{
-    content:"";                        /* Create overlay layer */
-    position:absolute;                 /* Position overlay */
-    inset:0;                           /* Cover entire hero */
-    background:rgba(0,0,0,.45);        /* Dark transparent overlay */
+    content:"";                            /* Create overlay layer */
+    position:absolute;                     /* Position overlay */
+    inset:0;                               /* Cover entire hero section */
+    background:rgba(0,0,0,.45);            /* Black transparent overlay */
 }
 
 .hero-content{
-    position:relative;                 /* Place above overlay */
-    z-index:2;                         /* Keep content visible */
-    max-width:225px;                   /* Reduced from 320px */
+    position:relative;                     /* Place content above overlay */
+    z-index:2;                             /* Keep content visible */
+    max-width:450px;                       /* Maximum content width */
 }
+
+/* ===== Location Logo ===== */
+
 .hero-location{
-    margin-bottom:16px;     /* 16px → 11px */
-    margin-left:-10px;       /* -10px → -7px */
+    margin-bottom:20px;                    /* Reduced by ~30% */
+    margin-left:-7px;                      /* Reduced by ~30% */
 }
 
 .hero-location img{
-    width:120px;            /* 230px → 161px */
-    height:auto;            /* Keep image proportions */
-    display:block;          /* Display as block element */
+    width:295px;                           /* 422px → 295px */
+    height:auto;                           /* Keep proportions */
+    display:block;                         /* Remove extra spacing */
 }
+
+/* ===== Hero Text ===== */
+
 .hero-text h1{
-    font-size:36px;                    /* Increased heading size */
-    line-height:1.08;                  /* Space between heading lines */
-    font-weight:800;                   /* Extra bold heading */
-    margin-bottom:11px;                /* Space below heading */
-    color:#fff;                        /* White heading text */
+    font-size:36px;                        /* 52px → 36px */
+    line-height:1;
+    font-weight:800;
+    color:#FFFFFF;
+    margin-bottom:10px;                    /* 15px → 10px */
 }
 
 .hero-text span{
-    color:#D4AF37;                     /* Gold highlight text */
+    color:#D4AF37;                         /* Gold highlight */
 }
 
 .hero-text p{
-    font-size:15px;                    /* Increased paragraph size */
-    line-height:1.5;                   /* Comfortable line spacing */
-    color:#E5E5E5;                     /* Light gray paragraph text */
-    margin-bottom:20px;                /* Space below paragraph */
+    font-size:13px;                        /* 18px → 13px */
+    line-height:1.6;
+    color:#E5E5E5;
+    margin-bottom:20px;                    /* 28px → 20px */
 }
 
+/* ===== Hero Buttons ===== */
+
 .hero-buttons{
-    display:flex;                      /* Arrange buttons in a row */
-    gap:8px;                           /* Reduced from 12px */
+    display:flex;
+    gap:11px;                              /* 16px → 11px */
+    flex-direction:row;
 }
 
 .btn-primary,
 .btn-secondary{
-    width:105px;                       /* Reduced from 150px */
-    height:34px;                       /* Reduced from 48px */
-
-    display:flex;                      /* Enable Flexbox */
-    justify-content:center;            /* Center text horizontally */
-    align-items:center;                /* Center text vertically */
-
-    font-size:11px;                    /* Reduced from 15px */
-    font-weight:700;                   /* Bold button text */
-
-    border-radius:7px;                 /* Reduced from 10px */
-    text-decoration:none;              /* Remove underline */
+    padding:11px 24px;                     /* Reduced by ~30% */
+    border-radius:7px;                     /* 10px → 7px */
+    text-decoration:none;
+    font-weight:700;
+    font-size:11px;                        /* Reduced button text */
+    transition:.3s;
+    width:154px;                           /* 220px → 154px */
+    text-align:center;
 }
 
 .btn-primary{
-    background:#D4AF37;                /* Gold button background */
-    color:#111111;                     /* Black text */
+    background:#D4AF37;
+    color:#111;
+}
+
+.btn-primary:hover{
+    background:#b9962d;
 }
 
 .btn-secondary{
-    border:2px solid #FFFFFF;          /* White border */
-    color:#FFFFFF;                     /* White text */
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.btn-secondary:hover{
+    background:#fff;
+    color:#111;
 }
     
 /*Search Section */

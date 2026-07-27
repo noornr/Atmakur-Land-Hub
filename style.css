@@ -1003,8 +1003,12 @@ footer p{
 
 html,
 body{
-    width:100%;                        /* Full screen width */
-    overflow-x:hidden;                 /* Prevent horizontal scrolling */
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    padding-top:95px;
 }
 
 /* ==========================================

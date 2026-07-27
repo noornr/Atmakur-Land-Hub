@@ -2142,3 +2142,51 @@ body{
     font-size:13px;
 
 }
+
+/* ===========================
+   About Us (Mobile)
+=========================== */
+
+.about{
+    padding:40px 4%;
+}
+
+.about h2{
+
+    font-size:24px;
+
+    color:#FFD700;
+
+    margin-bottom:18px;
+
+}
+
+.about-content{
+
+    background:rgba(12,12,12,.96);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:18px;
+
+    padding:22px 18px;
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 10px 22px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+}
+
+.about p{
+
+    font-size:14px;
+
+    color:#D5D5D5;
+
+    line-height:1.7;
+
+    margin:0;
+
+}

@@ -1055,12 +1055,13 @@ body{
 
     align-items:center;                 /* Vertical alignment */
 
-    gap:12px;                           /* Space between buttons */
+    gap:6px;                            /* Reduced gap between boxes */
 
     width:100%;
 
-}
+    padding:0 4px;                      /* Very small left & right padding */
 
+}
 /* ===========================
    NAVIGATION LINKS
 =========================== */
@@ -1075,25 +1076,25 @@ body{
 
     align-items:center;                 /* Horizontal center */
 
-    width:90px;                         /* Increased box width */
+    width:90px;                         /* Box width */
 
-    height:60px;                        /* Increased box height */
+    height:60px;                        /* Box height */
 
-    margin-right:10px;                  /* Gap on the right side */
+    margin-right:0;                     /* Removes extra right gap */
 
     background:#d4af37;                 /* Gold box */
 
     color:#000;                         /* Black text */
 
-    text-decoration:none;               /* No underline */
+    text-decoration:none;
 
     font-size:13px;                     /* Same font size */
 
-    font-weight:600;                    /* Same font weight */
+    font-weight:600;
 
-    border-radius:18px;                 /* More rounded corners */
+    border-radius:18px;                 /* Rounded corners */
 
-    transition:.3s;                     /* Smooth animation */
+    transition:.3s;
 
 }
 

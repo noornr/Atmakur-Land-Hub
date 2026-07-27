@@ -1051,18 +1051,21 @@ body{
 
     display:flex;                       /* Horizontal layout */
 
-    justify-content:center;             /* Centers all boxes */
+    justify-content:space-between;      /* Even spacing */
 
     align-items:center;                 /* Vertical center */
 
-    gap:0;                              /* No gap between boxes */
+    width:100%;
 
-    width:100%;                         /* Full width */
+    max-width:320px;                    /* Keeps buttons together */
 
-    padding:0;                          /* No left/right spacing */
+    margin:0 auto;                      /* Centers the group */
+
+    gap:8px;                            /* Small gap */
+
+    box-sizing:border-box;
 
 }
-
 
 /* ===========================
    NAVIGATION LINKS
@@ -1074,11 +1077,13 @@ body{
 
     flex-direction:column;              /* Icon above text */
 
+    flex:0 0 68px;                       /* Prevents stretching */
+
     justify-content:center;             /* Vertical center */
 
     align-items:center;                 /* Horizontal center */
 
-    width:72px;                         /* Box width (15% smaller) */
+    width:68px;                             /* Box width */
 
     height:51px;                        /* Box height (15% smaller) */
 

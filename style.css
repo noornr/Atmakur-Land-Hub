@@ -1023,19 +1023,6 @@ body{
 
     height:100%;
 
-    justify-content:space-evenly;
-
-    padding:0 12px;
-
-}
-.glass-navbar{
-
-    display:flex;
-
-    width:100%;
-
-    height:100%;
-
     margin:0;
     padding:0;
      padding-left:15px;   /* Move all items right */

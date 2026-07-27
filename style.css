@@ -289,6 +289,7 @@ header{
     position:absolute;
 
     top:18px;
+
     left:18px;
 
     padding:10px 20px;
@@ -298,16 +299,22 @@ header{
     color:#111;
 
     font-size:13px;
-    font-weight:700;
+
+    font-weight:800;
+
     letter-spacing:1px;
 
     border-radius:50px;
 
-    box-shadow:0 8px 20px rgba(212,175,55,.35);
+    border:1px solid rgba(255,255,255,.25);
 
-    z-index:2;
+    box-shadow:
+        0 10px 25px rgba(212,175,55,.35),
+        inset 0 1px 0 rgba(255,255,255,.30);
 
-}
+    z-index:3;
+
+    animation:badgeFloat 2.5s ease-in-out infinite;
 
 }
 .price{

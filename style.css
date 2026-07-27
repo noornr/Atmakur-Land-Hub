@@ -1048,27 +1048,55 @@ body{
 }
 
 .nav-item{
-
     width:25%;
 
     display:flex;
-
     flex-direction:column;
 
     justify-content:center;
-
     align-items:center;
+
+    text-align:center;
 
     text-decoration:none;
 
-    color:#ffffff;
+    color:#fff;
+
+    position:relative;
+
+    gap:8px;           /* Space between icon and text */
 
     border-right:1px solid rgba(255,255,255,.10);
 
     transition:.3s;
+}
+
+
+.nav-item i{
+
+    display:block;
+
+    font-size:28px;
+
+    color:#D4AF37;
+
+    line-height:1;
 
 }
 
+.nav-item span{
+
+    display:block;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    line-height:1;
+
+    color:#fff;
+
+}
 .nav-item:last-child{
 
     border-right:none;

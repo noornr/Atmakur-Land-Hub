@@ -1081,7 +1081,9 @@ body{
     height:60px;                        /* Box height */
 
     margin-right:0;                     /* Removes extra right gap */
-
+    
+    margin-right:0;                     /* No right gap */
+    
     background:#d4af37;                 /* Gold box */
 
     color:#000;                         /* Black text */

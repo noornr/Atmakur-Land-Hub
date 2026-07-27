@@ -1132,20 +1132,20 @@ body{
 
 .hero-buttons{
     display:flex;
-    gap:11px;                              /* 16px → 11px */
+    gap:8px;                 /* Reduced from 11px */
     flex-direction:row;
 }
 
 .btn-primary,
 .btn-secondary{
-    padding:11px 24px;                     /* Reduced by ~30% */
-    border-radius:7px;                     /* 10px → 7px */
-    text-decoration:none;
+    padding:9px 20px;        /* Smaller padding */
+    width:123px;             /* 154px → 123px (≈20% smaller) */
+    border-radius:6px;
+    font-size:10px;          /* Smaller text */
     font-weight:700;
-    font-size:11px;                        /* Reduced button text */
-    transition:.3s;
-    width:154px;                           /* 220px → 154px */
+    text-decoration:none;
     text-align:center;
+    transition:.3s;
 }
 
 .btn-primary{

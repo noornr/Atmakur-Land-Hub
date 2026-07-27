@@ -1053,6 +1053,8 @@ body{
 
 .nav-item{
 
+    position:relative;
+
     flex:1;
 
     display:flex;
@@ -1062,7 +1064,7 @@ body{
 
     text-decoration:none;
 
-    color:#ffffff;
+    color:#fff;
 
     height:100%;
 
@@ -1088,7 +1090,36 @@ body{
 
     color:#ffffff;
 }
-   
+
+.nav-item.active{
+
+    background:rgba(212,175,55,.12);
+
+    border:1px solid rgba(212,175,55,.35);
+
+}
+
+.nav-item.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:6px;
+
+    width:24px;
+
+    height:3px;
+
+    background:#D4AF37;
+
+    border-radius:10px;
+
+    box-shadow:0 0 8px rgba(212,175,55,.7);
+
+}
+
+
 /* ===== Hero Section ===== */
 
 .hero{

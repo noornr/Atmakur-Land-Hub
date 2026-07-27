@@ -902,6 +902,14 @@ footer p:last-child{
     margin:70px 0 50px;                    /* Top & bottom spacing */
 }
 
+.search-section h2{
+    font-size:32px;
+    font-weight:700;
+    color:#FFFFFF;
+    margin-bottom:25px;
+    text-align:center;
+}
+
 .section-title h2{
     font-size:42px;                        /* Heading text size */
     font-weight:800;                       /* Extra bold heading */

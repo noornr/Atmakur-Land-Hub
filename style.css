@@ -1100,9 +1100,12 @@ body{
 }
 
 .hero-location img{
-    width:295px;                           /* 422px → 295px */
-    height:auto;                           /* Keep proportions */
-    display:block;                         /* Remove extra spacing */
+    width:295px;
+    height:auto;
+    display:block;
+
+    position:relative;
+    top:-30px;
 }
 
 /* ===== Hero Text ===== */

@@ -697,6 +697,84 @@ header{
     transform:scale(1.1);                  /* Increase size on hover */
 }
 
+/* ===========================
+   Why Choose Us (Desktop)
+=========================== */
+
+.why-us{
+    padding:60px 5%;
+    background:#050505;
+}
+
+.why-us h2{
+    text-align:center;
+    color:#FFD700;
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:35px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why-card{
+
+    background:rgba(12,12,12,.96);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:20px;
+
+    padding:28px 22px;
+
+    text-align:center;
+
+    backdrop-filter:blur(16px);
+
+    transition:all .35s ease;
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#D4AF37;
+
+    box-shadow:
+        0 18px 40px rgba(212,175,55,.20);
+
+}
+
+.why-card h3{
+
+    color:#FFFFFF;
+
+    font-size:20px;
+
+    margin-bottom:14px;
+
+    font-weight:600;
+
+}
+
+.why-card p{
+
+    color:#D5D5D5;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
 footer{
     background:#050505;                    /* Dark background */
     color:#FFFFFF;                         /* White text */

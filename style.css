@@ -980,13 +980,6 @@ footer p:last-child{
     color:#D4AF37;                         /* Gold highlighted text */
 }
 
-.price{
-    color:#D4AF37;                         /* Gold price */
-    font-size:28px;                        /* Price text size */
-    font-weight:700;                       /* Bold price */
-    margin:18px 0;                         /* Top & bottom spacing */
-}
-
 .slider{
     position:relative;                     /* Parent for navigation buttons */
     max-width:100%;                        /* Full available width */

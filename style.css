@@ -2308,68 +2308,69 @@ body{
 
 }
 
+
 /* ===========================
-   Contact Us (Mobile)
+Contact Us (Mobile)
 =========================== */
 
 .contact{
-    padding:32px 4%;
+padding:40px 4%;
 }
 
 .contact h2{
 
-    font-size:20px;
+font-size:24px;  
 
-    margin-bottom:14px;
+margin-bottom:18px;
 
 }
 
 .contact p{
 
-    font-size:12px;
+font-size:14px;  
 
-    line-height:1.6;
+line-height:1.7;  
 
-    margin-bottom:10px;
+margin-bottom:12px;
 
 }
 
 .contact-box{
 
-    margin-top:18px;
+margin-top:24px;  
 
-    padding:18px 15px;
+padding:22px 18px;  
 
-    background:rgba(12,12,12,.96);
+background:rgba(12,12,12,.96);  
 
-    border:1px solid rgba(212,175,55,.18);
+border:1px solid rgba(212,175,55,.18);  
 
-    border-radius:16px;
+border-radius:18px;  
 
-    backdrop-filter:blur(16px);
+backdrop-filter:blur(16px);  
 
-    box-shadow:
-        0 8px 18px rgba(0,0,0,.40),
-        inset 0 1px 0 rgba(255,255,255,.05);
+box-shadow:  
+    0 10px 22px rgba(0,0,0,.40),  
+    inset 0 1px 0 rgba(255,255,255,.05);
 
 }
 
 .call-btn,
 .contact .whatsapp-btn{
 
-    display:block;
+display:block;  
 
-    width:100%;
+width:100%;  
 
-    margin:10px 0 0;
+margin:12px 0 0;  
 
-    padding:11px 16px;
+padding:13px 18px;  
 
-    border-radius:10px;
+border-radius:12px;  
 
-    text-align:center;
+text-align:center;  
 
-    font-size:14px;
+font-size:15px;
 
 }
 

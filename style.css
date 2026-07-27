@@ -1158,6 +1158,100 @@ body{
     transform:translateY(-2px) scale(1.06);
 
 }
+
+    /* ==========================================
+   SIGNATURE ATMAKUR FINAL EFFECTS
+========================================== */
+
+/* Smooth Animation */
+.glass-navbar,
+.nav-item,
+.nav-icon,
+.nav-item span{
+    transition:all .35s ease;
+}
+
+/* Gold Border Glow */
+.glass-navbar:hover{
+
+    border-color:#D4AF37;
+
+    box-shadow:
+        0 0 20px rgba(212,175,55,.25),
+        0 12px 35px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.08);
+
+}
+
+/* Premium Button Press */
+.nav-item:active{
+
+    transform:scale(.96);
+
+}
+
+/* Active Text */
+.nav-item.active span{
+
+    color:#D4AF37;
+
+}
+
+/* Active Icon Scale */
+.nav-item.active .nav-icon{
+
+    transform:translateY(-2px) scale(1.08);
+
+}
+
+/* Glass Shine Animation */
+.glass-navbar::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:60%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    animation:glassShine 6s linear infinite;
+
+    border-radius:24px;
+
+}
+
+@keyframes glassShine{
+
+    0%{
+        left:-120%;
+    }
+
+    100%{
+        left:160%;
+    }
+
+}
+
+/* Prevent Overflow */
+.glass-navbar{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
    
 /* ===== Hero Section ===== */
 

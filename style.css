@@ -1055,7 +1055,7 @@ body{
 
     align-items:center;                 /* Vertical alignment */
 
-    gap:2px;                            /* Reduced gap between boxes */
+    gap:0;                            /* Reduced gap between boxes */
 
     width:100%;
 

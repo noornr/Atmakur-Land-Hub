@@ -1064,7 +1064,7 @@ body{
 
     flex:1;
 
-    height:56px;
+    height:50px;
 
     display:flex;
 
@@ -1088,8 +1088,8 @@ body{
 /* Gold Circle Icon */
 .nav-icon{
 
-    width:38px;
-    height:38px;
+    width:34px;
+    height:34px;
 
     display:flex;
     justify-content:center;
@@ -1109,7 +1109,7 @@ body{
 /* Icon */
 .nav-icon i{
 
-    font-size:16px;
+    font-size:15px;
 
     color:#111111;
 
@@ -1119,7 +1119,7 @@ body{
 /* Navigation Text */
 .nav-item span{
 
-    margin-top:6px;
+    margin-top:4px;
 
     font-size:11px;
 

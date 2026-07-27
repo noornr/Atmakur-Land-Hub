@@ -1049,16 +1049,17 @@ body{
 
 .nav-links{
 
-    display:flex;                       /* Places all menu boxes in one row */
+    display:flex;                       /* Horizontal layout */
 
-    width:100%;                         /* Uses full navbar width */
+    justify-content:center;             /* Centers all buttons */
 
-    height:100%;                        /* Matches navbar height */
+    align-items:center;                 /* Vertical alignment */
 
-    gap:0;                              /* Removes gaps between boxes */
+    gap:12px;                           /* Space between buttons */
+
+    width:100%;
 
 }
-
 
 /* ===========================
    NAVIGATION LINKS
@@ -1066,33 +1067,33 @@ body{
 
 .nav-links a{
 
-    flex:1;                             /* All boxes have equal width */
-
-    display:flex;                       /* Enables Flexbox */
+    display:flex;                       /* Flexbox */
 
     flex-direction:column;              /* Icon above text */
 
-    justify-content:center;             /* Centers vertically */
+    justify-content:center;             /* Vertical center */
 
-    align-items:center;                 /* Centers horizontally */
+    align-items:center;                 /* Horizontal center */
 
-    background:#d4af37;                 /* Premium gold box */
+    width:72px;                         /* Fixed button width */
 
-    color:#000;                         /* Black text */
+    height:48px;                        /* Fixed button height */
 
-    text-decoration:none;               /* Removes underline */
+    background:#d4af37;                 /* Gold */
 
-    font-size:13px;                     /* Original font size */
+    color:#000;                         /* Black */
 
-    font-weight:600;                    /* Semi-bold text */
+    text-decoration:none;
 
-    transition:.3s;                     /* Smooth hover animation */
+    font-size:13px;                     /* Same font size */
 
-    border-right:1px solid rgba(0,0,0,.20);
-                                        /* Thin divider between boxes */
+    font-weight:600;
+
+    border-radius:12px;                 /* Curved corners */
+
+    transition:.3s;
 
 }
-
 
 /* ===========================
    LAST MENU ITEM

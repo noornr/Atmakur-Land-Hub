@@ -1728,56 +1728,77 @@ body{
 /*Search Section */
 
 .search-section{
-    margin-top:-20px;                    /* Move section slightly upward */
-    padding:0 15px;                      /* Left & right spacing */
+    margin-top:-20px;
+    padding:0 15px;
 }
 
 .search-section h2{
-    font-size:24px;                      /* Smaller heading */
-    font-weight:700;                     /* Bold heading */
-    color:#FFFFFF;                       /* White text */
-    margin-bottom:20px;                  /* Space below heading */
-    text-align:center;                   /* Center heading */
+    font-size:24px;
+    font-weight:700;
+    color:#FFD700;
+    margin-bottom:20px;
+    text-align:center;
 }
 
 .search-box{
-    width:100%;                          /* Full width */
-    display:flex;                        /* Enable Flexbox */
-    flex-direction:column;               /* Stack input & button */
-    gap:12px;                            /* Space between input & button */
-    margin:auto;                         /* Center container */
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin:auto;
+
+    background:rgba(12,12,12,.96);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 10px 22px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    padding:12px;
 }
 
 .search-box input{
-    width:100%;                          /* Full width input */
-    padding:14px;                        /* Inner spacing */
-    font-size:15px;                      /* Input text size */
-    border:1px solid #444444;            /* Dark border */
-    border-radius:10px;                  /* Rounded corners */
-    background:#1A1A1A;                  /* Dark background */
-    color:#FFFFFF;                       /* White text */
-    box-sizing:border-box;               /* Include padding in width */
+    width:100%;
+    padding:14px;
+    font-size:15px;
+    border:1px solid #2E2E2E;
+    border-radius:10px;
+    background:#151515;
+    color:#FFFFFF;
+    box-sizing:border-box;
+    transition:.3s;
 }
 
 .search-box input::placeholder{
-    color:#AAAAAA;                       /* Gray placeholder */
+    color:#AAAAAA;
+}
+
+.search-box input:focus{
+    outline:none;
+    border-color:#D4AF37;
+    box-shadow:0 0 10px rgba(212,175,55,.18);
 }
 
 .search-box button{
-    width:100%;                          /* Full width button */
-    padding:14px;                        /* Inner spacing */
-    font-size:15px;                      /* Button text size */
-    font-weight:700;                     /* Bold text */
-    background:#D4AF37;                  /* Gold background */
-    color:#111111;                       /* Black text */
-    border:none;                         /* Remove border */
-    border-radius:10px;                  /* Rounded corners */
-    cursor:pointer;                      /* Hand cursor */
-    transition:.3s;                      /* Smooth hover effect */
+    width:100%;
+    padding:14px;
+    font-size:15px;
+    font-weight:700;
+    background:linear-gradient(135deg,#D4AF37,#F4C542);
+    color:#111111;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .search-box button:hover{
-    background:#F4C542;                  /* Lighter gold on hover */
+    box-shadow:0 8px 18px rgba(212,175,55,.25);
 }
 .card{
 

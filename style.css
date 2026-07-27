@@ -800,69 +800,7 @@ footer p:last-child{
     font-weight:500;
 
 }
-.property-details{
-    max-width:900px;                       /* Maximum content width */
-    margin:60px auto;                      /* Center section */
-    background:#fff;                       /* White background */
-    padding:30px;                          /* Inner spacing */
-    border-radius:20px;                    /* Rounded corners */
-    box-shadow:0 10px 30px rgba(0,0,0,.1); /* Shadow effect */
-}
 
-.property-details img{
-    width:100%;                            /* Full image width */
-    border-radius:15px;                    /* Rounded image corners */
-    margin-bottom:25px;                    /* Space below image */
-}
-
-.property-details h1{
-    color:#0F172A;                         /* Dark heading */
-    margin-bottom:10px;                    /* Space below heading */
-}
-
-.property-details h2{
-    color:#D4AF37;                         /* Gold subheading */
-    margin-bottom:20px;                    /* Space below subheading */
-}
-
-.property-details p{
-    margin:12px 0;                         /* Top & bottom spacing */
-    line-height:1.8;                       /* Comfortable line spacing */
-}
-
-.gallery{
-    display:grid;                          /* Enable CSS Grid */
-    grid-template-columns:repeat(2,1fr);   /* Two equal-width columns */
-    gap:15px;                              /* Space between images */
-    margin-bottom:30px;                    /* Space below gallery */
-}
-
-.gallery img{
-    width:100%;                            /* Full image width */
-    height:250px;                          /* Fixed image height */
-    object-fit:cover;                      /* Fill area without distortion */
-    border-radius:15px;                    /* Rounded image corners */
-    transition:.3s;                        /* Smooth hover animation */
-}
-
-.gallery img:hover{
-    transform:scale(1.03);                 /* Slight zoom on hover */
-}
-
-.highlights{
-    list-style:none;                       /* Remove bullet points */
-    padding:0;                             /* Remove inner spacing */
-    margin:25px 0;                         /* Top & bottom spacing */
-}
-
-.highlights li{
-    background:#f8f8f8;                    /* Light background */
-    margin:10px 0;                         /* Space between items */
-    padding:15px;                          /* Inner spacing */
-    border-left:5px solid #D4AF37;         /* Gold left border */
-    border-radius:8px;                     /* Rounded corners */
-    font-size:17px;                        /* Text size */
-}
 
 .testimonials{
     padding:90px 8%;                       /* Section spacing */
@@ -915,45 +853,6 @@ footer p:last-child{
 .testimonial-card span{
     color:#999999;                         /* Gray designation text */
     font-size:15px;                        /* Designation text size */
-}
-
-.enquiry-form{
-    display:flex;                          /* Enable Flexbox */
-    flex-direction:column;                 /* Arrange fields vertically */
-    gap:15px;                              /* Space between form fields */
-    margin:30px 0;                         /* Top & bottom spacing */
-}
-
-.enquiry-form input,
-.enquiry-form textarea{
-    width:100%;                            /* Full input width */
-    padding:15px;                          /* Inner spacing */
-    border:2px solid #D4AF37;              /* Gold border */
-    border-radius:10px;                    /* Rounded corners */
-    font-size:16px;                        /* Input text size */
-    outline:none;                          /* Remove default focus outline */
-    box-sizing:border-box;                 /* Include padding in width */
-}
-
-.enquiry-form textarea{
-    height:120px;                          /* Textarea height */
-    resize:vertical;                       /* Allow only vertical resizing */
-}
-
-.enquiry-form button{
-    background:#D4AF37;                    /* Gold background */
-    color:#0F172A;                         /* Dark text */
-    border:none;                           /* Remove border */
-    padding:15px;                          /* Inner spacing */
-    border-radius:10px;                    /* Rounded corners */
-    font-size:17px;                        /* Button text size */
-    font-weight:bold;                      /* Bold button text */
-    cursor:pointer;                        /* Hand cursor on hover */
-    transition:0.3s;                       /* Smooth hover animation */
-}
-
-.enquiry-form button:hover{
-    background:#c89b2c;                    /* Darker gold on hover */
 }
 
 .featured-property{

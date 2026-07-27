@@ -1399,46 +1399,104 @@ footer p:last-child{
     transform:translateY(-2px);            /* Lift button slightly */
 }
 
+/* ===========================
+   Premium Search Section
+=========================== */
+
 .search-section{
-    margin-top:-45px;                      /* Move search section upward */
-    position:relative;                     /* Allow z-index positioning */
-    z-index:10;                            /* Display above hero section */
+    margin-top:-45px;
+    position:relative;
+    z-index:10;
 }
 
 .search-box{
-    max-width:750px;                       /* Maximum search box width */
-    margin:auto;                           /* Center horizontally */
-    display:flex;                          /* Arrange input & button in a row */
-    gap:15px;                              /* Space between input and button */
+
+    max-width:750px;
+
+    margin:auto;
+
+    display:flex;
+
+    gap:15px;
+
+    padding:12px;
+
+    background:rgba(12,12,12,.96);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
 }
 
 .search-box input{
-    flex:1;                                /* Take remaining width */
-    padding:16px;                          /* Inner spacing */
-    font-size:16px;                        /* Input text size */
-    border:1px solid #444444;              /* Dark border */
-    border-radius:10px;                    /* Rounded corners */
-    background:#1A1A1A;                    /* Dark background */
-    color:#FFFFFF;                         /* White text */
+
+    flex:1;
+
+    padding:16px;
+
+    font-size:16px;
+
+    border:1px solid #2E2E2E;
+
+    border-radius:12px;
+
+    background:#151515;
+
+    color:#FFFFFF;
+
+    transition:.3s;
+
 }
 
 .search-box input::placeholder{
-    color:#AAAAAA;                         /* Gray placeholder text */
+
+    color:#9A9A9A;
+
+}
+
+.search-box input:focus{
+
+    outline:none;
+
+    border-color:#D4AF37;
+
+    box-shadow:0 0 12px rgba(212,175,55,.18);
+
 }
 
 .search-box button{
-    background:#D4AF37;                    /* Gold background */
-    color:#111111;                         /* Black text */
-    border:none;                           /* Remove border */
-    padding:16px 28px;                     /* Inner spacing */
-    border-radius:10px;                    /* Rounded corners */
-    font-weight:700;                       /* Bold text */
-    cursor:pointer;                        /* Hand cursor */
-    transition:.3s;                        /* Smooth hover animation */
+
+    background:linear-gradient(135deg,#D4AF37,#F4C542);
+
+    color:#050505;
+
+    border:none;
+
+    padding:16px 28px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
 .search-box button:hover{
-    background:#F4C542;                    /* Lighter gold on hover */
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 22px rgba(212,175,55,.28);
+
 }
 
 /* ===========================

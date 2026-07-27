@@ -1027,7 +1027,7 @@ body{
 
     box-sizing:border-box;              /* Includes padding inside width */
 
-    transform:translateX(-6px);    /* Moves all yellow boxes left */
+    transform:translateX(-8px);    /* Moves all yellow boxes left */
 
 }
 

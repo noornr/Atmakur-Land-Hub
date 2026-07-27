@@ -220,6 +220,35 @@ header{
 
 }
 
+.card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-130%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.14),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    transition:left .8s ease;
+
+    pointer-events:none;
+
+}
+
 /* ADD IT HERE ↓ */
 
 .card:hover{

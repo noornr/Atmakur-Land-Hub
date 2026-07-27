@@ -30,7 +30,7 @@ header{
     align-items:center;                 /* Vertically center all items */
     padding:15px 8%;                    /* Top/bottom & left/right spacing */
     min-height:90px;                    /* Minimum navbar height */
-    background:#111111;                 /* Dark navbar background */
+    background:#050505;                 /* Dark navbar background */
     border-bottom:1px solid #2A2A2A;    /* Bottom border */
 }
 

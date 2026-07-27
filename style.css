@@ -166,6 +166,7 @@ header{
     color:#111;                            /* Black text on hover */
 }
 .properties{
+    background:#050505;
     padding:60px 8%;                        /* Section spacing (top/bottom & left/right) */
 }
 

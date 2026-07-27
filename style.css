@@ -1801,6 +1801,8 @@ body{
 
 
 .property-grid{
+    
+    background:#050505;
 
     display:grid;
 
@@ -1819,7 +1821,7 @@ body{
     gap:12px;
 
     padding:40px 4%;
-
+    background:#050505;
 }
 
 .stat-box{

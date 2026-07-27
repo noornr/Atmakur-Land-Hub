@@ -861,13 +861,6 @@ footer p:last-child{
     z-index:10;                            /* Display above hero section */
 }
 
-.search-section h2{
-    font-size:40px;                        /* Heading text size */
-    font-weight:700;                       /* Bold heading */
-    color:#FFFFFF;                         /* White heading */
-    margin-bottom:30px;                    /* Space below heading */
-}
-
 .search-box{
     max-width:750px;                       /* Maximum search box width */
     margin:auto;                           /* Center horizontally */
@@ -1227,12 +1220,6 @@ body{
     margin:40px 15px 30px;               /* Reduced spacing */
 }
 
-.section-title h2{
-    font-size:28px;                      /* Smaller heading */
-    font-weight:800;                     /* Extra bold */
-    color:#D4AF37;                       /* Gold heading */
-    margin-bottom:10px;                  /* Space below heading */
-}
 
 .section-title p{
     font-size:15px;                      /* Smaller paragraph */

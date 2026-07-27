@@ -293,6 +293,23 @@ header{
 }
 
 }
+.price{
+
+    margin:18px 0;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#FFD700;
+
+    letter-spacing:.5px;
+
+    text-shadow:0 0 10px rgba(212,175,55,.30);
+
+}
+
+}
 
 .card-content{
 
@@ -1420,6 +1437,24 @@ body{
     box-shadow:0 6px 16px rgba(212,175,55,.35);
 
     z-index:2;
+
+}
+
+}
+
+.price{
+
+    margin:16px 0;
+
+    font-size:24px;
+
+    font-weight:800;
+
+    color:#FFD700;
+
+    letter-spacing:.5px;
+
+    text-shadow:0 0 8px rgba(212,175,55,.30);
 
 }
 

@@ -1371,12 +1371,11 @@ body{
     background:#F4C542;                  /* Lighter gold on hover */
 }
 .card{
+
+    width:100%;
     position:relative;
-    max-width:100%;
-    margin:20px auto;
-}
-.card{
-    ...
+    max-width:300%;
+    margin:auto;
 }
 
 .card::before{
@@ -1622,5 +1621,19 @@ body{
 .details-btn:active{
 
     transform:scale(.98);
+
+}
+
+
+
+.property-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;   /* One property per row */
+
+    gap:24px;
+
+    width:100%;
 
 }

@@ -1017,28 +1017,28 @@ body{
 
     position:fixed;                     /* Keeps navbar fixed while scrolling */
 
-    top:0;                              /* Sticks to the top of the screen */
+    top:0;                              /* Sticks to the top */
 
-    left:0;                             /* Starts from the left edge */
+    left:0;                             /* Starts from the left */
 
     width:100%;                         /* Full screen width */
 
     height:56px;                        /* Navbar height */
 
-    display:flex;                       /* Enables Flexbox layout */
+    display:flex;                       /* Flexbox layout */
 
-    align-items:center;                 /* Vertically centers navigation */
+    justify-content:center;             /* Centers navigation */
 
-    justify-content:center;             /* Centers navigation horizontally */
+    align-items:center;                 /* Vertical alignment */
 
-    padding:0;                          /* Removes extra spacing */
+    padding:0;                          /* Removes extra padding */
 
     background:#050505;                 /* Premium black background */
 
     border-bottom:1px solid rgba(212,175,55,.35);
-                                        /* Thin luxury gold bottom border */
+                                        /* Luxury gold bottom border */
 
-    z-index:1000;                       /* Always stays above page content */
+    z-index:1000;                       /* Always on top */
 
 }
 
@@ -1051,17 +1051,19 @@ body{
 
     display:flex;                       /* Horizontal layout */
 
-    justify-content:center;             /* Centers all buttons */
+    justify-content:center;             /* Centers all boxes */
 
-    align-items:center;                 /* Vertical alignment */
+    align-items:center;                 /* Vertical center */
 
-    gap:0;                            /* Reduced gap between boxes */
+    gap:0;                              /* No gap between boxes */
 
-    width:100%;
+    width:100%;                         /* Full width */
 
-    padding:0;                      /* Very small left & right padding */
+    padding:0;                          /* No left/right spacing */
 
 }
+
+
 /* ===========================
    NAVIGATION LINKS
 =========================== */
@@ -1076,37 +1078,25 @@ body{
 
     align-items:center;                 /* Horizontal center */
 
-    width:90px;                         /* Box width */
+    width:76px;                         /* Box width (15% smaller) */
 
-    height:60px;                        /* Box height */
+    height:51px;                        /* Box height (15% smaller) */
 
-    margin-right:0;                     /* Removes extra right gap */
-    
-    margin-right:0;                     /* No right gap */
-    
-    background:#d4af37;                 /* Gold box */
+    margin:0;                           /* Removes all margins */
+
+    background:#d4af37;                 /* Premium gold */
 
     color:#000;                         /* Black text */
 
-    text-decoration:none;
+    text-decoration:none;               /* Removes underline */
 
-    font-size:13px;                     /* Same font size */
+    font-size:10px;                     /* Text 25% smaller */
 
-    font-weight:600;
+    font-weight:600;                    /* Semi-bold */
 
-    border-radius:18px;                 /* Rounded corners */
+    border-radius:15px;                 /* Rounded corners */
 
-    transition:.3s;
-
-}
-
-/* ===========================
-   LAST MENU ITEM
-=========================== */
-
-.nav-links a:last-child{
-
-    border-right:none;                  /* Removes last divider */
+    transition:.3s;                     /* Smooth animation */
 
 }
 
@@ -1119,7 +1109,9 @@ body{
 
     color:#000;                         /* Black icon */
 
-    margin-bottom:4px;                  /* Small gap below icon */
+    font-size:15px;                     /* Icon 25% smaller */
+
+    margin-bottom:2px;                  /* Small gap below icon */
 
 }
 
@@ -1132,7 +1124,13 @@ body{
 
     color:#000;                         /* Black text */
 
+    font-size:10px;                     /* Text 25% smaller */
+
+    font-weight:600;                    /* Semi-bold */
+
     text-align:center;                  /* Centers text */
+
+    line-height:1;                      /* Compact spacing */
 
 }
 
@@ -1143,9 +1141,9 @@ body{
 
 .nav-links a:hover{
 
-    background:#e6be45;                 /* Slightly brighter gold */
+    background:#e6be45;                 /* Brighter gold */
 
-    color:#000;                         /* Keeps text black */
+    color:#000;                         /* Keep text black */
 
 }
 
@@ -1156,7 +1154,7 @@ body{
 
 .nav-links a.active{
 
-    background:#f2ca4f;                 /* Highlight active page */
+    background:#f2ca4f;                 /* Active page highlight */
 
     color:#000;                         /* Black text */
 

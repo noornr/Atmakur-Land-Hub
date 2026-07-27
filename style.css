@@ -1010,98 +1010,61 @@ body{
 
 
 /* ===========================
-   PREMIUM MOBILE NAVBAR
-=========================== */
-
-.navbar{
-
-    position:fixed;                     /* Keeps navbar fixed while scrolling */
-
-    top:0;                              /* Sticks to the top */
-
-    left:0;                             /* Starts from the left */
-
-    width:100%;                         /* Full screen width */
-
-    height:56px;                        /* Navbar height */
-
-    display:flex;                       /* Flexbox layout */
-
-    justify-content:center;             /* Centers navigation */
-
-    align-items:center;                 /* Vertical alignment */
-
-    padding:0;                          /* Removes extra padding */
-
-    background:#050505;                 /* Premium black background */
-
-    border-bottom:1px solid rgba(212,175,55,.35);
-                                        /* Luxury gold bottom border */
-
-    z-index:1000;                       /* Always on top */
-
-}
-
-
-/* ===========================
    NAVIGATION CONTAINER
 =========================== */
 
 .nav-links{
 
-    display:flex;                       /* Horizontal layout */
+    display:flex;                       /* Places all buttons in one row */
 
-    justify-content:space-between;      /* Even spacing */
+    justify-content:space-evenly;       /* Gives equal space between all buttons */
 
-    align-items:center;                 /* Vertical center */
+    align-items:center;                 /* Centers buttons vertically */
 
-    width:100%;
+    width:100%;                         /* Uses full navbar width */
 
-    max-width:320px;                    /* Keeps buttons together */
+    padding:0 8px;                      /* Small left & right spacing */
 
-    margin:0 auto;                      /* Centers the group */
-
-    gap:8px;                            /* Small gap */
-
-    box-sizing:border-box;
+    box-sizing:border-box;              /* Includes padding inside width */
 
 }
 
+
 /* ===========================
-   NAVIGATION LINKS
+   NAVIGATION BUTTONS
 =========================== */
 
 .nav-links a{
 
-    display:flex;                       /* Flexbox */
+    display:flex;                       /* Enables Flexbox */
 
     flex-direction:column;              /* Icon above text */
 
-    flex:0 0 68px;                       /* Prevents stretching */
+    justify-content:center;             /* Centers content vertically */
 
-    justify-content:center;             /* Vertical center */
+    align-items:center;                 /* Centers content horizontally */
 
-    align-items:center;                 /* Horizontal center */
+    flex:0 0 68px;                      /* Fixed width (doesn't stretch) */
 
-    width:68px;                             /* Box width */
+    width:68px;                         /* Button width */
 
-    height:51px;                        /* Box height (15% smaller) */
+    height:51px;                        /* Button height */
 
-    margin:0;                           /* Removes all margins */
+    margin:0;                           /* Removes outside spacing */
 
-    background:#d4af37;                 /* Premium gold */
+    background:#d4af37;                 /* Premium gold background */
 
     color:#000;                         /* Black text */
 
     text-decoration:none;               /* Removes underline */
 
-    font-size:10px;                     /* Text 25% smaller */
-
-    font-weight:600;                    /* Semi-bold */
-
     border-radius:15px;                 /* Rounded corners */
 
-    transition:.3s;                     /* Smooth animation */
+    font-size:10px;                     /* Text size */
+
+    font-weight:600;                    /* Semi-bold text */
+
+    transition:.3s;                     /* Smooth hover animation */
 
 }
 
@@ -1112,11 +1075,11 @@ body{
 
 .nav-links a i{
 
+    font-size:15px;                     /* Icon size */
+
     color:#000;                         /* Black icon */
 
-    font-size:15px;                     /* Icon 25% smaller */
-
-    margin-bottom:2px;                  /* Small gap below icon */
+    margin-bottom:2px;                  /* Space between icon & text */
 
 }
 
@@ -1127,28 +1090,24 @@ body{
 
 .nav-links a span{
 
+    font-size:10px;                     /* Text size */
+
     color:#000;                         /* Black text */
-
-    font-size:10px;                     /* Text 25% smaller */
-
-    font-weight:600;                    /* Semi-bold */
 
     text-align:center;                  /* Centers text */
 
-    line-height:1;                      /* Compact spacing */
+    line-height:1;                      /* Compact text height */
 
 }
 
 
 /* ===========================
-   HOVER EFFECT
+   HOVER
 =========================== */
 
 .nav-links a:hover{
 
-    background:#e6be45;                 /* Brighter gold */
-
-    color:#000;                         /* Keep text black */
+    background:#e6be45;                 /* Brighter gold on hover */
 
 }
 
@@ -1159,9 +1118,7 @@ body{
 
 .nav-links a.active{
 
-    background:#f2ca4f;                 /* Active page highlight */
-
-    color:#000;                         /* Black text */
+    background:#f2ca4f;                 /* Highlight current page */
 
 }
 

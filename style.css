@@ -897,34 +897,6 @@ footer p:last-child{
     background:#F4C542;                    /* Lighter gold on hover */
 }
 
-.section-title{
-    text-align:center;                     /* Center all content */
-    margin:70px 0 50px;                    /* Top & bottom spacing */
-}
-
-.search-section h2{
-    font-size:32px;
-    font-weight:700;
-    color:#FFFFFF;
-    margin-bottom:25px;
-    text-align:center;
-}
-
-.section-title h2{
-    font-size:42px;                        /* Heading text size */
-    font-weight:800;                       /* Extra bold heading */
-    color:#D4AF37;                         /* Gold heading */
-    margin-bottom:15px;                    /* Space below heading */
-}
-
-.section-title p{
-    color:#FFFFFF;                          /* Pure white text */
-    font-size:18px;                        /* Paragraph text size */
-    line-height:1.7;                       /* Comfortable line spacing */
-    max-width:700px;                       /* Maximum paragraph width */
-    margin:auto;                           /* Center paragraph */
-}
-
 .why-us{
     padding:90px 8%;                       /* Section spacing */
     background:#111111;                    /* Dark background */
@@ -1223,16 +1195,3 @@ body{
     background:#F4C542;                  /* Lighter gold on hover */
 }
 
-.section-title{
-    text-align:center;                   /* Center content */
-    margin:40px 15px 30px;               /* Reduced spacing */
-}
-
-
-.section-title p{
-    font-size:15px;                      /* Smaller paragraph */
-    line-height:1.6;                     /* Comfortable spacing */
-    color:#FFFFFF;                        /* Pure white text */
-    max-width:100%;                      /* Full width */
-    margin:auto;                         /* Center paragraph */
-}

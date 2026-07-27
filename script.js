@@ -98,3 +98,34 @@ if (copy) {
         alert("Property link copied!");
     });
 }
+const text = "Find Your Perfect Property";
+
+const typing = document.getElementById("typing");
+
+let index = 0;
+let deleting = false;
+
+function typeEffect() {
+
+    if (!deleting) {
+        typing.textContent = text.substring(0, index++);
+    } else {
+        typing.textContent = text.substring(0, index--);
+    }
+
+    let speed = deleting ? 60 : 100;
+
+    if (!deleting && index > text.length) {
+        deleting = true;
+        speed = 1500; // Wait before deleting
+    }
+
+    if (deleting && index < 0) {
+        deleting = false;
+        speed = 500; // Wait before typing again
+    }
+
+    setTimeout(typeEffect, speed);
+}
+
+typeEffect();

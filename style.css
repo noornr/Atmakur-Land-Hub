@@ -1110,7 +1110,7 @@ body{
 /* ===== Hero Text ===== */
 
 .hero-text h1{
-    font-size:36px;                        /* 52px → 36px */
+    font-size:29px;                        /* 52px → 36px */
     line-height:1;
     font-weight:800;
     color:#FFFFFF;

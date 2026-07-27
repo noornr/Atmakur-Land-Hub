@@ -118,18 +118,7 @@ header{
     color:#FFFFFF;                         /* White heading */
     margin-bottom:15px;                    /* Space below heading */
 }
-#typing{
-    border-right:3px solid #D4AF37;
-    white-space:nowrap;
-    overflow:hidden;
-    animation:blink .8s infinite;
-}
 
-@keyframes blink{
-    50%{
-        border-color:transparent;
-    }
-}
 .hero-text span{
     color:#D4AF37;                         /* Gold highlighted text */
 }

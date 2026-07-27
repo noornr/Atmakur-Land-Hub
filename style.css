@@ -999,7 +999,7 @@ footer p{
 
 
 /* Mobile */
-@media (max-width:768px){              /* Apply styles only on screens 768px or smaller */
+@media (max-width:768px){
 
 html,
 body{
@@ -1008,7 +1008,7 @@ body{
 }
 
 body{
-    padding-top:95px;
+    padding-top:78px;
 }
 
 /* ===============================

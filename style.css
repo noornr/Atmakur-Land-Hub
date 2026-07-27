@@ -1480,22 +1480,25 @@ body{
 }
 .card-content{
 
-    margin:16px;
-    padding:20px;
+    position:relative;
+
+    margin:-22px 16px 16px;
+
+    padding:22px;
 
     background:rgba(8,8,8,.96);
 
     border:1px solid rgba(255,255,255,.08);
 
-    border-radius:20px;
+    border-radius:22px;
 
     backdrop-filter:blur(18px);
 
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.05),
-        0 8px 20px rgba(0,0,0,.35);
+    z-index:2;
 
-}
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.05);
 
 }
 

@@ -1075,23 +1075,25 @@ body{
 
     align-items:center;                 /* Horizontal center */
 
-    width:72px;                         /* Fixed button width */
+    width:90px;                         /* Increased box width */
 
-    height:48px;                        /* Fixed button height */
+    height:60px;                        /* Increased box height */
 
-    background:#d4af37;                 /* Gold */
+    margin-right:10px;                  /* Gap on the right side */
 
-    color:#000;                         /* Black */
+    background:#d4af37;                 /* Gold box */
 
-    text-decoration:none;
+    color:#000;                         /* Black text */
+
+    text-decoration:none;               /* No underline */
 
     font-size:13px;                     /* Same font size */
 
-    font-weight:600;
+    font-weight:600;                    /* Same font weight */
 
-    border-radius:12px;                 /* Curved corners */
+    border-radius:18px;                 /* More rounded corners */
 
-    transition:.3s;
+    transition:.3s;                     /* Smooth animation */
 
 }
 

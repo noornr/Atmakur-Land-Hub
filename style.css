@@ -104,7 +104,7 @@ header{
 
     font-size:18px;
 
-    color:#D4AF37;
+    color:#FFD700;
 
     margin:0;
 
@@ -217,7 +217,7 @@ header{
 }
 
 .btn-primary{
-    background:#D4AF37;                    /* Gold background */
+    background:#FFD700;                    /* Gold background */
     color:#111;                            /* Black text */
 }
 
@@ -324,7 +324,7 @@ header{
 
     transform:translateY(-8px);
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:
         0 25px 60px rgba(0,0,0,.65),
@@ -405,7 +405,7 @@ header{
 
     padding:10px 20px;
 
-    background:linear-gradient(135deg,#FFD700,#D4AF37);
+    background:linear-gradient(135deg,#FFD700,#FFD700);
 
     color:#111;
 
@@ -511,7 +511,7 @@ header{
 
     padding:8px 18px;
 
-    background:linear-gradient(135deg,#FFD700,#D4AF37);
+    background:linear-gradient(135deg,#FFD700,#FFD700);
 
     color:#111;
 
@@ -553,7 +553,7 @@ header{
 }
 .card-content strong{
 
-    color:#D4AF37;
+    color:#FFD700;
 
     font-weight:700;
 
@@ -621,7 +621,7 @@ header{
 
     margin-top:16px;
 
-    background:linear-gradient(135deg,#FFD700,#D4AF37);
+    background:linear-gradient(135deg,#FFD700,#FFD700);
 
     color:#111;
 
@@ -718,7 +718,7 @@ header{
 
     transform:translateY(-6px);
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:
         0 18px 40px rgba(212,175,55,.20);
@@ -790,7 +790,7 @@ header{
 
     transform:translateY(-6px);
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:
         0 18px 40px rgba(212,175,55,.20);
@@ -818,7 +818,7 @@ header{
 
 .call-btn{
 
-    background:#D4AF37;
+    background:#FFD700;
 
     color:#050505;
 
@@ -857,14 +857,14 @@ header{
 }
 
 .available{
-    background:#D4AF37;                    /* Gold background */
+    background:#FFD700;                    /* Gold background */
     color:#111111;                         /* Black text */
     border:1px solid #F4C542;              /* Gold border */
     box-shadow:0 6px 18px rgba(212,175,55,.35); /* Gold glow effect */
 }
 
 .featured{
-    background:#D4AF37;                    /* Gold background */
+    background:#FFD700;                    /* Gold background */
     color:#000;                            /* Black text */
 }
 
@@ -947,7 +947,7 @@ header{
 
     transform:translateY(-6px);
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:
         0 18px 40px rgba(212,175,55,.20);
@@ -1041,7 +1041,7 @@ footer p{
 
     transform:translateY(-6px);
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:
         0 18px 40px rgba(212,175,55,.20);
@@ -1107,7 +1107,7 @@ footer p:last-child{
 
     transform:translateY(-6px);
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:
         0 16px 32px rgba(212,175,55,.18);
@@ -1184,7 +1184,7 @@ footer p:last-child{
 
     transform:translateY(-6px);
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:
         0 18px 40px rgba(212,175,55,.20);
@@ -1267,7 +1267,7 @@ footer p:last-child{
 
 .featured-card:hover{
     transform:translateY(-6px);
-    border-color:#D4AF37;
+    border-color:#FFD700;
     box-shadow:
         0 20px 45px rgba(212,175,55,.20);
 }
@@ -1303,7 +1303,7 @@ footer p:last-child{
 }
 
 .featured-content strong{
-    color:#D4AF37;
+    color:#FFD700;
 }
 
 .slider{
@@ -1343,7 +1343,7 @@ footer p:last-child{
 
 .prev:hover,
 .next:hover{
-    background:#D4AF37;                    /* Gold background on hover */
+    background:#FFD700;                    /* Gold background on hover */
     color:#000;                            /* Black arrow */
 }
 .lightbox{
@@ -1382,7 +1382,7 @@ footer p:last-child{
     margin-top:15px;                       /* Space above button */
     padding:14px;                          /* Inner spacing */
     text-align:center;                     /* Center text */
-    background:#D4AF37;                    /* Gold background */
+    background:#FFD700;                    /* Gold background */
     color:#000;                            /* Black text */
     text-decoration:none;                  /* Remove underline */
     border-radius:10px;                    /* Rounded corners */
@@ -1428,7 +1428,7 @@ footer p:last-child{
 }
 
 .copy{
-    background:#D4AF37;                    /* Gold background */
+    background:#FFD700;                    /* Gold background */
     color:#000;                            /* Black text */
 }
 
@@ -1439,7 +1439,7 @@ footer p:last-child{
 
 .visit-box{
     background:#1a1a1a;                    /* Dark background */
-    border:1px solid #D4AF37;              /* Gold border */
+    border:1px solid #FFD700;              /* Gold border */
     border-radius:12px;                    /* Rounded corners */
     padding:20px;                          /* Inner spacing */
     text-align:center;                     /* Center content */
@@ -1454,7 +1454,7 @@ footer p:last-child{
 
 .visit-btn{
     display:inline-block;                  /* Button fits content */
-    background:#D4AF37;                    /* Gold background */
+    background:#FFD700;                    /* Gold background */
     color:#000;                            /* Black text */
     padding:14px 28px;                     /* Inner spacing */
     border-radius:8px;                     /* Rounded corners */
@@ -1534,7 +1534,7 @@ footer p:last-child{
 
     outline:none;
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:0 0 12px rgba(212,175,55,.18);
 
@@ -1542,7 +1542,7 @@ footer p:last-child{
 
 .search-box button{
 
-    background:linear-gradient(135deg,#D4AF37,#F4C542);
+    background:linear-gradient(135deg,#FFD700,#F4C542);
 
     color:#050505;
 
@@ -1712,7 +1712,7 @@ footer p:last-child{
 
     font-size:26px;
 
-    color:#D4AF37;
+    color:#FFD700;
 
     margin-bottom:4px;
 
@@ -1854,7 +1854,7 @@ body{
 }
 
 .btn-primary{
-    background:#D4AF37;
+    background:#FFD700;
     color:#111;
 }
 
@@ -1927,7 +1927,7 @@ body{
 
 .search-box input:focus{
     outline:none;
-    border-color:#D4AF37;
+    border-color:#FFD700;
     box-shadow:0 0 10px rgba(212,175,55,.18);
 }
 
@@ -1936,7 +1936,7 @@ body{
     padding:14px;
     font-size:15px;
     font-weight:700;
-    background:linear-gradient(135deg,#D4AF37,#F4C542);
+    background:linear-gradient(135deg,#FFD700,#F4C542);
     color:#111111;
     border:none;
     border-radius:10px;
@@ -2002,7 +2002,7 @@ body{
 
     transform:scale(.98);
 
-    border-color:#D4AF37;
+    border-color:#FFD700;
 
     box-shadow:
         0 12px 28px rgba(0,0,0,.45),
@@ -2080,7 +2080,7 @@ body{
 
     padding:10px 18px;
 
-    background:linear-gradient(135deg,#FFD700,#D4AF37);
+    background:linear-gradient(135deg,#FFD700,#FFD700);
 
     color:#111;
 
@@ -2185,7 +2185,7 @@ body{
 
     padding:10px 22px;
 
-    background:linear-gradient(135deg,#FFD700,#D4AF37);
+    background:linear-gradient(135deg,#FFD700,#FFD700);
 
     color:#111;
 
@@ -2229,7 +2229,7 @@ body{
 
 .card-content strong{
 
-    color:#D4AF37;
+    color:#FFD700;
 
     font-weight:700;
 
@@ -2295,7 +2295,7 @@ body{
 
     margin-top:8px;
 
-    background:linear-gradient(135deg,#FFD700,#D4AF37);
+    background:linear-gradient(135deg,#FFD700,#FFD700);
 
     color:#111;
 

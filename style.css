@@ -267,6 +267,33 @@ header{
 
 }
 
+.badge.available{
+
+    position:absolute;
+
+    top:18px;
+    left:18px;
+
+    padding:10px 20px;
+
+    background:linear-gradient(135deg,#FFD700,#D4AF37);
+
+    color:#111;
+
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+
+    border-radius:50px;
+
+    box-shadow:0 8px 20px rgba(212,175,55,.35);
+
+    z-index:2;
+
+}
+
+}
+
 .card-content{
 
     margin:18px;
@@ -1368,6 +1395,33 @@ body{
         rgba(0,0,0,.35),
         transparent
     );
+
+}
+
+.badge.available{
+
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    padding:10px 18px;
+
+    background:linear-gradient(135deg,#FFD700,#D4AF37);
+
+    color:#111;
+
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+
+    border-radius:50px;
+
+    box-shadow:0 6px 16px rgba(212,175,55,.35);
+
+    z-index:2;
+
+}
 
 }
 .card-content{

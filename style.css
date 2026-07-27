@@ -1011,114 +1011,41 @@ body{
     padding-top:78px;
 }
 
-/* ===============================
-   SIGNATURE ATMAKUR DESIGN 4
-================================ */
+/* ===================================
+   PREMIUM FULL WIDTH NAVBAR
+=================================== */
 
 .navbar{
+
     position:fixed;
-    top:12px;
+
+    top:0;
     left:0;
+
     width:100%;
-    display:flex;
-    justify-content:center;
+
+    height:72px;
+
+    background:#0b0b0b;
+
+    border-bottom:2px solid #D4AF37;
+
     z-index:9999;
+
 }
 
 .glass-navbar{
 
-    width:calc(100% - 24px);
-    max-width:420px;
-
-    height:58px;
-
     display:flex;
-    justify-content:space-around;
-    align-items:center;
 
-    padding:0 8px;
-
-    border-radius:30px;
-
-    background:rgba(12,12,12,.82);
-
-    backdrop-filter:blur(16px);
-    -webkit-backdrop-filter:blur(16px);
-
-    border:1px solid rgba(212,175,55,.35);
-
-    box-shadow:
-        0 8px 24px rgba(0,0,0,.45);
-}
-
-.nav-item{
-
-    position:relative;
-
-    flex:1;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    text-decoration:none;
-
-    color:#fff;
+    width:100%;
 
     height:100%;
 
-    border-radius:22px;
-
-    transition:.3s;
-}
-
-.nav-item i{
-
-    font-size:18px;
-
-    color:#D4AF37;
-
-    margin-bottom:3px;
-}
-
-.nav-item span{
-
-    font-size:11px;
-
-    font-weight:600;
-
-    color:#ffffff;
-}
-
-.nav-item.active{
-
-    background:rgba(212,175,55,.12);
-
-    border:1px solid rgba(212,175,55,.35);
+    margin:0;
+    padding:0;
 
 }
-
-.nav-item.active::after{
-
-    content:"";
-
-    position:absolute;
-
-    bottom:6px;
-
-    width:24px;
-
-    height:3px;
-
-    background:#D4AF37;
-
-    border-radius:10px;
-
-    box-shadow:0 0 8px rgba(212,175,55,.7);
-
-}
-
 
 /* ===== Hero Section ===== */
 

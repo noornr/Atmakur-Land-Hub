@@ -430,24 +430,30 @@ header{
 .details-btn{
 
     display:block;
+
     width:100%;
 
-    margin-top:12px;
-    padding:15px;
+    margin-top:14px;
 
-    text-align:center;
-    text-decoration:none;
+    padding:16px;
 
     background:linear-gradient(135deg,#FFD700,#D4AF37);
 
     color:#111;
 
-    font-size:16px;
+    font-size:17px;
+
     font-weight:700;
+
+    text-align:center;
+
+    text-decoration:none;
 
     border-radius:14px;
 
-    transition:.3s;
+    box-shadow:0 10px 25px rgba(212,175,55,.25);
+
+    transition:all .3s ease;
 
 }
 
@@ -455,12 +461,9 @@ header{
 
     transform:translateY(-3px);
 
-    box-shadow:0 10px 25px rgba(212,175,55,.35);
+    box-shadow:0 14px 30px rgba(212,175,55,.40);
 
 }
-
-}
-
 .about{
     padding:90px 8%;                        /* Section spacing */
     background:#111111;                     /* Dark background */
@@ -1589,23 +1592,35 @@ body{
 .details-btn{
 
     display:block;
+
     width:100%;
 
-    margin-top:12px;
-    padding:16px;
+    margin-top:14px;
 
-    text-align:center;
-    text-decoration:none;
+    padding:16px;
 
     background:linear-gradient(135deg,#FFD700,#D4AF37);
 
     color:#111;
 
-    font-size:17px;
+    font-size:16px;
+
     font-weight:700;
 
-    border-radius:16px;
+    text-align:center;
+
+    text-decoration:none;
+
+    border-radius:14px;
+
+    box-shadow:0 8px 20px rgba(212,175,55,.25);
+
+    transition:.3s ease;
 
 }
+
+.details-btn:active{
+
+    transform:scale(.98);
 
 }

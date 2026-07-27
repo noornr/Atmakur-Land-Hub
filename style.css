@@ -1010,31 +1010,28 @@ body{
 
 
 /* ===========================
-/* ======================================
    PREMIUM MOBILE NAVBAR
-   Luxury Black & Gold Theme
-   Designed for Mobile (320px–430px)
-====================================== */
-
+=========================== */
 
 .navbar{
 
-    position:fixed;                     /* Keeps navbar fixed at the top while scrolling */
+    position:fixed;                     /* Keeps navbar fixed while scrolling */
 
-    top:0;                              /* Start from top of screen */
-    left:0;                             /* Start from left side */
+    top:0;                              /* Sticks to the top of the screen */
 
-    width:100%;                         /* Full mobile screen width */
+    left:0;                             /* Starts from the left edge */
 
-    height:56px;                        /* Navbar height (comfortable for mobile) */
+    width:100%;                         /* Full screen width */
 
-    display:flex;                       /* Places logo and menu in one row */
+    height:56px;                        /* Navbar height */
 
-    justify-content:space-between;      /* Logo on left, menu on right */
+    display:flex;                       /* Enables Flexbox layout */
 
-    align-items:center;                 /* Vertically center everything */
+    align-items:center;                 /* Vertically centers navigation */
 
-    padding:0 10px;                     /* Left and right spacing */
+    justify-content:center;             /* Centers navigation horizontally */
+
+    padding:0;                          /* Removes extra spacing */
 
     background:#050505;                 /* Premium black background */
 
@@ -1052,11 +1049,13 @@ body{
 
 .nav-links{
 
-    display:flex;                       /* Places all links in one horizontal row */
+    display:flex;                       /* Places all menu boxes in one row */
 
-    align-items:center;                 /* Vertically align menu */
+    width:100%;                         /* Uses full navbar width */
 
-    gap:12px;                           /* Space between buttons */
+    height:100%;                        /* Matches navbar height */
+
+    gap:0;                              /* Removes gaps between boxes */
 
 }
 
@@ -1067,15 +1066,67 @@ body{
 
 .nav-links a{
 
-    color:#ffffff;                      /* White text */
+    flex:1;                             /* All boxes have equal width */
+
+    display:flex;                       /* Enables Flexbox */
+
+    flex-direction:column;              /* Icon above text */
+
+    justify-content:center;             /* Centers vertically */
+
+    align-items:center;                 /* Centers horizontally */
+
+    background:#d4af37;                 /* Premium gold box */
+
+    color:#000;                         /* Black text */
 
     text-decoration:none;               /* Removes underline */
 
-    font-size:13px;                     /* Mobile-friendly font size */
+    font-size:13px;                     /* Original font size */
 
     font-weight:600;                    /* Semi-bold text */
 
     transition:.3s;                     /* Smooth hover animation */
+
+    border-right:1px solid rgba(0,0,0,.20);
+                                        /* Thin divider between boxes */
+
+}
+
+
+/* ===========================
+   LAST MENU ITEM
+=========================== */
+
+.nav-links a:last-child{
+
+    border-right:none;                  /* Removes last divider */
+
+}
+
+
+/* ===========================
+   ICON
+=========================== */
+
+.nav-links a i{
+
+    color:#000;                         /* Black icon */
+
+    margin-bottom:4px;                  /* Small gap below icon */
+
+}
+
+
+/* ===========================
+   TEXT
+=========================== */
+
+.nav-links a span{
+
+    color:#000;                         /* Black text */
+
+    text-align:center;                  /* Centers text */
 
 }
 
@@ -1086,7 +1137,9 @@ body{
 
 .nav-links a:hover{
 
-    color:#d4af37;                      /* Changes text to gold */
+    background:#e6be45;                 /* Slightly brighter gold */
+
+    color:#000;                         /* Keeps text black */
 
 }
 
@@ -1097,10 +1150,11 @@ body{
 
 .nav-links a.active{
 
-    color:#d4af37;                      /* Current page always gold */
+    background:#f2ca4f;                 /* Highlight active page */
+
+    color:#000;                         /* Black text */
 
 }
-
 
 /* ===== Hero Section ===== */
 

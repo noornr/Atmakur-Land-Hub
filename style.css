@@ -1007,123 +1007,77 @@ body{
     overflow-x:hidden;                 /* Prevent horizontal scrolling */
 }
 
+/* ==========================================
+   SIGNATURE ATMAKUR PREMIUM GLASS NAVBAR
+========================================== */
 
-
-/* ===========================
-   NAVIGATION CONTAINER
-=========================== */
-
-.nav-links{
-
-    display:flex;                       /* Places all buttons in one row */
-
-    justify-content:space-evenly;       /* Gives equal space between all buttons */
-
-    align-items:center;                 /* Centers buttons vertically */
-
-    width:100%;                         /* Uses full navbar width */
-
-    padding:0 8px;                      /* Small left & right spacing */
-
-    box-sizing:border-box;              /* Includes padding inside width */
-
-    transform:translateX(-10px);    /* Moves all yellow boxes left */
-
+/* Navbar Wrapper */
+.navbar{
+    position:fixed;
+    top:14px;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    z-index:9999;
+    pointer-events:none;
 }
 
+/* Glass Container */
+.glass-navbar{
 
-/* ===========================
-   NAVIGATION BUTTONS
-=========================== */
+    width:calc(100% - 24px);
+    max-width:430px;
 
-.nav-links a{
+    height:72px;
 
-    display:flex;                       /* Enables Flexbox */
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
 
-    flex-direction:column;              /* Icon above text */
+    pointer-events:auto;
 
-    justify-content:center;             /* Centers content vertically */
+    padding:8px;
 
-    align-items:center;                 /* Centers content horizontally */
+    border-radius:24px;
 
-    flex:0 0 68px;                      /* Fixed width (doesn't stretch) */
+    background:rgba(15,15,15,.72);
 
-    width:68px;                         /* Button width */
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 
-    height:51px;                        /* Button height */
+    border:1px solid rgba(212,175,55,.55);
 
-    margin:0;                           /* Removes outside spacing */
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.05);
 
-    background:#d4af37;                 /* Premium gold background */
-
-    color:#000;                         /* Black text */
-
-    text-decoration:none;               /* Removes underline */
-
-    border-radius:15px;                 /* Rounded corners */
-
-    font-size:10px;                     /* Text size */
-
-    font-weight:600;                    /* Semi-bold text */
-
-    transition:.3s;                     /* Smooth hover animation */
-
+    transition:.35s;
 }
 
+/* Navigation Button */
+.nav-item{
 
-/* ===========================
-   ICON
-=========================== */
+    flex:1;
 
-.nav-links a i{
+    height:56px;
 
-    font-size:15px;                     /* Icon size */
+    display:flex;
 
-    color:#000;                         /* Black icon */
+    flex-direction:column;
 
-    margin-bottom:2px;                  /* Space between icon & text */
+    justify-content:center;
 
+    align-items:center;
+
+    text-decoration:none;
+
+    border-radius:18px;
+
+    transition:.35s;
 }
 
-
-/* ===========================
-   TEXT
-=========================== */
-
-.nav-links a span{
-
-    font-size:10px;                     /* Text size */
-
-    color:#000;                         /* Black text */
-
-    text-align:center;                  /* Centers text */
-
-    line-height:1;                      /* Compact text height */
-
-}
-
-
-/* ===========================
-   HOVER
-=========================== */
-
-.nav-links a:hover{
-
-    background:#e6be45;                 /* Brighter gold on hover */
-
-}
-
-
-/* ===========================
-   ACTIVE PAGE
-=========================== */
-
-.nav-links a.active{
-
-    background:#f2ca4f;                 /* Highlight current page */
-
-}
-
+   
 /* ===== Hero Section ===== */
 
 .hero{

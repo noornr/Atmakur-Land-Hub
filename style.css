@@ -656,41 +656,123 @@ header{
 
 }
 
+/* ===========================
+   Contact Us (Desktop)
+=========================== */
+
 .contact{
-    padding:80px 10%;                       /* Section spacing */
-    background:#050505;                     /* Dark blue background */
-    color:white;                            /* White text */
-    text-align:center;                      /* Center all content */
+    padding:60px 5%;
+    background:#050505;
+    text-align:center;
+    color:#FFFFFF;
 }
 
 .contact h2{
-    font-size:36px;                         /* Heading size */
-    margin-bottom:25px;                     /* Space below heading */
+
+    font-size:32px;
+
+    color:#FFD700;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
 }
 
 .contact p{
-    margin:12px 0;                          /* Top & bottom spacing */
-    font-size:18px;                         /* Paragraph text size */
+
+    max-width:700px;
+
+    margin:0 auto 14px;
+
+    color:#D5D5D5;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.contact-box{
+
+    max-width:850px;
+
+    margin:35px auto 0;
+
+    padding:35px;
+
+    background:rgba(12,12,12,.96);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    transition:all .35s ease;
+
+}
+
+.contact-box:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#D4AF37;
+
+    box-shadow:
+        0 18px 40px rgba(212,175,55,.20);
+
 }
 
 .call-btn,
 .contact .whatsapp-btn{
-    display:inline-block;                   /* Display buttons in one line */
-    margin:15px 10px 0;                     /* Outer spacing */
-    padding:14px 28px;                      /* Inner button spacing */
-    text-decoration:none;                   /* Remove underline */
-    border-radius:8px;                      /* Rounded corners */
-    font-weight:600;                        /* Semi-bold text */
+
+    display:inline-block;
+
+    margin:12px 8px 0;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
 }
 
 .call-btn{
-    background:#D4AF37;                     /* Gold background */
-    color:#0F172A;                          /* Dark text */
+
+    background:#D4AF37;
+
+    color:#050505;
+
+}
+
+.call-btn:hover{
+
+    background:#FFD700;
+
 }
 
 .contact .whatsapp-btn{
-    background:#25D366;                     /* WhatsApp green background */
-    color:white;                            /* White text */
+
+    background:#25D366;
+
+    color:#FFFFFF;
+
+}
+
+.contact .whatsapp-btn:hover{
+
+    filter:brightness(1.08);
+
 }
 .badge{
     position:absolute;                     /* Position badge over the image */

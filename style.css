@@ -1094,7 +1094,6 @@ body{
 /* ===== Location Logo ===== */
 
 .hero-location{
-    margin-top:-30px;                      /* Push logo upward */
     margin-bottom:20px;                    /* Reduced by ~30% */
     margin-left:-7px;                      /* Reduced by ~30% */
 }

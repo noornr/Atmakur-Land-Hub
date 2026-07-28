@@ -3185,95 +3185,261 @@ footer p:last-child{
    PROPERTY DETAILS PAGE (Mobile)
 ===================================================== */
 
+/* =====================================================
+   PROPERTY DETAILS PAGE (DESKTOP)
+===================================================== */
+
 .property-details{
 
-width:92%;  
+    width:90%;
+    max-width:1100px;
 
-margin:20px auto;  
+    margin:40px auto 60px;
 
-padding:18px;  
+    padding:35px;
 
-border-radius:18px;  
+    background:rgba(12,12,12,.96);
 
-background:rgba(12,12,12,.96);  
+    border:1px solid rgba(212,175,55,.18);
 
-border:1px solid rgba(212,175,55,.18);  
+    border-radius:24px;
 
-backdrop-filter:blur(16px);  
+    backdrop-filter:blur(16px);
 
-box-shadow:  
-    0 10px 22px rgba(0,0,0,.40),  
-    inset 0 1px 0 rgba(255,255,255,.05);
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.05);
 
 }
 
+.property-details:hover{
+
+    border-color:#FFD700;
+
+    box-shadow:
+        0 22px 50px rgba(212,175,55,.18);
+
+}
+
+
 /* ===========================
-Property Slider (Mobile)
+   Property Slider
 =========================== */
 
 .slider{
 
-margin-bottom:20px;  
+    position:relative;
 
-border-radius:18px;
+    overflow:hidden;
+
+    border-radius:22px;
+
+    margin-bottom:35px;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.45);
 
 }
 
 .slider img{
 
-width:100%;  
+    width:100%;
 
-height:240px;  
+    height:550px;
 
-object-fit:cover;
+    object-fit:cover;
+
+    display:block;
+
+    transition:.45s;
+
+}
+
+.slider:hover img{
+
+    transform:scale(1.03);
 
 }
 
 .prev,
 .next{
 
-width:42px;  
+    position:absolute;
 
-height:42px;  
+    top:50%;
 
-font-size:18px;
+    transform:translateY(-50%);
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(5,5,5,.75);
+
+    color:#FFD700;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.3s;
 
 }
 
+.prev{
+
+    left:20px;
+
+}
+
+.next{
+
+    right:20px;
+
+}
+
+.prev:hover,
+.next:hover{
+
+    background:#FFD700;
+
+    color:#111;
+
+}
+
+
 /* ===========================
-   Property Information (Mobile)
+   Property Information
 =========================== */
 
 .property-info{
 
-    width:90%;
+    background:rgba(12,12,12,.96);
 
-    padding:20px;
+    border:1px solid rgba(212,175,55,.18);
 
-    border-radius:18px;
+    border-radius:22px;
 
-    margin-bottom:20px;
+    padding:30px;
+
+    margin:30px 0;
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.40);
+
+}
+
+.property-info h1{
+
+    color:#FFFFFF;
+
+    font-size:30px;
+
+    margin-bottom:14px;
+
+    font-weight:700;
 
 }
 
 .property-info h2{
 
-    font-size:24px;
+    color:#FFD700;
 
-    margin-bottom:15px;
+    font-size:34px;
+
+    margin-bottom:22px;
+
+    font-weight:800;
 
 }
 
 .property-info p{
 
-    font-size:14px;
+    color:#D5D5D5;
 
-    margin:10px 0;
+    font-size:17px;
 
-    line-height:1.7;
+    line-height:1.8;
+
+    margin:14px 0;
 
 }
 
+.property-info strong{
+
+    color:#FFD700;
+
+}
+
+
+/* ===========================
+   Property Highlights
+=========================== */
+
+.property-details>h3{
+
+    color:#FFD700;
+
+    font-size:28px;
+
+    margin:35px 0 18px;
+
+}
+
+.highlights{
+
+    list-style:none;
+
+    background:rgba(12,12,12,.96);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:22px;
+
+    padding:25px;
+
+    margin:0 0 35px;
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.40);
+
+}
+
+.highlights li{
+
+    color:#D5D5D5;
+
+    font-size:17px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.highlights li:last-child{
+
+    border-bottom:none;
+
+}
+
+.highlights li::before{
+
+    content:"✓";
+
+    color:#FFD700;
+
+    font-weight:bold;
+
+    margin-right:12px;
+
+}
 /* ===========================
    Property Highlights (Mobile)
 =========================== */

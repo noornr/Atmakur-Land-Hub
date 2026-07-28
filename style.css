@@ -2651,6 +2651,8 @@ footer p:last-child{
 
 .property-details{
 
+    width:92%;
+
     max-width:1200px;
 
     margin:40px auto;

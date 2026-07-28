@@ -3121,13 +3121,13 @@ footer p:last-child{
 }
 
 /* =====================================================
-   SECTION TITLE (MOBILE)
+   SECTION TITLE (DESKTOP)
 ===================================================== */
 .section-title{
     width:90%;
     max-width:960px;
     margin:0 auto 18px;
-    padding-left:20px;
+    padding-left:15px;
 }
 
 

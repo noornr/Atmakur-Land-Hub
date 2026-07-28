@@ -3234,6 +3234,100 @@ footer p:last-child{
     box-shadow:0 10px 25px rgba(255,215,0,.25);
 
 }
+
+/* =====================================================
+   PROPERTY ENQUIRY FORM (DESKTOP)
+===================================================== */
+
+.enquiry-form{
+
+    background:#111111;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin:30px 0;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+}
+
+.enquiry-form input,
+.enquiry-form textarea{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    margin-bottom:18px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:12px;
+
+    background:#1A1A1A;
+
+    color:#FFFFFF;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s ease;
+
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus{
+
+    border-color:#FFD700;
+
+    box-shadow:0 0 12px rgba(255,215,0,.18);
+
+}
+
+.enquiry-form textarea{
+
+    min-height:140px;
+
+    resize:vertical;
+
+}
+
+.enquiry-form button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#FFD700;
+
+    color:#111;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.enquiry-form button:hover{
+
+    background:#caa52d;
+
+    transform:translateY(-2px);
+
+}
 /* =====================================================
    PREMIUM NAVBAR (MOBILE)
 ===================================================== */
@@ -3579,6 +3673,48 @@ body{
     display:block;
 
     width:100%;
+
+    padding:14px;
+
+    font-size:15px;
+
+    border-radius:10px;
+
+}
+/* =====================================================
+   PROPERTY ENQUIRY FORM (MOBILE)
+===================================================== */
+
+.enquiry-form{
+
+    padding:20px;
+
+    margin:20px 0;
+
+    border-radius:16px;
+
+}
+
+.enquiry-form input,
+.enquiry-form textarea{
+
+    padding:14px;
+
+    font-size:15px;
+
+    margin-bottom:14px;
+
+    border-radius:10px;
+
+}
+
+.enquiry-form textarea{
+
+    min-height:110px;
+
+}
+
+.enquiry-form button{
 
     padding:14px;
 

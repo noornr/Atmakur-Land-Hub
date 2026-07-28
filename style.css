@@ -2653,6 +2653,8 @@ footer p:last-child{
 
 .property-details{
 
+    background:red !important;
+
     width:90%;
     max-width:1100px;
 
@@ -3219,8 +3221,6 @@ footer p:last-child{
 @media (max-width:767px){
 
 .property-details{
-
-    background:red !important;
 
     width:92%;
     margin:20px auto;

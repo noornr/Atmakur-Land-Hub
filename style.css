@@ -3145,6 +3145,8 @@ footer p:last-child{
 
     width:90%;
 
+    margin:0 auto; 
+
     height:50px;
 
     border-radius:13px;
@@ -3948,6 +3950,8 @@ body{
     height:43px;
 
     width:90%;
+
+    margin:0 auto; 
 
     font-size:13px;
 

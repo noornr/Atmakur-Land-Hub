@@ -3180,7 +3180,9 @@ footer p:last-child{
     box-shadow:0 9px 22px rgba(255,215,0,.25);
 
 }
-
+.share-buttons h3{
+    margin-left:10px;
+}
 /* =====================================================
    BOOK SITE VISIT (DESKTOP)
 ===================================================== */
@@ -3957,6 +3959,10 @@ body{
 
     border-radius:11px;
 
+}
+
+.share-buttons h3{
+    margin-left:10px;
 }
 
 /* =====================================================

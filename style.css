@@ -3157,7 +3157,7 @@ footer p:last-child{
 
     width:80%;
 
-    margin:0 auto;
+    margin:12px auto;
 
     height:50px;
 
@@ -3279,7 +3279,7 @@ footer p:last-child{
 
     padding:30px;
 
-    margin:0 auto; 
+    margin:12px auto; 
 
     box-shadow:0 12px 30px rgba(0,0,0,.35);
 
@@ -3977,7 +3977,7 @@ body{
 
     width:80%;
 
-    margin:0 auto; 
+    margin:12px auto; 
 
     font-size:13px;
 
@@ -4033,7 +4033,7 @@ body{
 
 .enquiry-form{
 
-    margin:0 auto; 
+    margin:12px auto; 
     
     width:90%;
 

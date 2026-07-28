@@ -3129,9 +3129,9 @@ footer p:last-child{
 
     grid-template-columns:repeat(4,1fr);
 
-    gap:16px;
+    gap:14px;
 
-    margin:25px 0 35px;
+    margin:22px 0 32px;
 
 }
 
@@ -3143,13 +3143,13 @@ footer p:last-child{
 
     align-items:center;
 
-    height:55px;
+    height:50px;
 
-    border-radius:14px;
+    border-radius:13px;
 
     text-decoration:none;
 
-    font-size:16px;
+    font-size:14px;
 
     font-weight:700;
 
@@ -3173,7 +3173,7 @@ footer p:last-child{
 
     transform:translateY(-3px);
 
-    box-shadow:0 10px 25px rgba(255,215,0,.25);
+    box-shadow:0 9px 22px rgba(255,215,0,.25);
 
 }
 

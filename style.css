@@ -3395,13 +3395,13 @@ footer p:last-child{
    Property Highlights
 =========================== */
 
-.property-details>h3{
+.property-details > h3{
 
     color:#FFD700;
 
-    font-size:28px;
+    font-size:22px;
 
-    margin:35px 0 18px;
+    margin:25px 0 15px;
 
 }
 
@@ -3413,14 +3413,14 @@ footer p:last-child{
 
     border:1px solid rgba(212,175,55,.18);
 
-    border-radius:22px;
+    border-radius:18px;
 
-    padding:25px;
+    padding:18px;
 
-    margin:0 0 35px;
+    margin:0 0 20px;
 
     box-shadow:
-        0 12px 28px rgba(0,0,0,.40);
+        0 10px 22px rgba(0,0,0,.40);
 
 }
 
@@ -3428,9 +3428,11 @@ footer p:last-child{
 
     color:#D5D5D5;
 
-    font-size:17px;
+    font-size:15px;
 
-    padding:15px 0;
+    line-height:1.7;
+
+    padding:12px 0;
 
     border-bottom:1px solid rgba(255,255,255,.08);
 
@@ -3450,7 +3452,7 @@ footer p:last-child{
 
     font-weight:bold;
 
-    margin-right:12px;
+    margin-right:10px;
 
 }
 /* ===========================

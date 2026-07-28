@@ -3279,7 +3279,7 @@ footer p:last-child{
 
     padding:30px;
 
-    margin:30px 0;
+    margin-left:10%;
 
     box-shadow:0 12px 30px rgba(0,0,0,.35);
 
@@ -4033,11 +4033,11 @@ body{
 
 .enquiry-form{
 
+    margin-left:10%;
+    
     width:90%;
 
     padding:20px;
-
-    margin:20px 0;
 
     border-radius:16px;
 

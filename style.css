@@ -3369,7 +3369,7 @@ footer p:last-child{
 
     display:block;
 
-    width:100%;
+    width:90%;
 
     text-align:center;
 
@@ -4080,15 +4080,17 @@ body{
 .whatsapp-btn,
 .details-btn{
 
-    width:100%;
+    width:90%;
 
     padding:14px;
 
-    margin:12px 0;
+    margin:12px auto;
 
     font-size:15px;
 
     border-radius:10px;
+
+    display:block;
 
 }
 

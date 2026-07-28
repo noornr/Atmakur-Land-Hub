@@ -3490,6 +3490,60 @@ footer p:last-child{
     margin-bottom:18px;
 
 }
+
+/* =====================================================
+   PREMIUM FOOTER (DESKTOP)
+===================================================== */
+
+footer{
+
+    margin-top:60px;
+
+    padding:40px 8%;
+
+    background:#080808;
+
+    border-top:1px solid rgba(212,175,55,.18);
+
+    text-align:center;
+
+}
+
+footer h3{
+
+    color:#FFD700;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#CFCFCF;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+footer a{
+
+    color:#FFD700;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+footer a:hover{
+
+    color:#FFFFFF;
+
+}
 /* =====================================================
    PREMIUM NAVBAR (MOBILE)
 ===================================================== */
@@ -3947,5 +4001,27 @@ body{
 .related-properties .card-content p{
 
     font-size:18px;
+
+}
+
+footer{
+
+    margin-top:40px;
+
+    padding:30px 20px;
+
+}
+
+footer h3{
+
+    font-size:22px;
+
+}
+
+footer p{
+
+    font-size:14px;
+
+    line-height:1.7;
 
 }

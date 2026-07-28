@@ -3192,6 +3192,8 @@ footer p:last-child{
 
     padding:18px;
 
+    box-sizing:border-box;
+
     border-radius:18px;
 
     background:rgba(12,12,12,.96);

@@ -3568,7 +3568,83 @@ footer a:hover{
     transform:translateY(0);
 
 }
+/* =====================================================
+   PREMIUM BUTTON EFFECT
+===================================================== */
 
+.call-btn,
+.whatsapp-btn,
+.details-btn,
+.visit-btn,
+.map-btn,
+.enquiry-form button{
+
+    position:relative;
+    overflow:hidden;
+    transition:.35s ease;
+
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover,
+.details-btn:hover,
+.visit-btn:hover,
+.map-btn:hover,
+.enquiry-form button:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(255,215,0,.28);
+
+}
+
+/* =====================================================
+   IMAGE HOVER EFFECT
+===================================================== */
+
+.slider{
+
+    overflow:hidden;
+
+}
+
+.slider img{
+
+    transition:transform .6s ease;
+
+}
+
+.slider:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* =====================================================
+   PAGE FADE-IN
+===================================================== */
+
+body{
+
+    animation:pageFade .8s ease;
+
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
 /* =====================================================
    PREMIUM NAVBAR (MOBILE)
 ===================================================== */

@@ -3375,7 +3375,7 @@ footer p:last-child{
 
     padding:16px;
 
-    margin:16px 0;
+    margin:0 auto;
 
     text-decoration:none;
 
@@ -4084,7 +4084,7 @@ body{
 
     padding:14px;
 
-    margin:12px auto;
+    margin:0 auto;
 
     font-size:15px;
 

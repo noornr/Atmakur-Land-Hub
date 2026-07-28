@@ -3143,6 +3143,8 @@ footer p:last-child{
 
     align-items:center;
 
+    width:90%;
+
     height:50px;
 
     border-radius:13px;
@@ -3944,6 +3946,8 @@ body{
 .share-btn{
 
     height:43px;
+
+    width:90%;
 
     font-size:13px;
 

@@ -3761,68 +3761,59 @@ body{
 
 .property-details{
 
-    width:94%;
-
-    margin:20px auto;
-
-    padding:18px;
-
-    border-radius:18px;
+    width:85%;
+    margin:18px auto;
+    padding:16px;
+    border-radius:16px;
 
     border:1px solid rgba(212,175,55,.15);
 
     background:rgba(12,12,12,.96);
 
     box-shadow:
-        0 10px 24px rgba(0,0,0,.35);
+        0 9px 22px rgba(0,0,0,.35);
 
 }
+
 /* =====================================================
    PREMIUM PROPERTY SLIDER (MOBILE)
 ===================================================== */
 
 .slider{
 
-    margin-bottom:20px;
-
-    border-radius:16px;
+    margin-bottom:18px;
+    border-radius:14px;
 
 }
 
 .slider img{
 
     width:100%;
-
-    height:240px;
-
+    height:216px;
     object-fit:cover;
-
-    border-radius:16px;
+    border-radius:14px;
 
 }
 
 .prev,
 .next{
 
-    width:42px;
-
-    height:42px;
-
-    font-size:20px;
-
+    width:38px;
+    height:38px;
+    font-size:18px;
     top:50%;
 
 }
 
 .prev{
 
-    left:10px;
+    left:9px;
 
 }
 
 .next{
 
-    right:10px;
+    right:9px;
 
 }
 
@@ -3832,68 +3823,58 @@ body{
 
 .property-info{
 
-    padding:18px;
-
-    border-radius:16px;
-
-    margin-bottom:20px;
+    padding:16px;
+    border-radius:14px;
+    margin-bottom:18px;
 
 }
 
 .property-info h1{
 
-    font-size:22px;
-
-    line-height:1.4;
-
-    margin-bottom:12px;
+    font-size:20px;
+    line-height:1.3;
+    margin-bottom:11px;
 
 }
 
 .property-info h2{
 
-    font-size:30px;
-
-    margin-bottom:18px;
+    font-size:27px;
+    margin-bottom:16px;
 
 }
 
 .property-info p{
 
-    font-size:15px;
-
-    line-height:1.8;
-
-    margin-bottom:10px;
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:9px;
 
 }
+
 /* =====================================================
    PROPERTY HIGHLIGHTS (MOBILE)
 ===================================================== */
 
 .highlights{
 
-    padding:18px;
-
-    margin:20px 0;
-
-    border-radius:16px;
+    padding:16px;
+    margin:18px 0;
+    border-radius:14px;
 
 }
 
 .highlights li{
 
-    font-size:15px;
-
-    padding:12px 0;
+    font-size:14px;
+    padding:11px 0;
 
 }
 
 .property-details h3{
 
-    font-size:22px;
-
-    margin:20px 0 15px;
+    font-size:20px;
+    margin:18px 0 14px;
 
 }
 /* =====================================================

@@ -3221,9 +3221,7 @@ footer p:last-child{
 .property-details{
 
     width:92%;
-
     margin:20px auto;
-
     padding:18px;
 
     background:rgba(12,12,12,.96);
@@ -3248,7 +3246,7 @@ footer p:last-child{
 
 
 /* ===========================
-   Property Slider (Mobile)
+   Property Slider
 =========================== */
 
 .slider{
@@ -3289,9 +3287,9 @@ footer p:last-child{
 
     transform:translateY(-50%);
 
-    width:42px;
+    width:40px;
 
-    height:42px;
+    height:40px;
 
     border:none;
 
@@ -3309,13 +3307,13 @@ footer p:last-child{
 
 .prev{
 
-    left:12px;
+    left:10px;
 
 }
 
 .next{
 
-    right:12px;
+    right:10px;
 
 }
 
@@ -3327,7 +3325,6 @@ footer p:last-child{
     color:#111;
 
 }
-
 
 /* ===========================
    Property Information

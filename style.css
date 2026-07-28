@@ -3328,6 +3328,86 @@ footer p:last-child{
     transform:translateY(-2px);
 
 }
+
+/* =====================================================
+   ACTION BUTTONS (DESKTOP)
+===================================================== */
+
+.call-btn,
+.whatsapp-btn,
+.details-btn{
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
+    padding:16px;
+
+    margin:16px 0;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    border-radius:12px;
+
+    transition:.3s ease;
+
+}
+
+.call-btn{
+
+    background:#FFD700;
+
+    color:#111;
+
+}
+
+.call-btn:hover{
+
+    background:#caa52d;
+
+    transform:translateY(-2px);
+
+}
+
+.whatsapp-btn{
+
+    background:#25D366;
+
+    color:#FFFFFF;
+
+}
+
+.whatsapp-btn:hover{
+
+    background:#1da851;
+
+    transform:translateY(-2px);
+
+}
+
+.details-btn{
+
+    background:#1A1A1A;
+
+    color:#FFD700;
+
+    border:1px solid rgba(212,175,55,.25);
+
+}
+
+.details-btn:hover{
+
+    background:#FFD700;
+
+    color:#111;
+
+}
 /* =====================================================
    PREMIUM NAVBAR (MOBILE)
 ===================================================== */
@@ -3717,6 +3797,26 @@ body{
 .enquiry-form button{
 
     padding:14px;
+
+    font-size:15px;
+
+    border-radius:10px;
+
+}
+
+/* =====================================================
+   ACTION BUTTONS (MOBILE)
+===================================================== */
+
+.call-btn,
+.whatsapp-btn,
+.details-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    margin:12px 0;
 
     font-size:15px;
 

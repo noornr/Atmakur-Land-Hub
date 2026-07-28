@@ -2749,7 +2749,7 @@ footer p:last-child{
 
 .property-info{
 
-    width:90%;
+    width:100%;
 
     background:rgba(12,12,12,.96);
 
@@ -3186,7 +3186,7 @@ footer p:last-child{
 
 .property-details{
 
-    width:92%;
+    width:90%;
 
     margin:20px auto;
 

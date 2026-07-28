@@ -2773,29 +2773,27 @@ footer p:last-child{
    PROPERTY DETAILS CONTAINER (DESKTOP)
 ===================================================== */
 
-
 .property-details{
 
-    width:90%;
+    width:81%;
+    max-width:1062px;
 
-    max-width:1180px;
+    margin:32px auto;
 
-    margin:35px auto;
-
-    padding:32px;
+    padding:29px;
 
     background:rgba(12,12,12,.96);
 
     border:1px solid rgba(212,175,55,.18);
 
-    border-radius:24px;
+    border-radius:22px;
 
-    backdrop-filter:blur(18px);
+    backdrop-filter:blur(16px);
 
-    -webkit-backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(16px);
 
     box-shadow:
-        0 18px 40px rgba(0,0,0,.45),
+        0 16px 36px rgba(0,0,0,.45),
         inset 0 1px 0 rgba(255,255,255,.05);
 
     transition:.35s ease;
@@ -2807,7 +2805,7 @@ footer p:last-child{
     border-color:#FFD700;
 
     box-shadow:
-        0 20px 45px rgba(255,215,0,.16),
+        0 18px 40px rgba(255,215,0,.16),
         inset 0 1px 0 rgba(255,255,255,.05);
 
 }
@@ -2822,16 +2820,16 @@ footer p:last-child{
 
     width:100%;
 
-    margin-bottom:35px;
+    margin-bottom:32px;
 
     overflow:hidden;
 
-    border-radius:22px;
+    border-radius:20px;
 
     border:1px solid rgba(212,175,55,.18);
 
     box-shadow:
-        0 15px 35px rgba(0,0,0,.40);
+        0 14px 32px rgba(0,0,0,.40);
 
 }
 
@@ -2841,7 +2839,7 @@ footer p:last-child{
 
     width:100%;
 
-    height:550px;
+    height:495px;
 
     object-fit:cover;
 
@@ -2864,9 +2862,9 @@ footer p:last-child{
 
     transform:translateY(-50%);
 
-    width:52px;
+    width:47px;
 
-    height:52px;
+    height:47px;
 
     border:none;
 
@@ -2878,9 +2876,9 @@ footer p:last-child{
 
     color:#FFD700;
 
-    font-size:26px;
+    font-size:23px;
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(9px);
 
     transition:.3s ease;
 
@@ -2888,13 +2886,13 @@ footer p:last-child{
 
 .prev{
 
-    left:18px;
+    left:16px;
 
 }
 
 .next{
 
-    right:18px;
+    right:16px;
 
 }
 
@@ -2908,6 +2906,7 @@ footer p:last-child{
     transform:translateY(-50%) scale(1.08);
 
 }
+
 /* =====================================================
    PROPERTY INFORMATION (DESKTOP)
 ===================================================== */
@@ -2918,24 +2917,24 @@ footer p:last-child{
 
     border:1px solid rgba(212,175,55,.18);
 
-    border-radius:20px;
+    border-radius:18px;
 
-    padding:30px;
+    padding:27px;
 
-    margin-bottom:30px;
+    margin-bottom:27px;
 
     box-shadow:
-        0 12px 30px rgba(0,0,0,.35);
+        0 11px 27px rgba(0,0,0,.35);
 
 }
 
 .property-info h1{
 
-    font-size:34px;
+    font-size:31px;
 
     color:#FFD700;
 
-    margin-bottom:18px;
+    margin-bottom:16px;
 
     font-weight:700;
 
@@ -2943,11 +2942,11 @@ footer p:last-child{
 
 .property-info h2{
 
-    font-size:40px;
+    font-size:36px;
 
     color:#FFFFFF;
 
-    margin-bottom:25px;
+    margin-bottom:22px;
 
     font-weight:800;
 
@@ -2955,13 +2954,13 @@ footer p:last-child{
 
 .property-info p{
 
-    font-size:17px;
+    font-size:15px;
 
-    line-height:1.9;
+    line-height:1.7;
 
     color:#E8E8E8;
 
-    margin-bottom:12px;
+    margin-bottom:11px;
 
 }
 
@@ -2979,28 +2978,28 @@ footer p:last-child{
 
     list-style:none;
 
-    margin:25px 0 35px;
+    margin:22px 0 32px;
 
-    padding:25px;
+    padding:22px;
 
     background:#111111;
 
     border:1px solid rgba(212,175,55,.18);
 
-    border-radius:20px;
+    border-radius:18px;
 
     box-shadow:
-        0 12px 28px rgba(0,0,0,.35);
+        0 11px 25px rgba(0,0,0,.35);
 
 }
 
 .highlights li{
 
-    font-size:17px;
+    font-size:15px;
 
     color:#EAEAEA;
 
-    padding:14px 0;
+    padding:12px 0;
 
     border-bottom:1px solid rgba(255,255,255,.08);
 
@@ -3016,7 +3015,7 @@ footer p:last-child{
 
     color:#FFD700;
 
-    padding-left:8px;
+    padding-left:7px;
 
     transition:.3s ease;
 
@@ -3026,13 +3025,17 @@ footer p:last-child{
 
     color:#FFD700;
 
-    font-size:28px;
+    font-size:25px;
 
-    margin:30px 0 20px;
+    margin:27px 0 18px;
 
     font-weight:700;
 
 }
+
+
+
+
 
 /* =====================================================
    PREMIUM MAP SECTION (DESKTOP)

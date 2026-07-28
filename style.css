@@ -3028,8 +3028,6 @@ footer p:last-child{
 
     font-size:25px;
 
-    padding-left:20px;
-
     margin:27px 0 18px;
 
     font-weight:700;
@@ -3121,6 +3119,18 @@ footer p:last-child{
     transform:translateY(-2px);
 
 }
+
+/* =====================================================
+   SECTION TITLE (MOBILE)
+===================================================== */
+.section-title{
+    width:90%;
+    max-width:960px;
+    margin:0 auto 18px;
+    padding-left:20px;
+}
+
+
 /* =====================================================
    SHARE PROPERTY (DESKTOP)
 ===================================================== */
@@ -3889,7 +3899,6 @@ body{
 
 .property-details h3{
 
-    padding-left:20px;
     font-size:20px;
     margin:18px 0 14px;
 
@@ -3934,6 +3943,15 @@ body{
 
     margin-top:18px;
 
+}
+/* =====================================================
+   SECTION TITLE (MOBILE)
+===================================================== */
+
+.section-title{
+    width:92%;
+    margin:0 auto 16px;
+    padding-left:15px;
 }
 /* =====================================================
    SHARE PROPERTY (MOBILE)

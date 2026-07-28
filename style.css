@@ -3220,6 +3220,8 @@ footer p:last-child{
 
 .property-details{
 
+    background:red !important;
+
     width:92%;
     margin:20px auto;
     padding:18px;

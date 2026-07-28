@@ -2913,6 +2913,8 @@ footer p:last-child{
 
 .property-info{
 
+    height:320px;
+
     background:#111111;
 
     border:1px solid rgba(212,175,55,.18);

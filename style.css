@@ -2749,6 +2749,8 @@ footer p:last-child{
 
 .property-info{
 
+    width:90%;
+
     background:rgba(12,12,12,.96);
 
     border:1px solid rgba(212,175,55,.18);
@@ -3242,6 +3244,8 @@ footer p:last-child{
 =========================== */
 
 .property-info{
+
+    width:90%;
 
     padding:20px;
 

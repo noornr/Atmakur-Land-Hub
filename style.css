@@ -3043,6 +3043,9 @@ footer p:last-child{
 
 .map-section{
 
+    width:80%;
+    max-width:960px;
+
     background:#111111;
 
     border:1px solid rgba(212,175,55,.18);

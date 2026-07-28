@@ -3237,53 +3237,6 @@ height:42px;
 font-size:18px;
 
 }
-/* ===========================
-Property Information (Mobile)
-=========================== */
-
-.property-info{
-
-width:90%;  
-
-padding:20px;  
-
-border-radius:18px;  
-
-margin-bottom:20px;
-
-}
-/* ===========================
-   Property Slider (Mobile)
-=========================== */
-
-.slider{
-
-    margin-bottom:20px;
-
-    border-radius:18px;
-
-}
-
-.slider img{
-
-    width:100%;
-
-    height:240px;
-
-    object-fit:cover;
-
-}
-
-.prev,
-.next{
-
-    width:42px;
-
-    height:42px;
-
-    font-size:18px;
-
-}
 
 /* ===========================
    Property Information (Mobile)

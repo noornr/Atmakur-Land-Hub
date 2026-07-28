@@ -3111,6 +3111,130 @@ footer p:last-child{
 
 }
 /* =====================================================
+   SHARE PROPERTY (DESKTOP)
+===================================================== */
+
+.share-buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:16px;
+
+    margin:25px 0 35px;
+
+}
+
+.share-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:55px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#FFFFFF;
+
+    background:#161616;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    transition:.3s ease;
+
+    cursor:pointer;
+
+}
+
+.share-btn:hover{
+
+    background:#FFD700;
+
+    color:#111;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(255,215,0,.25);
+
+}
+
+/* =====================================================
+   BOOK SITE VISIT (DESKTOP)
+===================================================== */
+
+.visit-box{
+
+    background:#111111;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin:30px 0;
+
+    text-align:center;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.35);
+
+}
+
+.visit-box p{
+
+    font-size:17px;
+
+    color:#E8E8E8;
+
+    margin-bottom:22px;
+
+    line-height:1.8;
+
+}
+
+.visit-btn{
+
+    display:inline-block;
+
+    padding:16px 32px;
+
+    background:#FFD700;
+
+    color:#111;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    font-size:16px;
+
+    transition:.3s ease;
+
+}
+
+.visit-btn:hover{
+
+    background:#caa52d;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(255,215,0,.25);
+
+}
+/* =====================================================
    PREMIUM NAVBAR (MOBILE)
 ===================================================== */
 
@@ -3400,5 +3524,66 @@ body{
     font-size:15px;
 
     margin-top:18px;
+
+}
+/* =====================================================
+   SHARE PROPERTY (MOBILE)
+===================================================== */
+
+.share-buttons{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin:20px 0 25px;
+
+}
+
+.share-btn{
+
+    height:48px;
+
+    font-size:14px;
+
+    border-radius:12px;
+
+}
+
+/* =====================================================
+   BOOK SITE VISIT (MOBILE)
+===================================================== */
+
+.visit-box{
+
+    padding:20px;
+
+    margin:20px 0;
+
+    border-radius:16px;
+
+}
+
+.visit-box p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin-bottom:18px;
+
+}
+
+.visit-btn{
+
+    display:block;
+
+    width:100%;
+
+    padding:14px;
+
+    font-size:15px;
+
+    border-radius:10px;
 
 }

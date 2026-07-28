@@ -1736,11 +1736,6 @@ body{
 
 
 
-body{
-    padding-top:70px;
-}
-
-
 /* ===== Hero Section ===== */
 
 .hero{
@@ -2644,23 +2639,149 @@ footer p:last-child{
 }
 
 
+/* =====================================================
+   PREMIUM NAVBAR (DESKTOP)
+===================================================== */
 
+.navbar{
 
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:84px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(5,5,5,.96);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(212,175,55,.20);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    z-index:9999;
+
+}
+
+.glass-navbar{
+
+    width:100%;
+
+    max-width:1200px;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    margin:auto;
+
+}
+
+.nav-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:120px;
+
+    text-decoration:none;
+
+    color:#E8E8E8;
+
+    transition:.35s ease;
+
+}
+
+.nav-item i{
+
+    font-size:28px;
+
+    color:#FFD700;
+
+    margin-bottom:6px;
+
+    transition:.35s ease;
+
+}
+
+.nav-item span{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:inherit;
+
+}
+
+.nav-item:hover{
+
+    color:#FFD700;
+
+    transform:translateY(-4px);
+
+}
+
+.nav-item:hover i{
+
+    transform:scale(1.12);
+
+    text-shadow:0 0 12px rgba(255,215,0,.45);
+
+}
+
+.nav-item.active{
+
+    color:#FFD700;
+
+}
+
+.nav-item.active i{
+
+    text-shadow:
+        0 0 10px rgba(255,215,0,.45),
+        0 0 18px rgba(255,215,0,.25);
+
+}
 
     /* =====================================================
-   PROPERTY DETAILS PAGE (DESKTOP)
+   PROPERTY DETAILS CONTAINER (DESKTOP)
 ===================================================== */
+
 
 .property-details{
 
-    background:red !important;
-
     width:90%;
-    max-width:1100px;
+    max-width:1180px;
 
     margin:40px auto 60px;
 
-    padding:35px;
+    padding:30px;
 
     background:rgba(12,12,12,.96);
 
@@ -2668,27 +2789,29 @@ footer p:last-child{
 
     border-radius:24px;
 
-    backdrop-filter:blur(16px);
+    backdrop-filter:blur(18px);
 
     box-shadow:
         0 18px 40px rgba(0,0,0,.45),
         inset 0 1px 0 rgba(255,255,255,.05);
 
+    transition:.35s ease;
+
 }
 
 .property-details:hover{
 
-    border-color:#FFD700;
+    border-color:#D4AF37;
 
     box-shadow:
-        0 22px 50px rgba(212,175,55,.18);
+        0 20px 45px rgba(212,175,55,.18),
+        inset 0 1px 0 rgba(255,255,255,.05);
 
 }
 
-
-/* ===========================
-   Property Slider
-=========================== */
+/* =====================================================
+   PROPERTY SLIDER (DESKTOP)
+===================================================== */
 
 .slider{
 
@@ -2698,9 +2821,11 @@ footer p:last-child{
 
     border-radius:22px;
 
-    margin-bottom:35px;
+    margin-bottom:30px;
 
     border:1px solid rgba(212,175,55,.18);
+
+    background:#111;
 
     box-shadow:
         0 15px 35px rgba(0,0,0,.45);
@@ -2711,19 +2836,19 @@ footer p:last-child{
 
     width:100%;
 
-    height:550px;
+    height:520px;
 
     object-fit:cover;
 
     display:block;
 
-    transition:.45s;
+    transition:transform .5s ease;
 
 }
 
 .slider:hover img{
 
-    transform:scale(1.03);
+    transform:scale(1.04);
 
 }
 
@@ -2736,19 +2861,19 @@ footer p:last-child{
 
     transform:translateY(-50%);
 
-    width:55px;
+    width:52px;
 
-    height:55px;
+    height:52px;
 
     border:none;
 
     border-radius:50%;
 
-    background:rgba(5,5,5,.75);
+    background:rgba(0,0,0,.65);
 
     color:#FFD700;
 
-    font-size:24px;
+    font-size:22px;
 
     cursor:pointer;
 
@@ -2758,13 +2883,13 @@ footer p:last-child{
 
 .prev{
 
-    left:20px;
+    left:18px;
 
 }
 
 .next{
 
-    right:20px;
+    right:18px;
 
 }
 
@@ -2776,480 +2901,137 @@ footer p:last-child{
     color:#111;
 
 }
-/* ===========================
-   Property Information (Desktop)
-=========================== */
 
-.property-info{
 
-    width:100%;
+/* =====================================================
+   PREMIUM NAVBAR (MOBILE)
+===================================================== */
 
-    background:rgba(12,12,12,.96);
+@media (max-width:767px){
 
-    border:1px solid rgba(212,175,55,.18);
+.navbar{
 
-    border-radius:20px;
+    height:70px;
 
-    padding:30px;
+    background:rgba(5,5,5,.96);
 
-    margin-bottom:30px;
+    backdrop-filter:blur(20px);
 
-    box-shadow:
-        0 12px 28px rgba(0,0,0,.40);
+    -webkit-backdrop-filter:blur(20px);
 
-}
-
-.property-info h2{
-
-    color:#FFD700;
-
-    font-size:32px;
-
-    margin-bottom:20px;
-
-}
-
-.property-info p{
-
-    font-size:17px;
-
-    color:#D5D5D5;
-
-    margin:14px 0;
-
-    line-height:1.8;
-
-}
-
-.property-info strong{
-
-    color:#FFD700;
-
-}
-
-/* ===========================
-   Property Highlights (Desktop)
-=========================== */
-
-.highlights{
-
-    list-style:none;
-
-    margin:30px 0;
-
-    padding:25px;
-
-    background:rgba(12,12,12,.96);
-
-    border:1px solid rgba(212,175,55,.18);
-
-    border-radius:20px;
+    border-bottom:1px solid rgba(212,175,55,.20);
 
     box-shadow:
-        0 12px 28px rgba(0,0,0,.40);
+        0 8px 20px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.05);
 
 }
 
-.highlights li{
-
-    color:#D5D5D5;
-
-    font-size:17px;
-
-    padding:14px 0;
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-}
-
-.highlights li:last-child{
-
-    border-bottom:none;
-
-}
-
-.highlights li::before{
-
-    content:"✓";
-
-    color:#FFD700;
-
-    font-weight:bold;
-
-    margin-right:12px;
-
-}
-
-/* ===========================
-   Property Map (Desktop)
-=========================== */
-
-.map-section{
-
-    margin:35px 0;
-
-    padding:30px;
-
-    background:rgba(12,12,12,.96);
-
-    border:1px solid rgba(212,175,55,.18);
-
-    border-radius:20px;
-
-    box-shadow:
-        0 12px 28px rgba(0,0,0,.40);
-
-}
-
-.map-section h3{
-
-    color:#FFD700;
-
-    font-size:28px;
-
-    margin-bottom:20px;
-
-}
-
-.map-section iframe{
-
-    width:100%;
-
-    height:420px;
-
-    border:none;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-}
-
-.map-btn{
-
-    margin-top:20px;
-
-    height:54px;
+.glass-navbar{
 
     display:flex;
 
     align-items:center;
 
-    justify-content:center;
-
-    border-radius:14px;
-
-    font-size:16px;
-
-    font-weight:700;
-
-}
-
-/* ===========================
-   Share Property (Desktop)
-=========================== */
-
-.share-buttons{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:15px;
-
-    margin:30px 0;
-
-}
-
-.share-btn{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    height:52px;
-
-    border-radius:14px;
-
-    font-size:15px;
-
-    font-weight:700;
-
-    transition:.3s;
-
-}
-
-.share-btn:hover{
-
-    transform:translateY(-3px);
-
-}
-
-/* ===========================
-   Book Site Visit (Desktop)
-=========================== */
-
-.visit-box{
-
-    margin:35px 0;
-
-    padding:30px;
-
-    background:rgba(12,12,12,.96);
-
-    border:1px solid rgba(212,175,55,.18);
-
-    border-radius:20px;
-
-    text-align:center;
-
-    box-shadow:
-        0 12px 28px rgba(0,0,0,.40);
-
-}
-
-.visit-box h3{
-
-    color:#FFD700;
-
-    font-size:28px;
-
-    margin-bottom:15px;
-
-}
-
-.visit-box p{
-
-    color:#D5D5D5;
-
-    font-size:17px;
-
-    line-height:1.8;
-
-    margin-bottom:22px;
-
-}
-
-.visit-btn{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    min-width:220px;
-
-    height:54px;
-
-    border-radius:14px;
-
-    font-size:16px;
-
-    font-weight:700;
-
-}
-
-/* ===========================
-   Property Enquiry (Desktop)
-=========================== */
-
-.enquiry-form{
-
-    margin:35px 0;
-
-    padding:30px;
-
-    background:rgba(12,12,12,.96);
-
-    border:1px solid rgba(212,175,55,.18);
-
-    border-radius:20px;
-
-    box-shadow:
-        0 12px 28px rgba(0,0,0,.40);
-
-}
-
-.enquiry-form h3{
-
-    color:#FFD700;
-
-    font-size:28px;
-
-    margin-bottom:22px;
-
-}
-
-.enquiry-form input,
-.enquiry-form textarea{
+    justify-content:space-evenly;
 
     width:100%;
 
-    margin-bottom:18px;
+    height:100%;
 
-    padding:15px;
-
-    background:#151515;
-
-    color:#FFFFFF;
-
-    border:1px solid #2E2E2E;
-
-    border-radius:12px;
-
-    font-size:16px;
-
-}
-
-.enquiry-form textarea{
-
-    min-height:140px;
-
-    resize:vertical;
-
-}
-
-.enquiry-form input:focus,
-.enquiry-form textarea:focus{
-
-    outline:none;
-
-    border-color:#FFD700;
-
-}
-
-.enquiry-form button{
-
-    width:100%;
-
-    height:54px;
-
-    border:none;
-
-    border-radius:14px;
-
-    background:#FFD700;
-
-    color:#111;
-
-    font-size:16px;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-}
-
-/* ===========================
-   Action Buttons (Desktop)
-=========================== */
-
-.action-buttons{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:18px;
-
-    margin:35px 0;
-
-}
-
-.action-buttons a{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    height:54px;
-
-    border-radius:14px;
-
-    text-decoration:none;
-
-    font-size:16px;
-
-    font-weight:700;
-
-    transition:.3s;
-
-}
-
-.action-buttons a:hover{
-
-    transform:translateY(-3px);
-
-}
-
-/* ===========================
-   Related Properties (Desktop)
-=========================== */
-
-.related-properties{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:25px;
-
-    margin:35px 0;
-
-}
-
-.related-properties .card{
-
-    width:100%;
-
-    max-width:none;
+    padding:0;
 
     margin:0;
 
 }
 
+.nav-item{
+
+    flex:1;
+
+    min-width:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#E8E8E8;
+
+    transition:.3s ease;
+
+}
+
+.nav-item i{
+
+    font-size:24px;
+
+    color:#FFD700;
+
+    margin-bottom:4px;
+
+    transition:.3s ease;
+
+}
+
+.nav-item span{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    color:inherit;
+
+}
+
+.nav-item:hover,
+.nav-item.active{
+
+    color:#FFD700;
+
+}
+
+.nav-item:hover i,
+.nav-item.active i{
+
+    transform:scale(1.08);
+
+    text-shadow:0 0 10px rgba(255,215,0,.35);
+
+}
+
+body{
+
+    padding-top:70px;
+
+}
 
 /* =====================================================
-   PROPERTY DETAILS PAGE (MOBILE)
+   PROPERTY DETAILS(MOBILE)
 ===================================================== */
-
-@media (max-width:767px){
-
+    
 .property-details{
 
     width:92%;
+
     margin:20px auto;
+
     padding:18px;
-
-    background:rgba(12,12,12,.96);
-
-    border:1px solid rgba(212,175,55,.18);
 
     border-radius:18px;
 
-    backdrop-filter:blur(16px);
-
-    box-shadow:
-        0 10px 22px rgba(0,0,0,.40),
-        inset 0 1px 0 rgba(255,255,255,.05);
-
 }
 
-.property-details:hover{
-
-    border-color:#FFD700;
-
-}
-
-
-/* ===========================
-   Property Slider
-=========================== */
+/* =====================================================
+   PROPERTY SLIDER (MOBILE)
+===================================================== */
 
 .slider{
 
@@ -3297,7 +3079,7 @@ footer p:last-child{
 
     border-radius:50%;
 
-    background:rgba(5,5,5,.75);
+    background:rgba(0,0,0,.70);
 
     color:#FFD700;
 
@@ -3328,345 +3110,3 @@ footer p:last-child{
 
 }
 
-/* ===========================
-   Property Information
-=========================== */
-
-.property-info{
-
-    background:rgba(12,12,12,.96);
-
-    border:1px solid rgba(212,175,55,.18);
-
-    border-radius:18px;
-
-    padding:18px;
-
-    margin:20px 0;
-
-    box-shadow:
-        0 10px 22px rgba(0,0,0,.40);
-
-}
-
-.property-info h1{
-
-    color:#FFFFFF;
-
-    font-size:22px;
-
-    font-weight:700;
-
-    line-height:1.4;
-
-    margin-bottom:10px;
-
-}
-
-.property-info h2{
-
-    color:#FFD700;
-
-    font-size:26px;
-
-    font-weight:800;
-
-    margin-bottom:16px;
-
-}
-
-.property-info p{
-
-    color:#D5D5D5;
-
-    font-size:15px;
-
-    line-height:1.7;
-
-    margin:10px 0;
-
-}
-
-.property-info strong{
-
-    color:#FFD700;
-
-}
-
-/* ===========================
-   Property Highlights
-=========================== */
-
-.property-details > h3{
-
-    color:#FFD700;
-
-    font-size:22px;
-
-    margin:25px 0 15px;
-
-}
-
-.highlights{
-
-    list-style:none;
-
-    background:rgba(12,12,12,.96);
-
-    border:1px solid rgba(212,175,55,.18);
-
-    border-radius:18px;
-
-    padding:18px;
-
-    margin:0 0 20px;
-
-    box-shadow:
-        0 10px 22px rgba(0,0,0,.40);
-
-}
-
-.highlights li{
-
-    color:#D5D5D5;
-
-    font-size:15px;
-
-    line-height:1.7;
-
-    padding:12px 0;
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-}
-
-.highlights li:last-child{
-
-    border-bottom:none;
-
-}
-
-.highlights li::before{
-
-    content:"✓";
-
-    color:#FFD700;
-
-    font-weight:bold;
-
-    margin-right:10px;
-
-}
-/* ===========================
-   Property Highlights (Mobile)
-=========================== */
-
-.highlights{
-
-    padding:18px;
-
-    margin:20px 0;
-
-    border-radius:18px;
-
-}
-
-.highlights li{
-
-    font-size:14px;
-
-    padding:10px 0;
-
-}
-
-/* ===========================
-   Property Map (Mobile)
-=========================== */
-
-.map-section{
-
-    margin:20px 0;
-
-    padding:18px;
-
-    border-radius:18px;
-
-}
-
-.map-section h3{
-
-    font-size:22px;
-
-    margin-bottom:15px;
-
-}
-
-.map-section iframe{
-
-    width:100%;
-
-    height:250px;
-
-    border-radius:14px;
-
-}
-
-.map-btn{
-
-    height:46px;
-
-    font-size:14px;
-
-    margin-top:15px;
-
-}
-
-/* ===========================
-   Share Property (Mobile)
-=========================== */
-
-.share-buttons{
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:12px;
-
-    margin:20px 0;
-
-}
-
-.share-btn{
-
-    height:45px;
-
-    font-size:13px;
-
-    border-radius:12px;
-
-}
-
-/* ===========================
-   Book Site Visit (Mobile)
-=========================== */
-
-.visit-box{
-
-    margin:20px 0;
-
-    padding:20px;
-
-    border-radius:18px;
-
-}
-
-.visit-box h3{
-
-    font-size:22px;
-
-}
-
-.visit-box p{
-
-    font-size:14px;
-
-    margin-bottom:18px;
-
-}
-
-.visit-btn{
-
-    width:100%;
-
-    height:46px;
-
-    font-size:14px;
-
-}
-/* ===========================
-   Property Enquiry (Mobile)
-=========================== */
-
-.enquiry-form{
-
-    margin:20px 0;
-
-    padding:20px;
-
-    border-radius:18px;
-
-}
-
-.enquiry-form h3{
-
-    font-size:22px;
-
-    margin-bottom:18px;
-
-}
-
-.enquiry-form input,
-.enquiry-form textarea{
-
-    padding:13px;
-
-    font-size:14px;
-
-    margin-bottom:14px;
-
-}
-
-.enquiry-form textarea{
-
-    min-height:110px;
-
-}
-
-.enquiry-form button{
-
-    height:46px;
-
-    font-size:14px;
-
-}
-
-/* ===========================
-   Action Buttons (Mobile)
-=========================== */
-
-.action-buttons{
-
-    grid-template-columns:1fr;
-
-    gap:12px;
-
-    margin:20px 0;
-
-}
-
-.action-buttons a{
-
-    height:46px;
-
-    font-size:14px;
-
-    border-radius:12px;
-
-}
-
-/* ===========================
-   Related Properties (Mobile)
-=========================== */
-
-.related-properties{
-
-    grid-template-columns:1fr;
-
-    gap:18px;
-
-}
-
-.related-properties .card{
-
-    width:100%;
-
-}

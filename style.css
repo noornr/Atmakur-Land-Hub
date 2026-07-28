@@ -3544,6 +3544,31 @@ footer a:hover{
     color:#FFFFFF;
 
 }
+
+/* =====================================================
+   PREMIUM SCROLL ANIMATION
+===================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
 /* =====================================================
    PREMIUM NAVBAR (MOBILE)
 ===================================================== */

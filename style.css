@@ -3851,32 +3851,22 @@ body{
 
 }
 
-/* =====================================================
-   ACTION BUTTONS (MOBILE)
-===================================================== */
+.details-btn{
 
-.call-btn,
-.whatsapp-btn,
-.details-btn,
-.back-btn{
+    background:#FFD700;
+    color:#111111;
+    border:1px solid #FFD700;
 
-    width:77%;              /* Reduced from 90% */
-    height:51px;            /* Reduced from 60px */
-    margin:19px auto;       /* Reduced from 22px */
-    padding:0 17px;         /* Reduced from 20px */
+}
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;                /* Reduced from 10px */
+.details-btn:hover,
+.details-btn:focus,
+.details-btn:active{
 
-    font-size:13px;         /* Reduced from 15px */
-    font-weight:700;
-    line-height:1;
-    text-align:center;
+    background:#FFD700;
+    color:#111111;
+    border:1px solid #FFD700;
 
-    border-radius:8px;      /* Reduced from 10px */
-    box-sizing:border-box;
 }
 /* =====================================================
    RELATED PROPERTIES (MOBILE)

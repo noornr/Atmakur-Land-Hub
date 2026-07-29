@@ -188,8 +188,9 @@ header{
     max-width:450px;                       /* Maximum content width */
 }
 .hero-location{
-    margin-bottom:29px;                  /* Increased from 26px by ~10% */
-    margin-left:-10px;                    /* Increased from -5px by ~10% */
+    margin-top:25px;      /* Move logo down */
+    margin-bottom:29px;
+    margin-left:-10px;
 }
 
 .hero-location img{

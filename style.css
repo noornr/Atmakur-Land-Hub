@@ -2206,30 +2206,23 @@ body{
 .whatsapp-btn{
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
-    width:100%;
-
-    height:40px;
-
-    margin-top:10px;
+    width:90%;
+    height:36px;
+    margin:10px auto 0;
 
     background:linear-gradient(135deg,#25D366,#128C7E);
-
     color:#fff;
 
-    font-size:14px;
-
+    font-size:13px;
     font-weight:700;
 
     text-align:center;
-
     text-decoration:none;
 
-    border-radius:14px;
+    border-radius:12px;
 
     border:1px solid rgba(255,255,255,.12);
 
@@ -2253,30 +2246,23 @@ body{
 .details-btn{
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
-    width:100%;
-
-    height:40px;
-
-    margin-top:8px;
+    width:90%;
+    height:36px;
+    margin:8px auto 0;
 
     background:linear-gradient(135deg,#FFD700,#FFD700);
-
     color:#111;
 
-    font-size:14px;
-
+    font-size:13px;
     font-weight:700;
 
     text-align:center;
-
     text-decoration:none;
 
-    border-radius:14px;
+    border-radius:12px;
 
     border:1px solid rgba(255,215,0,.35);
 

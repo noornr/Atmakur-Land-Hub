@@ -3268,104 +3268,6 @@ footer p:last-child{
 }
 
 /* =====================================================
-   PROPERTY ENQUIRY FORM (DESKTOP)
-===================================================== */
-
-.enquiry-form{
-
-    width:90%;
-    
-    max-width:900px;
-    
-    background:#111111;
-
-    border:1px solid rgba(212,175,55,.18);
-
-    border-radius:20px;
-
-    padding:30px;
-
-    margin:22px auto; 
-
-    box-shadow:0 12px 30px rgba(0,0,0,.35);
-
-}
-
-.enquiry-form input,
-.enquiry-form textarea{
-
-    width:100%;
-
-    padding:16px 18px;
-
-    margin-bottom:18px;
-
-    border:1px solid rgba(255,255,255,.12);
-
-    border-radius:12px;
-
-    background:#1A1A1A;
-
-    color:#FFFFFF;
-
-    font-size:16px;
-
-    outline:none;
-
-    transition:.3s ease;
-
-}
-
-.enquiry-form input:focus,
-.enquiry-form textarea:focus{
-
-    border-color:#FFD700;
-
-    box-shadow:0 0 12px rgba(255,215,0,.18);
-
-}
-
-.enquiry-form textarea{
-
-    min-height:140px;
-
-    resize:vertical;
-
-}
-
-.enquiry-form button{
-
-    width:100%;
-
-    padding:16px;
-
-    border:none;
-
-    border-radius:12px;
-
-    background:#FFD700;
-
-    color:#111;
-
-    font-size:17px;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-    transition:.3s ease;
-
-}
-
-.enquiry-form button:hover{
-
-    background:#caa52d;
-
-    transform:translateY(-2px);
-
-}
-
-/* =====================================================
    ACTION BUTTONS (DESKTOP)
 ===================================================== */
 
@@ -4041,50 +3943,6 @@ body{
     border-radius:9px;
 
 }
-/* =====================================================
-   PROPERTY ENQUIRY FORM (MOBILE)
-===================================================== */
-
-.enquiry-form{
-
-    margin:22px auto; 
-    
-    width:90%;
-
-    padding:20px;
-
-    border-radius:16px;
-
-}
-
-.enquiry-form input,
-.enquiry-form textarea{
-
-    padding:14px;
-
-    font-size:15px;
-
-    margin-bottom:14px;
-
-    border-radius:10px;
-
-}
-
-.enquiry-form textarea{
-
-    min-height:110px;
-
-}
-
-.enquiry-form button{
-
-    padding:14px;
-
-    font-size:15px;
-
-    border-radius:10px;
-
-}
 
 /* =====================================================
    ACTION BUTTONS (MOBILE)
@@ -4092,22 +3950,27 @@ body{
 
 .call-btn,
 .whatsapp-btn,
-.details-btn{
+.details-btn,
+.back-btn{
 
     width:90%;
-
-    padding:14px;
-
+    height:60px;              /* Fixed height */
     margin:22px auto;
+    padding:0 20px;           /* Remove top/bottom padding */
+
+    display:flex;
+    align-items:center;       /* Vertical center */
+    justify-content:center;   /* Horizontal center */
+    gap:10px;
 
     font-size:15px;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
 
     border-radius:10px;
-
-    display:block;
-
+    box-sizing:border-box;
 }
-
 /* =====================================================
    RELATED PROPERTIES (MOBILE)
 ===================================================== */

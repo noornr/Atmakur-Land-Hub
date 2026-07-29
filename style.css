@@ -164,7 +164,7 @@ header{
 
 .hero{
     position:relative;                     /* Parent element for overlay */
-    min-height:20vh;                       /* Minimum hero height (30% of screen height) */
+    min-height:25vh;                       /* Minimum hero height (30% of screen height) */
     display:flex;                          /* Enable Flexbox */
     align-items:center;                    /* Center content vertically */
     justify-content:flex-start;            /* Align content to the left */

@@ -1749,7 +1749,7 @@ body{
     background-size:cover;                 /* Fill entire hero area */
     background-position:center;            /* Center the background image */
     background-repeat:no-repeat;           /* Prevent image repetition */
-    padding:80px 8%;                       /* Inner spacing */
+    padding:60px 8%;                       /* Inner spacing */
 }
 
 .hero::before{

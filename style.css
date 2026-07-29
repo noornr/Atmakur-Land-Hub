@@ -3220,46 +3220,83 @@ footer p:last-child{
     border-radius:12px;
     transition:.3s ease;
     box-sizing:border-box;
+
 }
+
+/* ---------- Call Button ---------- */
 
 .call-btn{
 
     background:#FFD700;
-    color:#111;
+    color:#111111;
+
 }
 
 .call-btn:hover{
 
     background:#caa52d;
+    color:#111111;
     transform:translateY(-2px);
+
 }
+
+/* ---------- WhatsApp Button ---------- */
 
 .whatsapp-btn{
 
     background:#25D366;
     color:#FFFFFF;
+
 }
 
 .whatsapp-btn:hover{
 
     background:#1da851;
+    color:#FFFFFF;
     transform:translateY(-2px);
+
 }
 
-.details-btn,
+/* ---------- View Details Button ---------- */
+
+.details-btn{
+
+    background:#FFD700;
+    color:#111111;
+    border:1px solid #FFD700;
+
+}
+
+.details-btn:hover,
+.details-btn:focus,
+.details-btn:active{
+
+    background:#FFD700;
+    color:#111111;
+    border:1px solid #FFD700;
+    transform:translateY(-2px);
+
+}
+
+/* ---------- Back Button ---------- */
+
 .back-btn{
 
     background:#1A1A1A;
     color:#FFD700;
     border:1px solid rgba(212,175,55,.25);
+
 }
 
-.details-btn:hover,
 .back-btn:hover{
 
     background:#FFD700;
-    color:#111;
+    color:#111111;
+    transform:translateY(-2px);
+
 }
+
+/* ---------- Icons ---------- */
 
 .call-btn i,
 .whatsapp-btn i,
@@ -3270,6 +3307,7 @@ footer p:last-child{
     align-items:center;
     justify-content:center;
     line-height:1;
+
 }
 
 /* =====================================================

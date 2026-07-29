@@ -3273,78 +3273,80 @@ footer p:last-child{
 
 .call-btn,
 .whatsapp-btn,
-.details-btn{
+.details-btn,
+.back-btn{
 
-    display:block;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
 
     width:90%;
-
-    text-align:center;
-
-    padding:16px;
+    height:60px;
 
     margin:22px auto;
+    padding:0 20px;
 
     text-decoration:none;
+    text-align:center;
 
     font-size:17px;
-
     font-weight:700;
+    line-height:1;
 
     border-radius:12px;
-
     transition:.3s ease;
-
+    box-sizing:border-box;
 }
 
 .call-btn{
 
     background:#FFD700;
-
     color:#111;
-
 }
 
 .call-btn:hover{
 
     background:#caa52d;
-
     transform:translateY(-2px);
-
 }
 
 .whatsapp-btn{
 
     background:#25D366;
-
     color:#FFFFFF;
-
 }
 
 .whatsapp-btn:hover{
 
     background:#1da851;
-
     transform:translateY(-2px);
-
 }
 
-.details-btn{
+.details-btn,
+.back-btn{
 
     background:#1A1A1A;
-
     color:#FFD700;
-
     border:1px solid rgba(212,175,55,.25);
-
 }
 
-.details-btn:hover{
+.details-btn:hover,
+.back-btn:hover{
 
     background:#FFD700;
-
     color:#111;
+}
 
+.call-btn i,
+.whatsapp-btn i,
+.details-btn i,
+.back-btn i{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    line-height:1;
 }
 
 /* =====================================================

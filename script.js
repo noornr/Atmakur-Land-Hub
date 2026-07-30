@@ -124,7 +124,7 @@ window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);
 
 
-const API_URL = "YOUR_APPS_SCRIPT_URL";
+const API_URL = "https://script.google.com/macros/s/AKfycbyHU_YKlWR4l4Z7_QDWmAbNbf6SfgDORFHFBDzuhHK28cV14wvb-WT4B2QEYIiFDXBtdg/exec";
 
 async function loadProperties() {
 

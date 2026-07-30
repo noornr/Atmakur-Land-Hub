@@ -122,3 +122,64 @@ function revealSections() {
 window.addEventListener("scroll", revealSections);
 
 window.addEventListener("load", revealSections);
+
+
+const API_URL = "YOUR_APPS_SCRIPT_URL";
+
+async function loadProperties() {
+
+    const grid = document.getElementById("propertyGrid");
+
+    if (!grid) return;
+
+    try {
+
+        const res = await fetch(API_URL);
+        const properties = await res.json();
+
+        grid.innerHTML = "";
+
+        properties.forEach(property => {
+
+            grid.innerHTML += `
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="${property.Image}" alt="${property.Tittle}">
+                    <span class="badge available">${property.Status}</span>
+                </div>
+
+                <div class="card-content">
+
+                    <h3>${property.Tittle}</h3>
+
+                    <p>📍 <strong>Area :</strong> ${property.Area}</p>
+
+                    <p>📐 <strong>Land :</strong> ${property["Land Size"]}</p>
+
+                    <p class="price">${property.Price}</p>
+
+                    <a href="${property["Map Link"]}" class="details-btn">
+                        View Location
+                    </a>
+
+                    <a href="https://wa.me/${property.WhatsApp}" class="whatsapp-btn">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+            `;
+
+        });
+
+    } catch (err) {
+
+        console.log(err);
+
+    }
+
+}
+
+loadProperties();

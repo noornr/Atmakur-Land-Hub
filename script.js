@@ -151,7 +151,12 @@ async function loadProperties() {
 
                 <div class="card-content">
 
-                    <h3>${property.Tittle}</h3>
+                  <h3>
+                   Property ID:
+                     <span>${property.ID}</span>
+                 </h3>
+
+                       <h4>${property.Title}</h4>
 
                     <p>📍 <strong>Area :</strong> ${property.Area}</p>
 

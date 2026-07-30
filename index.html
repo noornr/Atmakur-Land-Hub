@@ -1,385 +1,269 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html>  <html lang="en">  
+<head>  <meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Atmakur Real Estate</title>  <meta property="og:image" content="images/hero.jpg">  <link rel="stylesheet" href="style.css">  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet"  
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  </head>  <body>  <header class="navbar">  <nav class="glass-navbar">  
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="#" class="nav-item active">  
+        <i class="fa-solid fa-house"></i>  
+        <span>Home</span>  
+    </a>  
 
-<title>Atmakur Real Estate</title>
+    <a href="#properties" class="nav-item">  
+        <i class="fa-solid fa-building"></i>  
+        <span>Properties</span>  
+    </a>  
 
-<meta property="og:image" content="images/hero.jpg">
-    
-<link rel="stylesheet" href="style.css">
+    <a href="#about" class="nav-item">  
+        <i class="fa-solid fa-user"></i>  
+        <span>About</span>  
+    </a>  
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <a href="tel:+91XXXXXXXXXX" class="nav-item">  
+        <i class="fa-solid fa-phone"></i>  
+        <span>Call</span>  
+    </a>  
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</nav>
 
-</head>
+</header>  
+<section class="hero">  <div class="hero-content">  
 
-<body>
+    <div class="hero-text">  
 
-<header class="navbar">
+        <div class="hero-location">  
+            <img src="images/atmakur-logo.png" alt="ఆత్మకూరు">  
+        </div>  
 
-    <nav class="glass-navbar">
+        <h1>  
+         Find Your <span>Perfect Property</span>  
+        </h1>  
 
-        <a href="#" class="nav-item active">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
-        </a>
+        <p>  
+            Premium Plots, Houses & Agricultural Land  
+            in and around Atmakur.  
+        </p>  
 
-        <a href="#properties" class="nav-item">
-            <i class="fa-solid fa-building"></i>
-            <span>Properties</span>
-        </a>
+        <div class="hero-buttons">  
 
-        <a href="#about" class="nav-item">
-            <i class="fa-solid fa-user"></i>
-            <span>About</span>
-        </a>
+            <a href="#properties" class="btn-primary">  
+                Explore Properties  
+            </a>  
 
-        <a href="tel:+91XXXXXXXXXX" class="nav-item">
-            <i class="fa-solid fa-phone"></i>
-            <span>Call</span>
-        </a>
+            <a href="#contact" class="btn-secondary">  
+                Contact Us  
+            </a>  
 
-    </nav>
+        </div>  
 
-</header>
-<section class="hero">
-
-    <div class="hero-content">
-
-        <div class="hero-text">
-
-            <div class="hero-location">
-                <img src="images/atmakur-logo.png" alt="ఆత్మకూరు">
-            </div>
-
-            <h1>
-             Find Your <span>Perfect Property</span>
-            </h1>
-
-            <p>
-                Premium Plots, Houses & Agricultural Land
-                in and around Atmakur.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#properties" class="btn-primary">
-                    Explore Properties
-                </a>
-
-                <a href="#contact" class="btn-secondary">
-                    Contact Us
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<div class="property-grid">
-
-    <div class="search-section">
-        <h2>Available Properties</h2>
-
-<div class="search-box">
-    <input
-        type="text"
-        id="searchInput"
-        placeholder="Search by area, road or property ID...">
-
-    <button onclick="searchProperties()">Search</button>
-</div>
-    </div>
-
-    <div class="section-title">
+    </div>  
 
 </div>
 
-    <div class="property-grid" id="propertyGrid">
+</section>  
+<section class="properties" id="properties">  <div class="search-section">  
+    <h2>Available Properties</h2>
 
-<!-- Property 1 -->
-<div class="card">
-<div class="card-image">
-<img src="images/property1.jpg" alt="Property 1">
-<span class="badge available">AVAILABLE</span>
-</div>
-<div class="card-content">
-<h3>
-    Property ID:
-<span>ALH-1001</span></h3>
-<p>📍 <strong>Area :</strong> Minority Colony</p>
-<p>📐 <strong>Land :</strong> 8 Cents</p>
-<p>⤴️ <strong>Face :</strong> East Face</p>
+<div class="search-box">  
+    <input  
+        type="text"  
+        id="searchInput"  
+        placeholder="Search by area, road or property ID...">  <button onclick="searchProperties()">Search</button>
 
-<p>📍 <strong>ప్రాంతం :</strong> మైనారిటీ కాలనీ</p>
-<p>📐 <strong>భూమి :</strong> 8 సెంట్లు</p>
-<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>
-<p class="price">₹7,50,000</p>
-<a href="property1.html" class="details-btn">View Details</a>
-<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>
-</div>
-</div>
-<!-- Property 2 -->
-<div class="card">
-<div class="card-image">
-<img src="images/property2.jpg" alt="Property 2">
-<span class="badge available">AVAILABLE</span>
-</div>
-<div class="card-content">
-<h3>
-Property ID:
-<span>ALH-1002</span>
-</h3>
-<p>📍 <strong>Area :</strong> Main Road</p>
-<p>📐 <strong>Land :</strong> 8 Cents</p>
-<p>⤴️ <strong>Face :</strong> East Face</p>
+</div>  
+    </div>  <div class="section-title">
 
-<p>📍 <strong>ప్రాంతం :</strong> మెయిన్ రోడ్</p>
-<p>📐 <strong>భూమి :</strong> 8 సెంట్లు</p>
-<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>
+</div>  <div class="property-grid">
 
-<p class="price">₹32,00,000</p>
-<a href="property2.html" class="details-btn">View Details</a>
-<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>
-</div>
-</div>
+<!-- Property 1 -->  <div class="card">  
+<div class="card-image">  
+<img src="images/property1.jpg" alt="Property 1">  
+<span class="badge available">AVAILABLE</span>  
+</div>  
+<div class="card-content">  
+<h3>  
+    Property ID:  
+<span>ALH-1001</span></h3>  
+<p>📍 <strong>Area :</strong> Minority Colony</p>  
+<p>📐 <strong>Land :</strong> 8 Cents</p>  
+<p>⤴️ <strong>Face :</strong> East Face</p>  <p>📍 <strong>ప్రాంతం :</strong> మైనారిటీ కాలనీ</p>  
+<p>📐 <strong>భూమి :</strong> 8 సెంట్లు</p>  
+<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>  
+<p class="price">₹7,50,000</p>  
+<a href="property1.html" class="details-btn">View Details</a>  
+<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>  
+</div>  
+</div>  
+<!-- Property 2 -->  
+<div class="card">  
+<div class="card-image">  
+<img src="images/property2.jpg" alt="Property 2">  
+<span class="badge available">AVAILABLE</span>  
+</div>  
+<div class="card-content">  
+<h3>  
+Property ID:  
+<span>ALH-1002</span>  
+</h3>  
+<p>📍 <strong>Area :</strong> Main Road</p>  
+<p>📐 <strong>Land :</strong> 8 Cents</p>  
+<p>⤴️ <strong>Face :</strong> East Face</p>  <p>📍 <strong>ప్రాంతం :</strong> మెయిన్ రోడ్</p>  
+<p>📐 <strong>భూమి :</strong> 8 సెంట్లు</p>  
+<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>  <p class="price">₹32,00,000</p>  
+<a href="property2.html" class="details-btn">View Details</a>  
+<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>  
+</div>  
+</div>  <!-- Property 3 -->  <div class="card">  
+<div class="card-image">  
+<img src="images/property3.jpg" alt="Property 3">  
+<span class="badge available">AVAILABLE</span>  
+</div>  
+<div class="card-content">  
+<h3>  
+Property ID:  
+<span>ALH-1003</span>  
+</h3>  
+<p>📍 <strong>Area :</strong> Bus Stand Area</p>  
+<p>📐 <strong>Land :</strong> 4 Cents</p>  
+<p>⤴️ <strong>Face :</strong> East Face</p>  <p>📍 <strong>ప్రాంతం :</strong> బస్ స్టాండ్ ప్రాంతం</p>  
+<p>📐 <strong>భూమి :</strong> 4 సెంట్లు</p>  
+<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>  <p class="price">₹15,50,000</p>  
+<a href="property3.html" class="details-btn">View Details</a>  
+<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>  
+</div>  
+</div>  <!-- Property 4 -->  <div class="card">  
+<div class="card-image">  
+<img src="images/property4.jpg" alt="Property 4">  
+<span class="badge available">AVAILABLE</span>  
+</div>  
+<div class="card-content">  
+<h3>  
+Property ID:  
+<span>ALH-1004</span>  
+</h3>  
+<p>📍 <strong>Area :</strong> Railway Road</p>  
+<p>📐 <strong>Land :</strong> 6 Cents</p>  
+<p>⤴️ <strong>Face :</strong> East Face</p>  <p>📍 <strong>ప్రాంతం :</strong> రైల్వే రోడ్</p>  
+<p>📐 <strong>భూమి :</strong> 6 సెంట్లు</p>  
+<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>  <p class="price">₹22,00,000</p>  
+<a href="property4.html" class="details-btn">View Details</a>  
+<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>  
+</div>  
+</div>  <!-- Property 5 -->  <div class="card">  
+<div class="card-image">  
+<img src="images/property5.jpg" alt="Property 5">  
+<span class="badge sale">FOR SALE</span>  
+</div>  
+<div class="card-content">  
+<h3>  
+Property ID:  
+<span>ALH-1005</span>  
+</h3>  
+<p>📍 <strong>Area :</strong> New Layout</p>  
+<p>📐 <strong>Land :</strong> 10 Cents</p>  
+<p>⤴️ <strong>Face :</strong> East Face</p>  <p>📍 <strong>ప్రాంతం :</strong> న్యూ లేఅవుట్</p>  
+<p>📐 <strong>భూమి :</strong> 10 సెంట్లు</p>  
+<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>  <p class="price">₹45,00,000</p>  
+<a href="property5.html" class="details-btn">View Details</a>  
+<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>  
+</div>  
+</div>  </div>  </section>  
+<section class="stats">  <div class="stat-box">  
+<h2>5+</h2>  
+<p>Properties Listed</p>  
+</div>  <div class="stat-box">  
+<h2>10+</h2>  
+<p>Happy Clients</p>  
+</div>  <div class="stat-box">  
+<h2>2+</h2>  
+<p>Locations Covered</p>  
+</div>  <div class="stat-box">  
+<h2>100%</h2>  
+<p>Trusted Service</p>  
+</div>  </section>  
+<section class="featured-property">  
+  <h2>⭐ Featured Property</h2>    <div class="featured-card">  
+      <img src="images/property1.jpg" alt="Featured Property">  <div class="featured-content">  
+      <h3>Premium Residential Plot</h3>  
 
-<!-- Property 3 -->
-<div class="card">
-<div class="card-image">
-<img src="images/property3.jpg" alt="Property 3">
-<span class="badge available">AVAILABLE</span>
-</div>
-<div class="card-content">
-<h3>
-Property ID:
-<span>ALH-1003</span>
-</h3>
-<p>📍 <strong>Area :</strong> Bus Stand Area</p>
-<p>📐 <strong>Land :</strong> 4 Cents</p>
-<p>⤴️ <strong>Face :</strong> East Face</p>
+      <p><strong>📍 Area:</strong> ABC Colony</p>  
 
-<p>📍 <strong>ప్రాంతం :</strong> బస్ స్టాండ్ ప్రాంతం</p>
-<p>📐 <strong>భూమి :</strong> 4 సెంట్లు</p>
-<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>
+      <p><strong>📐 Land:</strong> 5 Cents</p>  
 
-<p class="price">₹15,50,000</p>
-<a href="property3.html" class="details-btn">View Details</a>
-<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>
-</div>
-</div>
+      <p><strong>💰 Price:</strong> ₹18,50,000</p>  
 
-<!-- Property 4 -->
-<div class="card">
-<div class="card-image">
-<img src="images/property4.jpg" alt="Property 4">
-<span class="badge available">AVAILABLE</span>
-</div>
-<div class="card-content">
-<h3>
-Property ID:
-<span>ALH-1004</span>
-</h3>
-<p>📍 <strong>Area :</strong> Railway Road</p>
-<p>📐 <strong>Land :</strong> 6 Cents</p>
-<p>⤴️ <strong>Face :</strong> East Face</p>
-
-<p>📍 <strong>ప్రాంతం :</strong> రైల్వే రోడ్</p>
-<p>📐 <strong>భూమి :</strong> 6 సెంట్లు</p>
-<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>
-
-<p class="price">₹22,00,000</p>
-<a href="property4.html" class="details-btn">View Details</a>
-<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>
-</div>
-</div>
-
-<!-- Property 5 -->
-<div class="card">
-<div class="card-image">
-<img src="images/property5.jpg" alt="Property 5">
-<span class="badge sale">FOR SALE</span>
-</div>
-<div class="card-content">
-<h3>
-Property ID:
-<span>ALH-1005</span>
-</h3>
-<p>📍 <strong>Area :</strong> New Layout</p>
-<p>📐 <strong>Land :</strong> 10 Cents</p>
-<p>⤴️ <strong>Face :</strong> East Face</p>
-
-<p>📍 <strong>ప్రాంతం :</strong> న్యూ లేఅవుట్</p>
-<p>📐 <strong>భూమి :</strong> 10 సెంట్లు</p>
-<p>⤴️ <strong>ముఖం :</strong> తూర్పు ముఖం</p>
-
-<p class="price">₹45,00,000</p>
-<a href="property5.html" class="details-btn">View Details</a>
-<a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">WhatsApp</a>
-</div>
-</div>
-
-</div>
-
-</section>
-<section class="stats">
-
-<div class="stat-box">
-<h2>5+</h2>
-<p>Properties Listed</p>
-</div>
-
-<div class="stat-box">
-<h2>10+</h2>
-<p>Happy Clients</p>
-</div>
-
-<div class="stat-box">
-<h2>2+</h2>
-<p>Locations Covered</p>
-</div>
-
-<div class="stat-box">
-<h2>100%</h2>
-<p>Trusted Service</p>
-</div>
-
-</section>
-<section class="featured-property">
-  <h2>⭐ Featured Property</h2>
-
-  <div class="featured-card">
-      <img src="images/property1.jpg" alt="Featured Property">
-
-      <div class="featured-content">
-          <h3>Premium Residential Plot</h3>
-
-          <p><strong>📍 Area:</strong> ABC Colony</p>
-
-          <p><strong>📐 Land:</strong> 5 Cents</p>
-
-          <p><strong>💰 Price:</strong> ₹18,50,000</p>
-
-          <a href="property1.html" class="details-btn">View Details</a>
-      </div>
+      <a href="property1.html" class="details-btn">View Details</a>  
   </div>
-</section>
-<section class="why-us">
 
-    <h2>Why Choose Atmakur Real Estate?</h2>
+  </div>  
+</section>  
+<section class="why-us">  <h2>Why Choose Atmakur Real Estate?</h2>  
 
-    <div class="why-grid">
+<div class="why-grid">  
 
-        <div class="why-card">
-            <h3>✔ Verified Properties</h3>
-            <p>Every property is carefully verified before listing.</p>
-        </div>
+    <div class="why-card">  
+        <h3>✔ Verified Properties</h3>  
+        <p>Every property is carefully verified before listing.</p>  
+    </div>  
 
-    <div class="why-card">
-        <h3>📍 Prime Locations</h3>
-        <p>Properties in the best areas of Atmakur and nearby locations.</p>
-    </div>
+<div class="why-card">  
+    <h3>📍 Prime Locations</h3>  
+    <p>Properties in the best areas of Atmakur and nearby locations.</p>  
+</div>  
 
-    <div class="why-card">
-        <h3>🤝 Trusted Service</h3>
-        <p>Transparent dealings with honest guidance throughout.</p>
-    </div>
+<div class="why-card">  
+    <h3>🤝 Trusted Service</h3>  
+    <p>Transparent dealings with honest guidance throughout.</p>  
+</div>  
 
-    <div class="why-card">
-        <h3>💬 Quick Support</h3>
-        <p>Fast responses through WhatsApp and phone support.</p>
-    </div>
+<div class="why-card">  
+    <h3>💬 Quick Support</h3>  
+    <p>Fast responses through WhatsApp and phone support.</p>  
+</div>
+
+</div>  </section>  
+<section class="testimonials">  <h2>What Our Clients Say</h2>  
+
+<div class="testimonial-grid">  
+
+<div class="testimonial-card">  
+    <p>"Excellent service! The property buying process was smooth and transparent."</p>  
+    <h4>— Abdul Rahman</h4>  
+</div>  
+
+<div class="testimonial-card">  
+    <p>"Highly recommended. Professional guidance and genuine property listings."</p>  
+    <h4>— Shaik Ahmed</h4>  
+</div>  
+
+<div class="testimonial-card">  
+        <p>"Found the perfect plot at the right price. Thank you Atmakur Real Estate!"</p>  
+        <h4>— Noor Mohammed</h4>  
+    </div>  
 
 </div>
 
-</section>
-<section class="testimonials">
+</section>  
+<section id="about" class="about">  <h2>About Atmakur Real Estate</h2>  
 
-    <h2>What Our Clients Say</h2>
+<p>  
+    Atmakur Real Estate is dedicated to helping buyers and sellers find the right properties with honesty, transparency, and trusted service. We focus on verified plots, prime locations, and a smooth property buying experience across Atmakur and nearby areas.  
+</p>
 
-    <div class="testimonial-grid">
-
-    <div class="testimonial-card">
-        <p>"Excellent service! The property buying process was smooth and transparent."</p>
-        <h4>— Abdul Rahman</h4>
-    </div>
-
-    <div class="testimonial-card">
-        <p>"Highly recommended. Professional guidance and genuine property listings."</p>
-        <h4>— Shaik Ahmed</h4>
-    </div>
-
-    <div class="testimonial-card">
-            <p>"Found the perfect plot at the right price. Thank you Atmakur Real Estate!"</p>
-            <h4>— Noor Mohammed</h4>
-        </div>
-
-    </div>
-
-</section>
-<section id="about" class="about">
-
-    <h2>About Atmakur Real Estate</h2>
-
-    <p>
-        Atmakur Real Estate is dedicated to helping buyers and sellers find the right properties with honesty, transparency, and trusted service. We focus on verified plots, prime locations, and a smooth property buying experience across Atmakur and nearby areas.
-    </p>
-
-</section>
-
-<section class="contact" id="contact">
-
-<h2>Contact Us</h2>
-
-<p>📞 Phone: +91 YOUR NUMBER</p>
-
-<p>💬 WhatsApp: +91 YOUR NUMBER</p>
-
-<p>📍 Atmakur, Andhra Pradesh</p>
-<iframe
-src="https://www.google.com/maps?q=Atmakur,Andhra%20Pradesh&output=embed"
-width="100%"
-height="350"
-style="border:0;border-radius:15px;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-<p>📧 Email: youremail@gmail.com</p>
-
-<a href="tel:+91YOURNUMBER" class="call-btn">Call Now</a>
+</section>  <section class="contact" id="contact">  <h2>Contact Us</h2>  <p>📞 Phone: +91 YOUR NUMBER</p>  <p>💬 WhatsApp: +91 YOUR NUMBER</p>  <p>📍 Atmakur, Andhra Pradesh</p>  
+<iframe  
+src="https://www.google.com/maps?q=Atmakur,Andhra%20Pradesh&output=embed"  
+width="100%"  
+height="350"  
+style="border:0;border-radius:15px;"  
+allowfullscreen=""  
+loading="lazy">  
+</iframe>  <p>📧 Email: youremail@gmail.com</p>  <a href="tel:+91YOURNUMBER" class="call-btn">Call Now</a>
 
 <a href="https://wa.me/91YOURNUMBER" class="whatsapp-btn">Chat on WhatsApp</a>
 
-  </section>
-<hr class="section-divider">
-
-<footer>
-
-<h2>Atmakur Real Estate</h2>
-
-<p>Your Trusted Partner for Buying & Selling Properties</p>
-
-<p>📍 Atmakur, Andhra Pradesh</p>
-
-<p>📞 +91 YOUR NUMBER</p>
-
-<p>© 2026 Atmakur Real Estate. All Rights Reserved.</p>
-<p><i class="fa-solid fa-code"></i>👨‍💻 Designed &amp; Developed by Noor Mohammad</p>
-
-</footer>
-
-<a href="https://wa.me/91YOURNUMBER" class="floating-whatsapp">
-    💬
-</a>
-  
-<script src="script.js"></script>
-</body>
+  </section>  
+<hr class="section-divider">  <footer>  <h2>Atmakur Real Estate</h2>  <p>Your Trusted Partner for Buying & Selling Properties</p>  <p>📍 Atmakur, Andhra Pradesh</p>  <p>📞 +91 YOUR NUMBER</p>  <p>© 2026 Atmakur Real Estate. All Rights Reserved.</p>  
+<p><i class="fa-solid fa-code"></i>👨‍💻 Designed &amp; Developed by Noor Mohammad</p>  </footer>  <a href="https://wa.me/91YOURNUMBER" class="floating-whatsapp">  
+    💬  
+</a>  <script src="script.js"></script>  </body>  
 </html>

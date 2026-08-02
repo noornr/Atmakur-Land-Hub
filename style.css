@@ -1854,11 +1854,11 @@ body{
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:20px;
+    gap:10px;
 
-    margin-top:20px;
+    margin-top:15px;
 
-    padding:0 15px;
+    padding:0 8px;
 
 }
 
@@ -1872,32 +1872,19 @@ body{
 
     max-width:100%;
 
-    margin:0 auto;
+    margin:0;
 
-    border-radius:18px;
-
-}
-
-.card:hover{
-
-    transform:none;
+    border-radius:12px;
 
 }
 
-.card::after{
-
-    display:none;
-
-}
-
-
-  /* =========================================================
+/* =========================================================
    4.3 PROPERTY IMAGE (MOBILE)
 ========================================================= */
 
 .card-image{
 
-    border-radius:18px 18px 0 0;
+    border-radius:12px 12px 0 0;
 
 }
 
@@ -1905,23 +1892,17 @@ body{
 
     width:100%;
 
-    height:220px;
+    height:120px;
 
     object-fit:cover;
 
-    border-radius:18px 18px 0 0;
+    border-radius:12px 12px 0 0;
 
 }
 
 .card-image::after{
 
-    height:60px;
-
-}
-
-.card:hover .card-image img{
-
-    transform:none;
+    height:35px;
 
 }
 
@@ -1931,55 +1912,36 @@ body{
 
 .badge{
 
-    top:10px;
+    top:6px;
 
-    left:10px;
+    left:6px;
 
-    padding:6px 12px;
+    padding:4px 8px;
 
-    font-size:10px;
+    font-size:8px;
 
-    letter-spacing:.5px;
-
-    border-radius:20px;
+    border-radius:14px;
 
 }
 
 .badge.available{
 
-    top:10px;
+    top:6px;
 
-    left:10px;
+    left:6px;
 
-    padding:6px 12px;
+    padding:4px 8px;
 
-    font-size:10px;
-
-    font-weight:700;
+    font-size:8px;
 
 }
 
-.available{
-
-    font-size:10px;
-
-}
-
-.featured{
-
-    font-size:10px;
-
-}
-
-.new{
-
-    font-size:10px;
-
-}
-
+.available,
+.featured,
+.new,
 .sold{
 
-    font-size:10px;
+    font-size:8px;
 
 }
 
@@ -1989,43 +1951,43 @@ body{
 
 .price{
 
-    margin:18px 0 8px;
+    margin:10px 0 5px;
 
     text-align:center;
 
-    font-size:24px;
+    font-size:16px;
 
     font-weight:800;
 
     color:#FFD700;
 
-    letter-spacing:.5px;
+    letter-spacing:.3px;
 
     text-shadow:
-        0 0 8px rgba(212,175,55,.25);
+        0 0 5px rgba(212,175,55,.25);
 
 }
 
-  
+
 /* =========================================================
    4.6 PROPERTY CONTENT (MOBILE)
 ========================================================= */
 
 .card-content{
 
-    margin:-18px 15px 15px;
+    margin:-12px 8px 8px;
 
-    padding:18px;
+    padding:10px;
 
-    border-radius:18px;
+    border-radius:12px;
 
 }
 
 .card-content h3{
 
-    font-size:20px;
+    font-size:14px;
 
-    margin-bottom:12px;
+    margin-bottom:8px;
 
     text-align:center;
 
@@ -2033,21 +1995,21 @@ body{
 
 .card-content p{
 
-    gap:8px;
+    gap:5px;
 
-    margin:10px 0;
+    margin:6px 0;
 
-    padding-bottom:8px;
+    padding-bottom:5px;
 
-    font-size:14px;
+    font-size:10px;
 
-    line-height:1.6;
+    line-height:1.4;
 
 }
 
 .card-content strong{
 
-    font-size:14px;
+    font-size:10px;
 
 }
 
@@ -2057,17 +2019,16 @@ body{
 
     justify-content:center;
 
-    padding:8px 12px;
+    padding:5px 8px;
 
-    font-size:12px;
+    font-size:9px;
 
-    margin-top:10px;
+    margin-top:6px;
 
 }
 
 
-  
-  /* =========================================================
+/* =========================================================
    4.7 PROPERTY BUTTONS (MOBILE)
 ========================================================= */
 
@@ -2083,15 +2044,15 @@ body{
 
     width:100%;
 
-    height:48px;
+    height:34px;
 
-    margin-top:14px;
+    margin-top:8px;
 
-    font-size:15px;
+    font-size:11px;
 
     font-weight:700;
 
-    border-radius:12px;
+    border-radius:8px;
 
 }
 
@@ -2108,25 +2069,15 @@ body{
 
     width:100%;
 
-    height:48px;
+    height:34px;
 
-    margin-top:12px;
+    margin-top:8px;
 
-    font-size:15px;
+    font-size:11px;
 
     font-weight:700;
 
-    border-radius:12px;
-
-}
-
-.contact .whatsapp-btn{
-
-    display:block;
-
-    width:100%;
-
-    margin-top:14px;
+    border-radius:8px;
 
 }
 

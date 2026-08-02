@@ -284,6 +284,14 @@ header{
     z-index:10;
 }
 
+.search-section h2{
+    text-align:center;
+    color:#FFD700;
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:20px;
+    text-shadow:0 0 10px rgba(255,215,0,.25);
+}
 .search-box{
 
     max-width:750px;
@@ -1769,13 +1777,23 @@ body{
 }
 
 
-.search-section h2{
+/* =========================================================
+   SEARCH SECTION TITLE (MOBILE)
+========================================================= */
 
-    font-size:24px;
+.search-section h2{
 
     text-align:center;
 
+    color:#FFD700;
+
+    font-size:26px;
+
+    font-weight:700;
+
     margin-bottom:18px;
+
+    text-shadow:0 0 8px rgba(255,215,0,.25);
 
 }
 

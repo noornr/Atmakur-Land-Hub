@@ -1,1 +1,1342 @@
 
+/* PROPERTY1.HTML DESKTOP */
+
+
+
+
+/* =====================================================
+   PREMIUM NAVBAR (DESKTOP)
+===================================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:97px;                 /* 84 → 97 */
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(5,5,5,.96);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(212,175,55,.20);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    z-index:9999;
+
+}
+
+.glass-navbar{
+
+    width:100%;
+
+    max-width:1380px;           /* 1200 → 1380 */
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+    padding:0 46px;             /* 40 → 46 */
+
+    margin:auto;
+
+}
+
+.nav-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:138px;            /* 120 → 138 */
+
+    text-decoration:none;
+
+    color:#E8E8E8;
+
+    transition:.35s ease;
+
+}
+
+.nav-item i{
+
+    font-size:32px;             /* 28 → 32 */
+
+    color:#FFD700;
+
+    margin-bottom:7px;          /* 6 → 7 */
+
+    transition:.35s ease;
+
+}
+
+.nav-item span{
+
+    font-size:17px;             /* 15 → 17 */
+
+    font-weight:600;
+
+    color:inherit;
+
+}
+
+.nav-item:hover{
+
+    color:#FFD700;
+
+    transform:translateY(-5px); /* 4 → 5 */
+
+}
+
+.nav-item:hover i{
+
+    transform:scale(1.15);      /* 1.12 → 1.15 */
+
+    text-shadow:0 0 12px rgba(255,215,0,.45);
+
+}
+
+.nav-item.active{
+
+    color:#FFD700;
+
+}
+
+.nav-item.active i{
+
+    text-shadow:
+        0 0 10px rgba(255,215,0,.45),
+        0 0 18px rgba(255,215,0,.25);
+
+}
+    /* =====================================================
+   PROPERTY DETAILS CONTAINER (DESKTOP)
+===================================================== */
+
+.property-details{
+
+    margin:120px auto 32px;
+
+    width:90%;
+    max-width:1062px;
+
+    padding:29px;
+
+    background:rgba(12,12,12,.96);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:22px;
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 16px 36px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    transition:.35s ease;
+
+}
+
+.property-details:hover{
+
+    border-color:#FFD700;
+
+    box-shadow:
+        0 18px 40px rgba(255,215,0,.16),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+}
+
+/* =====================================================
+   PREMIUM PROPERTY SLIDER (DESKTOP)
+===================================================== */
+
+.slider{
+
+    position:relative;
+
+    width:100%;
+
+    margin-bottom:32px;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    box-shadow:
+        0 14px 32px rgba(0,0,0,.40);
+
+}
+
+.slider img{
+
+    display:block;
+
+    width:100%;
+
+    height:495px;
+
+    object-fit:cover;
+
+    transition:.4s ease;
+
+}
+
+.slider:hover img{
+
+    transform:scale(1.03);
+
+}
+
+.prev,
+.next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:47px;
+
+    height:47px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:rgba(0,0,0,.55);
+
+    color:#FFD700;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+    line-height:1;
+
+    backdrop-filter:blur(9px);
+
+    transition:.3s ease;
+
+}
+
+.prev{
+
+    left:16px;
+
+}
+
+.next{
+
+    right:16px;
+
+}
+
+.prev:hover,
+.next:hover{
+
+    background:#FFD700;
+
+    color:#000;
+
+    transform:translateY(-50%) scale(1.08);
+
+}
+
+/* =====================================================
+   PROPERTY INFORMATION (DESKTOP)
+===================================================== */
+
+.property-info{
+
+    background:#111111;
+    border:1px solid rgba(212,175,55,.18);
+    border-radius:18px;
+    padding:27px;
+    margin-bottom:27px;
+
+    box-shadow:
+        0 11px 27px rgba(0,0,0,.35);
+
+}
+
+.property-info h1{
+
+    font-size:34px;        /* Increased from 31px */
+    color:#FFD700;
+    margin-bottom:16px;
+    font-weight:700;
+
+}
+
+.property-info h2{
+
+    font-size:42px;        /* Increased from 36px */
+    color:#FFFFFF;
+    margin-bottom:22px;
+    font-weight:800;
+
+}
+
+.property-info p{
+
+    font-size:20px;        /* Increased from 15px */
+    line-height:1.8;
+    color:#E8E8E8;
+    margin-bottom:14px;
+
+}
+
+.property-info strong{
+
+    font-size:21px;        /* Added */
+    color:#FFD700;
+    font-weight:700;
+
+}
+
+
+/* =====================================================
+   PREMIUM MAP SECTION (DESKTOP)
+===================================================== */
+
+.map-section{
+
+    width:90%;
+    max-width:960px;
+
+    background:#111111;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:20px;
+
+    padding:27px;
+
+    margin:32px auto;
+
+    box-shadow:
+        0 14px 32px rgba(0,0,0,.35);
+
+}
+
+.map-section h3{
+
+    color:#FFD700;
+
+    font-size:25px;
+
+    margin-bottom:18px;
+
+}
+
+.map-section iframe{
+
+    width:100%;
+
+    height:378px;
+
+    border:none;
+
+    border-radius:16px;
+
+}
+
+.map-btn{
+
+    display:block;
+
+    width:234px;
+
+    margin:22px auto 0;
+
+    padding:14px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#FFD700;
+
+    color:#111;
+
+    border-radius:11px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:.3s ease;
+
+}
+
+.map-btn:hover{
+
+    background:#caa52d;
+
+    transform:translateY(-2px);
+
+}
+
+/* =====================================================
+   SECTION TITLE (DESKTOP)
+===================================================== */
+.section-title{
+    width:90%;
+    max-width:960px;
+    margin:0 auto 18px;
+    padding-left:15px;
+}
+
+
+/* =====================================================
+   SHARE PROPERTY (DESKTOP)
+===================================================== */
+
+.share-buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:14px;
+
+    margin:22px 0 32px;
+
+}
+
+.share-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:80%;
+
+    margin:8px auto;
+
+    height:50px;
+
+    border-radius:13px;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#FFFFFF;
+
+    background:#161616;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    transition:.3s ease;
+
+    cursor:pointer;
+
+}
+
+.share-btn:hover{
+
+    background:#FFD700;
+
+    color:#111;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 9px 22px rgba(255,215,0,.25);
+
+}
+/* =====================================================
+   BOOK SITE VISIT (DESKTOP)
+===================================================== */
+
+.visit-box{
+
+    width:90%;                  /* Reduced width by 10% */
+    max-width:900px;
+    margin:27px auto;
+
+    background:#111111;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:18px;
+
+    padding:27px;
+
+    text-align:center;
+
+    box-shadow:
+        0 11px 27px rgba(0,0,0,.35);
+
+}
+
+.visit-box p{
+
+    font-size:15px;
+
+    color:#E8E8E8;
+
+    margin-bottom:20px;
+
+    line-height:1.6;
+
+}
+
+.visit-btn{
+
+    display:inline-block;
+
+    padding:14px 29px;
+
+    background:#FFD700;
+
+    color:#111;
+
+    text-decoration:none;
+
+    border-radius:11px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+    transition:.3s ease;
+
+}
+
+.visit-btn:hover{
+
+    background:#caa52d;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 9px 22px rgba(255,215,0,.25);
+
+}
+
+/* =====================================================
+   ACTION BUTTONS (DESKTOP)
+===================================================== */
+
+.call-btn,
+.whatsapp-btn,
+.details-btn,
+.back-btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:90%;
+    height:60px;
+
+    margin:22px auto;
+    padding:0 20px;
+
+    text-decoration:none;
+    text-align:center;
+
+    font-size:17px;
+    font-weight:700;
+    line-height:1;
+
+    border-radius:12px;
+    transition:.3s ease;
+    box-sizing:border-box;
+
+}
+
+/* ---------- Call Button ---------- */
+
+.call-btn{
+
+    background:#FFD700;
+    color:#111111;
+
+}
+
+.call-btn:hover{
+
+    background:#caa52d;
+    color:#111111;
+    transform:translateY(-2px);
+
+}
+
+/* ---------- WhatsApp Button ---------- */
+
+.whatsapp-btn{
+
+    background:#25D366;
+    color:#FFFFFF;
+
+}
+
+.whatsapp-btn:hover{
+
+    background:#1da851;
+    color:#FFFFFF;
+    transform:translateY(-2px);
+
+}
+
+/* ---------- View Details Button ---------- */
+
+.details-btn{
+
+    background:#FFD700;
+    color:#111111;
+    border:1px solid #FFD700;
+
+}
+
+.details-btn:hover,
+.details-btn:focus,
+.details-btn:active{
+
+    background:#FFD700;
+    color:#111111;
+    border:1px solid #FFD700;
+    transform:translateY(-2px);
+
+}
+
+/* ---------- Back Button ---------- */
+
+.back-btn{
+
+    background:#1A1A1A;
+    color:#FFD700;
+    border:1px solid rgba(212,175,55,.25);
+
+}
+
+.back-btn:hover{
+
+    background:#FFD700;
+    color:#111111;
+    transform:translateY(-2px);
+
+}
+
+/* ---------- Icons ---------- */
+
+.call-btn i,
+.whatsapp-btn i,
+.details-btn i,
+.back-btn i{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    line-height:1;
+
+}
+
+/* =====================================================
+   RELATED PROPERTIES (DESKTOP)
+===================================================== */
+
+.related-properties{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:28px;
+
+    margin:35px 0;
+
+}
+
+.related-properties .card{
+
+    background:#111111;
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.35);
+
+}
+
+.related-properties .card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#FFD700;
+
+    box-shadow:
+        0 20px 40px rgba(255,215,0,.18);
+
+}
+
+.related-properties .card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.related-properties .card-content{
+
+    padding:22px;
+
+}
+
+.related-properties .card-content h3{
+
+    color:#FFD700;
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.related-properties .card-content p{
+
+    color:#FFFFFF;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+/* =====================================================
+   PREMIUM FOOTER (DESKTOP)
+===================================================== */
+
+footer{
+
+    margin-top:60px;
+
+    padding:40px 8%;
+
+    background:#080808;
+
+    border-top:1px solid rgba(212,175,55,.18);
+
+    text-align:center;
+
+}
+
+footer h3{
+
+    color:#FFD700;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#CFCFCF;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+footer a{
+
+    color:#FFD700;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+footer a:hover{
+
+    color:#FFFFFF;
+
+}
+
+/* =====================================================
+   PREMIUM SCROLL ANIMATION
+===================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+/* =====================================================
+   PREMIUM BUTTON EFFECT
+===================================================== */
+
+.call-btn,
+.whatsapp-btn,
+.details-btn,
+.visit-btn,
+.map-btn,
+.enquiry-form button{
+
+    position:relative;
+    overflow:hidden;
+    transition:.35s ease;
+
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover,
+.details-btn:hover,
+.visit-btn:hover,
+.map-btn:hover,
+.enquiry-form button:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(255,215,0,.28);
+
+}
+
+/* =====================================================
+   IMAGE HOVER EFFECT
+===================================================== */
+
+.slider{
+
+    overflow:hidden;
+
+}
+
+.slider img{
+
+    transition:transform .6s ease;
+
+}
+
+.slider:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* =====================================================
+   PAGE FADE-IN
+===================================================== */
+
+body{
+
+    animation:pageFade .8s ease;
+
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+/* =====================================================
+   PREMIUM NAVBAR (MOBILE)
+===================================================== */
+
+
+
+/* PROPERTY1.HTML MOBILE */
+
+@media (max-width:767px){
+
+.navbar{
+
+    height:70px;
+
+    background:rgba(5,5,5,.96);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(212,175,55,.20);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+}
+
+.glass-navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-evenly;
+
+    width:100%;
+
+    height:100%;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.nav-item{
+
+    flex:1;
+
+    min-width:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#E8E8E8;
+
+    transition:.3s ease;
+
+}
+
+.nav-item i{
+
+    font-size:24px;
+
+    color:#FFD700;
+
+    margin-bottom:4px;
+
+    transition:.3s ease;
+
+}
+
+.nav-item span{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    color:inherit;
+
+}
+
+.nav-item:hover,
+.nav-item.active{
+
+    color:#FFD700;
+
+}
+
+.nav-item:hover i,
+.nav-item.active i{
+
+    transform:scale(1.08);
+
+    text-shadow:0 0 10px rgba(255,215,0,.35);
+
+}
+
+body{
+
+    padding-top:70px;
+
+}
+
+/* =====================================================
+   PROPERTY DETAILS CONTAINER (MOBILE)
+===================================================== */
+
+.property-details{
+
+    width:90%;
+    margin:18px auto;
+    padding:16px;
+    border-radius:16px;
+
+    border:1px solid rgba(212,175,55,.15);
+
+    background:rgba(12,12,12,.96);
+
+    box-shadow:
+        0 9px 22px rgba(0,0,0,.35);
+
+}
+
+/* =====================================================
+   PREMIUM PROPERTY SLIDER (MOBILE)
+===================================================== */
+
+.slider{
+
+    margin-bottom:18px;
+    border-radius:14px;
+
+}
+
+.slider img{
+
+    width:100%;
+    height:216px;
+    object-fit:cover;
+    border-radius:14px;
+
+}
+
+.prev,
+.next{
+
+    width:38px;
+    height:38px;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:20px;
+    line-height:1;
+
+}
+
+.prev{
+
+    left:9px;
+
+}
+
+.next{
+
+    right:9px;
+
+}
+
+/* =====================================================
+   PROPERTY INFORMATION (MOBILE)
+===================================================== */
+
+.property-info{
+
+    padding:16px;
+    border-radius:14px;
+    margin-bottom:18px;
+
+}
+
+.property-info h1{
+
+    font-size:20px;      /* 22px → 20px */
+    line-height:1.3;
+    margin-bottom:11px;
+
+}
+
+.property-info h2{
+
+    font-size:29px;      /* 32px → 29px */
+    margin-bottom:16px;
+
+}
+
+.property-info p{
+
+    font-size:16px;      /* 18px → 16px */
+    line-height:1.8;
+    margin-bottom:12px;
+
+}
+
+.property-info strong{
+
+    font-size:17px;      /* 19px → 17px */
+    font-weight:700;
+
+}
+
+/* =====================================================
+   PREMIUM MAP SECTION (MOBILE)
+===================================================== */
+
+.map-section{
+
+    padding:18px;
+
+    margin:20px auto;
+
+    border-radius:16px;
+
+}
+
+.map-section h3{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.map-section iframe{
+
+    height:250px;
+
+    border-radius:14px;
+
+}
+
+.map-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    font-size:15px;
+
+    margin-top:18px;
+
+}
+/* =====================================================
+   SECTION TITLE (MOBILE)
+===================================================== */
+
+.section-title{
+    width:92%;
+    margin:0 auto 16px;
+    padding-left:15px;
+}
+/* =====================================================
+   SHARE PROPERTY (MOBILE)
+===================================================== */
+
+.share-buttons{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:11px;
+
+    margin:18px 0 22px;
+
+}
+
+.share-btn{
+
+    height:43px;
+
+    width:80%;
+
+    margin:8px auto; 
+
+    font-size:13px;
+
+    border-radius:11px;
+
+}
+
+
+/* =====================================================
+   BOOK SITE VISIT (MOBILE)
+===================================================== */
+
+.visit-box{
+
+    width:90%;                 /* Reduced width by 10% */
+
+    padding:18px;
+
+    margin:18px auto;
+
+    border-radius:14px;
+
+}
+
+.visit-box p{
+
+    font-size:14px;
+
+    line-height:1.5;
+
+    margin-bottom:16px;
+
+}
+
+.visit-btn{
+
+    display:block;
+
+    width:90%;                 /* Reduced width by 10% */
+
+    margin:0 auto;             /* Center button */
+
+    padding:13px;
+
+    font-size:14px;
+
+    border-radius:9px;
+
+}
+
+.details-btn{
+
+    background:#FFD700;
+    color:#111111;
+    border:1px solid #FFD700;
+
+}
+
+.details-btn:hover,
+.details-btn:focus,
+.details-btn:active{
+
+    background:#FFD700;
+    color:#111111;
+    border:1px solid #FFD700;
+
+}
+/* =====================================================
+   RELATED PROPERTIES (MOBILE)
+===================================================== */
+
+.related-properties{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+    margin:25px 0;
+
+}
+
+.related-properties .card{
+
+    border-radius:16px;
+
+}
+
+.related-properties .card img{
+
+    height:190px;
+
+}
+
+.related-properties .card-content{
+
+    padding:18px;
+
+}
+
+.related-properties .card-content h3{
+
+    font-size:20px;
+
+}
+
+.related-properties .card-content p{
+
+    font-size:18px;
+
+}
+
+footer{
+
+    margin-top:40px;
+
+    padding:30px 20px;
+
+}
+
+footer h3{
+
+    font-size:22px;
+
+}
+
+footer p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}

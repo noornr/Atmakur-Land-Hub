@@ -1530,3 +1530,1020 @@ footer p:last-child{
 }
 
 
+
+
+/* ==================================================================================================================================
+                    MOBILE VERSION
+========================================================= */
+
+@media (max-width:767px){
+
+/* =========================================================
+   1. NAVBAR (MOBILE)
+========================================================= */
+
+.navbar{
+
+    position:fixed;
+
+    bottom:0;
+
+    top:auto;
+
+    left:0;
+
+    width:100%;
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(5,5,5,.96);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-top:1px solid rgba(255,215,0,.18);
+
+    border-bottom:none;
+
+    box-shadow:
+        0 -8px 20px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    z-index:9999;
+
+}
+
+.glass-navbar{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.nav-item{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#E8E8E8;
+
+    min-width:0;
+
+    transition:all .3s ease;
+
+}
+
+.nav-item i{
+
+    font-size:24px;
+
+    color:#FFD700;
+
+    margin-bottom:4px;
+
+}
+
+.nav-item span{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    line-height:1;
+
+    white-space:nowrap;
+
+}
+
+.nav-item:hover,
+.nav-item.active{
+
+    color:#FFD700;
+
+}
+
+.nav-item:hover i,
+.nav-item.active i{
+
+    color:#FFD700;
+
+    text-shadow:0 0 8px rgba(255,215,0,.35);
+
+}
+
+body{
+
+    padding-bottom:70px;
+
+}
+
+/* =========================================================
+   2. HERO SECTION (MOBILE)
+========================================================= */
+
+.hero{
+
+    min-height:58vh;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    background-position:center;
+
+}
+
+.hero-content{
+
+    max-width:100%;
+
+}
+
+.hero-location{
+
+    margin:0 auto 20px;
+
+    text-align:center;
+
+}
+
+.hero-location img{
+
+    width:260px;
+
+    max-width:100%;
+
+    height:auto;
+
+    margin:0 auto;
+
+}
+
+.hero-text h1{
+
+    font-size:34px;
+
+    line-height:1.2;
+
+    margin-bottom:15px;
+
+}
+
+.hero-text p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+    padding:0 10px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    align-items:center;
+
+}
+
+.btn-primary,
+
+.btn-secondary{
+
+    width:100%;
+
+    max-width:300px;
+
+    padding:15px 20px;
+
+}
+
+/* =========================================================
+   3. SEARCH SECTION (MOBILE)
+========================================================= */
+
+.search-section{
+
+    margin-top:-25px;
+
+    padding:0 15px;
+
+    z-index:10;
+
+}
+
+
+.search-section h2{
+
+    font-size:24px;
+
+    text-align:center;
+
+    margin-bottom:18px;
+
+}
+
+.search-box{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    padding:15px;
+
+    border-radius:16px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:15px;
+
+    border-radius:10px;
+
+}
+
+.search-box button{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:16px;
+
+    border-radius:10px;
+
+}
+
+/* =========================================================
+   4. PROPERTIES SECTION (MOBILE)
+========================================================= */
+
+
+/* =========================================================
+   4.1 PROPERTY GRID (MOBILE)
+========================================================= */
+
+.property-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+    margin-top:20px;
+
+    padding:0 15px;
+
+}
+
+/* =========================================================
+   4.2 PROPERTY CARD (MOBILE)
+========================================================= */
+
+.card{
+
+    width:100%;
+
+    max-width:100%;
+
+    margin:0 auto;
+
+    border-radius:18px;
+
+}
+
+.card:hover{
+
+    transform:none;
+
+}
+
+.card::after{
+
+    display:none;
+
+}
+
+
+  /* =========================================================
+   4.3 PROPERTY IMAGE (MOBILE)
+========================================================= */
+
+.card-image{
+
+    border-radius:18px 18px 0 0;
+
+}
+
+.card-image img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:18px 18px 0 0;
+
+}
+
+.card-image::after{
+
+    height:60px;
+
+}
+
+.card:hover .card-image img{
+
+    transform:none;
+
+}
+
+/* =========================================================
+   4.4 PROPERTY BADGE (MOBILE)
+========================================================= */
+
+.badge{
+
+    top:10px;
+
+    left:10px;
+
+    padding:6px 12px;
+
+    font-size:10px;
+
+    letter-spacing:.5px;
+
+    border-radius:20px;
+
+}
+
+.badge.available{
+
+    top:10px;
+
+    left:10px;
+
+    padding:6px 12px;
+
+    font-size:10px;
+
+    font-weight:700;
+
+}
+
+.available{
+
+    font-size:10px;
+
+}
+
+.featured{
+
+    font-size:10px;
+
+}
+
+.new{
+
+    font-size:10px;
+
+}
+
+.sold{
+
+    font-size:10px;
+
+}
+
+/* =========================================================
+   4.5 PROPERTY PRICE (MOBILE)
+========================================================= */
+
+.price{
+
+    margin:18px 0 8px;
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-weight:800;
+
+    color:#FFD700;
+
+    letter-spacing:.5px;
+
+    text-shadow:
+        0 0 8px rgba(212,175,55,.25);
+
+}
+
+  
+/* =========================================================
+   4.6 PROPERTY CONTENT (MOBILE)
+========================================================= */
+
+.card-content{
+
+    margin:-18px 15px 15px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+}
+
+.card-content h3{
+
+    font-size:20px;
+
+    margin-bottom:12px;
+
+    text-align:center;
+
+}
+
+.card-content p{
+
+    gap:8px;
+
+    margin:10px 0;
+
+    padding-bottom:8px;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+.card-content strong{
+
+    font-size:14px;
+
+}
+
+.status{
+
+    width:100%;
+
+    justify-content:center;
+
+    padding:8px 12px;
+
+    font-size:12px;
+
+    margin-top:10px;
+
+}
+
+
+  
+  /* =========================================================
+   4.7 PROPERTY BUTTONS (MOBILE)
+========================================================= */
+
+/* ---------- View Details Button ---------- */
+
+.details-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:100%;
+
+    height:48px;
+
+    margin-top:14px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    border-radius:12px;
+
+}
+
+
+/* ---------- WhatsApp Button ---------- */
+
+.whatsapp-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:100%;
+
+    height:48px;
+
+    margin-top:12px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    border-radius:12px;
+
+}
+
+.contact .whatsapp-btn{
+
+    display:block;
+
+    width:100%;
+
+    margin-top:14px;
+
+}
+
+/* =========================================================
+   5. STATS SECTION (MOBILE)
+========================================================= */
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    padding:40px 15px;
+
+}
+
+.stat-box{
+
+    padding:18px 12px;
+
+    border-radius:15px;
+
+}
+
+.stat-box h2{
+
+    font-size:26px;
+
+    margin-bottom:5px;
+
+}
+
+.stat-box p{
+
+    font-size:13px;
+
+    line-height:1.4;
+
+}
+
+
+  /* =========================================================
+   6. FEATURED PROPERTY (MOBILE)
+========================================================= */
+
+.featured-property{
+
+    padding:40px 15px;
+
+}
+
+.featured-property h2{
+
+    font-size:26px;
+
+    margin-bottom:25px;
+
+}
+
+.featured-card{
+
+    display:block;
+
+    border-radius:18px;
+
+}
+
+.featured-card img{
+
+    width:100%;
+
+    min-height:auto;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.featured-content{
+
+    padding:20px;
+
+}
+
+.featured-content h3{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.featured-content p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin-bottom:10px;
+
+}
+
+
+  /* =========================================================
+   7. WHY CHOOSE US (MOBILE)
+========================================================= */
+
+.why-us{
+
+    padding:40px 15px;
+
+}
+
+.why-us h2{
+
+    font-size:26px;
+
+    margin-bottom:25px;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+.why-card{
+
+    padding:20px 18px;
+
+    border-radius:16px;
+
+}
+
+.why-card h3{
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+.why-card p{
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+
+  /* =========================================================
+   8. TESTIMONIALS (MOBILE)
+========================================================= */
+
+.testimonials{
+
+    padding:40px 15px;
+
+}
+
+.testimonials h2{
+
+    font-size:26px;
+
+    margin-bottom:25px;
+
+}
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+.testimonial-card{
+
+    padding:20px 18px;
+
+    border-radius:16px;
+
+}
+
+.testimonial-card p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+}
+
+.testimonial-card h4{
+
+    font-size:17px;
+
+}
+
+.testimonial-card span{
+
+    font-size:13px;
+
+}
+
+/* =========================================================
+   9. ABOUT SECTION (MOBILE)
+========================================================= */
+
+.about{
+
+    padding:40px 15px;
+
+    text-align:center;
+
+}
+
+.about h2{
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+}
+
+.about p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    max-width:100%;
+
+}
+
+.about-content{
+
+    max-width:100%;
+
+    margin:20px auto 0;
+
+    padding:20px;
+
+    border-radius:16px;
+
+}
+
+.about-content:hover{
+
+    transform:none;
+
+}
+
+
+  /* =========================================================
+   10. CONTACT SECTION (MOBILE)
+========================================================= */
+
+.contact{
+
+    padding:40px 15px;
+
+    text-align:center;
+
+}
+
+.contact h2{
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+}
+
+.contact p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin-bottom:12px;
+
+}
+
+.contact iframe{
+
+    width:100%;
+
+    height:250px;
+
+    border-radius:15px;
+
+    margin:20px 0;
+
+}
+
+.call-btn{
+
+    display:block;
+
+    width:100%;
+
+    margin:12px 0;
+
+    padding:14px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+}
+
+.contact .whatsapp-btn{
+
+    display:block;
+
+    width:100%;
+
+    margin:12px 0;
+
+    padding:14px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+}
+
+/* =========================================================
+   11. FLOATING WHATSAPP (MOBILE)
+========================================================= */
+
+.floating-whatsapp{
+
+    width:56px;
+
+    height:56px;
+
+    right:15px;
+
+    bottom:85px;
+
+    font-size:26px;
+
+    border-radius:50%;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.35);
+
+}
+
+.floating-whatsapp:hover{
+
+    transform:none;
+
+}
+
+  
+  /* =========================================================
+   12. FOOTER (MOBILE)
+========================================================= */
+
+.section-divider{
+
+    margin:0;
+
+}
+
+footer{
+
+    padding:35px 15px 90px;
+
+    text-align:center;
+
+}
+
+footer h2{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    margin-bottom:10px;
+
+}
+
+.footer-content{
+
+    max-width:100%;
+
+    margin:20px auto 0;
+
+    padding:20px;
+
+    border-radius:16px;
+
+}
+
+.footer-content:hover{
+
+    transform:none;
+
+}
+
+footer p:last-child{
+
+    margin-top:18px;
+
+    padding-top:15px;
+
+    font-size:13px;
+
+}
+
+} /* ===== END MOBILE VERSION ===== */
+
+
+
+  
+  
+  

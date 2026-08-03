@@ -392,11 +392,14 @@ header{
 ========================================================= */
 
 .property-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-    margin-top:25px;
-}
+
+        display:grid;
+        grid-template-columns:repeat(2, minmax(420px, 1fr));
+        gap:20px;               /* Reduced middle gap */
+        max-width:950px;        /* Increase if needed */
+        margin:0 auto;
+
+    }
 
 /* =========================================================
    6.2 PROPERTY CARD (DESKTOP)
@@ -407,7 +410,7 @@ header{
     position:relative;
 
     width:100%;
-    max-width:300px;
+    max-width:none;
 
     margin:10px auto;
 

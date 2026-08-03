@@ -1920,38 +1920,48 @@ body{
    4.4 PROPERTY BADGE (MOBILE)
 ========================================================= */
 
+  
 .badge{
 
     top:6px;
-
     left:6px;
-
     padding:4px 8px;
-
     font-size:8px;
-
-    border-radius:14px;
+    border-radius:20px;
+    font-weight:800;
+    letter-spacing:.6px;
 
 }
 
 .badge.available{
 
-    top:6px;
-
-    left:6px;
-
-    padding:4px 8px;
-
-    font-size:8px;
+    background:linear-gradient(135deg,#28a745,#34d058);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:0 4px 10px rgba(40,167,69,.35);
 
 }
 
-.available,
-.featured,
-.new,
-.sold{
+.badge.sold{
 
-    font-size:8px;
+    background:linear-gradient(135deg,#dc3545,#ff4d4f);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:0 4px 10px rgba(220,53,69,.35);
+
+}
+
+.badge.featured{
+
+    background:#FFD700;
+    color:#111;
+
+}
+
+.badge.new{
+
+    background:#007bff;
+    color:#fff;
 
 }
 

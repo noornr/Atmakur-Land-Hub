@@ -304,7 +304,7 @@ header{
 
     padding:12px;
 
-    background:rgba(12,12,12,.96);
+    background:#000000;
 
     border:1px solid rgba(212,175,55,.18);
 
@@ -1809,6 +1809,8 @@ body{
 
     gap:12px;
 
+    background:#000000;
+  
     padding:15px;
 
     border-radius:16px;

@@ -330,7 +330,7 @@ header{
 
     border-radius:12px;
 
-    background:#151515;
+    background:#000000;
 
     color:#FFFFFF;
 
@@ -1826,6 +1826,8 @@ body{
     font-size:15px;
 
     border-radius:10px;
+
+  background:#000000;
 
 }
 

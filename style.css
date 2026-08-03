@@ -2024,6 +2024,10 @@ body{
     font-size:15px;
 
     line-height:1.4;
+  
+    font-weight:700;   /* Bold */
+  
+    color:#222;        /* Darker text */
 
 }
 

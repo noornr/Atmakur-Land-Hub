@@ -39,12 +39,6 @@ Message: ${message}`;
     );
 }
 
-const images = [
-    "images/property1.jpg",
-    "images/property1-2.jpg",
-    "images/property1-3.jpg",
-    "images/property1-4.jpg"
-];
 
 let current = 0;
 

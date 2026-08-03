@@ -1946,28 +1946,18 @@ body{
 
 .badge.sold{
 
-    position:absolute;
+    position:absolute !important;
 
-    top:50%;
-    left:50%;
+    top:50% !important;
+    left:50% !important;
 
-    transform:translate(-50%,-50%);
-
-    margin:0;
+    transform:translate(-50%,-50%) !important;
 
     padding:6px 16px;
 
-    background:linear-gradient(135deg,#dc3545,#ff4d4f);
-
-    color:#fff;
-
     font-size:10px;
 
-    font-weight:800;
-
-    border-radius:25px;
-
-    z-index:100;
+    z-index:999;
 
 }
 

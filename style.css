@@ -566,33 +566,39 @@ header{
 .badge.available{
 
     position:absolute;
-
     top:10px;
-
     left:10px;
-
     padding:6px 12px;
-
-    background:linear-gradient(135deg,#FFD700,#F4C430);
-
-    color:#111;
-
+    background:linear-gradient(135deg,#28a745,#34d058);
+    color:#fff;
     font-size:10px;
-
     font-weight:800;
-
     letter-spacing:.8px;
-
     border-radius:30px;
-
     border:1px solid rgba(255,255,255,.25);
-
     box-shadow:
-        0 6px 14px rgba(212,175,55,.30),
+        0 6px 14px rgba(40,167,69,.35),
         inset 0 1px 0 rgba(255,255,255,.30);
-
     z-index:3;
+    animation:badgeFloat 2.5s ease-in-out infinite;
+}
+.badge.sold{
 
+    position:absolute;
+    top:10px;
+    left:10px;
+    padding:6px 12px;
+    background:linear-gradient(135deg,#dc3545,#ff4d4f);
+    color:#fff;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.8px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:
+        0 6px 14px rgba(220,53,69,.35),
+        inset 0 1px 0 rgba(255,255,255,.30);
+    z-index:3;
     animation:badgeFloat 2.5s ease-in-out infinite;
 }
 

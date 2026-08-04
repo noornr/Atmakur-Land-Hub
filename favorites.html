@@ -1,1 +1,94 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Favorite Properties</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h2>❤️ My Favorite Properties</h2>
+
+</header>
+
+<section class="property-grid" id="favoritesContainer">
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+
+const favorites =
+JSON.parse(localStorage.getItem("favorites")) || [];
+
+const container =
+document.getElementById("favoritesContainer");
+
+if(favorites.length===0){
+
+container.innerHTML=`
+
+<div style="text-align:center;width:100%;padding:80px 20px;">
+
+<h2>No Favorite Properties</h2>
+
+<p>Save properties using the ❤️ button.</p>
+
+<a href="index.html"
+class="details-btn">
+
+Back Home
+
+</a>
+
+</div>
+
+`;
+
+}else{
+
+favorites.forEach(id=>{
+
+container.innerHTML+=`
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>${id}</h3>
+
+<p>This property is saved.</p>
+
+<a href="property${id.replace("ATK-","")}.html"
+class="details-btn">
+
+View Property
+
+</a>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>

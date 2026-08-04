@@ -653,7 +653,7 @@ header{
 
     text-align:center;
 
-    font-size:30px;
+    font-size:35px;
 
     font-weight:800;
 
@@ -719,7 +719,9 @@ header{
 
     font-size:15px;
 
-    color:#d8d8d8;
+    font-weight:700;   /* Bold */
+  
+    color:#ffffff;
 
     line-height:1.7;
 

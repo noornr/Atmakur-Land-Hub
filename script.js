@@ -160,55 +160,37 @@ window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);
 
 
-function toggleFavorite(id){
+function toggleFavorite(id) {
 
-    let favorites =
-        JSON.parse(
-            localStorage.getItem("favorites")
-        ) || [];
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-    if(favorites.includes(id)){
-
-        favorites =
-            favorites.filter(item => item !== id);
-
-    }else{
-
+    if (favorites.includes(id)) {
+        favorites = favorites.filter(item => item !== id);
+    } else {
         favorites.push(id);
-
     }
 
-    localStorage.setItem(
-        "favorites",
-        JSON.stringify(favorites)
-    );
+    localStorage.setItem("favorites", JSON.stringify(favorites));
 
     updateFavoriteButtons();
+}
+
+function updateFavoriteButtons() {
+
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    document.querySelectorAll(".favorite-btn").forEach(button => {
+
+        const id = button.getAttribute("data-id");
+
+        if (favorites.includes(id)) {
+            button.innerHTML = "❤️";
+        } else {
+            button.innerHTML = "🤍";
+        }
+
+    });
 
 }
 
-function updateFavoriteButtons(){
-
-    const favorites =
-        JSON.parse(
-            localStorage.getItem("favorites")
-        ) || [];
-
-    document
-        .querySelectorAll(".favorite-btn")
-        .forEach(button=>{
-
-            const id =
-                button.getAttribute("onclick")
-                .match(/'(.*?)'/)[1];
-
-            button.innerHTML =
-                favorites.includes(id)
-                ? "❤️"
-                : "🤍";
-
-        });
-
-}
-
-window.onload = updateFavoriteButtons;
+document.addEventListener("DOMContentLoaded", updateFavoriteButtons);

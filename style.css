@@ -630,6 +630,29 @@ header{
     background:#dc3545;
 }
 
+
+/*Favorite Button */
+
+.favorite-btn{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#1b1b1b;
+
+    color:#ff4d6d;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
 @keyframes badgeFloat{
 
     0%,100%{
@@ -2124,6 +2147,23 @@ body{
 
 }
 
+
+
+
+ /* Favorite Button */
+
+.favorite-btn{
+
+        width:42px;
+        height:42px;
+
+        font-size:20px;
+
+        border-radius:10px;
+
+}
+
+  
 /* =========================================================
    5. STATS SECTION (MOBILE)
 ========================================================= */

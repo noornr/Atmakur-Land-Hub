@@ -416,10 +416,10 @@ header{
 
     position:relative;
   
-    width:100%;
+    width:95%;
     max-width:520px;
 
-    margin:10px auto;
+    margin:0 auto;
 
     background:rgba(8,8,8,.92);
 

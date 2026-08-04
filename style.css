@@ -414,9 +414,9 @@ header{
 .card{
 
     position:relative;
-   min-height: 110%;
-   height:550px;
-  padding-bottom:22px;
+   
+  padding-bottom:28px;
+  
     width:100%;
     max-width:520px;
 

@@ -54,7 +54,7 @@ header{
 
     width:100%;
 
-    height:80px;
+    height:88px; /* was 80px */
 
     display:flex;
 
@@ -64,14 +64,14 @@ header{
 
     background:rgba(5,5,5,.96);
 
-    backdrop-filter:blur(18px);
+    backdrop-filter:blur(20px); /* was 18px */
 
-    -webkit-backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(20px);
 
     border-bottom:1px solid rgba(255,215,0,.18);
 
     box-shadow:
-        0 10px 25px rgba(0,0,0,.35),
+        0 11px 28px rgba(0,0,0,.35),
         inset 0 1px 0 rgba(255,255,255,.05);
 
     z-index:9999;
@@ -82,7 +82,7 @@ header{
 
     width:100%;
 
-    max-width:1200px;
+    max-width:1320px; /* was 1200px */
 
     height:100%;
 
@@ -92,7 +92,7 @@ header{
 
     align-items:center;
 
-    padding:0 40px;
+    padding:0 44px; /* was 40px */
 
     margin:0 auto;
 
@@ -112,7 +112,7 @@ header{
 
     color:#E8E8E8;
 
-    min-width:120px;
+    min-width:132px; /* was 120px */
 
     transition:all .3s ease;
 
@@ -120,11 +120,11 @@ header{
 
 .nav-item i{
 
-    font-size:28px;
+    font-size:31px; /* was 28px */
 
     color:#FFD700;
 
-    margin-bottom:6px;
+    margin-bottom:7px; /* was 6px */
 
     transition:all .3s ease;
 
@@ -132,7 +132,7 @@ header{
 
 .nav-item span{
 
-    font-size:15px;
+    font-size:17px; /* was 15px */
 
     font-weight:600;
 
@@ -176,7 +176,6 @@ header{
         0 0 16px rgba(255,215,0,.18);
 
 }
-
 /* =========================================================
    4. HERO SECTION (DESKTOP)
 ========================================================= */

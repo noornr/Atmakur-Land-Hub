@@ -43,15 +43,7 @@ Message: ${message}`;
 
 let images = [];
 
-if (propertyId && typeof properties !== "undefined") {
 
-    const property = properties[propertyId];
-
-    if (property) {
-        images = property.images;
-    }
-
-}
 
 let current = 0;
 
@@ -185,6 +177,8 @@ if (propertyId && typeof properties !== "undefined") {
     const property = properties[propertyId];
 
     if (property) {
+
+        images = property.images;
 
         document.getElementById("property-id").textContent =
             "ID : " + property.id;

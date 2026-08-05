@@ -48,17 +48,32 @@ let images = [];
 let current = 0;
 
 function showSlide(index) {
-    document.getElementById("slide").src = images[index];
+
+    const slide = document.getElementById("slide");
+
+    if (!slide || images.length === 0) return;
+
+    slide.src = images[index];
+
 }
 
 function nextSlide() {
-    current = (current + 1) % images.length;
-    showSlide(current);
-}
 
-function prevSlide() {
-    current = (current - 1 + images.length) % images.length;
+    if(images.length===0) return;
+
+    current = (current + 1) % images.length;
+
     showSlide(current);
+
+}
+function prevSlide() {
+
+    if(images.length===0) return;
+
+    current = (current - 1 + images.length) % images.length;
+
+    showSlide(current);
+
 }
 if (document.getElementById("slide")) {
     setInterval(nextSlide, 3000);

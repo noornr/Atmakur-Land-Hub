@@ -45,41 +45,17 @@ let images = [];
 
 const page = window.location.pathname.split("/").pop();
 
-if (page === "property1.html") {
-    images = [
-        "images/property1.jpg",
-        "images/property1-2.jpg",
-        "images/property1-3.jpg",
-        "images/property1-4.jpg"
-    ];
-} else if (page === "property2.html") {
-    images = [
-        "images/property2.jpg",
-        "images/property2-2.jpg",
-        "images/property2-3.jpg",
-        "images/property2-4.jpg"
-    ];
-} else if (page === "property3.html") {
-    images = [
-        "images/property3.jpg",
-        "images/property3-2.jpg",
-        "images/property3-3.jpg",
-        "images/property3-4.jpg"
-    ];
-} else if (page === "property4.html") {
-    images = [
-        "images/property4.jpg",
-        "images/property4-2.jpg",
-        "images/property4-3.jpg",
-        "images/property4-4.jpg"
-    ];
-} else if (page === "property5.html") {
-    images = [
-        "images/property5.jpg",
-        "images/property5-2.jpg",
-        "images/property5-3.jpg",
-        "images/property5-4.jpg"
-    ];
+const params = new URLSearchParams(window.location.search);
+const propertyId = params.get("id");
+
+if (propertyId && typeof properties !== "undefined") {
+
+    const property = properties[propertyId];
+
+    if (property) {
+        images = property.images;
+    }
+
 }
 
 let current = 0;

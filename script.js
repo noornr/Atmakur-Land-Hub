@@ -194,3 +194,50 @@ function updateFavoriteButtons() {
 }
 
 document.addEventListener("DOMContentLoaded", updateFavoriteButtons);
+
+
+
+
+
+
+
+
+/* ==========================================
+   Dynamic Property Page
+========================================== */
+
+const params = new URLSearchParams(window.location.search);
+const propertyId = params.get("id");
+
+if (propertyId && typeof properties !== "undefined") {
+
+    const property = properties[propertyId];
+
+    if (property) {
+
+        document.getElementById("property-id").textContent =
+            "ID : " + property.id;
+
+        document.getElementById("property-price").textContent =
+            property.price;
+
+        document.getElementById("property-area").textContent =
+            property.area;
+
+        document.getElementById("property-land").textContent =
+            property.land;
+
+        document.getElementById("property-road").textContent =
+            property.road;
+
+        document.getElementById("property-description").textContent =
+            property.description;
+
+        if(document.getElementById("slide")){
+            document.getElementById("slide").src =
+                property.images[0];
+        }
+
+    }
+
+}

@@ -1481,7 +1481,8 @@ body{
 }
 
 
-   /* =========================================================
+   
+/* =========================================================
    9. ACTION BUTTONS (MOBILE)
 ========================================================= */
 
@@ -1500,23 +1501,23 @@ body{
 
     width:100%;
 
-    height:48px;
+    height:52px;
 
     margin:12px 0;
 
-    padding:0 16px;
+    padding:14px;
 
     text-decoration:none;
 
     text-align:center;
 
-    font-size:15px;
+    font-size:18px;
 
     font-weight:700;
 
     line-height:1;
 
-    border-radius:10px;
+    border-radius:12px;
 
     box-sizing:border-box;
 
@@ -1526,33 +1527,9 @@ body{
 
 .call-btn{
 
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    width:100%;
-
-    height:52px;
-
-    margin:12px 0;
-
-    padding:14px;
-
     background:#FFD700;
 
     color:#111111;
-
-    font-size:18px;
-
-    font-weight:700;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    border-radius:12px;
 
 }
 
@@ -1560,33 +1537,9 @@ body{
 
 .whatsapp-btn{
 
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    width:100%;
-
-    height:52px;
-
-    margin:12px 0;
-
-    padding:14px;
-
     background:#25D366;
 
     color:#FFFFFF;
-
-    font-size:18px;
-
-    font-weight:700;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    border-radius:12px;
 
 }
 
@@ -1594,69 +1547,21 @@ body{
 
 .details-btn{
 
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    width:100%;
-
-    height:52px;
-
-    margin:12px 0;
-
-    padding:14px;
-
     background:#FFD700;
 
     color:#111111;
-
-    font-size:18px;
-
-    font-weight:700;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    border-radius:12px;
 
     border:1px solid #FFD700;
 
 }
 
-/* ---------- Optional Back Button ---------- */
+/* ---------- Back Button ---------- */
 
 .back-btn{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    width:100%;
-
-    height:52px;
-
-    margin:12px 0;
-
-    padding:14px;
 
     background:#1A1A1A;
 
     color:#FFD700;
-
-    font-size:18px;
-
-    font-weight:700;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    border-radius:12px;
 
     border:1px solid rgba(212,175,55,.25);
 

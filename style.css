@@ -635,21 +635,51 @@ header{
 
 .favorite-btn{
 
-    width:48px;
-    height:48px;
+    position:absolute;
+
+    top:10px;
+
+    right:10px;
+
+    width:42px;
+
+    height:42px;
 
     border:none;
-    border-radius:12px;
 
-    background:#1b1b1b;
+    border-radius:50%;
 
-    color:#ff4d6d;
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    color:#ff2d55;
 
     font-size:22px;
 
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
     cursor:pointer;
 
-    transition:.3s;
+    z-index:5;
+
+    transition:.3s ease;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.35);
+
+}
+
+.favorite-btn:hover{
+
+    transform:scale(1.1);
+
+    background:rgba(0,0,0,.75);
 
 }
 
@@ -2156,15 +2186,53 @@ body{
 
 .favorite-btn{
 
-        width:42px;
-        height:42px;
+    position:absolute;
 
-        font-size:20px;
+    top:10px;
 
-        border-radius:10px;
+    right:10px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    color:#ff2d55;
+
+    font-size:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    z-index:5;
+
+    transition:.3s ease;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.35);
 
 }
 
+.favorite-btn:hover{
+
+    transform:scale(1.1);
+
+    background:rgba(0,0,0,.75);
+
+}
   
 /* =========================================================
    5. STATS SECTION (MOBILE)

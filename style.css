@@ -176,6 +176,31 @@ header{
         0 0 16px rgba(255,215,0,.18);
 
 }
+
+.nav-item .fa-heart{
+
+    color:#ff1744;
+
+    font-size:24px;
+
+    margin-bottom:4px;
+
+}
+
+.nav-item span{
+
+    color:#ffffff;
+
+}
+
+.nav-item:hover .fa-heart,
+.nav-item.active .fa-heart{
+
+    color:#ff1744;
+
+    text-shadow:0 0 8px rgba(255,23,68,.45);
+
+}
 /* =========================================================
    4. HERO SECTION (DESKTOP)
 ========================================================= */
@@ -1726,6 +1751,33 @@ footer p:last-child{
     text-shadow:0 0 8px rgba(255,215,0,.35);
 
 }
+
+
+  .nav-item .fa-heart{
+
+    color:#ff1744;
+
+    font-size:24px;
+
+    margin-bottom:4px;
+
+}
+
+.nav-item span{
+
+    color:#ffffff;
+
+}
+
+.nav-item:hover .fa-heart,
+.nav-item.active .fa-heart{
+
+    color:#ff1744;
+
+    text-shadow:0 0 8px rgba(255,23,68,.45);
+
+}
+  
 
 body{
 

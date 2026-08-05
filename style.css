@@ -511,6 +511,15 @@ header{
     border-radius:18px 18px 0 0;
 }
 
+/*Favorite Button */
+
+.favorite-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:10;
+}
+
 .card-image img{
 
     width:100%;
@@ -631,62 +640,6 @@ header{
 }
 
 
-/*Favorite Button */
-
-.favorite-btn{
-
-    position:absolute;
-
-    top:10px;
-
-    right:10px;
-
-    width:46px;
-
-    height:46px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:rgba(0,0,0,.45);
-
-    backdrop-filter:blur(8px);
-
-    -webkit-backdrop-filter:blur(8px);
-
-    color:#ff2d55;
-
-    font-size:24px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    cursor:pointer;
-
-    z-index:5;
-
-    transition:.3s ease;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.35);
-}
-
-.favorite-btn:hover{
-
-    transform:scale(1.1);
-
-}
-
-.favorite-btn.active{
-
-    color:#ff1744;
-
-    background:rgba(255,255,255,.15);
-
-}
 
 @keyframes badgeFloat{
 
@@ -1970,6 +1923,15 @@ body{
 
 }
 
+  /*Favorite Button */
+
+.favorite-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:10;
+}
+
 .card-image img{
 
     width:100%;
@@ -2186,64 +2148,6 @@ body{
 
 
 
-
- /* Favorite Button */
-
-.favorite-btn{
-
-    position:absolute;
-
-    top:10px;
-
-    right:10px;
-
-    width:46px;
-
-    height:46px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:rgba(0,0,0,.45);
-
-    backdrop-filter:blur(8px);
-
-    -webkit-backdrop-filter:blur(8px);
-
-    color:#ff2d55;
-
-    font-size:24px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    cursor:pointer;
-
-    z-index:5;
-
-    transition:.3s ease;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.35);
-}
-
-.favorite-btn:hover{
-
-    transform:scale(1.1);
-
-}
-
-.favorite-btn.active{
-
-    color:#ff1744;
-
-    background:rgba(255,255,255,.15);
-
-}
-  
 /* =========================================================
    5. STATS SECTION (MOBILE)
 ========================================================= */

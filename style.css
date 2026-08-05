@@ -1945,13 +1945,11 @@ body{
 
     position:absolute;
 
-    top:8px;
+    top:9px;          /* was 8px */
+    right:9px;        /* was 8px */
 
-    right:8px;
-
-    width:37px;
-
-    height:37px;
+    width:33px;       /* was 37px */
+    height:33px;      /* was 37px */
 
     border:none;
 
@@ -1960,12 +1958,11 @@ body{
     background:rgba(0,0,0,.45);
 
     backdrop-filter:blur(6px);
-
     -webkit-backdrop-filter:blur(6px);
 
     color:#ff2d55;
 
-    font-size:20px;
+    font-size:20px;   /* Keep the heart size the same */
 
     display:flex;
 
@@ -1981,7 +1978,6 @@ body{
 
     box-shadow:0 3px 10px rgba(0,0,0,.35);
 }
-
 .favorite-btn:hover{
 
     transform:scale(1.08);

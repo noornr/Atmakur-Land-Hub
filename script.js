@@ -208,3 +208,84 @@ if (propertyId && typeof properties !== "undefined") {
     }
 
 }
+
+
+
+/* ==========================================
+   Generate Home Page Property Cards
+========================================== */
+
+const propertyGrid = document.getElementById("propertyGrid");
+
+if (propertyGrid && typeof properties !== "undefined") {
+
+    propertyGrid.innerHTML = "";
+
+    Object.values(properties).forEach(property => {
+
+        propertyGrid.innerHTML += `
+
+<div class="card">
+
+    <div class="card-image">
+
+        <img src="${property.images[0]}" alt="${property.id}">
+
+        <span class="badge ${property.status.toLowerCase()}">
+            ${property.status}
+        </span>
+
+        <button
+            class="favorite-btn"
+            data-id="${property.id}"
+            onclick="toggleFavorite('${property.id}')">
+            🤍
+        </button>
+
+    </div>
+
+    <div class="card-content">
+
+        <h3>
+            <span>ID:${property.id}</span>
+        </h3>
+
+        <p>📍 ${property.area}</p>
+
+        <p>📍 ${property.areaTelugu}</p>
+
+        <p>📐 ${property.land} / ${property.landTelugu}</p>
+
+        <p>⤴️ ${property.facing} / ${property.facingTelugu}</p>
+
+        <p class="price">${property.price}</p>
+
+        <div class="card-buttons">
+
+            <a href="property.html?id=${property.id}"
+               class="details-btn">
+
+               View Details
+
+            </a>
+
+            <a href="https://wa.me/918977201211"
+               class="whatsapp-btn">
+
+               WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+`;
+
+    });
+
+    updateFavoriteButtons();
+
+}

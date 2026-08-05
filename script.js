@@ -185,6 +185,8 @@ if (propertyId && typeof properties !== "undefined") {
         document.getElementById("property-id").textContent =
             "ID : " + property.id;
 
+        document.getElementById("property-map").src = property.map;
+
         document.getElementById("property-price").textContent =
             property.price;
 

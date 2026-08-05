@@ -632,27 +632,27 @@ header{
 
     position:absolute;
 
-    top:10px;
-    left:10px;
+    top:9px;
+    left:9px;
 
-    padding:6px 12px;
+    padding:5px 11px;
 
     background:linear-gradient(135deg,#28a745,#34d058);
 
     color:#fff;
 
-    font-size:10px;
+    font-size:9px;
 
     font-weight:800;
 
-    letter-spacing:.8px;
+    letter-spacing:.7px;
 
-    border-radius:30px;
+    border-radius:27px;
 
     border:1px solid rgba(255,255,255,.25);
 
     box-shadow:
-        0 5px 12px rgba(40,167,69,.35),
+        0 4px 11px rgba(40,167,69,.35),
         inset 0 1px 0 rgba(255,255,255,.30);
 
     z-index:3;

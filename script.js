@@ -226,7 +226,54 @@ if (propertyId && typeof properties !== "undefined") {
 
 }
 
+/* ==========================================
+   Related Properties
+========================================== */
 
+const relatedContainer =
+document.getElementById("relatedProperties");
+
+if (
+    relatedContainer &&
+    typeof properties !== "undefined" &&
+    propertyId
+) {
+
+    relatedContainer.innerHTML = "";
+
+    Object.values(properties)
+    .filter(p => p.id !== propertyId)
+    .slice(0,2)
+    .forEach(p => {
+
+        relatedContainer.innerHTML += `
+
+<div class="card">
+
+<img src="${p.images[0]}" alt="${p.id}">
+
+<div class="card-content">
+
+<h3>${p.id}</h3>
+
+<p>${p.price}</p>
+
+<a href="property.html?id=${p.id}"
+class="details-btn">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+`;
+
+    });
+
+}
 
 /* ==========================================
    Generate Home Page Property Cards

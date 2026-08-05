@@ -1248,15 +1248,26 @@ body{
 
     border-radius:16px;
 
-    border:1px solid rgba(212,175,55,.15);
-
     background:rgba(12,12,12,.96);
 
+    border:2px solid #D4AF37;
+
     box-shadow:
-        0 9px 22px rgba(0,0,0,.35);
+        0 0 0 1px rgba(255,215,0,.25),
+        0 0 12px rgba(255,215,0,.20),
+        0 10px 22px rgba(0,0,0,.35);
 
 }
 
+   .property-details:hover,
+.property-details:active{
+
+    border-color:#FFD700;
+
+    box-shadow:
+        0 0 20px rgba(255,215,0,.40);
+
+}
    
 /* =========================================================
    3. PROPERTY SLIDER (MOBILE)

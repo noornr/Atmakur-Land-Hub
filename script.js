@@ -43,11 +43,6 @@ Message: ${message}`;
 
 let images = [];
 
-const page = window.location.pathname.split("/").pop();
-
-const params = new URLSearchParams(window.location.search);
-const propertyId = params.get("id");
-
 if (propertyId && typeof properties !== "undefined") {
 
     const property = properties[propertyId];

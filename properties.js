@@ -67,4 +67,140 @@ map:"YOUR_MAP_LINK"
 
 },
 
+  "ATK-3":{
+
+id:"ATK-3",
+
+status:"AVAILABLE",
+
+price:"₹7,50,000",
+
+area:"Minority Colony",
+areaTelugu:"మైనారిటీ కాలనీ",
+
+land:"8 Cents",
+landTelugu:"8 సెంట్లు",
+
+facing:"East Face",
+facingTelugu:"తూర్పు ముఖం",
+
+road:"30 Feet Road",
+roadTelugu:"30 అడుగుల రోడ్డు",
+
+description:"A premium open plot.",
+descriptionTelugu:"అత్యుత్తమ ఓపెన్ ప్లాట్.",
+
+images:[
+"images/property3.jpg",
+"images/property3-2.jpg",
+"images/property3-3.jpg",
+"images/property3-4.jpg"
+],
+
+map:"YOUR_GOOGLE_MAP_LINK"
+
+},
+
+  "ATK-4":{
+
+id:"ATK-4",
+
+status:"AVAILABLE",
+
+price:"₹7,50,000",
+
+area:"Minority Colony",
+areaTelugu:"మైనారిటీ కాలనీ",
+
+land:"8 Cents",
+landTelugu:"8 సెంట్లు",
+
+facing:"East Face",
+facingTelugu:"తూర్పు ముఖం",
+
+road:"30 Feet Road",
+roadTelugu:"30 అడుగుల రోడ్డు",
+
+description:"A premium open plot.",
+descriptionTelugu:"అత్యుత్తమ ఓపెన్ ప్లాట్.",
+
+images:[
+"images/property4.jpg",
+"images/property4-2.jpg",
+"images/property4-3.jpg",
+"images/property4-4.jpg"
+],
+
+map:"YOUR_GOOGLE_MAP_LINK"
+
+},
+
+  "ATK-5":{
+
+id:"ATK-5",
+
+status:"AVAILABLE",
+
+price:"₹7,50,000",
+
+area:"Minority Colony",
+areaTelugu:"మైనారిటీ కాలనీ",
+
+land:"8 Cents",
+landTelugu:"8 సెంట్లు",
+
+facing:"East Face",
+facingTelugu:"తూర్పు ముఖం",
+
+road:"30 Feet Road",
+roadTelugu:"30 అడుగుల రోడ్డు",
+
+description:"A premium open plot.",
+descriptionTelugu:"అత్యుత్తమ ఓపెన్ ప్లాట్.",
+
+images:[
+"images/property5.jpg",
+"images/property5-2.jpg",
+"images/property5-3.jpg",
+"images/property5-4.jpg"
+],
+
+map:"YOUR_GOOGLE_MAP_LINK"
+
+},
+
+  "ATK-6":{
+
+id:"ATK-6",
+
+status:"AVAILABLE",
+
+price:"₹7,50,000",
+
+area:"Minority Colony",
+areaTelugu:"మైనారిటీ కాలనీ",
+
+land:"8 Cents",
+landTelugu:"8 సెంట్లు",
+
+facing:"East Face",
+facingTelugu:"తూర్పు ముఖం",
+
+road:"30 Feet Road",
+roadTelugu:"30 అడుగుల రోడ్డు",
+
+description:"A premium open plot.",
+descriptionTelugu:"అత్యుత్తమ ఓపెన్ ప్లాట్.",
+
+images:[
+"images/property6.jpg",
+"images/property6-2.jpg",
+"images/property6-3.jpg",
+"images/property6-4.jpg"
+],
+
+map:"YOUR_GOOGLE_MAP_LINK"
+
+},
+
 };

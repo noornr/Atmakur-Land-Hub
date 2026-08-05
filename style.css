@@ -517,13 +517,13 @@ header{
 
     position:absolute;
 
-    top:9px;
+    top:8px;
 
-    right:9px;
+    right:8px;
 
-    width:41px;
+    width:37px;
 
-    height:41px;
+    height:37px;
 
     border:none;
 
@@ -531,13 +531,13 @@ header{
 
     background:rgba(0,0,0,.45);
 
-    backdrop-filter:blur(7px);
+    backdrop-filter:blur(6px);
 
-    -webkit-backdrop-filter:blur(7px);
+    -webkit-backdrop-filter:blur(6px);
 
     color:#ff2d55;
 
-    font-size:22px;
+    font-size:20px;
 
     display:flex;
 
@@ -551,12 +551,12 @@ header{
 
     transition:.3s ease;
 
-    box-shadow:0 4px 11px rgba(0,0,0,.35);
+    box-shadow:0 3px 10px rgba(0,0,0,.35);
 }
 
 .favorite-btn:hover{
 
-    transform:scale(1.1);
+    transform:scale(1.08);
 
 }
 
@@ -1933,13 +1933,13 @@ body{
 
     position:absolute;
 
-    top:9px;
+    top:8px;
 
-    right:9px;
+    right:8px;
 
-    width:41px;
+    width:37px;
 
-    height:41px;
+    height:37px;
 
     border:none;
 
@@ -1947,13 +1947,13 @@ body{
 
     background:rgba(0,0,0,.45);
 
-    backdrop-filter:blur(7px);
+    backdrop-filter:blur(6px);
 
-    -webkit-backdrop-filter:blur(7px);
+    -webkit-backdrop-filter:blur(6px);
 
     color:#ff2d55;
 
-    font-size:22px;
+    font-size:20px;
 
     display:flex;
 
@@ -1967,12 +1967,12 @@ body{
 
     transition:.3s ease;
 
-    box-shadow:0 4px 11px rgba(0,0,0,.35);
+    box-shadow:0 3px 10px rgba(0,0,0,.35);
 }
 
 .favorite-btn:hover{
 
-    transform:scale(1.1);
+    transform:scale(1.08);
 
 }
 

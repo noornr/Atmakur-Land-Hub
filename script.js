@@ -60,7 +60,9 @@ function prevSlide() {
     current = (current - 1 + images.length) % images.length;
     showSlide(current);
 }
-setInterval(nextSlide, 3000);
+if (document.getElementById("slide")) {
+    setInterval(nextSlide, 3000);
+}
 
 function openFullscreen() {
     document.getElementById("lightbox").style.display = "flex";

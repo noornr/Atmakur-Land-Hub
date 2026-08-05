@@ -37,20 +37,22 @@ document.getElementById("favoritesContainer");
 
 if(favorites.length===0){
 
-container.innerHTML=`
+container.innerHTML = `
 
-<div style="text-align:center;width:100%;padding:80px 20px;">
+<div class="empty-favorites">
 
-<h2>No Favorite Properties</h2>
+    <div class="empty-icon">❤️</div>
 
-<p>Save properties using the ❤️ button.</p>
+    <h2>No Favorite Properties</h2>
 
-<a href="index.html"
-class="details-btn">
+    <p>
+        Save your favorite properties using the
+        <strong>❤️ Favorite</strong> button.
+    </p>
 
-Back Home
-
-</a>
+    <a href="index.html" class="details-btn">
+        🏠 Back Home
+    </a>
 
 </div>
 

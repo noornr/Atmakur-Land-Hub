@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,11 +21,12 @@
 </header>
 
 <section
-    class="property-grid"
-    id="favoritesContainer"
-    style="padding-top:120px;">
+class="property-grid"
+id="favoritesContainer"
+style="padding-top:120px;">
 </section>
 
+<script src="properties.js"></script>
 <script src="script.js"></script>
 
 <script>
@@ -39,86 +39,87 @@ document.getElementById("favoritesContainer");
 
 if(favorites.length===0){
 
-container.innerHTML = `...`;
-
-}
-else{
+container.innerHTML=`
 
 <div class="empty-favorites">
 
-    <div class="empty-icon">❤️</div>
+<div class="empty-icon">❤️</div>
 
-    <h2>No Favorite Properties</h2>
+<h2>No Favorite Properties</h2>
 
-    <p>
-        Save your favorite properties using the
-        <strong>❤️ Favorite</strong> button.
-    </p>
+<p>
 
-    <a href="index.html" class="details-btn">
-        🏠 Back Home
-    </a>
+Save your favorite properties using the
+<strong>❤️ Favorite</strong> button.
+
+</p>
+
+<a href="index.html" class="details-btn">
+
+🏠 Back Home
+
+</a>
 
 </div>
 
 `;
 
-else{
+}else{
 
+favorites.forEach(id=>{
 
-favorites.forEach(id => {
+const p = properties[id];
 
-    const p = properties[id];
+if(!p) return;
 
-    if (!p) return;
-
-    container.innerHTML += `
+container.innerHTML += `
 
 <div class="card">
 
-    <div class="card-image">
+<div class="card-image">
 
-        <img src="${p.images[0]}" alt="${p.id}">
+<img src="${p.images[0]}" alt="${p.id}">
 
-        <span class="badge ${p.status.toLowerCase()}">
+<span class="badge ${p.status.toLowerCase()}">
 
-            ${p.status}
+${p.status}
 
-        </span>
+</span>
 
-    </div>
+</div>
 
-    <div class="card-content">
+<div class="card-content">
 
-        <h3>ID: ${p.id}</h3>
+<h3>ID: ${p.id}</h3>
 
-        <p>📍 ${p.area}</p>
+<p>📍 ${p.area}</p>
 
-        <p>📍 ${p.areaTelugu}</p>
+<p>📍 ${p.areaTelugu}</p>
 
-        <p>📐 ${p.land} / ${p.landTelugu}</p>
+<p>📐 ${p.land} / ${p.landTelugu}</p>
 
-        <p>⤴️ ${p.facing} / ${p.facingTelugu}</p>
+<p>⤴️ ${p.facing} / ${p.facingTelugu}</p>
 
-        <p class="price">${p.price}</p>
+<p class="price">${p.price}</p>
 
-        <div class="card-buttons">
+<div class="card-buttons">
 
-            <a href="property.html?id=${p.id}" class="details-btn">
+<a href="property.html?id=${p.id}" class="details-btn">
 
-                View Details
+View Details
 
-            </a>
+</a>
 
-            <a href="https://wa.me/918977201211" class="whatsapp-btn">
+<a href="https://wa.me/918977201211"
+class="whatsapp-btn">
 
-                WhatsApp
+WhatsApp
 
-            </a>
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </div>
 
@@ -126,11 +127,9 @@ favorites.forEach(id => {
 
 });
 
-<script src="properties.js"></script>
-<script src="script.js"></script>
+}
 
 </script>
 
 </body>
-
 </html>

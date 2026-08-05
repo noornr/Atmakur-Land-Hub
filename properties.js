@@ -4,7 +4,7 @@ const properties = {
 
 id:"ATK-1",
 
-status:"AVAILABLE",
+status:"SOLD",
 
 price:"₹7,50,000",
 

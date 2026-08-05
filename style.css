@@ -511,6 +511,24 @@ header{
     border-radius:18px 18px 0 0;
 }
 
+.card-image img{
+
+        width:100%;
+
+        height:260px;   /* Adjust as needed */
+
+        object-fit:cover;
+
+        border-radius:18px 18px 0 0;
+
+    }
+
+    .card-image::after{
+
+        height:50px;
+
+    }
+
 /*Favorite Button */
 
 .favorite-btn{

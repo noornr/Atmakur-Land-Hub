@@ -27,6 +27,86 @@ body{
 }
 
 
+/* =======================================================================================================
+   FAVORITES PAGE
+========================================== */
+
+.empty-favorites{
+
+    width:100%;
+    max-width:520px;
+
+    margin:40px auto;
+
+    padding:40px 25px;
+
+    background:#111111;
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.45);
+
+}
+
+.empty-icon{
+
+    font-size:75px;
+
+    margin-bottom:18px;
+
+}
+
+.empty-favorites h2{
+
+    color:#FFFFFF;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.empty-favorites p{
+
+    color:#CCCCCC;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+.empty-favorites strong{
+
+    color:#FFD700;
+
+}
+
+.empty-favorites .details-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    max-width:280px;
+
+    margin:auto;
+
+}
+/*===================================================================================================*/
+
 
 /* =========================================================
    2. HEADER (DESKTOP)
@@ -2752,6 +2832,47 @@ footer p:last-child{
     padding-top:15px;
 
     font-size:13px;
+
+}
+
+
+/* =======================================================================================================
+   FAVORITES PAGE
+========================================== */
+
+
+
+
+
+.empty-favorites{
+
+    margin:25px 12px;
+
+    padding:30px 20px;
+
+}
+
+.empty-icon{
+
+    font-size:60px;
+
+}
+
+.empty-favorites h2{
+
+    font-size:28px;
+
+}
+
+.empty-favorites p{
+
+    font-size:16px;
+
+}
+
+.empty-favorites .details-btn{
+
+    max-width:100%;
 
 }
 

@@ -108,52 +108,65 @@ status:"AVAILABLE"
 
 };
 
-favorites.forEach(id=>{
+favorites.forEach(id => {
 
-const p=propertyData[id];
+    const p = properties[id];
 
-if(!p)return;
+    if (!p) return;
 
-container.innerHTML+=`
+    container.innerHTML += `
 
 <div class="card">
 
-<div class="card-image">
+    <div class="card-image">
 
-<img src="${p.image}" alt="${id}">
+        <img src="${p.images[0]}" alt="${p.id}">
 
-<span class="badge ${p.status==="SOLD"?"sold":"available"}">
+        <span class="badge ${p.status.toLowerCase()}">
 
-${p.status}
+            ${p.status}
 
-</span>
+        </span>
 
-</div>
+    </div>
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>${id}</h3>
+        <h3>ID: ${p.id}</h3>
 
-<p>📍 ${p.title}</p>
+        <p>📍 ${p.area}</p>
 
-<p class="price">${p.price}</p>
+        <p>📍 ${p.areaTelugu}</p>
 
-<a href="property${id.replace("ATK-","")}.html"
-class="details-btn">
+        <p>📐 ${p.land} / ${p.landTelugu}</p>
 
-View Property
+        <p>⤴️ ${p.facing} / ${p.facingTelugu}</p>
 
-</a>
+        <p class="price">${p.price}</p>
 
-</div>
+        <div class="card-buttons">
+
+            <a href="property.html?id=${p.id}" class="details-btn">
+
+                View Details
+
+            </a>
+
+            <a href="https://wa.me/918977201211" class="whatsapp-btn">
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
 `;
 
 });
-
-}
 
 </script>
 

@@ -60,19 +60,83 @@ container.innerHTML = `
 
 `;
 
-}else{
+else{
+
+const propertyData={
+
+"ATK-1":{
+image:"images/property1.jpg",
+title:"Minority Colony",
+price:"₹7,50,000",
+status:"AVAILABLE"
+},
+
+"ATK-2":{
+image:"images/property2.jpg",
+title:"Nandyala Road Highway Side",
+price:"1 Cent ₹4,50,000",
+status:"SOLD"
+},
+
+"ATK-3":{
+image:"images/property3.jpg",
+title:"Minority Colony",
+price:"₹7,50,000",
+status:"AVAILABLE"
+},
+
+"ATK-4":{
+image:"images/property4.jpg",
+title:"Minority Colony",
+price:"₹7,50,000",
+status:"AVAILABLE"
+},
+
+"ATK-5":{
+image:"images/property5.jpg",
+title:"Minority Colony",
+price:"₹7,50,000",
+status:"AVAILABLE"
+},
+
+"ATK-6":{
+image:"images/property6.jpg",
+title:"Minority Colony",
+price:"₹7,50,000",
+status:"AVAILABLE"
+}
+
+};
 
 favorites.forEach(id=>{
+
+const p=propertyData[id];
+
+if(!p)return;
 
 container.innerHTML+=`
 
 <div class="card">
 
+<div class="card-image">
+
+<img src="${p.image}" alt="${id}">
+
+<span class="badge ${p.status==="SOLD"?"sold":"available"}">
+
+${p.status}
+
+</span>
+
+</div>
+
 <div class="card-content">
 
 <h3>${id}</h3>
 
-<p>This property is saved.</p>
+<p>📍 ${p.title}</p>
+
+<p class="price">${p.price}</p>
 
 <a href="property${id.replace("ATK-","")}.html"
 class="details-btn">

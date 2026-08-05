@@ -588,20 +588,32 @@ header{
 .badge.available{
 
     position:absolute;
-    top:11px;          /* was 10px */
-    left:11px;         /* was 10px */
-    padding:7px 13px;  /* was 6px 12px */
+
+    top:10px;
+    left:10px;
+
+    padding:6px 12px;
+
     background:linear-gradient(135deg,#28a745,#34d058);
+
     color:#fff;
-    font-size:11px;    /* was 10px */
+
+    font-size:10px;
+
     font-weight:800;
-    letter-spacing:.9px; /* was .8px */
-    border-radius:33px;  /* was 30px */
+
+    letter-spacing:.8px;
+
+    border-radius:30px;
+
     border:1px solid rgba(255,255,255,.25);
+
     box-shadow:
-        0 6px 14px rgba(40,167,69,.35),
+        0 5px 12px rgba(40,167,69,.35),
         inset 0 1px 0 rgba(255,255,255,.30);
+
     z-index:3;
+
     animation:badgeFloat 2.5s ease-in-out infinite;
 }
 .badge.sold{
@@ -2021,13 +2033,35 @@ body{
 
 .badge.available{
 
+    position:absolute;
+
+    top:10px;
+    left:10px;
+
+    padding:6px 12px;
+
     background:linear-gradient(135deg,#28a745,#34d058);
+
     color:#fff;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:.8px;
+
+    border-radius:30px;
+
     border:1px solid rgba(255,255,255,.25);
-    box-shadow:0 4px 10px rgba(40,167,69,.35);
 
+    box-shadow:
+        0 5px 12px rgba(40,167,69,.35),
+        inset 0 1px 0 rgba(255,255,255,.30);
+
+    z-index:3;
+
+    animation:badgeFloat 2.5s ease-in-out infinite;
 }
-
 .badge.sold{
 
     position:absolute !important;

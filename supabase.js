@@ -1,4 +1,33 @@
+alert("admin.js loaded");
 
+function test() {
+    alert("Button clicked");
+}
+
+async function addProperty() {
+    alert("addProperty started");
+
+    const property = {
+        property_id: document.getElementById("property_id").value,
+        price: document.getElementById("price").value,
+        area: document.getElementById("area").value,
+        area_telugu: document.getElementById("area_telugu").value,
+        land: document.getElementById("land").value,
+        land_telugu: document.getElementById("land_telugu").value,
+        facing: document.getElementById("facing").value,
+        facing_telugu: document.getElementById("facing_telugu").value,
+        road: document.getElementById("road").value,
+        road_telugu: document.getElementById("road_telugu").value,
+        description: document.getElementById("description").value,
+        description_telugu: document.getElementById("description_telugu").value,
+        status: document.getElementById("status").value,
+        map: document.getElementById("map").value,
+        images: document.getElementById("images").value,
+        featured: document.getElementById("featured").checked
+    };
+
+    alert("Collected data");
+}
 
 const SUPABASE_URL = "https://soltusisytegacqbjhsh.supabase.co";
 
@@ -49,9 +78,7 @@ async function loadProperties() {
 
     });
 
-    if (typeof displayProperties === "function") {
-    displayProperties(1);
-}
+    
 
 if (typeof displayProperties === "function") {
     displayProperties(1);

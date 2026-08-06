@@ -50,9 +50,12 @@ async function loadProperties() {
     });
 
     if (typeof displayProperties === "function") {
-        displayProperties(1);
-        setupPagination();
-    }
+    displayProperties(1);
+}
+
+if (typeof setupPagination === "function") {
+    setupPagination();
+}
 
 }
 

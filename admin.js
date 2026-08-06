@@ -1,7 +1,5 @@
 
-
 alert("admin.js loaded");
-
 
 async function addProperty() {
 

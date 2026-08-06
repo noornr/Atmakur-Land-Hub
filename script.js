@@ -580,3 +580,72 @@ setupPagination();
 });
 
 }
+
+/* ==========================================
+   DYNAMIC FEATURED PROPERTY
+========================================== */
+
+const featuredContainer =
+document.getElementById("featuredProperty");
+
+if(featuredContainer && typeof properties !== "undefined"){
+
+    const featured =
+    Object.values(properties).find(property => property.featured === true);
+
+    if(featured){
+
+        featuredContainer.innerHTML = `
+
+<div class="featured-card">
+
+    <img
+        src="${featured.images[0]}"
+        alt="${featured.id}"
+        loading="lazy">
+
+    <div class="featured-content">
+
+        <h3>${featured.id}</h3>
+
+        <p>
+            <strong>📍 Area:</strong>
+            ${featured.area}
+        </p>
+
+        <p>
+            <strong>📍 ప్రాంతం:</strong>
+            ${featured.areaTelugu}
+        </p>
+
+        <p>
+            <strong>📐 Land:</strong>
+            ${featured.land} / ${featured.landTelugu}
+        </p>
+
+        <p>
+            <strong>💰 Price:</strong>
+            ${featured.price}
+        </p>
+
+        <a
+            href="property.html?id=${featured.id}"
+            class="details-btn">
+
+            View Details
+
+        </a>
+
+    </div>
+
+</div>
+
+`;
+
+    }else{
+
+        featuredContainer.style.display = "none";
+
+    }
+
+}

@@ -375,6 +375,34 @@ function displayProperties(page){
 
     let allProperties = Object.values(properties);
 
+const keyword =
+document.getElementById("searchInput")
+?.value.toLowerCase().trim() || "";
+
+if(keyword){
+
+allProperties = allProperties.filter(property=>{
+
+return (
+
+property.id.toLowerCase().includes(keyword) ||
+
+property.area.toLowerCase().includes(keyword) ||
+
+property.areaTelugu.includes(keyword) ||
+
+property.price.toLowerCase().includes(keyword) ||
+
+property.road.toLowerCase().includes(keyword) ||
+
+property.status.toLowerCase().includes(keyword)
+
+);
+
+});
+
+}
+
 if(currentFilter !== "ALL"){
 
     allProperties = allProperties.filter(property =>

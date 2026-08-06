@@ -2945,8 +2945,6 @@ footer p:last-child{
    FILTER BUTTONS (MOBILE)
 ========================================================= */
 
-@media(max-width:768px){
-
 .filter-buttons{
 
     display:flex;
@@ -3015,6 +3013,98 @@ footer p:last-child{
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* =========================================================
+   ADMIN PANEL
+========================================================= */
+
+.admin-panel{
+
+width:90%;
+
+max-width:850px;
+
+margin:120px auto 60px;
+
+padding:30px;
+
+border-radius:18px;
+
+background:#111;
+
+border:1px solid rgba(255,215,0,.18);
+
+box-shadow:0 12px 30px rgba(0,0,0,.45);
+
+}
+
+.admin-panel h2{
+
+text-align:center;
+
+color:#FFD700;
+
+margin-bottom:30px;
+
+}
+
+#propertyForm{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+#propertyForm input,
+#propertyForm textarea,
+#propertyForm select{
+
+padding:15px;
+
+border-radius:12px;
+
+border:1px solid rgba(255,215,0,.20);
+
+background:#1a1a1a;
+
+color:#fff;
+
+font-size:15px;
+
+outline:none;
+
+}
+
+#propertyForm textarea{
+
+min-height:130px;
+
+resize:vertical;
+
+}
+
+#propertyForm button{
+
+width:100%;
+
+margin-top:10px;
+
+}
   
   

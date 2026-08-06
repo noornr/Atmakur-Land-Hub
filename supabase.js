@@ -1,4 +1,6 @@
 
+alert("Supabase.js started");
+
 const SUPABASE_URL = "https://soltusisytegacqbjhsh.supabase.co";
 
 const SUPABASE_KEY = "sb_publishable_stQnnktiByN2OEGK2bURWQ_W3TQb8B_";

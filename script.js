@@ -362,7 +362,10 @@ const propertyGrid = document.getElementById("propertyGrid");
 const pagination = document.getElementById("pagination");
 
 const cardsPerPage = 20;
+
 let currentPage = 1;
+
+let currentFilter = "ALL";
 
 function displayProperties(page){
 

@@ -507,3 +507,29 @@ Math.ceil(allProperties.length / cardsPerPage);
 displayProperties(currentPage);
 
 setupPagination();
+
+
+/* ==========================================
+   FILTER BUTTONS
+========================================== */
+
+document.querySelectorAll(".filter-btn").forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        document.querySelectorAll(".filter-btn")
+        .forEach(btn=>btn.classList.remove("active"));
+
+        button.classList.add("active");
+
+        currentFilter = button.dataset.filter;
+
+        currentPage = 1;
+
+        displayProperties(currentPage);
+
+        setupPagination();
+
+    });
+
+});

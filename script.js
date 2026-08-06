@@ -649,3 +649,17 @@ if(featuredContainer && typeof properties !== "undefined"){
     }
 
 }
+
+/* ==========================================
+   PROPERTY COUNTER
+========================================== */
+
+const propertyCount =
+document.getElementById("propertyCount");
+
+if(propertyCount && typeof properties !== "undefined"){
+
+    propertyCount.textContent =
+        Object.keys(properties).length + "+";
+
+}

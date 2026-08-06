@@ -17,11 +17,13 @@ async function loadProperties() {
         .select("*");
 
     if (error) {
-        alert("Supabase Error: " + error.message);
-        return;
-    }
+    alert("Supabase Error: " + error.message);
+    return;
+}
 
-    window.properties = {};
+alert("Rows found: " + data.length);
+
+window.properties = {};
 
     data.forEach(p => {
 

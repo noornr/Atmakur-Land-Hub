@@ -463,8 +463,18 @@ function setupPagination(){
 
     pagination.innerHTML="";
 
-    const totalPages =
-    Math.ceil(Object.keys(properties).length / cardsPerPage);
+    let allProperties = Object.values(properties);
+
+if(currentFilter !== "ALL"){
+
+    allProperties = allProperties.filter(property =>
+        property.status === currentFilter
+    );
+
+}
+
+const totalPages =
+Math.ceil(allProperties.length / cardsPerPage);
 
     for(let i=1;i<=totalPages;i++){
 

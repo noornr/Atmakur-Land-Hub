@@ -373,7 +373,15 @@ function displayProperties(page){
 
     propertyGrid.innerHTML="";
 
-    const allProperties = Object.values(properties);
+    let allProperties = Object.values(properties);
+
+if(currentFilter !== "ALL"){
+
+    allProperties = allProperties.filter(property =>
+        property.status === currentFilter
+    );
+
+}
 
     const start = (page-1) * cardsPerPage;
     const end = start + cardsPerPage;

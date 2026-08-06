@@ -561,3 +561,22 @@ document.querySelectorAll(".filter-btn").forEach(button=>{
     });
 
 });
+
+
+
+const searchInput =
+document.getElementById("searchInput");
+
+if(searchInput){
+
+searchInput.addEventListener("input",()=>{
+
+currentPage=1;
+
+displayProperties(currentPage);
+
+setupPagination();
+
+});
+
+}

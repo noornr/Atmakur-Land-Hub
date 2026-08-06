@@ -49,19 +49,16 @@ async function addProperty() {
 
     console.log(property);
 
-    const { error } = await supabase
-        .from("properties")
-        .insert([property]);
+    const { data, error } = await supabase
+    .from("properties")
+    .select("*");
 
-    if (error) {
+if (error) {
+    alert("Supabase Error: " + error.message);
+    return;
+}
 
-        console.error(error);
-
-        alert("Error: " + error.message);
-
-        return;
-
-    }
+alert("Loaded " + data.length + " properties");
 
     alert("Property Added Successfully!");
 

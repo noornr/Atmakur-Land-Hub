@@ -1690,7 +1690,71 @@ footer p:last-child{
 
 }
 
+/* =========================================================
+   FILTER BUTTONS (DESKTOP)
+========================================================= */
 
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin:30px auto;
+
+}
+
+.filter-btn{
+
+    min-width:140px;
+
+    padding:14px 28px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,215,0,.35);
+
+    background:#111;
+
+    color:#FFD700;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+
+}
+
+.filter-btn:hover{
+
+    background:#FFD700;
+
+    color:#111;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 26px rgba(255,215,0,.30);
+
+}
+
+.filter-btn.active{
+
+    background:#FFD700;
+
+    color:#111;
+
+    border-color:#FFD700;
+
+}
 
 
 /* ==================================================================================================================================
@@ -2873,6 +2937,77 @@ footer p:last-child{
 .empty-favorites .details-btn{
 
     max-width:100%;
+
+}
+
+
+  /* =========================================================
+   FILTER BUTTONS (MOBILE)
+========================================================= */
+
+@media(max-width:768px){
+
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:20px auto;
+
+    padding:0 12px;
+
+}
+
+.filter-btn{
+
+    flex:1;
+
+    min-width:90px;
+
+    padding:12px 10px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,215,0,.35);
+
+    background:#111;
+
+    color:#FFD700;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+}
+
+.filter-btn:hover{
+
+    background:#FFD700;
+
+    color:#111;
+
+}
+
+.filter-btn.active{
+
+    background:#FFD700;
+
+    color:#111;
+
+    border-color:#FFD700;
+
+}
 
 }
 

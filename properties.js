@@ -3,6 +3,8 @@ const properties = {
 "ATK-1":{
 
 id:"ATK-1",
+  
+featured:true,
 
 status:"AVAILABLE",
 

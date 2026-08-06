@@ -6,93 +6,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Admin Dashboard</title>
+<title>Admin Panel</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header class="navbar">
-
-<h2>🔐 Admin Dashboard</h2>
-
-</header>
-
-<section class="admin-panel">
+<div class="admin-container">
 
 <h2>Add New Property</h2>
 
-<form id="propertyForm">
+<input type="text" id="property_id" placeholder="Property ID">
 
-<input
-type="text"
-placeholder="Property ID (ATK-101)"
-required>
+<input type="text" id="price" placeholder="Price">
 
-<input
-type="text"
-placeholder="Price"
-required>
+<input type="text" id="area" placeholder="Area">
 
-<input
-type="text"
-placeholder="Area (English)"
-required>
+<input type="text" id="area_telugu" placeholder="Area Telugu">
 
-<input
-type="text"
-placeholder="Area (Telugu)"
-required>
+<input type="text" id="land" placeholder="Land">
 
-<input
-type="text"
-placeholder="Land (English)"
-required>
+<input type="text" id="land_telugu" placeholder="Land Telugu">
 
-<input
-type="text"
-placeholder="Land (Telugu)"
-required>
+<input type="text" id="facing" placeholder="Facing">
 
-<input
-type="text"
-placeholder="Facing (English)"
-required>
+<input type="text" id="facing_telugu" placeholder="Facing Telugu">
 
-<input
-type="text"
-placeholder="Facing (Telugu)"
-required>
+<input type="text" id="road" placeholder="Road">
 
-<select>
+<input type="text" id="road_telugu" placeholder="Road Telugu">
 
-<option>AVAILABLE</option>
+<textarea id="description" placeholder="Description"></textarea>
 
-<option>SOLD</option>
+<textarea id="description_telugu" placeholder="Description Telugu"></textarea>
 
+<select id="status">
+    <option value="AVAILABLE">AVAILABLE</option>
+    <option value="SOLD">SOLD</option>
 </select>
+<input type="text" id="map" placeholder="Google Maps Link">
 
-<textarea
-placeholder="Description">
-</textarea>
+<input type="text" id="images" placeholder="property1.jpg">
 
-<button
-type="submit"
-class="details-btn">
+<label>
+<input type="checkbox" id="featured">
+Featured Property
+</label>
 
+<button onclick="addProperty()">
 Save Property
-
 </button>
 
-</form>
+</div>
 
-</section>
-
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="admin.js"></script>
 
 </body>
 

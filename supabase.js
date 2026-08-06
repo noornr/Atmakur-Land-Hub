@@ -1,4 +1,4 @@
-alert("admin.js loaded");
+
 
 const SUPABASE_URL = "https://soltusisytegacqbjhsh.supabase.co";
 

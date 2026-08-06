@@ -53,6 +53,10 @@ async function loadProperties() {
     displayProperties(1);
 }
 
+if (typeof displayProperties === "function") {
+    displayProperties(1);
+}
+
 if (typeof setupPagination === "function") {
     setupPagination();
 }

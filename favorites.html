@@ -32,7 +32,7 @@ JSON.parse(localStorage.getItem("favorites")) || [];
 const container =
 document.getElementById("favoritesContainer");
 
-
+if (favorites.length === 0) {
 
 container.classList.add("empty-state");
     

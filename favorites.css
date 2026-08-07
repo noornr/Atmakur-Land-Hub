@@ -389,18 +389,12 @@ body{
 .property-grid{
 
     width:100%;
-
     max-width:100%;
-
-    margin:30px auto;
-
-    padding:0 12px 30px;
-
+    margin:15px auto 30px;
+    padding:0 8px 30px;
     display:grid;
-
-    grid-template-columns:repeat(2,minmax(0,1fr));
-
-    gap:12px;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
 
 }
 
@@ -408,25 +402,40 @@ body{
    8.3 PROPERTY CARD (MOBILE)
 ========================================================= */
 
+.card{
+
+    width:100%;
+    height:auto;
+    min-height:520px;   /* Important */
+    border-radius:12px;
+
+}
+
 .card-image{
-    height:140px;
+
+    height:120px;
+
 }
 
 .card-content{
-    padding:12px;
+
+    padding:10px;
+
 }
 
-.card-content h3{
-    font-size:15px;
+.card-buttons{
+
+    display:flex;
+    flex-direction:column;   /* Stack buttons vertically */
+    gap:8px;
 }
 
-.card-content p{
-    font-size:12px;
-    margin-bottom:6px;
-}
+.details-btn,
+.whatsapp-btn{
 
-.price{
-    font-size:16px;
+    width:100%;
+    height:34px;
+
 }
 
 /* =========================================================

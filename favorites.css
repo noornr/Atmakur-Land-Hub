@@ -15,6 +15,7 @@
 }
 
 body{
+   padding-top:120px; /*
 
     background:#050505;
     color:#ffffff;
@@ -571,6 +572,7 @@ body{
 ========================================================= */
 
 .navbar{
+margin-bottom:40px;
 
     position:fixed;
 
@@ -828,11 +830,10 @@ body{
 
 body{
 
-    padding-bottom:90px;
+    padding-top:120px;
 
 }
 
-}
 
 /* =========================================================
    FAVORITES PAGE

@@ -90,7 +90,11 @@ body{
    4. EMPTY FAVORITES
 ========================================================= */
 
-#favoritesContainer:has(.empty-favorites){
+/* =========================================================
+   EMPTY FAVORITES CONTAINER
+========================================================= */
+
+.empty-state{
 
     display:flex;
 
@@ -610,7 +614,11 @@ body{
    3. EMPTY FAVORITES
 ========================================================= */
 
-#favoritesContainer:has(.empty-favorites){
+/* =========================================================
+   EMPTY FAVORITES CONTAINER
+========================================================= */
+
+.empty-state{
 
     display:flex;
 
@@ -618,7 +626,7 @@ body{
 
     align-items:flex-start;
 
-    min-height:calc(100vh - 70px);
+    min-height:calc(100vh - 82px);
 
     padding-top:30px;
 

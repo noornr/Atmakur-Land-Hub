@@ -291,7 +291,7 @@ header{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    padding:80px 8%;
+    padding:80px 8% 0;
 }
 
 .hero::before{
@@ -1929,7 +1929,7 @@ body{
 
     text-align:center;
 
-    padding:40px 20px;
+    padding:40px 20px 0;
 
     background-position:center;
 

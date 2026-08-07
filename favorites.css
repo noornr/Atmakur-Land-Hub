@@ -77,9 +77,9 @@ body{
 #favoritesContainer:has(.empty-favorites){
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     min-height:100vh;
-    padding:0;
+    padding-top:20px;
 }
 /* ---------- HEART ---------- */
 
@@ -625,9 +625,9 @@ body{
  #favoritesContainer:has(.empty-favorites){
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     min-height:100vh;
-    padding:0;
+    padding-top:20px;
 }
 .empty-icon{
 

@@ -397,6 +397,7 @@ body{
     padding-bottom:80px;
 
 }
+
 /* =========================================================
    8.2 PROPERTY GRID (MOBILE)
 ========================================================= */
@@ -405,11 +406,13 @@ body{
 
     width:100%;
     max-width:100%;
-    margin:15px auto 30px;
-    padding:0 8px 30px;
+    margin:14px auto 27px;
+    padding:0 7px 27px;
+
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:10px;
+
+    gap:9px;
 
 }
 
@@ -420,60 +423,89 @@ body{
 .card{
 
     width:100%;
-    height:auto;
-    min-height:520px;   /* Important */
-    border-radius:12px;
+    max-width:100%;
+
+    margin:0;
+
+    min-height:468px;
+
+    border-radius:11px;
+
+    overflow:hidden;
 
 }
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border:1px solid rgba(212,175,55,.22);
+
+    border-radius:11px;
+
+    box-sizing:border-box;
+
+    pointer-events:none;
+
+}
+
+/* =========================================================
+   8.4 PROPERTY IMAGE (MOBILE)
+========================================================= */
 
 .card-image{
 
-    height:120px;
+    position:relative;
+
+    height:108px;
+
+    border-radius:11px 11px 0 0;
 
 }
 
-.card-content{
-
-    padding:10px;
-
-}
-
-.card-buttons{
-
-    display:flex;
-    flex-direction:column;   /* Stack buttons vertically */
-    gap:8px;
-}
-
-.details-btn,
-.whatsapp-btn{
+.card-image img{
 
     width:100%;
-    height:34px;
+
+    height:108px;
+
+    object-fit:cover;
+
+    border-radius:11px 11px 0 0;
 
 }
 
-   /* =========================================================
-   8.4 PROPERTY BADGE (MOBILE)
+.card-image::after{
+
+    height:32px;
+
+}
+
+/* =========================================================
+   8.5 PROPERTY BADGE (MOBILE)
 ========================================================= */
 
 .badge{
 
     position:absolute;
 
-    top:8px;
+    top:7px;
 
-    right:8px;
+    right:7px;
 
-    padding:6px 12px;
+    padding:5px 11px;
 
-    font-size:10px;
+    font-size:9px;
 
     font-weight:800;
 
-    border-radius:20px;
+    border-radius:18px;
 
-    letter-spacing:.5px;
+    letter-spacing:.4px;
 
     color:#fff;
 
@@ -488,7 +520,7 @@ body{
     border:1px solid rgba(255,255,255,.25);
 
     box-shadow:
-        0 4px 10px rgba(40,167,69,.35),
+        0 4px 9px rgba(40,167,69,.35),
         inset 0 1px 0 rgba(255,255,255,.25);
 
 }
@@ -500,7 +532,7 @@ body{
     border:1px solid rgba(255,255,255,.25);
 
     box-shadow:
-        0 4px 10px rgba(255,23,68,.35),
+        0 4px 9px rgba(255,23,68,.35),
         inset 0 1px 0 rgba(255,255,255,.25);
 
 }
@@ -512,8 +544,75 @@ body{
     border:1px solid rgba(255,255,255,.25);
 
     box-shadow:
-        0 4px 10px rgba(245,158,11,.35),
+        0 4px 9px rgba(245,158,11,.35),
         inset 0 1px 0 rgba(255,255,255,.25);
+
+}
+
+/* =========================================================
+   8.6 PROPERTY CONTENT (MOBILE)
+========================================================= */
+
+.card-content{
+
+    padding:9px;
+
+}
+
+.card-content h3{
+
+    font-size:14px;
+
+    margin-bottom:7px;
+
+}
+
+.card-content p{
+
+    font-size:11px;
+
+    margin-bottom:5px;
+
+    line-height:1.4;
+
+}
+
+.price{
+
+    font-size:14px;
+
+    font-weight:800;
+
+    margin:8px 0;
+
+}
+
+/* =========================================================
+   8.7 PROPERTY BUTTONS (MOBILE)
+========================================================= */
+
+.card-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+
+}
+
+.details-btn,
+.whatsapp-btn{
+
+    width:100%;
+
+    height:31px;
+
+    font-size:9px;
+
+    font-weight:700;
+
+    border-radius:7px;
 
 }
 

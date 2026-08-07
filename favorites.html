@@ -36,6 +36,15 @@ JSON.parse(localStorage.getItem("favorites")) || [];
 const container =
 document.getElementById("favoritesContainer");
 
+/* Paste pagination variables here */
+
+const cardsPerPage = 20;
+let currentPage = 1;
+
+const start = (currentPage - 1) * cardsPerPage;
+const end = start + cardsPerPage;
+const currentCards = favorites.slice(start, end);
+
 if(favorites.length===0){
 
 container.classList.add("empty-state");

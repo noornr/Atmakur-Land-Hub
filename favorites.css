@@ -74,12 +74,16 @@ body{
 
 /* ---------- EMPTY FAVORITES ---------- */
 
-#favoritesContainer:has(.empty-favorites){
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    min-height:100vh;
-    padding-top:20px;
+.empty-favorites{
+    width:100%;
+    max-width:500px;
+    margin:0 auto;
+    padding:45px 30px;
+    background:#111;
+    border:1px solid rgba(255,215,0,.25);
+    border-radius:24px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.55);
 }
 /* ---------- HEART ---------- */
 
@@ -623,11 +627,13 @@ body{
 ========================== */
 
  #favoritesContainer:has(.empty-favorites){
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    min-height:100vh;
-    padding-top:20px;
+    min-height:calc(100vh - 70px);
+    padding:20px 15px;
+}
+
+.empty-favorites{
+    max-width:360px;
+    padding:30px 20px;
 }
 .empty-icon{
 

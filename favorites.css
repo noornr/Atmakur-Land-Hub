@@ -670,36 +670,6 @@ body{
 
 }
 
-/* =========================================================
-   9. SCROLLBAR (OPTIONAL)
-========================================================= */
-
-::-webkit-scrollbar{
-    width:8px;
-}
-
-::-webkit-scrollbar-track{
-    background:#0d0d0d;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#555;
-    border-radius:10px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background:#FFD700;
-}
-
-/* =========================================================
-   10. SELECTION (OPTIONAL)
-========================================================= */
-
-::selection{
-    background:#FFD700;
-    color:#111;
-}
-
 
 
    

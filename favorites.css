@@ -372,16 +372,31 @@ body{
 
 .navbar{
 
-    padding:25px 16px;
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:16px;
+
+    background:#050505;
+
+    z-index:999;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.1);
 
 }
 
-.navbar h2{
+body{
 
-    font-size:22px;
+    padding-bottom:80px;
 
 }
-
 /* =========================================================
    8.2 PROPERTY GRID (MOBILE)
 ========================================================= */

@@ -453,6 +453,70 @@ body{
 
 }
 
+   /* =========================================================
+   8.4 PROPERTY BADGE (MOBILE)
+========================================================= */
+
+.badge{
+
+    position:absolute;
+
+    top:8px;
+
+    right:8px;
+
+    padding:6px 12px;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    border-radius:20px;
+
+    letter-spacing:.5px;
+
+    color:#fff;
+
+    z-index:3;
+
+}
+
+.badge.available{
+
+    background:linear-gradient(135deg,#28a745,#34d058);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 4px 10px rgba(40,167,69,.35),
+        inset 0 1px 0 rgba(255,255,255,.25);
+
+}
+
+.badge.sold{
+
+    background:linear-gradient(135deg,#ff1744,#ff4569);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 4px 10px rgba(255,23,68,.35),
+        inset 0 1px 0 rgba(255,255,255,.25);
+
+}
+
+.badge.reserved{
+
+    background:linear-gradient(135deg,#f59e0b,#ffbf47);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 4px 10px rgba(245,158,11,.35),
+        inset 0 1px 0 rgba(255,255,255,.25);
+
+}
+
 /* =========================================================
    8.5 EMPTY FAVORITES (MOBILE)
 ========================================================= */

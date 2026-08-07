@@ -350,7 +350,69 @@ body{
 
 }
 
+/* =========================================================
+   9. PAGINATION (DESKTOP)
+========================================================= */
 
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin:40px 0 30px;
+
+}
+
+.pagination button{
+
+    min-width:44px;
+
+    height:44px;
+
+    padding:0 16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#111;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pagination button:hover{
+
+    background:#FFD700;
+
+    color:#111;
+
+}
+
+.pagination button.active{
+
+    background:#FFD700;
+
+    color:#111;
+
+    font-weight:700;
+
+}
 
 
 
@@ -674,6 +736,60 @@ body{
 
 
 
-   
+   /* =========================================================
+   9. PAGINATION (MOBILE)
+========================================================= */
+
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin:25px 0 20px;
+
+}
+
+.pagination button{
+
+    min-width:36px;
+
+    height:36px;
+
+    padding:0 10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#111;
+
+    color:#fff;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.pagination button.active{
+
+    background:#FFD700;
+
+    color:#111;
+
+    font-weight:700;
+
+}
+
+}
 
    

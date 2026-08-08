@@ -2334,13 +2334,13 @@ body{
 
 .badge{
 
-    top:6px;
-    left:6px;
-    padding:6px 10px;
-    font-size:10px;
-    border-radius:20px;
+    top:5px;
+    left:5px;
+    padding:5px 9px;
+    font-size:9px;
+    border-radius:18px;
     font-weight:800;
-    letter-spacing:.6px;
+    letter-spacing:.5px;
 
 }
 
@@ -2348,33 +2348,34 @@ body{
 
     position:absolute;
 
-    top:10px;
-    left:10px;
+    top:9px;
+    left:9px;
 
-    padding:6px 12px;
+    padding:5px 11px;
 
     background:linear-gradient(135deg,#28a745,#34d058);
 
     color:#fff;
 
-    font-size:10px;
+    font-size:9px;
 
     font-weight:800;
 
-    letter-spacing:.8px;
+    letter-spacing:.7px;
 
-    border-radius:30px;
+    border-radius:27px;
 
     border:1px solid rgba(255,255,255,.25);
 
     box-shadow:
-        0 5px 12px rgba(40,167,69,.35),
+        0 4.5px 11px rgba(40,167,69,.35),
         inset 0 1px 0 rgba(255,255,255,.30);
 
     z-index:3;
 
     animation:badgeFloat 2.5s ease-in-out infinite;
 }
+
 .badge.sold{
 
     position:absolute !important;
@@ -2384,9 +2385,9 @@ body{
 
     transform:translate(-50%,-50%) !important;
 
-    padding:6px 16px;
+    padding:5px 14px;
 
-    font-size:10px;
+    font-size:9px;
 
     color:#fff;
 
@@ -2395,10 +2396,10 @@ body{
     border:1px solid rgba(255,255,255,.25);
 
     box-shadow:
-        0 6px 14px rgba(255,23,68,.40),
+        0 5px 13px rgba(255,23,68,.40),
         inset 0 1px 0 rgba(255,255,255,.30);
 
-    border-radius:30px;
+    border-radius:27px;
 
     z-index:999;
 

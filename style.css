@@ -3110,43 +3110,6 @@ footer p:last-child{
 
 }
 
-.policy-container{
-
-    width:94%;
-
-    margin:20px auto 60px;
-
-    padding:22px;
-
-    border-radius:15px;
-
-}
-
-.policy-container h1{
-
-    font-size:34px;
-
-    margin-bottom:25px;
-
-}
-
-.policy-container h2{
-
-    font-size:24px;
-
-    margin-top:28px;
-
-}
-
-.policy-container p,
-.policy-container li{
-
-    font-size:17px;
-
-    line-height:1.8;
-
-}
-
 }  /* ===== END MOBILE VERSION ===== */
 
 

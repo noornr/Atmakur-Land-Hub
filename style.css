@@ -48,6 +48,10 @@ footer a:hover{
 
 }
 
+.terms-container{
+
+    margin:20px auto 60px;
+
 
 
 /* =======================================================================================================
@@ -3114,11 +3118,7 @@ footer p:last-child{
 
     width:94%;
 
-    .policy-container{
-
-    margin:15px auto 60px;
-
-}
+    margin:20px auto 60px;
 
     padding:22px;
 
@@ -3150,6 +3150,16 @@ footer p:last-child{
     line-height:1.8;
 
 }
+
+
+  .terms-container{
+
+    max-width:950px;
+    width:90%;
+
+    margin:20px auto 60px;
+
+    padding:30px;
 
 }  /* ===== END MOBILE VERSION ===== */
 

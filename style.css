@@ -3361,23 +3361,22 @@ footer p:last-child{
   
   .pagination{
 
-        gap:8px;
+        gap:4px;
 
-        margin:25px auto 35px;
+        margin:10px auto 15px;
 
     }
 
     .pagination button{
 
-        min-width:40px;
+        min-width:20px;
 
-        height:40px;
+        height:20px;
 
-        padding:0 11px;
+        padding:0 5px;
 
         font-size:15px;
 
-        border-radius:11px;
 
     }
 

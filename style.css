@@ -3355,31 +3355,7 @@ footer p:last-child{
     border-color:#FFD700;
 
 }
-/* =========================================================
-   PAGINATION — PREMIUM MOBILE
-========================================================= */
   
-  .pagination{
-
-      
-        justify-content:center !important;
-
-        align-items:center !important;
-
-      
-    }
-
-    .pagination button{
-
-        
-
-        align-items:center !important;
-
-        justify-content:center !important;
-
-
-    }
-
 }  /* ===== END MOBILE VERSION ===== */
 
 

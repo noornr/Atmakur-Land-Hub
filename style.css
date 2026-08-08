@@ -2261,54 +2261,60 @@ body{
 
 }
 
-  /*Favorite Button */
+.card-image::after{
+
+    height:35px;
+
+}
+
+    /*Favorite Button */
 
 .favorite-btn{
 
-    position:absolute;
+position:absolute;  
 
-    top:9px;
-    right:9px;
+top:9px;          /* was 8px */  
+right:9px;        /* was 8px */  
 
-    width:31px;
-    height:31px;
+width:33px;       /* was 37px */  
+height:33px;      /* was 37px */  
 
-    border:none;
+border:none;  
 
-    border-radius:50%;
+border-radius:50%;  
 
-    background:rgba(0,0,0,.45);
+background:rgba(0,0,0,.45);  
 
-    color:#ff1744;
+color:#ff1744;  
 
-    font-size:19px;
+font-size:20px;   /* Keep the heart size the same */  
 
-    display:flex;
+display:flex;  
 
-    align-items:center;
+align-items:center;  
 
-    justify-content:center;
+justify-content:center;  
 
-    cursor:pointer;
+cursor:pointer;  
 
-    z-index:5;
+z-index:5;  
 
-    transition:.3s ease;
+transition:.3s ease;  
 
-    box-shadow:0 3px 10px rgba(0,0,0,.35);
+box-shadow:0 3px 10px rgba(0,0,0,.35);
+
 }
-
 .favorite-btn:hover{
 
-    transform:scale(1.08);
+transform:scale(1.08);
 
 }
 
 .favorite-btn.active{
 
-    color:#ff1744;
+color:#ff1744;  
 
-    background:rgba(255,255,255,.15);
+background:rgba(255,255,255,.15);
 
 }
 
@@ -2321,12 +2327,6 @@ body{
     object-fit:cover;
 
     border-radius:12px 12px 0 0;
-
-}
-
-.card-image::after{
-
-    height:35px;
 
 }
 

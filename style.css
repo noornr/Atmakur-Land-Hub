@@ -2363,57 +2363,6 @@ body{
 
 }
 
-    /*Favorite Button */
-
-.favorite-btn{
-
-position:absolute;  
-
-top:9px;          /* was 8px */  
-right:9px;        /* was 8px */  
-
-width:33px;       /* was 37px */  
-height:33px;      /* was 37px */  
-
-border:none;  
-
-border-radius:50%;  
-
-background:rgba(0,0,0,.45);  
-
-color:#ff1744;  
-
-font-size:20px;   /* Keep the heart size the same */  
-
-display:flex;  
-
-align-items:center;  
-
-justify-content:center;  
-
-cursor:pointer;  
-
-z-index:5;  
-
-transition:.3s ease;  
-
-box-shadow:0 3px 10px rgba(0,0,0,.35);
-
-}
-.favorite-btn:hover{
-
-transform:scale(1.08);
-
-}
-
-.favorite-btn.active{
-
-color:#ff1744;  
-
-background:rgba(255,255,255,.15);
-
-}
-
 .card-image img{
 
     width:100%;
@@ -2425,6 +2374,59 @@ background:rgba(255,255,255,.15);
     border-radius:12px 12px 0 0;
 
 }
+
+
+  /*Favorite Button */
+
+.favorite-btn{
+
+    position:absolute;
+
+    top:9px;
+    right:9px;
+
+    width:31px;
+    height:31px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.45);
+
+    color:#ff1744;
+
+    font-size:19px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    z-index:5;
+
+    transition:.3s ease;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.35);
+}
+
+.favorite-btn:hover{
+
+    transform:scale(1.08);
+
+}
+
+.favorite-btn.active{
+
+    color:#ff1744;
+
+    background:rgba(255,255,255,.15);
+
+}
+
 
 /* =========================================================
    4.4 PROPERTY BADGE (MOBILE)

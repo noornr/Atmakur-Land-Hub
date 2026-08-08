@@ -3361,7 +3361,7 @@ footer p:last-child{
   
   .pagination{
 
-        width:100% !important;
+        width:50% !important;
 
         display:flex !important;
 
@@ -3371,7 +3371,7 @@ footer p:last-child{
 
         gap:8px !important;
 
-        margin:25px auto 35px !important;
+        margin:5px 5px !important;
 
         padding:0 !important;
 
@@ -3379,11 +3379,11 @@ footer p:last-child{
 
     .pagination button{
 
-        width:40px !important;
+        width:10px !important;
 
-        min-width:40px !important;
+        min-width:10px !important;
 
-        height:40px !important;
+        height:10px !important;
 
         padding:0 !important;
 
@@ -3393,9 +3393,7 @@ footer p:last-child{
 
         justify-content:center !important;
 
-        border-radius:11px !important;
-
-        font-size:15px !important;
+        font-size:5px !important;
 
     }
 

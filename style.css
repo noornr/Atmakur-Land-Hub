@@ -2265,11 +2265,11 @@ body{
 
     position:absolute;
 
-    top:9px;          /* was 8px */
-    right:9px;        /* was 8px */
+    top:9px;
+    right:9px;
 
-    width:33px;       /* was 37px */
-    height:33px;      /* was 37px */
+    width:31px;
+    height:31px;
 
     border:none;
 
@@ -2279,7 +2279,7 @@ body{
 
     color:#ff1744;
 
-    font-size:20px;   /* Keep the heart size the same */
+    font-size:19px;
 
     display:flex;
 
@@ -2295,6 +2295,7 @@ body{
 
     box-shadow:0 3px 10px rgba(0,0,0,.35);
 }
+
 .favorite-btn:hover{
 
     transform:scale(1.08);

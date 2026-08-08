@@ -3257,6 +3257,53 @@ footer p:last-child{
     border-color:#FFD700;
 
 }
+
+
+  /* =========================================================
+   PROPERTY PAGINATION — MOBILE ONLY
+========================================================= */
+
+    .pagination{
+
+        width:100% !important;
+
+        display:flex !important;
+
+        justify-content:center !important;
+
+        align-items:center !important;
+
+        gap:8px !important;
+
+        margin:25px auto 35px !important;
+
+        padding:0 !important;
+
+    }
+
+    .pagination button{
+
+        width:40px !important;
+
+        min-width:40px !important;
+
+        height:40px !important;
+
+        padding:0 !important;
+
+        display:flex !important;
+
+        align-items:center !important;
+
+        justify-content:center !important;
+
+        border-radius:11px !important;
+
+        font-size:15px !important;
+
+    }
+
+}
   
 }  /* ===== END MOBILE VERSION ===== */
 

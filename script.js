@@ -279,6 +279,121 @@ function displayProperties(page){
 
     let allProperties = Object.values(properties);
 
+    /* =========================================================
+   ADVANCED FILTER
+========================================================= */
+
+const filterAreaValue =
+    document.getElementById("filterArea")
+    ?.value.toLowerCase().trim() || "";
+
+const belowPriceValue =
+    Number(
+        document.getElementById("belowPrice")?.value
+    ) || 0;
+
+const filterCentsValue =
+    Number(
+        document.getElementById("filterCents")?.value
+    ) || 0;
+
+const filterFacingValue =
+    document.getElementById("filterFacing")
+    ?.value.toLowerCase().trim() || "";
+
+
+/* AREA / ROAD */
+
+if(filterAreaValue){
+
+    allProperties = allProperties.filter(property => {
+
+        const area =
+            (property.area || "").toLowerCase();
+
+        const road =
+            (property.road || "").toLowerCase();
+
+        return (
+            area.includes(filterAreaValue) ||
+            road.includes(filterAreaValue)
+        );
+
+    });
+
+}
+
+
+/* BELOW PRICE */
+
+if(belowPriceValue > 0){
+
+    allProperties = allProperties.filter(property => {
+
+        const priceMatch =
+            String(property.price || "")
+            .match(/₹\s?[\d,]+/);
+
+        if(!priceMatch){
+
+            return false;
+
+        }
+
+        const price =
+            Number(
+                priceMatch[0]
+                .replace(/[₹,\s]/g, "")
+            );
+
+        return price <= belowPriceValue;
+
+    });
+
+}
+
+
+/* LAND SIZE */
+
+if(filterCentsValue > 0){
+
+    allProperties = allProperties.filter(property => {
+
+        const landMatch =
+            String(property.land || "")
+            .match(/[\d.]+/);
+
+        if(!landMatch){
+
+            return false;
+
+        }
+
+        const cents =
+            Number(landMatch[0]);
+
+        return cents >= filterCentsValue;
+
+    });
+
+}
+
+
+/* FACING */
+
+if(filterFacingValue){
+
+    allProperties = allProperties.filter(property => {
+
+        const facing =
+            (property.facing || "").toLowerCase();
+
+        return facing.includes(filterFacingValue);
+
+    });
+
+}
+
 const keyword =
 document.getElementById("searchInput")
 ?.value.toLowerCase().trim() || "";

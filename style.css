@@ -1720,6 +1720,23 @@ footer p:last-child{
    FILTER BUTTONS (DESKTOP)
 ========================================================= */
 
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin:30px auto;
+
+    flex-wrap:nowrap;
+
+}
+
+.filter-btn,
 .filter-open-btn{
 
     min-width:140px;
@@ -1748,35 +1765,8 @@ footer p:last-child{
 
 }
 
-.filter-btn{
-
-    min-width:140px;
-
-    padding:14px 28px;
-
-    border-radius:14px;
-
-    border:1px solid rgba(255,215,0,.35);
-
-    background:#111;
-
-    color:#FFD700;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.30s;
-
-    box-shadow:0 8px 18px rgba(0,0,0,.35);
-
-    white-space:nowrap;
-
-}
-
-.filter-btn:hover{
+.filter-btn:hover,
+.filter-open-btn:hover{
 
     background:#FFD700;
 
@@ -1797,7 +1787,6 @@ footer p:last-child{
     border-color:#FFD700;
 
 }
-
 /* =========================================================
    FILTER POPUP - FIX
 ========================================================= */

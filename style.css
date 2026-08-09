@@ -1732,6 +1732,8 @@ footer p:last-child{
 
     margin:30px auto;
 
+    flex-wrap:nowrap;
+
 }
 
 .filter-btn{
@@ -1757,6 +1759,8 @@ footer p:last-child{
     transition:.30s;
 
     box-shadow:0 8px 18px rgba(0,0,0,.35);
+
+    white-space:nowrap;
 
 }
 

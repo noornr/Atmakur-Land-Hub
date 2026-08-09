@@ -789,6 +789,9 @@ advancedApplyFilter.addEventListener("click", function(){
 
 if(cents > 0){
 
+    const minCents = cents - 0.25;
+    const maxCents = cents + 0.25;
+
     filtered = filtered.filter(property => {
 
         const land =
@@ -800,12 +803,14 @@ if(cents > 0){
         const propertyCents =
             Number(land);
 
-        return propertyCents >= cents;
+        return (
+            propertyCents >= minCents &&
+            propertyCents <= maxCents
+        );
 
     });
 
 }
-
 
     /* FACING */
 

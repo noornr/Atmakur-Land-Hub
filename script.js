@@ -787,21 +787,24 @@ advancedApplyFilter.addEventListener("click", function(){
 
     /* CENTS */
 
-    if(cents > 0){
+if(cents > 0){
 
-        filtered = filtered.filter(property => {
+    filtered = filtered.filter(property => {
 
-            const match =
-            String(property.land)
-            .match(/[\d.]+/);
+        const land =
+            String(property.land || "")
+            .toLowerCase()
+            .replace("cents", "")
+            .trim();
 
-            if(!match) return false;
+        const propertyCents =
+            Number(land);
 
-            return Number(match[0]) >= cents;
+        return propertyCents >= cents;
 
-        });
+    });
 
-    }
+}
 
 
     /* FACING */

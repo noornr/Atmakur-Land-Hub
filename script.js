@@ -842,3 +842,59 @@ if(advancedClearFilter){
     });
 
 }
+
+/* =========================================================
+   FILTER POPUP OPEN / CLOSE
+========================================================= */
+
+const openFilterButton =
+    document.getElementById("openFilter");
+
+const closeFilterButton =
+    document.getElementById("closeFilter");
+
+const filterPopup =
+    document.getElementById("filterOverlay");
+
+
+/* OPEN FILTER */
+
+if(openFilterButton){
+
+    openFilterButton.addEventListener("click", function(){
+
+        filterPopup.classList.add("show");
+
+    });
+
+}
+
+
+/* CLOSE FILTER */
+
+if(closeFilterButton){
+
+    closeFilterButton.addEventListener("click", function(){
+
+        filterPopup.classList.remove("show");
+
+    });
+
+}
+
+
+/* CLOSE WHEN CLICKING OUTSIDE */
+
+if(filterPopup){
+
+    filterPopup.addEventListener("click", function(event){
+
+        if(event.target === filterPopup){
+
+            filterPopup.classList.remove("show");
+
+        }
+
+    });
+
+}

@@ -504,7 +504,10 @@ WhatsApp
 
 }
 
-function setupPagination(){
+
+
+        
+        function setupPagination(){
 
     if(!pagination || typeof properties==="undefined") return;
 
@@ -524,9 +527,7 @@ function setupPagination(){
         Math.ceil(allProperties.length / cardsPerPage);
 
 
-    /* =====================================================
-       PREVIOUS
-    ===================================================== */
+    /* PREVIOUS */
 
     const previousBtn =
         document.createElement("button");
@@ -538,38 +539,32 @@ function setupPagination(){
 
     previousBtn.onclick = function(){
 
-        if(currentPage > 1){
+        currentPage--;
 
-            currentPage--;
+        displayProperties(currentPage);
 
-            displayProperties(currentPage);
+        setupPagination();
 
-            setupPagination();
-
-            window.scrollTo({
-                top: propertyGrid.offsetTop - 20,
-                behavior: "smooth"
-            });
-
-        }
+        window.scrollTo({
+            top: propertyGrid.offsetTop - 20,
+            behavior: "smooth"
+        });
 
     };
 
     pagination.appendChild(previousBtn);
 
 
-    /* =====================================================
-       PAGE NUMBERS
-    ===================================================== */
+    /* PAGE NUMBERS */
 
-    function addPageButton(page){
+    for(let i = 1; i <= totalPages; i++){
 
         const btn =
             document.createElement("button");
 
-        btn.innerText = page;
+        btn.innerText = i;
 
-        if(page === currentPage){
+        if(i === currentPage){
 
             btn.classList.add("active");
 
@@ -577,7 +572,7 @@ function setupPagination(){
 
         btn.onclick = function(){
 
-            currentPage = page;
+            currentPage = i;
 
             displayProperties(currentPage);
 
@@ -595,136 +590,6 @@ function setupPagination(){
     }
 
 
-    function addDots(){
-
-        const dots =
-            document.createElement("span");
-
-        dots.innerText = "…";
-
-        dots.style.color = "#FFD700";
-
-        dots.style.fontSize = "20px";
-
-        dots.style.fontWeight = "700";
-
-        dots.style.padding = "0 3px";
-
-        pagination.appendChild(dots);
-
-    }
-
-
-    /* =====================================================
-       SHOW PAGE NUMBERS
-    ===================================================== */
-
-    if(totalPages <= 7){
-
-        for(let i = 1; i <= totalPages; i++){
-
-            addPageButton(i);
-
-        }
-
-    }
-
-    else{
-
-        /* FIRST PAGE */
-
-        addPageButton(1);
-
-
-        /* PAGES NEAR CURRENT PAGE */
-
-        if(currentPage > 4){
-
-            addDots();
-
-        }
-
-
-        let start =
-            Math.max(2, currentPage - 1);
-
-        let end =
-            Math.min(totalPages - 1, currentPage + 1);
-
-
-        if(currentPage <= 3){
-
-            start = 2;
-
-            end = 4;
-
-        }
-
-
-        if(currentPage >= totalPages - 2){
-
-            start = totalPages - 3;
-
-            end = totalPages - 1;
-
-        }
-
-
-        for(let i = start; i <= end; i++){
-
-            addPageButton(i);
-
-        }
-
-
-        /* LAST PAGE */
-
-        if(currentPage < totalPages - 3){
-
-            addDots();
-
-        }
-
-        addPageButton(totalPages);
-
-    }
-
-
-    /* =====================================================
-       NEXT
-    ===================================================== */
-
-    const nextBtn =
-        document.createElement("button");
-
-    nextBtn.innerText = "Next ›";
-
-    nextBtn.disabled =
-        currentPage === totalPages;
-
-    nextBtn.onclick = function(){
-
-        if(currentPage < totalPages){
-
-            currentPage++;
-
-            displayProperties(currentPage);
-
-            setupPagination();
-
-            window.scrollTo({
-                top: propertyGrid.offsetTop - 20,
-                behavior: "smooth"
-            });
-
-        }
-
-    };
-
-    pagination.appendChild(nextBtn);
-
-}
-
     /* NEXT */
 
     const nextBtn =
@@ -737,20 +602,16 @@ function setupPagination(){
 
     nextBtn.onclick = function(){
 
-        if(currentPage < totalPages){
+        currentPage++;
 
-            currentPage++;
+        displayProperties(currentPage);
 
-            displayProperties(currentPage);
+        setupPagination();
 
-            setupPagination();
-
-            window.scrollTo({
-                top: propertyGrid.offsetTop - 20,
-                behavior: "smooth"
-            });
-
-        }
+        window.scrollTo({
+            top: propertyGrid.offsetTop - 20,
+            behavior: "smooth"
+        });
 
     };
 

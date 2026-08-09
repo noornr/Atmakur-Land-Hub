@@ -669,26 +669,25 @@ if(advancedApplyFilter){
 
 
             /* ------------------------------------------------
-               AREA / ROAD
-            ------------------------------------------------ */
+               AREA / ROAD - SMART PARTIAL SEARCH
+           ------------------------------------------------ */
 
-            if(area){
+       if(area){
 
-                const searchWords =
-                    area.split(" ").filter(Boolean);
+         const searchWords =
+        area.split(/\s+/).filter(Boolean);
 
+       searchWords.forEach(function(word){
 
-                searchWords.forEach(function(word){
+        if(!cardText.includes(word)){
 
-                    if(!cardText.includes(word)){
-
-                        showCard = false;
-
-                    }
-
-                });
-
+            showCard = false;
+ 
             }
+
+        });
+
+     }
 
 
             /* ------------------------------------------------

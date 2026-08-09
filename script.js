@@ -524,7 +524,9 @@ function setupPagination(){
         Math.ceil(allProperties.length / cardsPerPage);
 
 
-    /* PREVIOUS */
+    /* =====================================================
+       PREVIOUS
+    ===================================================== */
 
     const previousBtn =
         document.createElement("button");
@@ -556,24 +558,26 @@ function setupPagination(){
     pagination.appendChild(previousBtn);
 
 
-    /* EXISTING PAGE NUMBERS */
+    /* =====================================================
+       PAGE NUMBERS
+    ===================================================== */
 
-    for(let i=1;i<=totalPages;i++){
+    function addPageButton(page){
 
         const btn =
             document.createElement("button");
 
-        btn.innerText=i;
+        btn.innerText = page;
 
-        if(i===currentPage){
+        if(page === currentPage){
 
             btn.classList.add("active");
 
         }
 
-        btn.onclick=function(){
+        btn.onclick = function(){
 
-            currentPage=i;
+            currentPage = page;
 
             displayProperties(currentPage);
 
@@ -590,6 +594,136 @@ function setupPagination(){
 
     }
 
+
+    function addDots(){
+
+        const dots =
+            document.createElement("span");
+
+        dots.innerText = "…";
+
+        dots.style.color = "#FFD700";
+
+        dots.style.fontSize = "20px";
+
+        dots.style.fontWeight = "700";
+
+        dots.style.padding = "0 3px";
+
+        pagination.appendChild(dots);
+
+    }
+
+
+    /* =====================================================
+       SHOW PAGE NUMBERS
+    ===================================================== */
+
+    if(totalPages <= 7){
+
+        for(let i = 1; i <= totalPages; i++){
+
+            addPageButton(i);
+
+        }
+
+    }
+
+    else{
+
+        /* FIRST PAGE */
+
+        addPageButton(1);
+
+
+        /* PAGES NEAR CURRENT PAGE */
+
+        if(currentPage > 4){
+
+            addDots();
+
+        }
+
+
+        let start =
+            Math.max(2, currentPage - 1);
+
+        let end =
+            Math.min(totalPages - 1, currentPage + 1);
+
+
+        if(currentPage <= 3){
+
+            start = 2;
+
+            end = 4;
+
+        }
+
+
+        if(currentPage >= totalPages - 2){
+
+            start = totalPages - 3;
+
+            end = totalPages - 1;
+
+        }
+
+
+        for(let i = start; i <= end; i++){
+
+            addPageButton(i);
+
+        }
+
+
+        /* LAST PAGE */
+
+        if(currentPage < totalPages - 3){
+
+            addDots();
+
+        }
+
+        addPageButton(totalPages);
+
+    }
+
+
+    /* =====================================================
+       NEXT
+    ===================================================== */
+
+    const nextBtn =
+        document.createElement("button");
+
+    nextBtn.innerText = "Next ›";
+
+    nextBtn.disabled =
+        currentPage === totalPages;
+
+    nextBtn.onclick = function(){
+
+        if(currentPage < totalPages){
+
+            currentPage++;
+
+            displayProperties(currentPage);
+
+            setupPagination();
+
+            window.scrollTo({
+                top: propertyGrid.offsetTop - 20,
+                behavior: "smooth"
+            });
+
+        }
+
+    };
+
+    pagination.appendChild(nextBtn);
+
+}
 
     /* NEXT */
 

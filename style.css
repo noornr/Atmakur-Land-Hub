@@ -1720,19 +1720,31 @@ footer p:last-child{
    FILTER BUTTONS (DESKTOP)
 ========================================================= */
 
-.filter-buttons{
+.filter-open-btn{
 
-    display:flex;
+    min-width:140px;
 
-    justify-content:center;
+    padding:14px 28px;
 
-    align-items:center;
+    border-radius:14px;
 
-    gap:16px;
+    border:1px solid rgba(255,215,0,.35);
 
-    margin:30px auto;
+    background:#111;
 
-    flex-wrap:nowrap;
+    color:#FFD700;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+
+    white-space:nowrap;
 
 }
 
@@ -3508,21 +3520,19 @@ footer p:last-child{
    FILTER BUTTONS (MOBILE)
 ========================================================= */
 
-.filter-buttons{
+.filter-open-btn{
 
-    display:flex;
+    flex:1;
 
-    justify-content:center;
+    min-width:0;
 
-    align-items:center;
+    padding:12px 4px;
 
-    flex-wrap:nowrap;
+    border-radius:12px;
 
-    gap:6px;
+    font-size:13px;
 
-    margin:20px auto;
-
-    padding:0 8px;
+    white-space:nowrap;
 
 }
 

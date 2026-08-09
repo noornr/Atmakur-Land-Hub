@@ -505,9 +505,8 @@ WhatsApp
 }
 
 
-
         
-        function setupPagination(){
+    function setupPagination(){
 
     if(!pagination || typeof properties==="undefined") return;
 
@@ -539,16 +538,20 @@ WhatsApp
 
     previousBtn.onclick = function(){
 
-        currentPage--;
+        if(currentPage > 1){
 
-        displayProperties(currentPage);
+            currentPage--;
 
-        setupPagination();
+            displayProperties(currentPage);
 
-        window.scrollTo({
-            top: propertyGrid.offsetTop - 20,
-            behavior: "smooth"
-        });
+            setupPagination();
+
+            window.scrollTo({
+                top: propertyGrid.offsetTop - 20,
+                behavior: "smooth"
+            });
+
+        }
 
     };
 
@@ -602,16 +605,20 @@ WhatsApp
 
     nextBtn.onclick = function(){
 
-        currentPage++;
+        if(currentPage < totalPages){
 
-        displayProperties(currentPage);
+            currentPage++;
 
-        setupPagination();
+            displayProperties(currentPage);
 
-        window.scrollTo({
-            top: propertyGrid.offsetTop - 20,
-            behavior: "smooth"
-        });
+            setupPagination();
+
+            window.scrollTo({
+                top: propertyGrid.offsetTop - 20,
+                behavior: "smooth"
+            });
+
+        }
 
     };
 

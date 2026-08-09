@@ -700,263 +700,235 @@ if(propertyCount && typeof properties !== "undefined"){
 
 }
 
+
 /* =========================================================
    ADVANCED PROPERTY FILTER
 ========================================================= */
 
 const advancedApplyFilter =
-    document.getElementById("applyFilter");
+document.getElementById("applyFilter");
 
 const advancedClearFilter =
-    document.getElementById("clearFilter");
+document.getElementById("clearFilter");
 
-const advancedFilterArea =
-    document.getElementById("filterArea");
-
-const advancedMinPrice =
-    document.getElementById("minPrice");
-
-const advancedMaxPrice =
-    document.getElementById("maxPrice");
-
-const advancedFilterCents =
-    document.getElementById("filterCents");
-
-const advancedFilterFacing =
-    document.getElementById("filterFacing");
-
-
-/* ---------------------------------------------------------
-   NORMALIZE TEXT
---------------------------------------------------------- */
-
-function normalizeFilterText(text){
-
-    return text
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, " ")
-        .trim();
-
-}
-
-
-/* ---------------------------------------------------------
-   APPLY ADVANCED FILTER
---------------------------------------------------------- */
 
 if(advancedApplyFilter){
 
-    advancedApplyFilter.addEventListener("click", function(){
+advancedApplyFilter.addEventListener("click", function(){
 
-        const area =
-            normalizeFilterText(
-                advancedFilterArea.value
+    const area =
+    document.getElementById("filterArea")
+    .value.toLowerCase().trim();
+
+    const belowPrice =
+    Number(
+        document.getElementById("belowPrice").value
+    ) || 0;
+
+    const cents =
+    Number(
+        document.getElementById("filterCents").value
+    ) || 0;
+
+    const facing =
+    document.getElementById("filterFacing")
+    .value.toLowerCase();
+
+
+    let filtered =
+    Object.values(properties);
+
+
+    /* AREA */
+
+    if(area){
+
+        filtered = filtered.filter(property =>
+
+            (property.area || "")
+            .toLowerCase()
+            .includes(area)
+
+            ||
+
+            (property.road || "")
+            .toLowerCase()
+            .includes(area)
+
+        );
+
+    }
+
+
+    /* BELOW PRICE */
+
+    if(belowPrice > 0){
+
+        filtered = filtered.filter(property => {
+
+            const match =
+            String(property.price)
+            .match(/₹\s?[\d,]+/);
+
+            if(!match) return false;
+
+            const price =
+            Number(
+                match[0]
+                .replace(/[₹,\s]/g,"")
             );
 
-        const minPrice =
-            Number(advancedMinPrice.value) || 0;
-
-        const maxPrice =
-            Number(advancedMaxPrice.value) || Infinity;
-
-        const requiredCents =
-            Number(advancedFilterCents.value) || 0;
-
-        const facing =
-            normalizeFilterText(
-                advancedFilterFacing.value
-            );
-
-
-        const propertyCards =
-            document.querySelectorAll(".property-card");
-
-
-        propertyCards.forEach(function(card){
-
-            const cardText =
-                normalizeFilterText(
-                    card.innerText
-                );
-
-
-            let showCard = true;
-
-
-            /* ------------------------------------------------
-               AREA / ROAD - SMART PARTIAL SEARCH
-           ------------------------------------------------ */
-
-       if(area){
-
-         const searchWords =
-        area.split(/\s+/).filter(Boolean);
-
-       searchWords.forEach(function(word){
-
-        if(!cardText.includes(word)){
-
-            showCard = false;
- 
-            }
+            return price <= belowPrice;
 
         });
 
-     }
+    }
 
 
-            /* ------------------------------------------------
-               PRICE
-            ------------------------------------------------ */
+    /* CENTS */
 
-            const priceMatches =
-                card.innerText.match(/₹\s?[\d,]+/g);
+    if(cents > 0){
 
+        filtered = filtered.filter(property => {
 
-            if(
-                (minPrice > 0 || maxPrice < Infinity) &&
-                priceMatches
-            ){
+            const match =
+            String(property.land)
+            .match(/[\d.]+/);
 
-                const lastPrice =
-                    priceMatches[priceMatches.length - 1]
-                        .replace(/[₹,\s]/g, "");
+            if(!match) return false;
 
-
-                const propertyPrice =
-                    Number(lastPrice);
-
-
-                if(
-                    propertyPrice < minPrice ||
-                    propertyPrice > maxPrice
-                ){
-
-                    showCard = false;
-
-                }
-
-            }
-
-
-            /* ------------------------------------------------
-               LAND SIZE / CENTS
-            ------------------------------------------------ */
-
-            if(requiredCents > 0){
-
-                const centsMatch =
-                    card.innerText.match(
-                        /(\d+(?:\.\d+)?)\s*Cents?/i
-                    );
-
-
-                if(centsMatch){
-
-                    const propertyCents =
-                        Number(centsMatch[1]);
-
-
-                    if(propertyCents < requiredCents){
-
-                        showCard = false;
-
-                    }
-
-                }else{
-
-                    showCard = false;
-
-                }
-
-            }
-
-
-            /* ------------------------------------------------
-               FACING
-            ------------------------------------------------ */
-
-            if(facing){
-
-                if(!cardText.includes(facing)){
-
-                    showCard = false;
-
-                }
-
-            }
-
-
-            /* ------------------------------------------------
-               SHOW / HIDE
-            ------------------------------------------------ */
-
-            card.style.display =
-                showCard ? "" : "none";
+            return Number(match[0]) >= cents;
 
         });
 
+    }
 
-        /* CLOSE POPUP */
 
-        const overlay =
-            document.getElementById("filterOverlay");
+    /* FACING */
 
-        if(overlay){
+    if(facing){
 
-            overlay.classList.remove("show");
+        filtered = filtered.filter(property =>
 
-        }
+            (property.facing || "")
+            .toLowerCase()
+            .includes(facing)
+
+        );
+
+    }
+
+
+    propertyGrid.innerHTML = "";
+
+
+    filtered.forEach(property => {
+
+        propertyGrid.innerHTML += `
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="${property.images[0]}" alt="${property.id}">
+
+<span class="badge ${property.status.toLowerCase()}">
+${property.status}
+</span>
+
+<button
+class="favorite-btn"
+data-id="${property.id}"
+onclick="toggleFavorite('${property.id}')">
+
+🤍
+
+</button>
+
+</div>
+
+<div class="card-content">
+
+<h3><span>ID:${property.id}</span></h3>
+
+<p>📍 ${property.area}</p>
+
+<p>📍 ${property.areaTelugu}</p>
+
+<p>📐 ${property.land} / ${property.landTelugu}</p>
+
+<p>⤴️ ${property.facing} / ${property.facingTelugu}</p>
+
+<p class="price">${property.price}</p>
+
+<div class="card-buttons">
+
+<a href="property.html?id=${property.id}"
+class="details-btn">
+
+View Details
+
+</a>
+
+<a href="https://wa.me/918977201211"
+class="whatsapp-btn">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+`;
 
     });
+
+
+    updateFavoriteButtons();
+
+
+    document
+    .getElementById("filterOverlay")
+    .classList.remove("show");
+
+});
 
 }
 
 
-/* =========================================================
-   CLEAR ADVANCED FILTER
-========================================================= */
+/* CLEAR */
 
 if(advancedClearFilter){
 
-    advancedClearFilter.addEventListener("click", function(){
+advancedClearFilter.addEventListener("click", function(){
 
-        advancedFilterArea.value = "";
+    document.getElementById("filterArea").value = "";
 
-        advancedMinPrice.value = "";
+    document.getElementById("belowPrice").value = "";
 
-        advancedMaxPrice.value = "";
+    document.getElementById("filterCents").value = "";
 
-        advancedFilterCents.value = "";
-
-        advancedFilterFacing.value = "";
+    document.getElementById("filterFacing").value = "";
 
 
-        const propertyCards =
-            document.querySelectorAll(".property-card");
+    displayProperties(1);
+
+    setupPagination();
 
 
-        propertyCards.forEach(function(card){
+    document
+    .getElementById("filterOverlay")
+    .classList.remove("show");
 
-            card.style.display = "";
-
-        });
-
-
-        const overlay =
-            document.getElementById("filterOverlay");
-
-
-        if(overlay){
-
-            overlay.classList.remove("show");
-
-        }
-
-    });
+});
 
 }
 
+            
 /* =========================================================
    FILTER POPUP OPEN / CLOSE
 ========================================================= */

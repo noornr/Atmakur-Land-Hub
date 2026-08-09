@@ -586,49 +586,256 @@ if(propertyCount && typeof properties !== "undefined"){
 }
 
 /* =========================================================
-   FILTER POPUP OPEN / CLOSE
+   ADVANCED PROPERTY FILTER
 ========================================================= */
 
-const openFilter = document.getElementById("openFilter");
-const closeFilter = document.getElementById("closeFilter");
-const filterOverlay = document.getElementById("filterOverlay");
+const advancedApplyFilter =
+    document.getElementById("applyFilter");
+
+const advancedClearFilter =
+    document.getElementById("clearFilter");
+
+const advancedFilterArea =
+    document.getElementById("filterArea");
+
+const advancedMinPrice =
+    document.getElementById("minPrice");
+
+const advancedMaxPrice =
+    document.getElementById("maxPrice");
+
+const advancedFilterCents =
+    document.getElementById("filterCents");
+
+const advancedFilterFacing =
+    document.getElementById("filterFacing");
 
 
-/* OPEN FILTER */
+/* ---------------------------------------------------------
+   NORMALIZE TEXT
+--------------------------------------------------------- */
 
-if (openFilter) {
+function normalizeFilterText(text){
 
-    openFilter.addEventListener("click", function(){
+    return text
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
 
-        filterOverlay.classList.add("show");
+}
+
+
+/* ---------------------------------------------------------
+   APPLY ADVANCED FILTER
+--------------------------------------------------------- */
+
+if(advancedApplyFilter){
+
+    advancedApplyFilter.addEventListener("click", function(){
+
+        const area =
+            normalizeFilterText(
+                advancedFilterArea.value
+            );
+
+        const minPrice =
+            Number(advancedMinPrice.value) || 0;
+
+        const maxPrice =
+            Number(advancedMaxPrice.value) || Infinity;
+
+        const requiredCents =
+            Number(advancedFilterCents.value) || 0;
+
+        const facing =
+            normalizeFilterText(
+                advancedFilterFacing.value
+            );
+
+
+        const propertyCards =
+            document.querySelectorAll(".property-card");
+
+
+        propertyCards.forEach(function(card){
+
+            const cardText =
+                normalizeFilterText(
+                    card.innerText
+                );
+
+
+            let showCard = true;
+
+
+            /* ------------------------------------------------
+               AREA / ROAD
+            ------------------------------------------------ */
+
+            if(area){
+
+                const searchWords =
+                    area.split(" ").filter(Boolean);
+
+
+                searchWords.forEach(function(word){
+
+                    if(!cardText.includes(word)){
+
+                        showCard = false;
+
+                    }
+
+                });
+
+            }
+
+
+            /* ------------------------------------------------
+               PRICE
+            ------------------------------------------------ */
+
+            const priceMatches =
+                card.innerText.match(/₹\s?[\d,]+/g);
+
+
+            if(
+                (minPrice > 0 || maxPrice < Infinity) &&
+                priceMatches
+            ){
+
+                const lastPrice =
+                    priceMatches[priceMatches.length - 1]
+                        .replace(/[₹,\s]/g, "");
+
+
+                const propertyPrice =
+                    Number(lastPrice);
+
+
+                if(
+                    propertyPrice < minPrice ||
+                    propertyPrice > maxPrice
+                ){
+
+                    showCard = false;
+
+                }
+
+            }
+
+
+            /* ------------------------------------------------
+               LAND SIZE / CENTS
+            ------------------------------------------------ */
+
+            if(requiredCents > 0){
+
+                const centsMatch =
+                    card.innerText.match(
+                        /(\d+(?:\.\d+)?)\s*Cents?/i
+                    );
+
+
+                if(centsMatch){
+
+                    const propertyCents =
+                        Number(centsMatch[1]);
+
+
+                    if(propertyCents < requiredCents){
+
+                        showCard = false;
+
+                    }
+
+                }else{
+
+                    showCard = false;
+
+                }
+
+            }
+
+
+            /* ------------------------------------------------
+               FACING
+            ------------------------------------------------ */
+
+            if(facing){
+
+                if(!cardText.includes(facing)){
+
+                    showCard = false;
+
+                }
+
+            }
+
+
+            /* ------------------------------------------------
+               SHOW / HIDE
+            ------------------------------------------------ */
+
+            card.style.display =
+                showCard ? "" : "none";
+
+        });
+
+
+        /* CLOSE POPUP */
+
+        const overlay =
+            document.getElementById("filterOverlay");
+
+        if(overlay){
+
+            overlay.classList.remove("show");
+
+        }
 
     });
 
 }
 
 
-/* CLOSE FILTER */
+/* =========================================================
+   CLEAR ADVANCED FILTER
+========================================================= */
 
-if (closeFilter) {
+if(advancedClearFilter){
 
-    closeFilter.addEventListener("click", function(){
+    advancedClearFilter.addEventListener("click", function(){
 
-        filterOverlay.classList.remove("show");
+        advancedFilterArea.value = "";
 
-    });
+        advancedMinPrice.value = "";
 
-}
+        advancedMaxPrice.value = "";
+
+        advancedFilterCents.value = "";
+
+        advancedFilterFacing.value = "";
 
 
-/* CLOSE WHEN CLICKING OUTSIDE */
+        const propertyCards =
+            document.querySelectorAll(".property-card");
 
-if (filterOverlay) {
 
-    filterOverlay.addEventListener("click", function(e){
+        propertyCards.forEach(function(card){
 
-        if(e.target === filterOverlay){
+            card.style.display = "";
 
-            filterOverlay.classList.remove("show");
+        });
+
+
+        const overlay =
+            document.getElementById("filterOverlay");
+
+
+        if(overlay){
+
+            overlay.classList.remove("show");
 
         }
 

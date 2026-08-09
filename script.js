@@ -584,3 +584,54 @@ if(propertyCount && typeof properties !== "undefined"){
         Object.keys(properties).length + "+";
 
 }
+
+/* =========================================================
+   FILTER POPUP OPEN / CLOSE
+========================================================= */
+
+const openFilter = document.getElementById("openFilter");
+const closeFilter = document.getElementById("closeFilter");
+const filterOverlay = document.getElementById("filterOverlay");
+
+
+/* OPEN FILTER */
+
+if (openFilter) {
+
+    openFilter.addEventListener("click", function(){
+
+        filterOverlay.classList.add("show");
+
+    });
+
+}
+
+
+/* CLOSE FILTER */
+
+if (closeFilter) {
+
+    closeFilter.addEventListener("click", function(){
+
+        filterOverlay.classList.remove("show");
+
+    });
+
+}
+
+
+/* CLOSE WHEN CLICKING OUTSIDE */
+
+if (filterOverlay) {
+
+    filterOverlay.addEventListener("click", function(e){
+
+        if(e.target === filterOverlay){
+
+            filterOverlay.classList.remove("show");
+
+        }
+
+    });
+
+}

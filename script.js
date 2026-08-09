@@ -512,20 +512,56 @@ function setupPagination(){
 
     let allProperties = Object.values(properties);
 
-if(currentFilter !== "ALL"){
+    if(currentFilter !== "ALL"){
 
-    allProperties = allProperties.filter(property =>
-        property.status === currentFilter
-    );
+        allProperties = allProperties.filter(property =>
+            property.status === currentFilter
+        );
 
-}
+    }
 
-const totalPages =
-Math.ceil(allProperties.length / cardsPerPage);
+    const totalPages =
+        Math.ceil(allProperties.length / cardsPerPage);
+
+
+    /* PREVIOUS */
+
+    const previousBtn =
+        document.createElement("button");
+
+    previousBtn.innerText = "‹ Previous";
+
+    previousBtn.disabled =
+        currentPage === 1;
+
+    previousBtn.onclick = function(){
+
+        if(currentPage > 1){
+
+            currentPage--;
+
+            displayProperties(currentPage);
+
+            setupPagination();
+
+            window.scrollTo({
+                top: propertyGrid.offsetTop - 20,
+                behavior: "smooth"
+            });
+
+        }
+
+    };
+
+    pagination.appendChild(previousBtn);
+
+
+    /* EXISTING PAGE NUMBERS */
 
     for(let i=1;i<=totalPages;i++){
 
-        const btn=document.createElement("button");
+        const btn =
+            document.createElement("button");
 
         btn.innerText=i;
 
@@ -537,22 +573,54 @@ Math.ceil(allProperties.length / cardsPerPage);
 
         btn.onclick=function(){
 
-    currentPage=i;
+            currentPage=i;
 
-    displayProperties(currentPage);
+            displayProperties(currentPage);
 
-    setupPagination();
+            setupPagination();
 
-    window.scrollTo({
-        top: propertyGrid.offsetTop - 20,
-        behavior: "smooth"
-    });
+            window.scrollTo({
+                top: propertyGrid.offsetTop - 20,
+                behavior: "smooth"
+            });
 
-     };
+        };
 
         pagination.appendChild(btn);
 
     }
+
+
+    /* NEXT */
+
+    const nextBtn =
+        document.createElement("button");
+
+    nextBtn.innerText = "Next ›";
+
+    nextBtn.disabled =
+        currentPage === totalPages;
+
+    nextBtn.onclick = function(){
+
+        if(currentPage < totalPages){
+
+            currentPage++;
+
+            displayProperties(currentPage);
+
+            setupPagination();
+
+            window.scrollTo({
+                top: propertyGrid.offsetTop - 20,
+                behavior: "smooth"
+            });
+
+        }
+
+    };
+
+    pagination.appendChild(nextBtn);
 
 }
 

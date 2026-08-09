@@ -537,13 +537,18 @@ Math.ceil(allProperties.length / cardsPerPage);
 
         btn.onclick=function(){
 
-            currentPage=i;
+    currentPage=i;
 
-            displayProperties(currentPage);
+    displayProperties(currentPage);
 
-            setupPagination();
+    setupPagination();
 
-        };
+    window.scrollTo({
+        top: propertyGrid.offsetTop - 20,
+        behavior: "smooth"
+    });
+
+     };
 
         pagination.appendChild(btn);
 

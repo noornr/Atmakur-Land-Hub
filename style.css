@@ -3302,23 +3302,24 @@ footer p:last-child{
 
     align-items:center;
 
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 
-    gap:10px;
+    gap:6px;
 
     margin:20px auto;
 
-    padding:0 12px;
+    padding:0 8px;
 
 }
+
 
 .filter-btn{
 
     flex:1;
 
-    min-width:90px;
+    min-width:0;
 
-    padding:12px 10px;
+    padding:12px 4px;
 
     border-radius:12px;
 
@@ -3328,7 +3329,7 @@ footer p:last-child{
 
     color:#FFD700;
 
-    font-size:14px;
+    font-size:13px;
 
     font-weight:600;
 
@@ -3336,7 +3337,10 @@ footer p:last-child{
 
     transition:.30s;
 
+    white-space:nowrap;
+
 }
+
 
 .filter-btn:hover{
 
@@ -3345,6 +3349,7 @@ footer p:last-child{
     color:#111;
 
 }
+
 
 .filter-btn.active{
 

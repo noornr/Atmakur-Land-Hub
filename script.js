@@ -635,21 +635,31 @@ setupPagination();
    FILTER BUTTONS
 ========================================== */
 
-document.querySelectorAll(".filter-btn").forEach(button=>{
+document.querySelectorAll(".filter-btn").forEach(button => {
 
-    button.addEventListener("click",()=>{
+    button.addEventListener("click", () => {
 
+        /* REMOVE ALL ADVANCED FILTERS */
+        document.getElementById("filterArea").value = "";
+        document.getElementById("belowPrice").value = "";
+        document.getElementById("filterCents").value = "";
+        document.getElementById("filterFacing").value = "";
+
+        /* REMOVE SEARCH FILTER TOO */
+        document.getElementById("searchInput").value = "";
+
+        /* ACTIVE BUTTON */
         document.querySelectorAll(".filter-btn")
-        .forEach(btn=>btn.classList.remove("active"));
+            .forEach(btn => btn.classList.remove("active"));
 
         button.classList.add("active");
 
+        /* APPLY ONLY ALL / AVAILABLE / SOLD */
         currentFilter = button.dataset.filter;
 
         currentPage = 1;
 
         displayProperties(currentPage);
-
         setupPagination();
 
     });

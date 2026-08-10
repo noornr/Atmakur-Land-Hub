@@ -1575,6 +1575,15 @@ header{
 
 }
 
+.call-btn:hover,
+.call-btn:focus,
+.call-btn:active{
+    background:#FFD700 !important;
+    color:#050505 !important;
+    -webkit-text-fill-color:#050505 !important;
+    text-decoration:none !important;
+}
+
 /* ---------- WhatsApp Button ---------- */
 
 .contact .whatsapp-btn{

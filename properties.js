@@ -934,9 +934,9 @@ map:"YOUR_GOOGLE_MAP_LINK"
 },
 
 
-"ATK-27":{
+"ATK-28":{
 
-id:"ATK-27",
+id:"ATK-28",
 
 status:"AVAILABLE",
 
@@ -958,10 +958,10 @@ description:"A premium open plot.",
 descriptionTelugu:"అత్యుత్తమ ఓపెన్ ప్లాట్.",
 
 images:[
-"images/property27.jpg",
-"images/property27-2.jpg",
-"images/property27-3.jpg",
-"images/property27-4.jpg"
+"images/property28.jpg",
+"images/property28-2.jpg",
+"images/property28-3.jpg",
+"images/property28-4.jpg"
 ],
 
 map:"YOUR_GOOGLE_MAP_LINK"

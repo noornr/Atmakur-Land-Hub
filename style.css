@@ -3294,6 +3294,12 @@ body{
 }
 
 
+  .call-btn:active {
+    background: #FFD700 !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
+
 /* =========================================================
    WHATSAPP BUTTON
 ========================================================= */

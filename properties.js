@@ -829,4 +829,8 @@ images:[
 "images/property24-4.jpg"
 ],
 
+map:"YOUR_GOOGLE_MAP_LINK"
+
+},
+
 };

@@ -870,5 +870,3 @@ map:"YOUR_GOOGLE_MAP_LINK"
 }
 
 };
-
-};

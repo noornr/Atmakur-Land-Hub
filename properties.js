@@ -863,41 +863,42 @@ map:"YOUR_GOOGLE_MAP_LINK"
 
     map: "YOUR_GOOGLE_MAP_LINK"
 
-}
+},
 
-  "ATK-26": {
+  "ATK-26":{
 
-    id: "ATK-26",
+id:"ATK-26",
 
-    status: "AVAILABLE",
+status:"AVAILABLE",
 
-    price: "₹7,50,000",
+price:"₹7,50,000",
 
-    area: "Minority Colony",
-    areaTelugu: "మైనారిటీ కాలనీ",
+area:"Minority Colony",
+areaTelugu:"మైనారిటీ కాలనీ",
 
-    land: "8 Cents",
-    landTelugu: "8 సెంట్లు",
+land:"8 Cents",
+landTelugu:"8 సెంట్లు",
 
-    facing: "East Face",
-    facingTelugu: "తూర్పు ముఖం",
+facing:"East Face",
+facingTelugu:"తూర్పు ముఖం",
 
-    road: "30 Feet Road",
-    roadTelugu: "30 అడుగుల రోడ్డు",
+road:"30 Feet Road",
+roadTelugu:"30 అడుగుల రోడ్డు",
 
-    description: "A premium open plot.",
-    descriptionTelugu: "అత్యుత్తమ ఓపెన్ ప్లాట్.",
+description:"A premium open plot.",
+descriptionTelugu:"అత్యుత్తమ ఓపెన్ ప్లాట్.",
 
-    images: [
-        "images/property26.jpg",
-        "images/property26-2.jpg",
-        "images/property26-3.jpg",
-        "images/property26-4.jpg"
-    ],
+images:[
+"images/property26.jpg",
+"images/property26-2.jpg",
+"images/property26-3.jpg",
+"images/property26-4.jpg"
+],
 
-    map: "YOUR_GOOGLE_MAP_LINK"
+map:"YOUR_GOOGLE_MAP_LINK"
 
-}
+},
+
 
 
 };

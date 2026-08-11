@@ -65,7 +65,7 @@ images:[
 "images/property2-4.jpg"
 ],
 
-map:"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d583.0667482873671!2d78.61291267106094!3d15.879715429108323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1784827657882!5m2!1sen!2sin"
+map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d300!2d78.590344!3d15.8738262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2sProperty!5e0!3m2!1sen!2sin!4v1"
 
 },
 

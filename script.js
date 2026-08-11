@@ -1055,6 +1055,13 @@ if(cents > 0){
 ${property.status}
 </span>
 
+
+</div>
+
+<div class="card-content">
+
+<h3><span>ID:${property.id}</span></h3>
+
 <button
 class="favorite-btn"
 data-id="${property.id}"
@@ -1063,12 +1070,6 @@ onclick="toggleFavorite('${property.id}')">
 🤍
 
 </button>
-
-</div>
-
-<div class="card-content">
-
-<h3><span>ID:${property.id}</span></h3>
 
 <p>📍 ${property.area}</p>
 

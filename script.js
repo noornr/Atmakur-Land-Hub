@@ -261,6 +261,12 @@ if (propertyId && typeof properties !== "undefined") {
         document.getElementById("property-map").src =
             property.map;
 
+        const mapButton = document.getElementById("property-map-btn");
+
+if (mapButton) {
+    mapButton.href = property.map;
+}
+
         document.getElementById("property-price").textContent =
             property.price;
 

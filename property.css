@@ -1884,6 +1884,23 @@ footer p{
         font-size:27px !important;
     }
 
+   /* =========================================================
+   REMOVE MOBILE TAP / BLUE FLASH
+========================================================= */
+
+.lightbox,
+.lightbox *,
+#lightboxImg,
+.lightbox-prev,
+.lightbox-next,
+.lightbox-close{
+
+    -webkit-tap-highlight-color:transparent;
+    -webkit-touch-callout:none;
+    outline:none;
+
+}
+
 }
 
 

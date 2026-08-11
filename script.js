@@ -182,11 +182,13 @@ if (propertyId && typeof properties !== "undefined") {
         document.getElementById("property-id").textContent =
             "ID : " + property.id;
 
-        document.getElementById("property-map").src = property.map;
+        document.getElementById("property-map").src =
+            property.map;
 
         document.getElementById("property-price").textContent =
             property.price;
 
+        /* ENGLISH */
         document.getElementById("property-area").textContent =
             property.area;
 
@@ -196,10 +198,21 @@ if (propertyId && typeof properties !== "undefined") {
         document.getElementById("property-road").textContent =
             property.road;
 
+        /* TELUGU */
+        document.getElementById("property-area-telugu").textContent =
+            property.areaTelugu;
+
+        document.getElementById("property-land-telugu").textContent =
+            property.landTelugu;
+
+        document.getElementById("property-road-telugu").textContent =
+            property.roadTelugu;
+
+        /* DESCRIPTION */
         document.getElementById("property-description").textContent =
             property.description;
 
-        if(document.getElementById("slide")){
+        if (document.getElementById("slide")) {
             document.getElementById("slide").src =
                 property.images[0];
         }
@@ -207,7 +220,6 @@ if (propertyId && typeof properties !== "undefined") {
     }
 
 }
-
 /* ==========================================
    Related Properties
 ========================================== */

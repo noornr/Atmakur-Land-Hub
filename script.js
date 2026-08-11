@@ -128,7 +128,7 @@ if (lightbox) {
 
         /* SWIPE LEFT → NEXT IMAGE */
 
-        if (swipeDistance < -50) {
+        if (swipeDistance < -20) {
 
             nextFullscreenImage();
 
@@ -137,7 +137,7 @@ if (lightbox) {
 
         /* SWIPE RIGHT → PREVIOUS IMAGE */
 
-        else if (swipeDistance > 50) {
+        else if (swipeDistance > 20) {
 
             previousFullscreenImage();
 

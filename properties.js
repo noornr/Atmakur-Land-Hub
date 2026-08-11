@@ -41,7 +41,7 @@ id:"ATK-2",
 
 status:"SOLD",
 
-price:"1 Cent ₹4,50,000",
+price:"₹4,50,000 (1cent)",
 
 area:"Nandyala Road Highway Side",
 areaTelugu:"నంద్యాల రోడ్డు హైవే పక్కన",

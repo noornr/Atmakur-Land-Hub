@@ -155,9 +155,28 @@
 
 <a href="index.html#properties" class="details-btn">⬅ Back to Properties</a>
     
-<div id="lightbox" class="lightbox" onclick="closeFullscreen()">
-<img id="lightboxImg" src="">
- </div> 
+<div id="lightbox" class="lightbox">
+
+    <button class="lightbox-prev"
+            onclick="event.stopPropagation(); previousFullscreenImage()">
+        ❮
+    </button>
+
+    <img id="lightboxImg"
+         src=""
+         onclick="event.stopPropagation()">
+
+    <button class="lightbox-next"
+            onclick="event.stopPropagation(); nextFullscreenImage()">
+        ❯
+    </button>
+
+    <button class="lightbox-close"
+            onclick="closeFullscreen()">
+        ×
+    </button>
+
+</div>
 <h3 class="section-title">Related Properties</h3>
 
 <div class="related-properties reveal" id="relatedProperties">

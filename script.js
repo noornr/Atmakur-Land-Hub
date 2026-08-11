@@ -62,13 +62,89 @@ if (document.getElementById("slide")) {
 }
 
 function openFullscreen() {
+
     document.getElementById("lightbox").style.display = "flex";
+
     document.getElementById("lightboxImg").src =
-        document.getElementById("slide").src;
+        images[current];
+
 }
 
+
+function nextFullscreenImage() {
+
+    if (images.length === 0) return;
+
+    current = (current + 1) % images.length;
+
+    document.getElementById("lightboxImg").src =
+        images[current];
+
+}
+
+
+function previousFullscreenImage() {
+
+    if (images.length === 0) return;
+
+    current = (current - 1 + images.length) % images.length;
+
+    document.getElementById("lightboxImg").src =
+        images[current];
+
+}
+
+
 function closeFullscreen() {
+
     document.getElementById("lightbox").style.display = "none";
+
+}
+
+
+/* ==========================================
+   FULLSCREEN IMAGE SWIPE
+========================================== */
+
+let touchStartX = 0;
+
+const lightbox = document.getElementById("lightbox");
+
+if (lightbox) {
+
+    lightbox.addEventListener("touchstart", function(event) {
+
+        touchStartX = event.changedTouches[0].screenX;
+
+    }, { passive: true });
+
+
+    lightbox.addEventListener("touchend", function(event) {
+
+        const touchEndX = event.changedTouches[0].screenX;
+
+        const swipeDistance = touchEndX - touchStartX;
+
+
+        /* SWIPE LEFT → NEXT IMAGE */
+
+        if (swipeDistance < -50) {
+
+            nextFullscreenImage();
+
+        }
+
+
+        /* SWIPE RIGHT → PREVIOUS IMAGE */
+
+        else if (swipeDistance > 50) {
+
+            previousFullscreenImage();
+
+        }
+
+    }, { passive: true });
+
 }
 
 const pageUrl = window.location.href;

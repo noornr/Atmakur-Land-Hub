@@ -13,7 +13,7 @@ price:"₹27,00,000  (Not Fixed Price)",
 area:"Dudyala To Nandikunta Road",
 areaTelugu:"దుద్యాల నుండి నందికుంట రోడ్డు",
 
-land:"1.08 Acres",
+land:"1.08 acres of farmland",
 landTelugu:"1.08 ఎకరాలు",
 
 facing:"West Face",

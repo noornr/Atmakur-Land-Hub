@@ -1062,6 +1062,157 @@ body{
 
     }
 
+   /* =========================================================
+   FULLSCREEN IMAGE ARROWS
+========================================================= */
+
+.lightbox{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+
+    display:none;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(0,0,0,.95);
+
+    -webkit-tap-highlight-color:transparent;
+    -webkit-touch-callout:none;
+}
+
+
+/* =========================================================
+   FULLSCREEN IMAGE
+========================================================= */
+
+#lightboxImg{
+    max-width:90%;
+    max-height:90vh;
+
+    object-fit:contain;
+
+    transition:none !important;
+    animation:none !important;
+
+    user-select:none;
+    -webkit-user-select:none;
+    -webkit-user-drag:none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+
+/* =========================================================
+   PREVIOUS / NEXT BUTTONS
+========================================================= */
+
+.lightbox-prev,
+.lightbox-next{
+
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:50px;
+    height:60px;
+
+    border:none;
+    border-radius:12px;
+
+    background:rgba(0,0,0,.65);
+
+    color:#FFD700;
+
+    font-size:32px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:10001;
+
+    transition:none !important;
+    animation:none !important;
+
+    -webkit-tap-highlight-color:transparent;
+    -webkit-touch-callout:none;
+}
+
+
+/* PREVIOUS */
+
+.lightbox-prev{
+    left:20px;
+}
+
+
+/* NEXT */
+
+.lightbox-next{
+    right:20px;
+}
+
+
+/* HOVER */
+
+.lightbox-prev:hover,
+.lightbox-next:hover{
+    background:#FFD700;
+    color:#000;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.lightbox-close{
+
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(0,0,0,.65);
+
+    color:#fff;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    z-index:10001;
+
+    transition:none !important;
+    animation:none !important;
+
+    -webkit-tap-highlight-color:transparent;
+    -webkit-touch-callout:none;
+}
+
+
+/* =========================================================
+   REMOVE TAP FLASH
+========================================================= */
+
+.lightbox,
+#lightboxImg,
+.lightbox-prev,
+.lightbox-next,
+.lightbox-close{
+
+    -webkit-tap-highlight-color:transparent;
+    -webkit-touch-callout:none;
 }
 
 
@@ -1783,86 +1934,38 @@ footer p{
    FULLSCREEN IMAGE ARROWS
 ========================================================= */
 
-.lightbox{
-    position:fixed;
-    inset:0;
-    z-index:9999;
+.#lightboxImg{
+        max-width:94%;
+        max-height:88vh;
+    }
 
-    display:none;
-    align-items:center;
-    justify-content:center;
+    .lightbox-prev,
+    .lightbox-next{
 
-    background:rgba(0,0,0,.95);
-}
+        width:44px;
+        height:54px;
 
-#lightboxImg{
-    max-width:90%;
-    max-height:90vh;
-    object-fit:contain;
-}
+        font-size:27px;
+    }
 
-.lightbox-prev,
-.lightbox-next{
-    position:absolute;
+    .lightbox-prev{
+        left:10px;
+    }
 
-    top:50%;
-    transform:translateY(-50%);
+    .lightbox-next{
+        right:10px;
+    }
 
-    width:50px;
-    height:60px;
+    .lightbox-close{
 
-    border:none;
-    border-radius:12px;
+        top:12px;
+        right:12px;
 
-    background:rgba(0,0,0,.65);
-    color:#FFD700;
+        width:42px;
+        height:42px;
 
-    font-size:32px;
-    font-weight:bold;
-
-    cursor:pointer;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    z-index:10001;
-}
-
-.lightbox-prev{
-    left:20px;
-}
-
-.lightbox-next{
-    right:20px;
-}
-
-.lightbox-prev:hover,
-.lightbox-next:hover{
-    background:#FFD700;
-    color:#000;
-}
-
-.lightbox-close{
-    position:absolute;
-
-    top:20px;
-    right:20px;
-
-    width:45px;
-    height:45px;
-
-    border:none;
-    border-radius:50%;
-
-    background:rgba(0,0,0,.65);
-    color:#fff;
-
-    font-size:30px;
-    cursor:pointer;
-
-    z-index:10001;
-}
+        font-size:27px;
+    }
 
 }
 

@@ -147,6 +147,23 @@ if (lightbox) {
 
 }
 
+/* =========================================================
+   PREVENT LONG-PRESS MENU ON FULLSCREEN IMAGE
+========================================================= */
+
+const fullscreenImage =
+    document.getElementById("lightboxImg");
+
+if (fullscreenImage) {
+
+    fullscreenImage.addEventListener("contextmenu", function(event) {
+
+        event.preventDefault();
+
+    });
+
+}
+
 const pageUrl = window.location.href;
 
 const whatsapp = document.getElementById("share-whatsapp");

@@ -8,21 +8,21 @@ featured:true,
 
 status:"AVAILABLE",
 
-price:"₹7,50,000",
+price:"₹27,00,000",
 
-area:"Minority Colony",
-areaTelugu:"మైనారిటీ కాలనీ",
+area:"Dudyala To Nandikunta Road",
+areaTelugu:"దుద్యాల నుండి నందికుంట రోడ్డు",
 
-land:"8 Cents",
-landTelugu:"8 సెంట్లు",
+land:"1.08 Acres",
+landTelugu:"1.08 ఎకరాలు",
 
-facing:"East Face",
-facingTelugu:"తూర్పు ముఖం",
+facing:"West Face",
+facingTelugu:"పడమర ముఖం",
 
 road:"30 Feet Road",
 roadTelugu:"30 అడుగుల రోడ్డు",
 
-description:"A premium open plot.",
+description:"నందికుంట నుండి దూడ్యాల వెళ్లే రోడ్డులో, రోడ్డు పక్కనే మొదటి పొలం ఉంది 🌾 విస్తీర్ణం: 1.08 ఎకరాలు🧭 ముఖం: పడమర ముఖం📄 డాక్యుమెంట్స్: అన్ని డాక్యుమెంట్స్ అందుబాటులో ఉన్నాయి ✅ ఎలాంటి సమస్యలు లేవు.",
 
 images:[
 "images/property1.jpg",
@@ -31,7 +31,7 @@ images:[
 "images/property1-4.jpg"
 ],
 
-map:"https://www.google.com/maps/embed?..."
+map:"https://www.google.com/maps?q=15.8949178,78.5583595&output=embed"
 },
 
   

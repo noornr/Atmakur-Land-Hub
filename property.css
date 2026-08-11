@@ -1062,157 +1062,126 @@ body{
 
     }
 
-   /* =========================================================
-   FULLSCREEN IMAGE ARROWS
-========================================================= */
-
-.lightbox{
-    position:fixed;
-    inset:0;
-    z-index:9999;
-
-    display:none;
-    align-items:center;
-    justify-content:center;
-
-    background:rgba(0,0,0,.95);
-
-    -webkit-tap-highlight-color:transparent;
-    -webkit-touch-callout:none;
-}
-
-
 /* =========================================================
-   FULLSCREEN IMAGE
+   FULLSCREEN PREVIOUS BUTTON
 ========================================================= */
 
-#lightboxImg{
-    max-width:90%;
-    max-height:90vh;
+.lightbox-prev {
 
-    object-fit:contain;
+    position:absolute !important;
+
+    top:50% !important;
+    left:20px !important;
+
+    transform:translateY(-50%) !important;
+
+    width:50px !important;
+    height:60px !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    border:none !important;
+    outline:none !important;
+    border-radius:12px !important;
+
+    background:rgba(0,0,0,.70) !important;
+    color:#FFD700 !important;
+
+    font-size:32px !important;
+    font-weight:bold !important;
+    line-height:1 !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    appearance:none !important;
+    -webkit-appearance:none !important;
+
+    box-shadow:none !important;
+
+    z-index:10010 !important;
 
     transition:none !important;
     animation:none !important;
 
-    user-select:none;
-    -webkit-user-select:none;
-    -webkit-user-drag:none;
-    -webkit-tap-highlight-color:transparent;
+    -webkit-tap-highlight-color:transparent !important;
+}
+
+.lightbox-prev:hover {
+    background:#FFD700 !important;
+    color:#000000 !important;
+}
+
+.lightbox-prev:active,
+.lightbox-prev:focus {
+    background:rgba(0,0,0,.70) !important;
+    color:#FFD700 !important;
+    outline:none !important;
+    box-shadow:none !important;
 }
 
 
+
 /* =========================================================
-   PREVIOUS / NEXT BUTTONS
+   FULLSCREEN NEXT BUTTON
 ========================================================= */
 
-.lightbox-prev,
-.lightbox-next{
+.lightbox-next {
 
-    position:absolute;
+    position:absolute !important;
 
-    top:50%;
-    transform:translateY(-50%);
+    top:50% !important;
+    right:20px !important;
 
-    width:50px;
-    height:60px;
+    transform:translateY(-50%) !important;
 
-    border:none;
-    border-radius:12px;
+    width:50px !important;
+    height:60px !important;
 
-    background:rgba(0,0,0,.65);
+    margin:0 !important;
+    padding:0 !important;
 
-    color:#FFD700;
+    border:none !important;
+    outline:none !important;
+    border-radius:12px !important;
 
-    font-size:32px;
-    font-weight:bold;
+    background:rgba(0,0,0,.70) !important;
+    color:#FFD700 !important;
 
-    cursor:pointer;
+    font-size:32px !important;
+    font-weight:bold !important;
+    line-height:1 !important;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
 
-    z-index:10001;
+    appearance:none !important;
+    -webkit-appearance:none !important;
+
+    box-shadow:none !important;
+
+    z-index:10010 !important;
 
     transition:none !important;
     animation:none !important;
 
-    -webkit-tap-highlight-color:transparent;
-    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color:transparent !important;
 }
 
-
-/* PREVIOUS */
-
-.lightbox-prev{
-    left:20px;
+.lightbox-next:hover {
+    background:#FFD700 !important;
+    color:#000000 !important;
 }
 
-
-/* NEXT */
-
-.lightbox-next{
-    right:20px;
-}
-
-
-/* HOVER */
-
-.lightbox-prev:hover,
-.lightbox-next:hover{
-    background:#FFD700;
-    color:#000;
-}
-
-
-/* =========================================================
-   CLOSE BUTTON
-========================================================= */
-
-.lightbox-close{
-
-    position:absolute;
-
-    top:20px;
-    right:20px;
-
-    width:45px;
-    height:45px;
-
-    border:none;
-    border-radius:50%;
-
-    background:rgba(0,0,0,.65);
-
-    color:#fff;
-
-    font-size:30px;
-
-    cursor:pointer;
-
-    z-index:10001;
-
-    transition:none !important;
-    animation:none !important;
-
-    -webkit-tap-highlight-color:transparent;
-    -webkit-touch-callout:none;
-}
-
-
-/* =========================================================
-   REMOVE TAP FLASH
-========================================================= */
-
-.lightbox,
-#lightboxImg,
-.lightbox-prev,
-.lightbox-next,
-.lightbox-close{
-
-    -webkit-tap-highlight-color:transparent;
-    -webkit-touch-callout:none;
+.lightbox-next:active,
+.lightbox-next:focus {
+    background:rgba(0,0,0,.70) !important;
+    color:#FFD700 !important;
+    outline:none !important;
+    box-shadow:none !important;
 }
 
 
@@ -1933,37 +1902,18 @@ footer p{
    FULLSCREEN IMAGE ARROWS
 ========================================================= */
 
-.#lightboxImg{
-        max-width:94%;
-        max-height:88vh;
+.lightbox-prev {
+        left:10px !important;
+        width:44px !important;
+        height:54px !important;
+        font-size:27px !important;
     }
 
-    .lightbox-prev,
-    .lightbox-next{
-
-        width:44px;
-        height:54px;
-
-        font-size:27px;
-    }
-
-    .lightbox-prev{
-        left:10px;
-    }
-
-    .lightbox-next{
-        right:10px;
-    }
-
-    .lightbox-close{
-
-        top:12px;
-        right:12px;
-
-        width:42px;
-        height:42px;
-
-        font-size:27px;
+    .lightbox-next {
+        right:10px !important;
+        width:44px !important;
+        height:54px !important;
+        font-size:27px !important;
     }
 
 }

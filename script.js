@@ -263,8 +263,22 @@ if (propertyId && typeof properties !== "undefined") {
 
         const mapButton = document.getElementById("property-map-btn");
 
-if (mapButton) {
-    mapButton.href = property.map;
+if (mapButton && property.map) {
+
+    const match = property.map.match(
+        /!2d(-?\d+(?:\.\d+)?)!3d(-?\d+(?:\.\d+)?)/
+    );
+
+    if (match) {
+
+        const longitude = match[1];
+        const latitude = match[2];
+
+        mapButton.href =
+            `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+
+    }
+
 }
 
         document.getElementById("property-price").textContent =

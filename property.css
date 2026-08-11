@@ -1779,6 +1779,91 @@ footer p{
 
 }
 
+   /* =========================================================
+   FULLSCREEN IMAGE ARROWS
+========================================================= */
+
+.lightbox{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+
+    display:none;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(0,0,0,.95);
+}
+
+#lightboxImg{
+    max-width:90%;
+    max-height:90vh;
+    object-fit:contain;
+}
+
+.lightbox-prev,
+.lightbox-next{
+    position:absolute;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    width:50px;
+    height:60px;
+
+    border:none;
+    border-radius:12px;
+
+    background:rgba(0,0,0,.65);
+    color:#FFD700;
+
+    font-size:32px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:10001;
+}
+
+.lightbox-prev{
+    left:20px;
+}
+
+.lightbox-next{
+    right:20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover{
+    background:#FFD700;
+    color:#000;
+}
+
+.lightbox-close{
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(0,0,0,.65);
+    color:#fff;
+
+    font-size:30px;
+    cursor:pointer;
+
+    z-index:10001;
+}
+
 }
 
 

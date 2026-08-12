@@ -47,8 +47,8 @@ status:"SOLD",
 
 price:"₹4,50,000 (1 సెంట్)",
 
-area:"Nandyala Road Highway Side",
-areaTelugu:"నంద్యాల రోడ్డు హైవే పక్కన",
+area:"Nandyala Road Kabrastan Side",
+areaTelugu:"నంద్యాల రోడ్డు శ్మశానవాటిక పక్కన",
 
 land:"4 Cents",
 landTelugu:"4 సెంట్లు",

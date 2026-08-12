@@ -74,7 +74,7 @@ id:"ATK-3",
 
 status:"AVAILABLE",
 
-price:"₹4,00,000",
+price:"₹4,00,000 (1 సెంట్",
 
 area:"Sidda palli Road ",
 areaTelugu:"సిద్దపల్లి రోడ్డు",

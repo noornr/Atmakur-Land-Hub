@@ -311,6 +311,9 @@ if (mapButton && property.map) {
         document.getElementById("property-road").textContent =
             property.road;
 
+        document.getElementById("property-facing").textContent =
+    property.facing;
+
         /* TELUGU */
         document.getElementById("property-area-telugu").textContent =
             property.areaTelugu;
@@ -320,6 +323,9 @@ if (mapButton && property.map) {
 
         document.getElementById("property-road-telugu").textContent =
             property.roadTelugu;
+
+        document.getElementById("property-facing-telugu").textContent =
+    property.facingTelugu;
 
         /* DESCRIPTION */
         document.getElementById("property-description").textContent =

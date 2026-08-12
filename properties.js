@@ -1,4 +1,4 @@
-const properties = {
+var properties = {
 
 "ATK-1":{
 

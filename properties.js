@@ -98,7 +98,7 @@ images:[
 "images/property3-4.jpg"
 ],
 
-map:"YOUR_GOOGLE_MAP_LINK"
+map:"https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d239.85231068458492!2d78.5976201!3d15.8756663!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1786271821073!5m2!1sen!2sin"
 
 },
 

@@ -74,7 +74,7 @@ id:"ATK-3",
 
 status:"AVAILABLE",
 
-price:"₹7,50,000",
+price:"₹4,00,000",
 
 area:"Minority Colony",
 areaTelugu:"మైనారిటీ కాలనీ",

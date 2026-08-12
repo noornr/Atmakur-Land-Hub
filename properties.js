@@ -59,8 +59,14 @@ facingTelugu:"తూర్పు ముఖం",
 road:"30 Feet Road",
 roadTelugu:"30 అడుగులు రోడ్డు",
 
-description:"Highway facing premium plot.",
-
+description: `నంద్యాల రోడ్ కబ్రస్తాన్ దాటాక వెంచర్‌లో 
+  🏡 ప్లాట్ నంబర్: 50
+  🌾 4 సెంట్ల భూమి.
+  💰 ఒక సెంటు ధర: ₹4,50,000.
+  🧭 తూర్పు ముఖం.
+  📄 ఈ భూమికి సంబంధించిన అన్ని డాక్యుమెంట్లు ఉన్నాయి.
+  ✅ ఎటువంటి సమస్య లేదు.`,
+  
 images:[
 "images/property2.jpg",
 "images/property2-2.jpg",

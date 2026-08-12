@@ -8,7 +8,7 @@ featured:true,
 
 status:"AVAILABLE",
 
-price:"₹27,00,000  (Not Fixed Rate )",
+price:"₹27,00,000  (Not Fixed)",
 
 area:"Dudyala To Nandikunta Road",
 areaTelugu:"దుద్యాల నుండి నందికుంట రోడ్డు",
@@ -119,7 +119,7 @@ map:"https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d239.85231068458492!2d7
 
 id:"ATK-4",
 
-status:"AVAILABLE",
+status:"SOLD",
 
 price:"₹7,50,000",
 

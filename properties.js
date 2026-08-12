@@ -76,14 +76,14 @@ status:"AVAILABLE",
 
 price:"₹4,00,000",
 
-area:"Minority Colony",
-areaTelugu:"మైనారిటీ కాలనీ",
+area:"Sidda palli Road ",
+areaTelugu:"సిద్దపల్లి రోడ్డు",
 
-land:"8 Cents",
-landTelugu:"8 సెంట్లు",
+land:"2.5 Cents",
+landTelugu:"2.5 సెంట్లు",
 
-facing:"East Face",
-facingTelugu:"తూర్పు ముఖం",
+facing:"West Face",
+facingTelugu:"పడమర ముఖం",
 
 road:"30 Feet Road",
 roadTelugu:"30 అడుగుల రోడ్డు",
@@ -95,7 +95,6 @@ images:[
 "images/property3.jpg",
 "images/property3-2.jpg",
 "images/property3-3.jpg",
-"images/property3-4.jpg"
 ],
 
 map:"https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d239.85231068458492!2d78.5976201!3d15.8756663!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1786271821073!5m2!1sen!2sin"

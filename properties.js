@@ -14,7 +14,7 @@ area:"Dudyala To Nandikunta Road",
 areaTelugu:"దుద్యాల నుండి నందికుంట రోడ్డు",
 
 land:"1.08 acres Agricultural Land",
-landTelugu:"1.08 ఎకరాలు",
+landTelugu:"1.08 ఎకరాల పొలం ",
 
 facing:"West Face",
 facingTelugu:"పడమర ముఖం",

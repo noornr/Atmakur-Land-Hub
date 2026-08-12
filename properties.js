@@ -8,7 +8,7 @@ featured:true,
 
 status:"AVAILABLE",
 
-price:"₹27,00,000  (Not Fixed Price)",
+price:"₹27,00,000  (Not Fixed Rates)",
 
 area:"Dudyala To Nandikunta Road",
 areaTelugu:"దుద్యాల నుండి నందికుంట రోడ్డు",
@@ -22,7 +22,11 @@ facingTelugu:"పడమర ముఖం",
 road:"30 Feet Road",
 roadTelugu:"30 అడుగుల రోడ్డు",
 
-description:"నందికుంట నుండి దూడ్యాల వెళ్లే రోడ్డులో, రోడ్డు పక్కనే మొదటి పొలం ఉంది. 🌾 విస్తీర్ణం: 1.08 ఎకరాలు🧭 ముఖం: పడమర ముఖం📄 డాక్యుమెంట్స్: అన్ని డాక్యుమెంట్స్ అందుబాటులో ఉన్నాయి ✅ ఎలాంటి సమస్యలు లేవు.",
+description:`నందికుంట నుండి దూడ్యాల వెళ్లే రోడ్డులో, రోడ్డు పక్కనే మొదటి పొలం. 
+🌾 విస్తీర్ణం: 1.08 ఎకరాలు.
+🧭 ముఖం: పడమర ముఖం.
+📄 డాక్యుమెంట్స్: అన్ని డాక్యుమెంట్స్ అందుబాటులో ఉన్నాయి. 
+✅ ఎలాంటి సమస్యలు లేవు.`,
 
 images:[
 "images/property1.jpg",
@@ -41,7 +45,7 @@ id:"ATK-2",
 
 status:"SOLD",
 
-price:"₹4,50,000 (1cent)",
+price:"₹4,50,000 (1 సెంట్)",
 
 area:"Nandyala Road Highway Side",
 areaTelugu:"నంద్యాల రోడ్డు హైవే పక్కన",
@@ -56,7 +60,6 @@ road:"30 Feet Road",
 roadTelugu:"30 అడుగులు రోడ్డు",
 
 description:"Highway facing premium plot.",
-descriptionTelugu:"హైవేకు ఆనుకుని ఉన్న ప్రీమియం ప్లాట్.",
 
 images:[
 "images/property2.jpg",
@@ -88,8 +91,13 @@ facingTelugu:"పడమర ముఖం",
 road:"30 Feet Road",
 roadTelugu:"30 అడుగుల రోడ్డు",
 
-description:"A premium open plot.",
-descriptionTelugu:"అత్యుత్తమ ఓపెన్ ప్లాట్.",
+description:`సిద్దపల్లి రోడ్ హైవే దాటాక మిఠాయి మాబుసా గారి పొలంలో 
+ 
+🌾 2.5 సెంట్ల భూమి.
+🧭 ముఖం: పడమర ముఖం
+💰 ఒక సెంటు ధర ₹4,00,000.
+📄 ఈ భూమికి సంబంధించిన అన్ని డాక్యుమెంట్లు ఉన్నాయి. 
+✅ ఎటువంటి సమస్య లేదు.`,
 
 images:[
 "images/property3.jpg",

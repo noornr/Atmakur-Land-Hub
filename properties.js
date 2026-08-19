@@ -121,22 +121,21 @@ id:"ATK-4",
 
 status:"AVAILABLE",
 
-price:"₹7,50,000",
+price:"₹3,50,000",
 
-area:"Minority Colony",
-areaTelugu:"మైనారిటీ కాలనీ",
+area:"Izaan Green City",
+areaTelugu:"ఇజాన్ గ్రీన్ సిటీ",
 
-land:"8 Cents",
-landTelugu:"8 సెంట్లు",
+land:"2.75 Cents",
+landTelugu:"2.75 సెంట్లు",
 
-facing:"East Face",
-facingTelugu:"తూర్పు ముఖం",
+facing:"East Face , West Face ",
+facingTelugu:"తూర్పు ముఖం, పడమర ముఖం",
 
 road:"30 Feet Road",
-roadTelugu:"30 అడుగుల రోడ్డు",
+roadTelugu:"20 అడుగుల రోడ్డు",
 
 description:"A premium open plot.",
-descriptionTelugu:"అత్యుత్తమ ఓపెన్ ప్లాట్.",
 
 images:[
 "images/property4.jpg",
@@ -145,7 +144,7 @@ images:[
 "images/property4-4.jpg"
 ],
 
-map:"YOUR_GOOGLE_MAP_LINK"
+map:"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.84590804110815!2d78.60955023992034!3d15.881043290550116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1786618193862!5m2!1sen!2sin"
 
 },
 

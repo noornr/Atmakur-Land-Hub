@@ -121,7 +121,7 @@ id:"ATK-4",
 
 status:"AVAILABLE",
 
-price:"₹3,50,000",
+price:"₹3,80,000",
 
 area:"Izaan Green City",
 areaTelugu:"ఇజాన్ గ్రీన్ సిటీ",
@@ -129,8 +129,8 @@ areaTelugu:"ఇజాన్ గ్రీన్ సిటీ",
 land:"2.75 Cents",
 landTelugu:"2.75 సెంట్లు",
 
-facing:"East Face , West Face ",
-facingTelugu:"తూర్పు ముఖం, పడమర ముఖం",
+facing:"East Face , West Face, South Face",
+facingTelugu:"తూర్పు ముఖం, పడమర ముఖం, దక్షిణం",
 
 road:"30 Feet Road",
 roadTelugu:"20 అడుగుల రోడ్డు",
@@ -153,5 +153,43 @@ map:"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.84590804110815!2d
 
 },
 
+
+  "ATK-4":{
+
+id:"ATK-4",
+
+status:"AVAILABLE",
+
+price:"₹3,80,000",
+
+area:"Izaan Green City",
+areaTelugu:"ఇజాన్ గ్రీన్ సిటీ",
+
+land:"2.75 Cents",
+landTelugu:"2.75 సెంట్లు",
+
+facing:"East Face , West Face ",
+facingTelugu:"తూర్పు ముఖం, పడమర ముఖం",
+
+road:"30 Feet Road",
+roadTelugu:"20 అడుగుల రోడ్డు",
+
+description:`ఆత్మకూరు నుంచి శ్రీశైలం వెళ్లే రోడ్డులో, హైవేకు ఎడమ వైపున ఇజాన్ గ్రీన్ సిటీ వెంచర్‌లో 2.75 సెంట్ల ప్లాట్ ఉంది.
+🌾 2.75 సెంట్ల భూమి.
+🧭 ముఖం: తూర్పు ముఖం, పడమర ముఖం,
+💰 ఒక సెంటు ధర ₹3,50,000.
+📄 ఈ భూమికి సంబంధించిన అన్ని డాక్యుమెంట్లు ఉన్నాయి. 
+✅ ఎటువంటి సమస్య లేదు.`,
+
+images:[
+"images/property4.jpg",
+"images/property4-2.jpg",
+"images/property4-3.jpg",
+"images/property4-4.jpg"
+],
+
+map:"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.84590804110815!2d78.60955023992034!3d15.881043290550116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1786618193862!5m2!1sen!2sin"
+
+},
 
 };

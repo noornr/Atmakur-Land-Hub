@@ -200,8 +200,8 @@ status:"AVAILABLE",
 
 price:"₹3,80,000",
 
-area:"Izaan Green City",
-areaTelugu:"ఇజాన్ గ్రీన్ సిటీ",
+area:"Atmakur To NandyalaRoad",
+areaTelugu:"ఆత్మకూర్ నుండి నంద్యాల రోడ్డు",
 
 land:"3 Cents",
 landTelugu:"3 సెంట్లు",

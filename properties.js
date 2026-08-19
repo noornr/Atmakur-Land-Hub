@@ -154,13 +154,13 @@ map:"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.84590804110815!2d
 },
 
 
-  "ATK-4":{
+  "ATK-5":{
 
-id:"ATK-4",
+id:"ATK-5",
 
 status:"AVAILABLE",
 
-price:"₹3,80,000",
+price:"₹3,50,000",
 
 area:"Izaan Green City",
 areaTelugu:"ఇజాన్ గ్రీన్ సిటీ",
@@ -182,10 +182,48 @@ description:`ఆత్మకూరు నుంచి శ్రీశైలం �
 ✅ ఎటువంటి సమస్య లేదు.`,
 
 images:[
-"images/property4.jpg",
-"images/property4-2.jpg",
-"images/property4-3.jpg",
-"images/property4-4.jpg"
+"images/property5.jpg",
+"images/property5-2.jpg",
+"images/property5-3.jpg",
+"images/property5-4.jpg"
+],
+
+map:"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.84590804110815!2d78.60955023992034!3d15.881043290550116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1786618193862!5m2!1sen!2sin"
+
+},
+
+  "ATK-6":{
+
+id:"ATK-6",
+
+status:"AVAILABLE",
+
+price:"₹3,80,000",
+
+area:"Izaan Green City",
+areaTelugu:"ఇజాన్ గ్రీన్ సిటీ",
+
+land:"3 Cents",
+landTelugu:"3 సెంట్లు",
+
+facing:"East Face , West Face ",
+facingTelugu:"తూర్పు ముఖం, పడమర ముఖం",
+
+road:"20 Feet Road",
+roadTelugu:"20 అడుగుల రోడ్డు",
+
+description:`ఆత్మకూరు నుంచి శ్రీశైలం వెళ్లే రోడ్డులో, హైవేకు ఎడమ వైపున ఇజాన్ గ్రీన్ సిటీ వెంచర్‌లో 2.75 సెంట్ల ప్లాట్ ఉంది.
+🌾 2.75 సెంట్ల భూమి.
+🧭 ముఖం: తూర్పు ముఖం, పడమర ముఖం,
+💰 ఒక సెంటు ధర ₹3,50,000.
+📄 ఈ భూమికి సంబంధించిన అన్ని డాక్యుమెంట్లు ఉన్నాయి. 
+✅ ఎటువంటి సమస్య లేదు.`,
+
+images:[
+"images/property6.jpg",
+"images/property6-2.jpg",
+"images/property6-3.jpg",
+"images/property6-4.jpg"
 ],
 
 map:"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.84590804110815!2d78.60955023992034!3d15.881043290550116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1786618193862!5m2!1sen!2sin"
